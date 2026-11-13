@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "task_id": "r109-harbor-sync",
+  "agent_id": "wb-main",
+  "created_at_utc": "2026-11-13T12:19:17.189882+00:00",
+  "status": "in_progress",
+  "input_git_head": "4520d5572b2ad6fe9f5fab87b4bee453562e5f7d",
+  "protocol": {
+    "path": "collaboration/PROTOCOL.md",
+    "sha256": "1230c4e0f546e50f4d71c43a63819d0860428308c327c822343dd4ffff983a5a",
+    "bytes": 3899
+  },
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "4211e5a27fcc80d4fd7fe28aac2c7a034271413f7601fb70fee7b649f1905998",
+      "bytes": 2487
+    },
+    {
+      "path": "collaboration/PROJECT.md",
+      "sha256": "cdd2d86801fbaa0578b8957dfc033a0a1d98b9cacd1cef10b5971417f1955e6c",
+      "bytes": 4834
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/TASK.md",
+      "sha256": "546a476be5265f4a73090615362a28d45e2dc812d3c73d6b620590b685ac02c2",
+      "bytes": 2313
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/HANDOFF.md",
+      "sha256": "0cd3d61edae869cbf4bc041a61ff4669280e1bf9ba99f7ab9722adc18df726f8",
+      "bytes": 3203
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/LOG.md",
+      "sha256": "c76716f62bd48a3df1fa4ee44170a0932289f14e54006a5b4c8feae4c0348829",
+      "bytes": 3104
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/checkpoints/20261113T121816Z-r109-init/CHECKPOINT.md",
+      "sha256": "5fea5be36f3da94e93ced524a33c5fe842839dfcc33649e60456f1686b7c2df3",
+      "bytes": 4212
+    },
+    {
+      "path": "evidence/GOAL-ITERATION-R107.md",
+      "sha256": "1a81c8e15b361f62e027360af0d6c82d498040370610c87b657c7facd0aed4b3",
+      "bytes": 5446
+    },
+    {
+      "path": "evidence/gate-G0-recency-review-R99.md",
+      "sha256": "4eb1df8ddebb15d5eb934b0060fef49eb4a84902940ffae401b367172ea06046",
+      "bytes": 4974
+    },
+    {
+      "path": "evidence/R99-design-block-decision.md",
+      "sha256": "9b07d5698fd7e051fa0daf2c32422c1db2086490f7e8fc02f4538958e29eb245",
+      "bytes": 5120
+    },
+    {
+      "path": "evidence/R108-HARBOR-TRIAL.md",
+      "sha256": "35072cc26bd8f6dfd6674ee6f1f4e36692e5b7a390bdc64236366efda2717cf9",
+      "bytes": 7587
+    },
+    {
+      "path": "evidence/route-diagnosis-redacted.json",
+      "sha256": "8526378468571a5296496e028f222d0f3d16113590868c29e75f813b0a95787b",
+      "bytes": 4831
+    },
+    {
+      "path": "evidence/harbor-r108/task.toml",
+      "sha256": "dae0940c64b92f5d29567284152f05e159ad8a4431b1154d715eebf5bac9e67a",
+      "bytes": 413
+    },
+    {
+      "path": "evidence/harbor-r108/instruction.md",
+      "sha256": "19fa8472682515d27bbd5b485a7a51b195876e79508b11ce01a4e46747de7013",
+      "bytes": 1608
+    },
+    {
+      "path": "evidence/harbor-r108/tests/probe.py",
+      "sha256": "d3659dcb886a89ae65098a6f3f51b0f350c63307d029a66d33f843bed24f883c",
+      "bytes": 3300
+    },
+    {
+      "path": "evidence/harbor-r108/tests/test.sh",
+      "sha256": "4ff5bfc71b4eb00586e25f2466c9ad951c527004ded723d9b20187fa3915d31e",
+      "bytes": 2999
+    },
+    {
+      "path": "evidence/harbor-r108/solution/solve.sh",
+      "sha256": "28e9f96963e42a95797f67fe4da925e204f8ec07368d36906fda27e59db81802",
+      "bytes": 234
+    }
+  ]
+}
