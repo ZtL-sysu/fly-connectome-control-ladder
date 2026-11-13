@@ -2,8 +2,8 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (4 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-13 22:4x +0800
+- Status: **in_progress** (5 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 00:1x +0800 (R115 heartbeat, awakened 2026-11-13 23:51)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
@@ -26,6 +26,37 @@
   `PARTIAL | G0 may be passed: NO` and identified overclaims (withdrawn by
   appending a correction register). Raw bytes and hashes stay in the primary
   project and are not uploaded.
+- R115 G0 gap-1 remaining first-hand evidence acquisition: sanitized summary
+  published (`evidence/R115-G0-R1-REMAINING-EVIDENCE.md`). Three items from
+  R114's handoff were advanced with first-hand bytes, **none promoted to CLOSED**:
+  (1) Correig-Fraga archive **content bytes** — all 6 Zenodo routes returned
+  HTTP 403 at this timepoint (explicit negative evidence; R107 403 / R114 200 /
+  R115 403 are separate timepoint observations, no history rewritten) ⇒ OPEN;
+  (2) pretrained-checkpoint **hosting located** — official upstream bytes show
+  the weights come from a Google Drive public folder, not the GitHub code repo,
+  with two published SHA-256 checksums ⇒ hosting PARTIAL, **distribution terms
+  still OPEN** (a script constant is not a LICENSE text; code MIT is not
+  extrapolated to weights); (3) "natural clips" **identity confirmed** —
+  official source verbatim shows they are MPI Sintel-derived `AugmentedSintel`
+  stimuli, not a separate asset ⇒ identity PARTIAL, independent license still
+  OPEN. A credential-bearing official script was deleted before persistence;
+  its value was never printed, copied, recorded or uploaded. **Gap 1 overall
+  remains PARTIAL; G0 stays `pending`; no gate passed.**
+- R115 fresh isolated recheck recovered: `PARTIAL | G0 may be passed: NO |
+  Scientific result claimed: NO`, final **24,958 B** / SHA-256
+  `5758007a…62e0` (an earlier 22,396 B / `ef2b0e21…d55b3` reading was an
+  intermediate state; both retained in the primary project, final bytes
+  govern). It independently confirmed 10/10 SHA and 10/10 verbatim fields, 0
+  credential hits in this round's directory, and an unchanged pipeline state;
+  it found **no instance** of the ten named overclaim categories. Six
+  boundary/precision issues (W1–W6) were recorded as append-only corrections:
+  W1 and W4 withdrawn, W2/W3/W5/W6 narrowed. In particular the weight-hosting
+  constants came from a **local frozen copy outside this round's collected
+  bytes**, not from official upstream bytes fetched this round; and the UTC
+  field is write-time, not a recomputable fetch time (the final review does
+  NOT judge the time difference a factual contradiction). Unpublished files
+  were corrected before this publication. The recheck is not an authorisation
+  and does not replace an R9 independent review.
 - Content scan performed each sync: no credentials / local absolute paths /
   dataset binaries / files >50 MiB in the upload set.
 
