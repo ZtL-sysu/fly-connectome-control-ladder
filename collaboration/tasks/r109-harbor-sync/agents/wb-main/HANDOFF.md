@@ -2,15 +2,62 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (9 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 05:2x +0800 (R118 heartbeat: read-only source-registry gap audit + isolated recheck, awakened 2026-11-14 04:35)
+- Status: **in_progress** (10 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 06:5x +0800 (R119 heartbeat: read-only review-launch protocol chain audit; isolated recheck launched, not yet recovered at write time; awakened 2026-11-14 06:28)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
+- **R119 — read-only review-launch protocol chain audit (latest, tenth
+  checkpoint).** Concurrency guard not triggered (primary ledger `05:26:24`,
+  ~62 min stale >10 min; 0 project writes in preceding 20 min; only this
+  automation session; newest review still r95; no R119 artifacts).
+  Direction change: R110 already proved acceptance-machinery reachability,
+  R111's five decision points remain unanswered, and R114–R118 exhausted the
+  approval-free first-hand acquisition channel with three earlier loop halts.
+  This round audits a layer untouched in 118 prior rounds: the **launch brief
+  of the sole success-criterion action**. Zero network requests, zero
+  write-back to pre-existing bytes. Measured from raw bytes: exactly **one**
+  `independent-review-brief*` file (4,803 B / `8771dea8…`), titled
+  `(Contract v2, R51)`, carrying `X > 8.0`, `If X <= 8.0`,
+  `score_gt_threshold = true`, a hard-coded `…20261108` output filename and an
+  `8 pages` clause. `GOAL-ITERATION-R107.md` lines 90–92 deliberately freeze
+  `protocols/` and name a *future* v4 versioned contract, but **zero** R107/v4
+  launch briefs exist ⇒ a **versioned-contract gap** on the launch path.
+  Strictly **not** claimed: no anchor leak to the reviewer (the verbatim
+  handoff block lines 21–66 has zero `8.0`/`7.0` tokens and explicit
+  non-anchoring clauses; R51 numbers live only in the preamble and post-review
+  gate, and R58/R60 registered them as background only), no missing machine
+  field (`score_gt_threshold` retained with `>=` semantics plus
+  `score_meets_threshold`), no R95 anchoring (R95 used a different 5,275 B
+  frozen brief), no new A6 finding, no first-ever brief-path-imprecision
+  discovery (R95 already logged a different brief's `paper/sources/` path).
+  One real incidental fact: the brief's cited
+  `ccf-paper-reviewer/references/review-output-standards.md` does not exist;
+  the real file is under `ccf-common/references/` and the reviewer `SKILL.md`
+  lines 27/40/90 cite that path. 36 verification checks / 36 MATCH / 0
+  MISMATCH; 6/6 isolated byte-identical copies; two collector-v1 script
+  defects (directory `read_bytes()`, wrapped-line exact-substring false
+  negative) logged as script judgment defects, not data inconsistencies.
+  Read-only double gate: validator `NOT_QUALIFIED / 6.0 / >=7.0` (D1✓ D2✗
+  D3✗ D4✓ D5✗), guard `INCOMPLETE` (A2/A6, S1–S7 pending), ledger SHA-16
+  `f98b69369db6eb80` + mtime and main `pipeline-state.json` `bcb48bb9…` /
+  3,723 B identical before/after. **Fresh isolated sub-agent launched with no
+  expected conclusion; at this checkpoint's write time its report had NOT been
+  recovered, so this checkpoint claims no recheck verdict** — per the R117
+  precedent the recovered conclusion and any append-only corrections go into a
+  new separate immutable checkpoint. Content scan: 44 files, 0 pattern hits,
+  0 files >50 MiB, 0 binary/dataset/weight/third-party/unpublished-manuscript
+  files, largest 29,482 B. Primary reports/scripts/JSON/independent-review
+  original **not uploaded**; only `evidence/R119-REVIEW-LAUNCH-PROTOCOL-SANITIZED.md`.
+  All nine earlier published checkpoints untouched. **Result: 0 papers
+  qualified, no COMPLETE, governing still R95 = 6.0 / Confidence 4.0.**
+  The versioned-contract decision belongs to the designated gate owner; the
+  heartbeat does not create a v4 contract or self-certify.
+
 - **R118 — read-only first-hand source registry gap audit + isolated recheck
-  recovered (latest, ninth checkpoint).** Concurrency guard not triggered
+  recovered (ninth checkpoint).** Concurrency guard not triggered
   (primary ledger `03:34:35`, ~61.6 min stale >10 min; 0 project writes in the
   preceding 20 min; no independent main session / polling; no new file in
   either review-report directory; no R118 artifacts). Direction change: no
