@@ -140,3 +140,33 @@ do not enter an unbounded patch loop (R105 precedent).
    and STOP harbor retries. Report the platform build-service blocker.
 4. Only a verified reward makes harbor a viable heavy-work entry point.
    Until then: experimental, no GPU execution claim, no 4090 claim.
+
+---
+
+## Attempt 3 milestone — BUILD SUCCEEDED, run in progress (2026-11-13 21:0x)
+
+Background tracker `dNf5Pa` (55 × 1 min) recorded the phase transition:
+`building` through 20:39:57 → **`running` from 20:41:04 through 21:04:16**,
+still `processing`. The tracker exhausted its poll count; the task did NOT
+terminate.
+
+Direct re-check confirms:
+- `harborPhase = "running"`, `status = "processing"`, `errorCode = None`.
+- **`harborImageDigest = sha256:3f6290d03df10654a0243bb0fc40c8c9bb27383685760e7811a4d8232f583e79`**
+  — the first successfully built image digest in all three attempts.
+- `debug build-logs 25092` returns `status = "success"`, ending with
+  `run cache step successfully!`.
+- `harborResult = None`, `steps = []`, no `reward` yet; the agent is executing
+  `instruction.md` inside the container.
+
+**Interpretation**: the single `--build-timeout 3600` fix worked. The 1.36 GB
+CUDA base pull finished within the raised ceiling, the `apt-get` layer
+completed, and the image was pushed. This is an **engineering milestone, not a
+result**: no probe output, no verifier reward, no scientific claim yet.
+
+A fresh tracker `D8mdCU` polls the run phase. Recovery on finish:
+`novix --json task result 25092` → read `harborResult` →
+`novix debug pull task:25092 <out> --sub project/results/r108_probe` →
+independently recompute the probe arithmetic from raw artifacts. On error:
+`novix debug build-logs` / `task result` verbatim, record, and stop harbor
+retries as previously declared.

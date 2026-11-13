@@ -2,8 +2,8 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (checkpoint published; research itself unfinished)
-- Last update: 2026-11-13 20:1x +0800
+- Status: **in_progress** (2 checkpoints published; research itself unfinished)
+- Last update: 2026-11-13 21:0x +0800
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
@@ -22,7 +22,9 @@
 ## NOT completed / do not assume
 
 - **No GPU execution, no reward, no scientific result from harbor yet.**
-  Task 25092 is still `processing / harborPhase=building` at last check.
+  Image build SUCCEEDED (first digest across 3 attempts); task 25092 is
+  `processing / harborPhase=running` at last check. See checkpoint
+  `20261113T130720Z-r108-build`.
 - Two earlier harbor attempts failed (25075 COPY-context error; 25076
   platform 1800 s image-build timeout). Both retained verbatim in the primary
   project; 25092 is the declared last build-stage attempt.
@@ -50,7 +52,7 @@ protocol and know exactly which local artifacts to request.
 
 | Job | Provider | State | Recovery |
 |:--|:--|:--|:--|
-| 25092 | Novix harbor | `processing / building`, steps 0 | `novix --json task result 25092`; on finish `novix debug pull task:25092 <out> --sub project/results/r108_probe` |
+| 25092 | Novix harbor | `processing / **running**`, image digest `sha256:3f6290d0…`, steps 0, no reward | `novix --json task result 25092`; on finish `novix debug pull task:25092 <out> --sub project/results/r108_probe` |
 | heartbeat | local automation | ACTIVE, every 30 min | reads the primary project's `goal-ledger.md` |
 
 Do not claim either produced a scientific result.
