@@ -2,14 +2,76 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (8 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 03:3x +0800 (R117 heartbeat + isolated recheck recovery, awakened 2026-11-14 03:09)
+- Status: **in_progress** (9 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 05:2x +0800 (R118 heartbeat: read-only source-registry gap audit + isolated recheck, awakened 2026-11-14 04:35)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
-- **R117 isolated recheck recovered (latest, eighth checkpoint).** Fresh isolated
+- **R118 — read-only first-hand source registry gap audit + isolated recheck
+  recovered (latest, ninth checkpoint).** Concurrency guard not triggered
+  (primary ledger `03:34:35`, ~61.6 min stale >10 min; 0 project writes in the
+  preceding 20 min; no independent main session / polling; no new file in
+  either review-report directory; no R118 artifacts). Direction change: no
+  machine-gate fix, no Nth G0 text patch, no P3 forward pass. Instead quantified
+  two debts R107's **independent gate review** named verbatim and left open
+  across 11 rounds: **W7 / R4 PARTIAL** (R106 §6 R4 requires registering the
+  SHA-pinned `arXiv:2609.24565v2` bytes into `literature-search/source-manifest.json`;
+  R107 froze 5 Kuklev files but never registered them — measured now still
+  `1124 B / 541880ab… / 5 entries / no 2609.24565`, byte-identical to R107's
+  record) and **R98 "23 saved public sources" vs a 5-entry manifest**.
+  Read-only, **zero network requests**, zero write-back to pre-existing project
+  bytes. Measured from raw bytes: `literature-search/` **167** files, **26**
+  suffix-filtered first-hand candidates, **5** registered, **21** unregistered,
+  **141** project-owned artifacts; registry 5 declared bytes+SHA **10/10 match**;
+  Kuklev 5 frozen bytes **5/5 SHA match** R107; verification **50 checks, 0
+  MISMATCH** (plus 5 `PROBED`, 1 `REGISTERED`). **26 is a candidate count, not
+  26 verified sources**; no single rule reproduces R98's 23, so it is neither
+  confirmed nor refuted. **Incremental observation** (not a first-ever
+  discovery): registry entry 5 `flyvis2024` is SHA-intact but its plain text is
+  only **165 chars**, a reCAPTCHA / browser challenge page; R98 excluded only
+  the failed `.txt` CAPTCHA response, so the registered `.html` is also a
+  challenge page ⇒ 5/5 SHA-intact but only **4/5 content usable**.
+  `flyvis2024-primary.xml` / `-body.txt` still hold the EuropePMC body; the
+  registry was not rewritten. **gap 2 still OPEN**: matrix `9445 B / 31b5098b…`
+  byte-identical to the R106 freeze, lines 46–47 still contain the stale
+  `the open question` + `Kuklev leaves`. **Not the first** Kuklev field-level
+  recomputation (R107 already did it); the increment is exact abstract lengths,
+  verbatim key sentences, `abs/latest == abs/v2`, and a two-scope search readout.
+  Read-only double gate: validator `NOT_QUALIFIED / 6.0 / >=7.0`, guard
+  `INCOMPLETE` (A2, A6), ledger SHA-16 `73043b4e164a5a5f` + mtime and main
+  `pipeline-state.json` `bcb48bb9…` / 3723 B identical before/after; G0 and
+  G1–G8 / validation / handoff all `pending`. Fresh isolated sub-agent, **no
+  expected conclusion supplied**: `R118-INDEPENDENT-REVIEW.md` final
+  **23,653 B / SHA-256 `3ffc37c9fe71ad8daeb677d62bfafd9dd789d4220a93cd1c7d5643fa0d2d7bc7`**,
+  one write, no intermediate state, original unchanged. Verdict
+  `REPRODUCIBLE_WITH_WORDING_AND_JUDGMENT_DEFECTS | G0 may be passed: NO |
+  Scientific result claimed: NO`, `Forward pass performed: NO`. 168 readings
+  reproduced; **12 named overclaim / self-certification categories (a)–(l) all
+  REFUTED**, no high-severity defect, no fabrication, no existing file modified.
+  **9 defects (3 medium / 6 low) all accepted** via append-only correction:
+  W1 mislabelled "closing sentence" (it is the penultimate sentence), **W2
+  substantive wording withdrawal** — "12/12 all hit the frozen raw bytes" →
+  reconstructed plain text 12/12 FOUND but raw-byte exact substring for the 10
+  §7.3/§8/§9 phrases is **6 FOUND / 4 ABSENT** (MathML / U+2002 splits), and
+  2 of the 12 fields are abstract sentences not §7.3/§8/§9; W3 three mixed
+  abstract-length conventions; W4 truncated verbatim CAPTCHA quote; W5 two
+  classification conventions; W6 "new discovery" → "incremental observation";
+  W7 zero-write-back scope + `/tmp` double-gate readouts not independently
+  recomputable; W8 "0 mismatch" is not all-green (5 `PROBED` include one
+  `CHALLENGE_PAGE`); W9 R98 "23" wording. None changes core counts, byte
+  integrity, the non-scientific-result boundary or absence of a G0 promotion.
+  A **v1 verifier false negative** is preserved verbatim (17,627 B /
+  `5f44c8e4…57fe`): a keyword-too-broad script judgment defect, not a data
+  inconsistency; v2 adds a two-condition rule plus 5 content-validity probes,
+  both readings retained. Gate/evidence recheck, **not** a
+  `ccf-paper-reviewer full` manuscript review: no scored-review Overall line,
+  no numeric paper score, no governing change. Primary reports / scripts / JSON
+  / review original **not uploaded**; only `evidence/R118-REGISTRY-GAP-SANITIZED.md`
+  is. All eight earlier published checkpoints byte-for-byte untouched.
+  Governing still 6.0, 0 qualifying papers, no COMPLETE.
+- **R117 isolated recheck recovered (eighth checkpoint).** Fresh isolated
   sub-agent, no expected conclusion supplied: final 22,725 B / SHA-256
   `0d133eaca0684bc61b927378923aaf09489adb6e33b979b8c4e9be33df030a3b`,
   one write, no intermediate state, original unchanged. Verdict
