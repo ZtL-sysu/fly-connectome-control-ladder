@@ -2,14 +2,41 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (10 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 06:5x +0800 (R119 heartbeat: read-only review-launch protocol chain audit; isolated recheck launched, not yet recovered at write time; awakened 2026-11-14 06:28)
+- Status: **in_progress** (11 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 07:0x +0800 (R119 heartbeat: read-only review-launch protocol chain audit; isolated recheck recovered, all 8 defects accepted append-only; awakened 2026-11-14 06:28)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
-- **R119 — read-only review-launch protocol chain audit (latest, tenth
+- **R119 isolated recheck recovered + append-only corrections (latest,
+  eleventh checkpoint).** The tenth checkpoint was written while the fresh
+  isolated sub-agent was still running and truthfully claimed no verdict; its
+  bytes are **not rewritten**. Final independent report (primary project,
+  **not uploaded**) is **28,594 B** / SHA-256
+  `55dbfbf130ac2fde9d7ff950d70c5718cd07d491901ac5459f173446cfd89219`, one
+  write, no intermediate state, original unchanged. Verdict
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result
+  claimed: NO`, `Forward pass performed: NO`. A–L **all MATCH**, zero
+  MISMATCH; reviewer used **no** R119 JSON as a data source and recomputed
+  from source bytes. **12 named overclaim categories CONFIRMED = 0 (all
+  REFUTED)**; **8 defects (2 medium / 6 low / 0 high)**, no fabrication, no
+  score line, no forward pass, no gate promotion, no existing file modified
+  by the reviewer. **All 8 accepted, append-only** in primary
+  `R119-POST-REVIEW-CORRECTION.md`: M1 masking-scope inconsistency (private
+  artifacts vs sanitized public summary; staged public files 0 local-path
+  hits), M2 snapshot-scope wording on ledger SHA (append-only entries landed
+  after capture; no historical byte changed), L1 prefix-glob count scope, L2
+  `-null-ladder` filenames, L3 broad historical negative narrowed to a scope
+  observation, L4 inventory timing, L5 "v4 never created" narrowed to a
+  pending gate-owner decision + "R51 **protocols/** brief", L6 "main-line"
+  qualifier retained. Only `evidence/R119-INDEPENDENT-REVIEW-SANITIZED.md` is
+  uploaded; the independent report original stays private. Gate/evidence
+  recheck, **not** a `ccf-paper-reviewer full` manuscript review. All ten
+  earlier published checkpoints untouched. **Result unchanged: 0 papers
+  qualified, no COMPLETE, governing R95 = 6.0 / Confidence 4.0.**
+
+- **R119 — read-only review-launch protocol chain audit (tenth
   checkpoint).** Concurrency guard not triggered (primary ledger `05:26:24`,
   ~62 min stale >10 min; 0 project writes in preceding 20 min; only this
   automation session; newest review still r95; no R119 artifacts).
