@@ -1,0 +1,19 @@
+version = "1.0"
+
+[metadata]
+slug = "r108-frozen-cuda-probe"
+completion_mode = "artifacts"
+metric = "environment_verification"
+required_artifacts = [
+  "results/r108_probe/result.json",
+  "results/r108_probe/manifest.json",
+]
+description = "R108: engineering-only frozen CUDA/GPU probe. No training, no labels, no scientific claim."
+
+[environment]
+gpus = 1
+cpus = 4
+memory_mb = 16384
+
+[verifier]
+timeout_sec = 600
