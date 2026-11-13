@@ -2,8 +2,8 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (3 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-13 22:0x +0800
+- Status: **in_progress** (4 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-13 22:4x +0800
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
@@ -16,8 +16,18 @@
 - R108 harbor-trial evidence sanitized and published: the package, the trial
   log, a redacted route-diagnosis JSON with 7 dispatch rows, and the goal
   iteration record.
-- Content scan performed: no credentials / local absolute paths / dataset
-  binaries / files >50 MiB in the upload set.
+- R114 G0 gap-1 first-hand license verification: sanitized summary published
+  (`evidence/R114-G0-R1-LICENSE-EVIDENCE.md`). Two previously OPEN items
+  **advanced to recomputable first-hand attachments but remain PARTIAL**:
+  Zenodo 21549559 license identifier `cc-by-4.0` (one Zenodo metadata source
+  exposed through three same-source views, NOT independent cross-checks), and
+  the MPI Sintel official non-commercial license page. **Gap 1 overall is
+  still PARTIAL; no gate was passed.** A fresh isolated recheck returned
+  `PARTIAL | G0 may be passed: NO` and identified overclaims (withdrawn by
+  appending a correction register). Raw bytes and hashes stay in the primary
+  project and are not uploaded.
+- Content scan performed each sync: no credentials / local absolute paths /
+  dataset binaries / files >50 MiB in the upload set.
 
 ## NOT completed / do not assume
 
@@ -48,14 +58,17 @@ manuscript) is **not** in this repo. `PROJECT.md` and `AGENTS.md` state why.
 A new agent cannot reproduce experiments from this repo alone; it can read the
 protocol and know exactly which local artifacts to request.
 
-## Running jobs (verified 2026-11-13 20:16 +0800)
+## Running jobs (verified 2026-11-13 22:4x +0800)
 
 | Job | Provider | State | Recovery |
 |:--|:--|:--|:--|
 | 25092 | Novix harbor | **FINISH**, `reward=1.0`, `measurementValid=true`, 169 steps, device **H20** (not 4090), no scientific result | trial closed; optional `novix debug pull task:25092 <out> --sub project/results/r108_probe` after track-ops recovers |
 | heartbeat | local automation | ACTIVE, every 30 min | reads the primary project's `goal-ledger.md` |
+| R114 isolated review | local isolated sub-agent | **RECOVERED** `PARTIAL \| G0 may be passed: NO \| Scientific result claimed: NO`; final 26,104 B, SHA-256 `879ecb78…3e`. Found 7 flaws; two substantive overclaims (same-source views called independent sources; license identifier called LICENSE text CLOSED) withdrawn by appended correction register. | primary project `gate-G0-R114/R114-G0-R1-INDEPENDENT-REVIEW.md` + `R114-POST-REVIEW-CORRECTION.md` |
 
-Do not claim either produced a scientific result.
+Do not claim any of these produced a scientific result. A gate-evidence
+recheck is not a `ccf-paper-reviewer full` manuscript review and must not
+produce an Overall score line.
 
 ## Next executable command (for a resuming agent)
 
