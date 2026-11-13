@@ -2,8 +2,8 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (5 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 00:1x +0800 (R115 heartbeat, awakened 2026-11-13 23:51)
+- Status: **in_progress** (6 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 02:0x +0800 (R116 heartbeat, awakened 2026-11-14 01:27)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
@@ -57,6 +57,25 @@
   NOT judge the time difference a factual contradiction). Unpublished files
   were corrected before this publication. The recheck is not an authorisation
   and does not replace an R9 independent review.
+- R116 G0 gap-1 archive-content bytes **first obtained** (sanitized summary
+  `evidence/R116-G0-R1-ARCHIVE-CONTENT.md`). R115's handoff item 2 named this
+  approval-free action and its channel recovered: 8 small archive content files
+  (incl. `README.md` / `MANIFEST.csv` / `SHA256SUMS`) returned HTTP 200 and
+  **byte-match the upstream official md5 8/8**, with zero MISMATCH; size 8/8;
+  disk <-> manifest <-> verification SHA/MD5/bytes 8/8. Channel stayed mixed:
+  a first batch of 10 custom-UA requests all returned throttling 403 (8 pages
+  saved verbatim, 8 distinct md5), while single sequential requests returned
+  200. 8/20 files / 16,519 B = **0.0028% of archive bytes** obtained; the
+  remaining 12 files (6 compressed tables + 6 CSV, ~591 MB) were deliberately
+  not downloaded under the exclusion list and are **not verified**. v1 of the
+  verification script falsely counted structurally absent checksum rows as
+  failures; v1 is preserved verbatim and v2 uses a three-state rule. A fresh
+  isolated recheck: `PARTIAL | G0 may be passed: NO | Scientific result
+  claimed: NO`, final **31,188 B** / SHA-256 `2e348521…b75c2`, ten named
+  overclaim categories **CONFIRMED = 0**, two NARROW issues (`CLOSED (partial)`
+  -> PARTIAL; "7 + 5" -> "6 compressed + 6 CSV") plus six LOW wording issues
+  accepted by append-only correction. **gap 1 overall PARTIAL, G0 pending,
+  no gate passed, no state write-back.**
 - Content scan performed each sync: no credentials / local absolute paths /
   dataset binaries / files >50 MiB in the upload set.
 
@@ -96,6 +115,7 @@ protocol and know exactly which local artifacts to request.
 | 25092 | Novix harbor | **FINISH**, `reward=1.0`, `measurementValid=true`, 169 steps, device **H20** (not 4090), no scientific result | trial closed; optional `novix debug pull task:25092 <out> --sub project/results/r108_probe` after track-ops recovers |
 | heartbeat | local automation | ACTIVE, every 30 min | reads the primary project's `goal-ledger.md` |
 | R114 isolated review | local isolated sub-agent | **RECOVERED** `PARTIAL \| G0 may be passed: NO \| Scientific result claimed: NO`; final 26,104 B, SHA-256 `879ecb78…3e`. Found 7 flaws; two substantive overclaims (same-source views called independent sources; license identifier called LICENSE text CLOSED) withdrawn by appended correction register. | primary project `gate-G0-R114/R114-G0-R1-INDEPENDENT-REVIEW.md` + `R114-POST-REVIEW-CORRECTION.md` |
+| R116 isolated review | local isolated sub-agent | **RECOVERED** `PARTIAL \| G0 may be passed: NO \| Scientific result claimed: NO`; final 31,188 B, SHA-256 `2e348521…b75c2`, original text unchanged. Ten named overclaim categories CONFIRMED = 0; two NARROW + six LOW wording issues accepted by append-only correction. Gate/evidence recheck, not a manuscript full review. | `evidence/R116-G0-R1-ARCHIVE-CONTENT.md`, primary project `gate-G0-R116/R116-G0-R1-INDEPENDENT-REVIEW.md` + `R116-POST-REVIEW-CORRECTION.md` |
 
 Do not claim any of these produced a scientific result. A gate-evidence
 recheck is not a `ccf-paper-reviewer full` manuscript review and must not
