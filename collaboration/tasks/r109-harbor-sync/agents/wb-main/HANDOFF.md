@@ -2,13 +2,41 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (6 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 02:0x +0800 (R116 heartbeat, awakened 2026-11-14 01:27)
+- Status: **in_progress** (7 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 03:2x +0800 (R117 heartbeat, awakened 2026-11-14 03:09)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
+- **R117 (latest) — mainline P3 forward-pass execution premises, measured read-only.**
+  Sanitized summary: `evidence/R117-EXEC-PREMISE-SANITIZED.md`;
+  checkpoint `20261113T192349Z-r117-exec-premise`. Direction change: R114–R116
+  exhausted the approval-free first-hand acquisition channel, so R117 returned
+  to the mainline P3 real forward (U5) and measured the **execution
+  environment** that R106 had only inferred. Local Conda, zero network
+  requests, strict EXEC LOCK (zero forward / inference / training / labels /
+  EPE·l2 / scientific metric). **7 import configs: 5 FAIL / 2 OK** — default
+  environments and the official source tree all fail; only the R101 sandbox
+  with a reconstructed, explicitly non-official `flyvis/version.py` plus
+  explicit `PYTHONPATH`/`FLYVIS_ROOT_DIR` imports OK. Historical readouts are
+  reproducible but **not portable**. **Device premise**: MPS available in all 7
+  configs but `flyvis.device = cpu` in both OK configs; upstream `cuda if
+  available else cpu` + global `set_default_device` means a default-path P3
+  forward runs entirely on CPU, and using MPS requires explicit `.to("mps")`.
+  No device migration/forward performed, no 4090/L4/H20 claim. **Asset bytes
+  confirmed**: official checkpoint SHA + `weights_only=True` (14 tensors, all
+  finite), digest under R101's original rule MATCH, 8 Sintel npz CRC/SHA 8/8
+  match R106 (zero array instantiation). A first probe digest differed only by
+  one extra trailing `\0` => framing difference, **not** a data conflict.
+  v1 verifier false negative (credential vs local-path categories merged) is
+  preserved verbatim; final 45/45 MATCH. Read-only double gate unchanged:
+  validator `NOT_QUALIFIED / 6.0 / >=7.0`, guard `INCOMPLETE` (A2/A6), zero
+  write-back. **No gate passed, G0 `pending`, no scientific result.** Three P3
+  premises are now explicit and need a designated gate owner to freeze a
+  versioned execution contract (non-official `version.py` acceptability, MPS
+  adaptation vs global default device, executable frozen-seed/noise/
+  zero-injection runner). Governing still 6.0, 0 qualifying papers, no COMPLETE.
 - Public repo created with a sanitized collaboration layer only.
 - R107 goal iteration recorded: independent full-review acceptance changed from
   strictly > 8.0 to **>= 7.0** (equal qualifies). Machine validators synced.
