@@ -2,14 +2,33 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (7 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 03:2x +0800 (R117 heartbeat, awakened 2026-11-14 03:09)
+- Status: **in_progress** (8 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 03:3x +0800 (R117 heartbeat + isolated recheck recovery, awakened 2026-11-14 03:09)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
-- **R117 (latest) — mainline P3 forward-pass execution premises, measured read-only.**
+- **R117 isolated recheck recovered (latest, eighth checkpoint).** Fresh isolated
+  sub-agent, no expected conclusion supplied: final 22,725 B / SHA-256
+  `0d133eaca0684bc61b927378923aaf09489adb6e33b979b8c4e9be33df030a3b`,
+  one write, no intermediate state, original unchanged. Verdict
+  `PARTIAL | G0 may be passed: NO | Scientific result claimed: NO`,
+  `Forward pass performed: NO`. Independently recomputed 19/19 sources, 6/6
+  artifacts, 8/8 clips, checkpoint + both digest framings, main
+  `pipeline-state.json` (all pending), and 7 import configs. **Twelve named
+  overclaim/self-certification categories: CONFIRMED = 0 (all REFUTED).**
+  Six low / low-medium defects accepted by append-only correction; the
+  low-medium one (R101-rule digest lacked a first-hand on-disk artifact) was
+  closed with a NEW recomputation script + JSON, not a text patch. The review
+  contains two real local paths in its own section 0, so **the original is not
+  uploaded**; only `evidence/R117-INDEPENDENT-REVIEW-SANITIZED.md` is. 14 strict
+  credential patterns 0 hits. Gate/evidence recheck, **not** a
+  `ccf-paper-reviewer full` manuscript review; no scored-review Overall line,
+  no numeric paper score, no governing change. All seven earlier published
+  checkpoints byte-for-byte untouched. Governing still 6.0, 0 qualifying
+  papers, no COMPLETE.
+- **R117 — mainline P3 forward-pass execution premises, measured read-only.**
   Sanitized summary: `evidence/R117-EXEC-PREMISE-SANITIZED.md`;
   checkpoint `20261113T192349Z-r117-exec-premise`. Direction change: R114–R116
   exhausted the approval-free first-hand acquisition channel, so R117 returned
