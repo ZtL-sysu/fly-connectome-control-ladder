@@ -2,8 +2,8 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (2 checkpoints published; research itself unfinished)
-- Last update: 2026-11-13 21:0x +0800
+- Status: **in_progress** (3 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-13 22:0x +0800
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
@@ -21,10 +21,10 @@
 
 ## NOT completed / do not assume
 
-- **No GPU execution, no reward, no scientific result from harbor yet.**
-  Image build SUCCEEDED (first digest across 3 attempts); task 25092 is
-  `processing / harborPhase=running` at last check. See checkpoint
-  `20261113T130720Z-r108-build`.
+- **Harbor trial finished with a verified engineering reward (1.0).**
+  CUDA execution on **NVIDIA H20**, independent recomputation passed, frozen
+  probe SHA matched. **Still no scientific result and no 4090 claim.** See
+  checkpoints `20261113T130720Z-r108-build` and `20261113T140607Z-r108-final`.
 - Two earlier harbor attempts failed (25075 COPY-context error; 25076
   platform 1800 s image-build timeout). Both retained verbatim in the primary
   project; 25092 is the declared last build-stage attempt.
@@ -52,7 +52,7 @@ protocol and know exactly which local artifacts to request.
 
 | Job | Provider | State | Recovery |
 |:--|:--|:--|:--|
-| 25092 | Novix harbor | `processing / **running**`, image digest `sha256:3f6290d0…`, steps 0, no reward | `novix --json task result 25092`; on finish `novix debug pull task:25092 <out> --sub project/results/r108_probe` |
+| 25092 | Novix harbor | **FINISH**, `reward=1.0`, `measurementValid=true`, 169 steps, device **H20** (not 4090), no scientific result | trial closed; optional `novix debug pull task:25092 <out> --sub project/results/r108_probe` after track-ops recovers |
 | heartbeat | local automation | ACTIVE, every 30 min | reads the primary project's `goal-ledger.md` |
 
 Do not claim either produced a scientific result.
@@ -60,10 +60,10 @@ Do not claim either produced a scientific result.
 ## Next executable command (for a resuming agent)
 
 ```bash
-novix --json task result 25092
-# if finish: novix debug pull task:25092 <out> --sub project/results/r108_probe
-# then independently recompute the probe arithmetic from raw artifacts
-# if error: novix debug build-logs 25092, record verbatim, STOP harbor retries
+# Harbor trial is closed. Resume the ordered research gates instead.
+# If workspace files are needed later (track-ops was unreachable):
+novix debug pull task:25092 <out> --sub project/results/r108_probe
+# then re-verify file hashes against the trajectory raw values.
 ```
 
 Stop conditions: do not skip gates, do not open the confirmation panel without
