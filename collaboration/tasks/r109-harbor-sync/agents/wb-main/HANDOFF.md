@@ -2,12 +2,77 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (22 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 17:3x +0800 (R125 version-attribution first-hand route exhaustion; twenty-second checkpoint)
+- Status: **in_progress** (23 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 17:5x +0800 (R125 independent recheck RECOVERED, 1 MEDIUM + 1 LOW accepted append-only; twenty-third checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R125 isolated independent recheck RECOVERED + append-only corrections (latest,
+  twenty-third checkpoint).** The twenty-second checkpoint truthfully stated AT ITS
+  WRITE TIME that a fresh isolated recheck had been launched but was NOT yet recovered
+  and claimed no conclusion; its `CHECKPOINT.md` mtime `17:38:35` precedes the report
+  `17:42:59`, so that statement was TRUE and its bytes are NOT rewritten. Fresh isolated
+  sub-agent `general-purpose-1`, **no expected verdict / score anchor / conclusion
+  anchor**: final `R125-INDEPENDENT-REVIEW.md` **14,138 B / 94 lines / SHA-256
+  `15b5879315ed9c784c19dadc16b88c52365291dbe25d1a6bc2a6b2c6f482dcdf`** (mtime 17:42:59,
+  one write, no intermediate state, original unchanged).
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result claimed: NO |
+  Forward pass performed: NO`. Reviewer used ONLY 13 raw byte files + R124's two frozen
+  authority files with its own logic (no collector/verifier import, no round JSON as
+  substantive data source, round audit read LAST), ran no verifier / validator / guard /
+  git / network, modified no existing file; 0 scored-verdict lines / 0 email literals /
+  0 credential values. **A-H all group values reproduce** (13 sizes+SHA, 135,063 B,
+  5 x 17 B Cloudflare 1015 one digest, EPMC lite N-flags, both 500 bodies, EPMC core
+  metadata + 4,847-char abstract + 5 negative wordings + four v1-positive numbers
+  total 0, bioRxiv 12 records / string '1'..'12' / 1 abstract / 2 titles / **10
+  distinct jatsxml URLs** / 1 licence / v3=v4 + v8=v9 collisions, Wayback `[]` +
+  no-snapshot page, api-jats 404, both byte-identity checks, scope/safety).
+  **12 named overclaim categories CONFIRMED 0 / REFUTED 12**; defects **HIGH 0 /
+  MEDIUM 1 / LOW 1**; **1 factual error / 1 data inconsistency (same line) / 0
+  fabrication**. **Five findings ALL ACCEPTED append-only** in NEW primary
+  `R125-POST-REVIEW-CORRECTION.md` (9,234 B, SHA prefix `42506bff7a15e89b`): **M1
+  [MED]** round audit `:41` "all 13 <= 58,714 B" false (byte-max **64,741 B**);
+  reviewer read a **pre-correction snapshot** - main session had independently found
+  the same error via byte-wise max during `metrics.csv` generation and corrected it in
+  place in this round's OWN unpublished drafts BEFORE publication (22nd CHECKPOINT.md
+  mtime 17:38:35 < report 17:42:59, so published bytes were already correct); impact
+  strictly one derived aggregate in a local unuploaded draft, no frozen byte rewritten,
+  reviewer NOT claimed wrong. **L1 [LOW]** frozen verifier's `noEmail` check requires
+  BOTH `@` and `.com` => silent false negative for the two `.org` strings; independent
+  domain-agnostic recheck `R125-EMAIL-RECHECK.py/.json` finds **occurrences=2,
+  distinct=1 (a single public Internet Archive contact address (`.org` domain, redacted here))** in `wayback-v1.html`; strictly a cited-checker
+  weakness (audit's own safety claims independently confirmed true; no published
+  document claims zero email literals in raw; the word `email` in the 22nd checkpoint
+  is only an upload-set scan category; all 13 raw NOT uploaded; public IA contact,
+  not a project credential); frozen verifier NOT rewritten, 93/93 stays reproducible.
+  **C1** `connect-jats.xml` is actually a bioRxiv **about-page HTML**, NOT JATS, has
+  no abstract => strengthens "duplicate, not a new source" and "endpoint +1 != source
+  +1". **C2** similarity `0.9906` is specific to `difflib.SequenceMatcher(None,
+  biorxiv_api_abstract, epmc_core_abstract).ratio()` with default autojunk and that
+  argument order; reviewer got 0.8997 reversed, 0.9945 autojunk-off, 0.9953-0.9978
+  normalised - all SAME qualitative conclusion; must declare order + normalisation
+  (R122 C-1 / R124 M1). **C3** status codes are declared curl values (no literal 429
+  / 404 in raw bodies); Wayback page has no literal `404`; reviewer cannot verify
+  independent re-fetch or workspace-level counts / governing / gates / SHAs / mtimes /
+  history - collected separately by the main session. **Reviewer scope limits
+  accepted**: statuses declarative, group A same-host identity, verifier not run so 93
+  checks checked for category + self-consistency only. **Scope of impact**: all five
+  are wording / convention / supplementary-fact narrowings, NONE adds a claim; none
+  changes 13 raw bytes/SHA, SOURCE-MANIFEST, v3 **93/93 MATCH / 0 MISMATCH**, A-H,
+  12 REFUTED 12, double gate (`NOT_QUALIFIED / 6.0 / >=7.0`, `INCOMPLETE`), gate state
+  (G0 pending, G1-G8 pending, `inputs=[]`/`evidence=[]`), governing **R95 = 6.0 /
+  Confidence 4.0**, **0 papers qualified / no COMPLETE**, R106 section 6 convergence
+  table, or heartbeat ACTIVE schedule. **Independent-review original NOT uploaded**
+  (1 local-path literal + scan-pattern literals; R117 precedent) - only
+  `evidence/R125-INDEPENDENT-REVIEW-SANITIZED.md`. Result: step-3 precondition
+  (substantive new positive scientific evidence) unmet => no manuscript copy / no
+  9-page compilation / no fresh full review. **0 papers qualified, no COMPLETE**,
+  governing unchanged; G0 pending; zero gate promotion / zero self-certification /
+  zero state change. Stop gates only (1) qualify >=7.0 (2) goal owner stops.
+  Checkpoint `completed` is work state, not scientific validation.
+
 
 - **R125 version-attribution first-hand route exhaustion (latest, twenty-second
   checkpoint).** Read-only, NOT a gate pass / scientific result / forward pass.
