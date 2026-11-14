@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "task_id": "r109-harbor-sync",
+  "agent_id": "wb-main",
+  "created_at_utc": "2026-11-14T10:24:55.558378+00:00",
+  "status": "completed",
+  "input_git_head": "58500f32206197aa42e38225eb537f9b3e681e4c",
+  "protocol": {
+    "path": "collaboration/PROTOCOL.md",
+    "sha256": "1230c4e0f546e50f4d71c43a63819d0860428308c327c822343dd4ffff983a5a",
+    "bytes": 3899
+  },
+  "artifacts": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "ee5164c893d1b19bb75231cb8ff92116a271c267d8a25579fca3a020ebbfef66",
+      "bytes": 3479
+    },
+    {
+      "path": "collaboration/PROTOCOL.md",
+      "sha256": "1230c4e0f546e50f4d71c43a63819d0860428308c327c822343dd4ffff983a5a",
+      "bytes": 3899
+    },
+    {
+      "path": "collaboration/PROJECT.md",
+      "sha256": "9c15ddb85e51370b79f84af084999be5fd68a9552e9d0acda1be36c5720ea5ca",
+      "bytes": 6049
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/TASK.md",
+      "sha256": "42c3275179ffe0b35156ce3c6990e0635861594ca8898b1c8e97fbca833f46d3",
+      "bytes": 2792
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/HANDOFF.md",
+      "sha256": "016173c01d71db568acd93198db39d48acbfaab4723c1b6894dde7ec129c94c4",
+      "bytes": 69195
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/LOG.md",
+      "sha256": "b1aad0550afb2245c76e725f05c4d7db5f0f95a8838fb04c728995635a2ea846",
+      "bytes": 108667
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/checkpoints/20261114T102224Z-r126-full-open/CHECKPOINT.md",
+      "sha256": "2ed56ae863aba30bbed5a570a2bf00da4b671618743d87c7f0d7bfc184ebec39",
+      "bytes": 7371
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/checkpoints/20261114T102224Z-r126-full-open/metrics.csv",
+      "sha256": "51fb79d93cbf4686de80dbcb00476c78ed3e666c8e23c469654f624f993dcb84",
+      "bytes": 2523
+    },
+    {
+      "path": "research/README.md",
+      "sha256": "e3824e1e268b4ccfb0e395903267f381344457869b50946eedb4bdf1a10dd8f5",
+      "bytes": 3576
+    },
+    {
+      "path": "research/UPLOAD-MANIFEST.json",
+      "sha256": "3f7646ca44243fa2870099250489e032061e9c34242275bdb24adcbfe7662381",
+      "bytes": 78626
+    }
+  ]
+}
