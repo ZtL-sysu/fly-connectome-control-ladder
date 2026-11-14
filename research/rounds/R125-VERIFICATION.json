@@ -1,0 +1,837 @@
+{
+ "scope_note": "Group A is a same-machine byte-identity consistency check, not an independent cross-source verification; the SHA literals asserted there were measured by a separate `shasum` invocation. Groups B-H are substantive first-hand observations recomputed from raw bytes. The verifier does not import R125-ACQUIRE and does not read any R125-produced JSON as a substantive data source; R124 frozen bytes are used only as the pre-existing authority for API/EPMC metadata comparisons (groups C, D, E, G).",
+ "timepoint_note": "HTTP 429 / 500 / 404 / empty-CDX results are scoped to the R125 acquisition instant and the exact URLs recorded in R125-ACQUIRE.py. They are not claims of permanent unavailability.",
+ "total": 93,
+ "match": 93,
+ "mismatch": 0,
+ "groups": {
+  "A": {
+   "total": 27,
+   "match": 27
+  },
+  "B": {
+   "total": 6,
+   "match": 6
+  },
+  "C": {
+   "total": 10,
+   "match": 10
+  },
+  "D": {
+   "total": 24,
+   "match": 24
+  },
+  "E": {
+   "total": 14,
+   "match": 14
+  },
+  "F": {
+   "total": 4,
+   "match": 4
+  },
+  "G": {
+   "total": 2,
+   "match": 2
+  },
+  "H": {
+   "total": 6,
+   "match": 6
+  }
+ },
+ "checks": [
+  {
+   "id": "A-size:api-details-v1.json",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 64741,
+   "observed": 64741,
+   "match": true
+  },
+  {
+   "id": "A-sha:api-details-v1.json",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+   "observed": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+   "match": true
+  },
+  {
+   "id": "A-size:api-jats.json",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 196,
+   "observed": 196,
+   "match": true
+  },
+  {
+   "id": "A-sha:api-jats.json",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+   "observed": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+   "match": true
+  },
+  {
+   "id": "A-size:biorxiv-v1-full.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 17,
+   "observed": 17,
+   "match": true
+  },
+  {
+   "id": "A-sha:biorxiv-v1-full.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "match": true
+  },
+  {
+   "id": "A-size:biorxiv-v1-source.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 17,
+   "observed": 17,
+   "match": true
+  },
+  {
+   "id": "A-sha:biorxiv-v1-source.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "match": true
+  },
+  {
+   "id": "A-size:biorxiv-v1-source2.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 17,
+   "observed": 17,
+   "match": true
+  },
+  {
+   "id": "A-sha:biorxiv-v1-source2.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "match": true
+  },
+  {
+   "id": "A-size:connect-jats.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 58714,
+   "observed": 58714,
+   "match": true
+  },
+  {
+   "id": "A-sha:connect-jats.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+   "observed": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+   "match": true
+  },
+  {
+   "id": "A-size:epmc-core.json",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 6367,
+   "observed": 6367,
+   "match": true
+  },
+  {
+   "id": "A-sha:epmc-core.json",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "0875d916d4800f2bf9e972d2efe47f4b582fd15aaefeb5c834200988cd4dc9ac",
+   "observed": "0875d916d4800f2bf9e972d2efe47f4b582fd15aaefeb5c834200988cd4dc9ac",
+   "match": true
+  },
+  {
+   "id": "A-size:epmc-fulltext-v2.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 150,
+   "observed": 150,
+   "match": true
+  },
+  {
+   "id": "A-sha:epmc-fulltext-v2.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "7638ab17cbd5b178781ea8184278412849c3120eb0b953b6a29cfa53fca7a6e7",
+   "observed": "7638ab17cbd5b178781ea8184278412849c3120eb0b953b6a29cfa53fca7a6e7",
+   "match": true
+  },
+  {
+   "id": "A-size:epmc-fulltext.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 150,
+   "observed": 150,
+   "match": true
+  },
+  {
+   "id": "A-sha:epmc-fulltext.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "c240883c1ab45c19541f1ca4c89abe87ab99e8ff494aedaf99b2f91c0bb5f19c",
+   "observed": "c240883c1ab45c19541f1ca4c89abe87ab99e8ff494aedaf99b2f91c0bb5f19c",
+   "match": true
+  },
+  {
+   "id": "A-size:jats-v12.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 17,
+   "observed": 17,
+   "match": true
+  },
+  {
+   "id": "A-sha:jats-v12.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "match": true
+  },
+  {
+   "id": "A-size:jats-v3.xml",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 17,
+   "observed": 17,
+   "match": true
+  },
+  {
+   "id": "A-sha:jats-v3.xml",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "match": true
+  },
+  {
+   "id": "A-size:wayback-cdx.json",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 3,
+   "observed": 3,
+   "match": true
+  },
+  {
+   "id": "A-sha:wayback-cdx.json",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+   "observed": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+   "match": true
+  },
+  {
+   "id": "A-size:wayback-v1.html",
+   "group": "A",
+   "desc": "byte count recomputed from raw",
+   "expected": 4657,
+   "observed": 4657,
+   "match": true
+  },
+  {
+   "id": "A-sha:wayback-v1.html",
+   "group": "A",
+   "desc": "sha256 recomputed from raw (external shasum literal)",
+   "expected": "91cc23843494a080580be5f537716ecfb1007091754e50848487d6a0080d48c7",
+   "observed": "91cc23843494a080580be5f537716ecfb1007091754e50848487d6a0080d48c7",
+   "match": true
+  },
+  {
+   "id": "A-count",
+   "group": "A",
+   "desc": "number of frozen raw files",
+   "expected": 13,
+   "observed": 13,
+   "match": true
+  },
+  {
+   "id": "B-payload:biorxiv-v1-source.xml",
+   "group": "B",
+   "desc": "exact Cloudflare 1015 body",
+   "expected": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "observed": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "match": true
+  },
+  {
+   "id": "B-payload:biorxiv-v1-source2.xml",
+   "group": "B",
+   "desc": "exact Cloudflare 1015 body",
+   "expected": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "observed": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "match": true
+  },
+  {
+   "id": "B-payload:biorxiv-v1-full.xml",
+   "group": "B",
+   "desc": "exact Cloudflare 1015 body",
+   "expected": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "observed": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "match": true
+  },
+  {
+   "id": "B-payload:jats-v3.xml",
+   "group": "B",
+   "desc": "exact Cloudflare 1015 body",
+   "expected": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "observed": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "match": true
+  },
+  {
+   "id": "B-payload:jats-v12.xml",
+   "group": "B",
+   "desc": "exact Cloudflare 1015 body",
+   "expected": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "observed": {
+    "__bytes__": "error code: 1015\n"
+   },
+   "match": true
+  },
+  {
+   "id": "B-uniform",
+   "group": "B",
+   "desc": "all five 429 bodies share one digest",
+   "expected": 1,
+   "observed": 1,
+   "match": true
+  },
+  {
+   "id": "C-lite:hasPDF",
+   "group": "C",
+   "desc": "R124 frozen lite metadata hasPDF",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "C-lite:inEPMC",
+   "group": "C",
+   "desc": "R124 frozen lite metadata inEPMC",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "C-lite:inPMC",
+   "group": "C",
+   "desc": "R124 frozen lite metadata inPMC",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "C-lite:isOpenAccess",
+   "group": "C",
+   "desc": "R124 frozen lite metadata isOpenAccess",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "C-lite:firstPublicationDate",
+   "group": "C",
+   "desc": "first publication date",
+   "expected": "2026-06-12",
+   "observed": "2026-06-12",
+   "match": true
+  },
+  {
+   "id": "C-lite:firstIndexDate",
+   "group": "C",
+   "desc": "first index date",
+   "expected": "2026-06-15",
+   "observed": "2026-06-15",
+   "match": true
+  },
+  {
+   "id": "C-500:epmc-fulltext.xml",
+   "group": "C",
+   "desc": "HTTP 500 marker in preserved body",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "C-path:epmc-fulltext.xml",
+   "group": "C",
+   "desc": "fullTextXML path in preserved body",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "C-500:epmc-fulltext-v2.xml",
+   "group": "C",
+   "desc": "HTTP 500 marker in preserved body",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "C-path:epmc-fulltext-v2.xml",
+   "group": "C",
+   "desc": "fullTextXML path in preserved body",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-id",
+   "group": "D",
+   "desc": "EPMC record id",
+   "expected": "PPR1251441",
+   "observed": "PPR1251441",
+   "match": true
+  },
+  {
+   "id": "D-source",
+   "group": "D",
+   "desc": "source is preprint",
+   "expected": "PPR",
+   "observed": "PPR",
+   "match": true
+  },
+  {
+   "id": "D-doi",
+   "group": "D",
+   "desc": "DOI matches",
+   "expected": "10.64898/2026.06.10.731214",
+   "observed": "10.64898/2026.06.10.731214",
+   "match": true
+  },
+  {
+   "id": "D-license",
+   "group": "D",
+   "desc": "record-level licence",
+   "expected": "cc by",
+   "observed": "cc by",
+   "match": true
+  },
+  {
+   "id": "D-dateOfCreation",
+   "group": "D",
+   "desc": "creation date",
+   "expected": "2026-06-15",
+   "observed": "2026-06-15",
+   "match": true
+  },
+  {
+   "id": "D-firstPublicationDate",
+   "group": "D",
+   "desc": "first publication date",
+   "expected": "2026-06-12",
+   "observed": "2026-06-12",
+   "match": true
+  },
+  {
+   "id": "D-firstIndexDate",
+   "group": "D",
+   "desc": "first index date",
+   "expected": "2026-06-15",
+   "observed": "2026-06-15",
+   "match": true
+  },
+  {
+   "id": "D-hasPDF",
+   "group": "D",
+   "desc": "no PDF",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "D-inEPMC",
+   "group": "D",
+   "desc": "not in EPMC full text",
+   "expected": "N",
+   "observed": "N",
+   "match": true
+  },
+  {
+   "id": "D-fullTextUrlCount",
+   "group": "D",
+   "desc": "exactly one full-text URL",
+   "expected": 1,
+   "observed": 1,
+   "match": true
+  },
+  {
+   "id": "D-fullTextUrlIsDOI",
+   "group": "D",
+   "desc": "the only full-text URL is a DOI resolver",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-abstractChars",
+   "group": "D",
+   "desc": "EPMC abstract character count",
+   "expected": 4847,
+   "observed": 4847,
+   "match": true
+  },
+  {
+   "id": "D-apiAbstractChars",
+   "group": "D",
+   "desc": "bioRxiv API abstract character count",
+   "expected": 4816,
+   "observed": 4816,
+   "match": true
+  },
+  {
+   "id": "D-abstractSimilarity",
+   "group": "D",
+   "desc": "two endpoints carry the same current abstract (ratio > .98)",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-abstractSimilarityValue",
+   "group": "D",
+   "desc": "measured ratio rounded to 4dp (informational)",
+   "expected": "<informational>",
+   "observed": 0.9906,
+   "match": true
+  },
+  {
+   "id": "D-neg:largely null result",
+   "group": "D",
+   "desc": "negative wording present: 'largely null result'",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-neg:disappears entirely",
+   "group": "D",
+   "desc": "negative wording present: 'disappears entirely'",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-neg:statistically indistin",
+   "group": "D",
+   "desc": "negative wording present: 'statistically indistinguishable'",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-neg:size-matched",
+   "group": "D",
+   "desc": "negative wording present: 'size-matched'",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-neg:not the confirmation w",
+   "group": "D",
+   "desc": "negative wording present: 'not the confirmation we set out to find'",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "D-pos:0.686",
+   "group": "D",
+   "desc": "v1-positive number absent from first-hand bytes: 0.686",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "D-pos:0.846",
+   "group": "D",
+   "desc": "v1-positive number absent from first-hand bytes: 0.846",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "D-pos:0.930",
+   "group": "D",
+   "desc": "v1-positive number absent from first-hand bytes: 0.930",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "D-pos:0.603",
+   "group": "D",
+   "desc": "v1-positive number absent from first-hand bytes: 0.603",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "E-records",
+   "group": "E",
+   "desc": "version record count",
+   "expected": 12,
+   "observed": 12,
+   "match": true
+  },
+  {
+   "id": "E-versions",
+   "group": "E",
+   "desc": "version field is the string sequence '1'..'12'",
+   "expected": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "observed": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "match": true
+  },
+  {
+   "id": "E-versionType",
+   "group": "E",
+   "desc": "version field is a JSON string in every record",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "E-abstracts",
+   "group": "E",
+   "desc": "distinct abstracts across records",
+   "expected": 1,
+   "observed": 1,
+   "match": true
+  },
+  {
+   "id": "E-titles",
+   "group": "E",
+   "desc": "distinct titles across records",
+   "expected": 2,
+   "observed": 2,
+   "match": true
+  },
+  {
+   "id": "E-jats",
+   "group": "E",
+   "desc": "distinct JATS URLs across 12 records",
+   "expected": 10,
+   "observed": 10,
+   "match": true
+  },
+  {
+   "id": "E-licenses",
+   "group": "E",
+   "desc": "distinct licence values",
+   "expected": 1,
+   "observed": 1,
+   "match": true
+  },
+  {
+   "id": "E-licenseValue",
+   "group": "E",
+   "desc": "record-level licence value",
+   "expected": "cc_by",
+   "observed": "cc_by",
+   "match": true
+  },
+  {
+   "id": "E-v1date",
+   "group": "E",
+   "desc": "v1 date",
+   "expected": "2026-06-12",
+   "observed": "2026-06-12",
+   "match": true
+  },
+  {
+   "id": "E-v12date",
+   "group": "E",
+   "desc": "12th record date",
+   "expected": "2026-10-16",
+   "observed": "2026-10-16",
+   "match": true
+  },
+  {
+   "id": "E-v3v4collision",
+   "group": "E",
+   "desc": "v3 and v4 publish the same JATS URL",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "E-v8v9collision",
+   "group": "E",
+   "desc": "v8 and v9 publish the same JATS URL",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "E-v1title",
+   "group": "E",
+   "desc": "v1 title differs from v2+ title",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "E-abstractSha",
+   "group": "E",
+   "desc": "single shared abstract sha256 prefix",
+   "expected": "555e28f9fef30a3a",
+   "observed": "555e28f9fef30a3a",
+   "match": true
+  },
+  {
+   "id": "F-cdx",
+   "group": "F",
+   "desc": "CDX returns empty JSON array",
+   "expected": {
+    "__bytes__": "[]\n"
+   },
+   "observed": {
+    "__bytes__": "[]\n"
+   },
+   "match": true
+  },
+  {
+   "id": "F-waybackMarker",
+   "group": "F",
+   "desc": "Wayback 404 page marker",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "F-waybackTitle",
+   "group": "F",
+   "desc": "Wayback 404 page title marker",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "F-apiJats404",
+   "group": "F",
+   "desc": "api.biorxiv.org/jats returns 404 body",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "G-connect",
+   "group": "G",
+   "desc": "connect page byte-identical to R124 frozen copy",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "G-details",
+   "group": "G",
+   "desc": "details /1 response byte-identical to R124 details",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "H-noLocalPath",
+   "group": "H",
+   "desc": "zero local absolute path markers in raw bytes",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "H-noCredential",
+   "group": "H",
+   "desc": "zero credential markers in raw bytes",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "H-maxSize",
+   "group": "H",
+   "desc": "largest raw file <= 200 KiB",
+   "expected": true,
+   "observed": true,
+   "match": true
+  },
+  {
+   "id": "H-sizeValue",
+   "group": "H",
+   "desc": "largest raw file byte count (informational)",
+   "expected": "<informational>",
+   "observed": 64741,
+   "match": true
+  },
+  {
+   "id": "H-noScoreLine",
+   "group": "H",
+   "desc": "zero numeric **Overall:** lines in raw bytes",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  },
+  {
+   "id": "H-noEmail",
+   "group": "H",
+   "desc": "zero explicit email literals in raw bytes",
+   "expected": 0,
+   "observed": 0,
+   "match": true
+  }
+ ]
+}

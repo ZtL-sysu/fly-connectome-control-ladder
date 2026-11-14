@@ -1,0 +1,654 @@
+{
+  "round": "R121",
+  "collector": "v2",
+  "kind": "READONLY_SUCCESS_CRITERION_CLOSURE_AUDIT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "generated_at": "2026-11-14T10:24:37",
+  "python": "3.14.6",
+  "governing_review_taxonomy": {
+    "overall_line": {
+      "line": [
+        419
+      ],
+      "needle": "**Overall:** 6  | **Scholarly Confidence:** 4",
+      "found": true
+    },
+    "no_quick_change_row": {
+      "line": [
+        450
+      ],
+      "needle": "| **No quick change** | 继续补流程/披露/格式",
+      "found": true
+    },
+    "no_quick_change_reason": {
+      "line": [
+        450
+      ],
+      "needle": "不新增支持中心主张的科学证据",
+      "found": true
+    },
+    "no_quick_change_effect": {
+      "line": [
+        450
+      ],
+      "needle": "不改变 evidence-capped overall",
+      "found": true
+    },
+    "raise_row": {
+      "line": [
+        448
+      ],
+      "needle": "单项 +0.5；三项齐备 Overall 6→7~7.5",
+      "found": true
+    },
+    "raise_a": {
+      "line": [
+        448
+      ],
+      "needle": "真实 MaleCNS 图上以预注册协议**确认** motif-survival 阈值迁移",
+      "found": true
+    },
+    "raise_b": {
+      "line": [
+        448
+      ],
+      "needle": "在 flyvis/`toposens2026` 栈复跑同协议对证",
+      "found": true
+    },
+    "raise_c": {
+      "line": [
+        448
+      ],
+      "needle": "至少一项真实视觉任务上该诊断标准改变了一个实际结论",
+      "found": true
+    },
+    "revision_criteria": {
+      "line": [
+        473
+      ],
+      "needle": "Raising the score would require: 真实图上确认 motif-survival 阈值迁移",
+      "found": true
+    },
+    "m1_not_prose": {
+      "line": [
+        240
+      ],
+      "needle": "需新的真实图实验确认机制迁移（非 prose 可修）",
+      "found": true
+    },
+    "m2_not_prose": {
+      "line": [
+        249
+      ],
+      "needle": "无法靠 prose 补出视觉贡献",
+      "found": true
+    },
+    "m3_rerun": {
+      "line": [
+        258
+      ],
+      "needle": "在 flyvis / toposens2026 栈上跑一次同协议比较",
+      "found": true
+    },
+    "evidence_dim_3": {
+      "line": [
+        413
+      ],
+      "needle": "| Evidence | 3 | 5 |",
+      "found": true
+    },
+    "significance_dim_3": {
+      "line": [
+        414
+      ],
+      "needle": "| Significance | 3 | 4 |",
+      "found": true
+    },
+    "tiebreaker_blocks_7": {
+      "line": [
+        454
+      ],
+      "needle": "这组 ≥3 个决定性关切不允许 Overall 上到 7",
+      "found": true
+    },
+    "admin_no_score_change": {
+      "line": [
+        450
+      ],
+      "needle": "行政 blocker 解除仅恢复「可提交」状态",
+      "found": true
+    },
+    "panel_min": {
+      "line": [
+        293
+      ],
+      "needle": "一条真实图上确认机制迁移的独立结果 → 8",
+      "found": true
+    },
+    "rep_admin": {
+      "line": [
+        376
+      ],
+      "needle": "补编译日志与 sources 快照 → 维度维持；不改变由证据决定的总分",
+      "found": true
+    },
+    "_source": {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "bytes": 52430,
+      "sha256": "c67f8cd39c17d2fe7ae6d1eab9414be1275a4b7f9ac236c36d4d44aab02fb97a",
+      "mtime": 1794380499.4734879,
+      "mtime_str": "2026-11-11T15:01:39"
+    }
+  },
+  "prior_rounds": {
+    "R114": {
+      "path": "gate-G0-R114/R114-ROUND-AUDIT.md",
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "boundary_tags_full_document": [
+        "READONLY_FIRSTHAND_EVIDENCE_ACQUISITION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R115": {
+      "path": "gate-G0-R115/R115-ROUND-AUDIT.md",
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "boundary_tags_full_document": [
+        "READONLY_FIRSTHAND_EVIDENCE_ACQUISITION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R116": {
+      "path": "gate-G0-R116/R116-ROUND-AUDIT.md",
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "boundary_tags_full_document": [
+        "READONLY_FIRSTHAND_EVIDENCE_ACQUISITION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R117": {
+      "path": "exec-premise-R117/R117-ROUND-AUDIT.md",
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "boundary_tags_full_document": [
+        "READONLY_EXECUTION_PREMISE_PROBE",
+        "READONLY_EXECUTION_PREMISE_PROBE_NOT_SCIENTIFIC_RESULT_NOT_GATE_PASS_NOT_FORWARD_PASS"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R118": {
+      "path": "gate-G0-R118/R118-ROUND-AUDIT.md",
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "boundary_tags_full_document": [
+        "READONLY_REGISTRY_GAP_AUDIT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R119": {
+      "path": "review-protocol-R119/R119-ROUND-AUDIT.md",
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "boundary_tags_full_document": [
+        "READONLY_REVIEW_LAUNCH_PROTOCOL_CHAIN_AUDIT",
+        "READONLY_REVIEW_LAUNCH_PROTOCOL_CHAIN_AUDIT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R120": {
+      "path": "reconciliation-R120/R120-ROUND-AUDIT.md",
+      "bytes": 15418,
+      "sha256": "a61b18e88c16bfb6bf22f3892c3c3f4a9c9a4503fc25560e09b84b05f11244c4",
+      "boundary_tags_full_document": [
+        "NOT_SCIENTIFIC_RESULT",
+        "READ_ONLY_RECONCILIATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT"
+      ],
+      "declares_readonly": true,
+      "declares_not_gate_pass": true,
+      "declares_not_scientific_result": true,
+      "claims_new_positive_evidence": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    }
+  },
+  "raise_conditions": {
+    "a_real_graph_transfer": {
+      "requirement": "R95 §8 M1 / §13 (a): hypothesis_supported=true on a REAL MaleCNS graph under pre-registered protocol, degree-preserving null no longer retaining advantage.",
+      "n_files_with_field": 11,
+      "real_graph": {
+        "n": 6,
+        "any_true": false,
+        "files": [
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome_v2/metrics.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          },
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome_v2/metrics_from_trajectory.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          },
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome/metrics.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          },
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome_v2/metrics.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          },
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome_v2/metrics_from_trajectory.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          },
+          {
+            "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome/metrics.json",
+            "hypothesis_supported": false,
+            "data_source": "REAL_MALECNS_VISUAL_SUBGRAPH",
+            "class": "REAL_CONNECTOME"
+          }
+        ]
+      },
+      "synthetic_controlled": {
+        "n": 2,
+        "n_true": 2,
+        "note": "these `true` values are the 96-node XOR / task-aware controlled graphs, explicitly NOT the real graph (R95 §8 M1)."
+      },
+      "other": [
+        {
+          "path": "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/p3_p4_taskaware/metrics_from_trajectory.json",
+          "hypothesis_supported": true,
+          "data_source": null,
+          "class": "OTHER"
+        },
+        {
+          "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r51_motif_survival/task_a_results.json",
+          "hypothesis_supported": false,
+          "data_source": null,
+          "class": "OTHER"
+        },
+        {
+          "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4_taskaware/metrics_from_trajectory.json",
+          "hypothesis_supported": true,
+          "data_source": null,
+          "class": "OTHER"
+        }
+      ],
+      "satisfied": false
+    },
+    "b_strong_baseline_rerun": {
+      "requirement": "R95 §8 M3 / §13 (b): rerun the same protocol ON the flyvis / toposens2026 stack.",
+      "version_locked_main_tex": {
+        "path": "papers/paper-null-ladder/R49-7.5-DELIVERY/manuscript/main.tex",
+        "bytes": 40175,
+        "md5": "e4bfad51ad834fdccdb6db7821e158c6",
+        "matches_r95_lock": true
+      },
+      "admission_present": true,
+      "admission_line": [
+        637
+      ],
+      "rerun_metric_files_by_name": [],
+      "n_rerun_metric_files": 0,
+      "satisfied": false
+    },
+    "c_real_visual_task": {
+      "requirement": "R95 §8 M2 / §13 (c): on a real visual task the diagnostic CHANGES an actual conclusion.",
+      "metrics_path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_visual_task/metrics.json",
+      "mlp_baseline_mean_acc": 0.9722222222222222,
+      "real_mean_acc": {
+        "real": 0.7185185185185184,
+        "degree_preserving_null": 0.7189814814814813,
+        "A0": 0.6189814814814815,
+        "task_aware_null": 0.7333333333333333,
+        "mlp_baseline": 0.9722222222222222
+      },
+      "delta_degree_preserving_null": -0.0004629629629628873,
+      "delta_ci95_degree_preserving_null": [
+        -0.04120370370370371,
+        0.04398148148148153
+      ],
+      "r95_verdict": "R95 §8 M2 records this as a NEGATIVE result (non-graph MLP 0.9722 dominates; degree-preserving null ~= real).",
+      "satisfied": false
+    }
+  },
+  "machine_gates": {
+    "validator": {
+      "exit": 1,
+      "verdict": "NOT_QUALIFIED",
+      "overall_score": 6.0,
+      "threshold": 7.0,
+      "comparison_operator": ">=",
+      "score_meets_threshold": false,
+      "checks_pass": {
+        "D1_guidance_validated": true,
+        "D2_tex_pdf_pipeline_all_passed": false,
+        "D3_independent_full_review": false,
+        "D4_novix_experiment_evidence": true,
+        "D5_six_sections_traceability": false
+      }
+    },
+    "guard": {
+      "exit": 1,
+      "verdict_lines": [
+        "结论      : INCOMPLETE  (退出码 1)"
+      ],
+      "failing_criteria": [
+        "[FAIL] A2 pipeline-state.json 全 26 阶段 status=passed",
+        "[FAIL] A6 最新一次独立 full 评审的 Overall 严格 > 8.0（等于 8.0 不算；主会话自评不算）"
+      ],
+      "pending_steps": 7,
+      "action_sequence_count": 0,
+      "a6_ledger_wording": "严格 > 8.0（R109/R111 已登记的双口径已知问题，只读登记不改）"
+    }
+  },
+  "ordered_gate_chain": [
+    {
+      "id": "CCFA-startup",
+      "status": "passed",
+      "n_inputs": 2,
+      "n_evidence": 4,
+      "gate_verdict": "pass"
+    },
+    {
+      "id": "G0",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G1",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G2",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G3",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G4",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G5",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G6",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G7",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G8",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "validation",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "handoff",
+      "status": "pending",
+      "n_inputs": 0,
+      "n_evidence": 0,
+      "gate_verdict": "pending"
+    }
+  ],
+  "numeric_overall_scan": {
+    "total_line_start_numeric_lines": 14,
+    "r95_mtime": 1794380499.4734879,
+    "newer_than_r95": [
+      {
+        "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/provenance/paper-null-ladder-r95-independent-review-20261111.md",
+        "score": "6",
+        "mtime": 1794408962.4274442,
+        "byte_identical_to_r95": true
+      }
+    ],
+    "new_governing_candidates": []
+  },
+  "source_manifest": {
+    "governing_r95": {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "bytes": 52430,
+      "sha256": "c67f8cd39c17d2fe7ae6d1eab9414be1275a4b7f9ac236c36d4d44aab02fb97a",
+      "isolated_copy": "isolated/governing_r95__paper-null-ladder-r95-independent-review-20261111.md",
+      "isolated_copy_byte_identical": true
+    },
+    "version_locked_main_tex": {
+      "path": "papers/paper-null-ladder/R49-7.5-DELIVERY/manuscript/main.tex",
+      "bytes": 40175,
+      "sha256": "f0e760dbb41978a907a077a6daadce29d3b39cae590fe0b2248061c4547c0043",
+      "isolated_copy": "isolated/version_locked_main_tex__main.tex",
+      "isolated_copy_byte_identical": true
+    },
+    "visual_task_metrics": {
+      "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_visual_task/metrics.json",
+      "bytes": 8644,
+      "sha256": "81d938a4366f4a057d181e7b2c9a5954bdbd5d3392472b41d25b4ce7c6ca9ad9",
+      "isolated_copy": "isolated/visual_task_metrics__metrics.json",
+      "isolated_copy_byte_identical": true
+    },
+    "r106_gate_review": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "isolated_copy": "isolated/r106_gate_review__R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "isolated_copy_byte_identical": true
+    },
+    "r107_goal_iteration": {
+      "path": "GOAL-ITERATION-R107.md",
+      "bytes": 5446,
+      "sha256": "1a81c8e15b361f62e027360af0d6c82d498040370610c87b657c7facd0aed4b3",
+      "isolated_copy": "isolated/r107_goal_iteration__GOAL-ITERATION-R107.md",
+      "isolated_copy_byte_identical": true
+    },
+    "r107_pass_criterion": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R107/R107-G0-PASS-CRITERION-REGISTER.md",
+      "bytes": 5952,
+      "sha256": "1297b3f26f1d02cf7d12e765c0ba8c227bf9dfdb4881c53baf5cf55820241685",
+      "isolated_copy": "isolated/r107_pass_criterion__R107-G0-PASS-CRITERION-REGISTER.md",
+      "isolated_copy_byte_identical": true
+    },
+    "r111_decision_package": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "isolated_copy": "isolated/r111_decision_package__R111-DECISION-READY-PACKAGE.md",
+      "isolated_copy_byte_identical": true
+    },
+    "r120_decision_register": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-CONSOLIDATED-DECISION-REGISTER.md",
+      "bytes": 12878,
+      "sha256": "22d432fec98708d89c1df1fdb74438254e2f70853bbba728b664b5edf9f2aacc",
+      "isolated_copy": "isolated/r120_decision_register__R120-CONSOLIDATED-DECISION-REGISTER.md",
+      "isolated_copy_byte_identical": true
+    },
+    "mainline_state": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/pipeline-state.json",
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "isolated_copy": "isolated/mainline_state__pipeline-state.json",
+      "isolated_copy_byte_identical": true
+    },
+    "r108_scaffold_state": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R108/f-research-v1-state/pipeline-state.json",
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "isolated_copy": "isolated/r108_scaffold_state__pipeline-state.json",
+      "isolated_copy_byte_identical": true
+    },
+    "validator": {
+      "path": "readonly-validator/validate_single_paper.py",
+      "bytes": 7845,
+      "sha256": "72240260ec2447c219a9c4717ec57da3c8e35d2a32bc5e909169daa8558a0e58",
+      "isolated_copy": "isolated/validator__validate_single_paper.py",
+      "isolated_copy_byte_identical": true
+    },
+    "guard_ledger": {
+      "path": "guard/ledger-null-ladder.json",
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+      "isolated_copy": "isolated/guard_ledger__ledger-null-ladder.json",
+      "isolated_copy_byte_identical": true
+    },
+    "guard_criteria": {
+      "path": "guard/criteria-null-ladder.json",
+      "bytes": 10443,
+      "sha256": "94846083217df86fff6e69ab1d3edbb7c8ef7abd6e8cbfd8272c49dc549c1a36",
+      "isolated_copy": "isolated/guard_criteria__criteria-null-ladder.json",
+      "isolated_copy_byte_identical": true
+    },
+    "goal_ledger": {
+      "path": "goal-ledger.md",
+      "bytes": 687472,
+      "sha256": "a7c246dbe3c4944b45da1197927d4264ab7a5857f6a5e673a190d34c32748251",
+      "isolated_copy": "isolated/goal_ledger__goal-ledger.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R114": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R114/R114-ROUND-AUDIT.md",
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "isolated_copy": "isolated/round_R114__R114-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R115": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R115/R115-ROUND-AUDIT.md",
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "isolated_copy": "isolated/round_R115__R115-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R116": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R116/R116-ROUND-AUDIT.md",
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "isolated_copy": "isolated/round_R116__R116-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R117": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-ROUND-AUDIT.md",
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "isolated_copy": "isolated/round_R117__R117-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R118": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-ROUND-AUDIT.md",
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "isolated_copy": "isolated/round_R118__R118-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R119": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-ROUND-AUDIT.md",
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "isolated_copy": "isolated/round_R119__R119-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    },
+    "round_R120": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-ROUND-AUDIT.md",
+      "bytes": 15418,
+      "sha256": "a61b18e88c16bfb6bf22f3892c3c3f4a9c9a4503fc25560e09b84b05f11244c4",
+      "isolated_copy": "isolated/round_R120__R120-ROUND-AUDIT.md",
+      "isolated_copy_byte_identical": true
+    }
+  },
+  "capture_time_hashes": {
+    "goal_ledger": {
+      "bytes": 687472,
+      "sha256": "a7c246dbe3c4944b45da1197927d4264ab7a5857f6a5e673a190d34c32748251",
+      "mtime": 1794617871.0118527
+    },
+    "mainline_state": {
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime": 1794451392.5066164
+    },
+    "scaffold_state": {
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "mtime": 1794527067.8194063
+    },
+    "guard_ledger": {
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+      "mtime": 1794528560.4745793
+    }
+  }
+}

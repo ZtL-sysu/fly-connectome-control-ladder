@@ -36,13 +36,23 @@ fabricated results, no edited on-disk reviews.
 - Ordered gates: `CCFA-startup` passed; **G0–G8, validation, handoff all
   pending**. f-research-v1 P0/P1A/P1B/P2 not started. Do not skip gates.
 
-## True status (verified 2026-11-13)
+## True status (verified 2026-11-14 18:1x, R126)
 
 - Governing independent full review: R95, **Overall 6.0 / Confidence 4.0**.
-- Machine validator: `NOT_QUALIFIED` (6.0 < 7.0); guard: `INCOMPLETE`.
+- Machine validator: `NOT_QUALIFIED` (6.0 < 7.0, `comparison_operator=">="`);
+  guard: `INCOMPLETE`.
 - Historical chain 7.5 → 6.9 → 6.3 → 5.4 → 5.2 → 6.0 all retained.
 - **0 qualifying papers; no COMPLETE written.**
 - No new full manuscript review has been run since R95.
+- Ordered gates unchanged: `CCFA-startup` passed; **G0–G8, validation,
+  handoff all pending**; `G0.inputs=[]`, `G0.evidence=[]`; all f-research-v1
+  P stages not started. R106 independent gate review verdict
+  `PARTIAL | G0 may be passed: NO`.
+- Heartbeat rounds R114–R125 produced extensive first-hand evidence
+  acquisition, isolated independent rechecks and append-only corrections
+  (see `research/ledger/` and `research/rounds/`), but **zero gate promotions**.
+- Harbor heavy-work trial closed successfully (task 25092, engineering
+  reward 1.0, CUDA on NVIDIA H20 — not 4090). No scientific result.
 
 ## Established scientific facts (do not re-litigate without evidence)
 
@@ -66,23 +76,32 @@ fabricated results, no edited on-disk reviews.
   `BLOCKED_ON_CONFIRMATION`. Do not reopen a v3 patch loop. Documents are in
   the primary project; reviews are retained unedited.
 
-## Historical artefacts (primary project only, not uploaded)
+## Historical artefacts
 
 - Main-matrix metrics from a 2026-11-08 exp-4090 job (`device=cuda`,
-  `cuda_smoke_ok=True`), 10 seeds. That job also suffered a corrupted
-  transferred script and an agent-authored repair that did not verify CRC;
-  the local source was proven authoritative by CRC. Always EXEC LOCK + SHA.
+  `cuda_smoke_ok=True`), 10 seeds — **now in `research/results/`**. That job
+  also suffered a corrupted transferred script and an agent-authored repair
+  that did not verify CRC; the local source was proven authoritative by CRC.
+  Always EXEC LOCK + SHA.
 - 8 Sintel-derived development clips, official model000/001 checkpoints and
   frozen runners exist locally; `import flyvis` verified in local Conda/MPS.
   The bottleneck is gate order and G4 positioning, not missing data or compute.
 
-## Repo purpose and boundaries
+## Repo purpose and boundaries (R126, owner-instructed full-open upload)
 
-This public repo is the collaboration/checkpoint layer. It contains sanitized
-protocols, decision records, small reproducible scripts and evidence
-manifests. It contains **no** credentials, datasets, model weights, third-party
-source trees, local absolute paths, or unpublished manuscript. See
-`../AGENTS.md`.
+Since 2026-11-14 this public repo holds **research outputs, progress and
+ideas in the open**: manuscripts (TeX/PDF), real metrics, all 23 review
+reports, guidance and frozen protocols, proposals/independent reviews, the
+full `goal-ledger.md` and daily work logs, R106–R125 round audits, and the
+harbor trial. See `research/README.md` and `research/UPLOAD-MANIFEST.json`.
+
+Still excluded by owner instruction: **large model weights and datasets**, plus
+the single hard safety exclusion of files containing a real credential value.
+No text-level redaction is applied to research content. `evidence/` retains the
+earlier sanitized set unchanged; `research/` supersedes it in coverage.
+
+Integrator alone updates this file and `PROTOCOL.md`. Agent branches cannot
+promote their self-reported results into a global acceptance claim.
 
 Integrator alone updates this file and `PROTOCOL.md`. Agent branches cannot
 promote their self-reported results into a global acceptance claim.

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "task_id": "r109-harbor-sync",
+  "agent_id": "wb-main",
+  "created_at_utc": "2026-11-13T14:07:17.559161+00:00",
+  "status": "completed",
+  "input_git_head": "5710e9811bb5ff5d35847732f534717b6eb0eff7",
+  "protocol": {
+    "path": "collaboration/PROTOCOL.md",
+    "sha256": "1230c4e0f546e50f4d71c43a63819d0860428308c327c822343dd4ffff983a5a",
+    "bytes": 3899
+  },
+  "artifacts": [
+    {
+      "path": "collaboration/PROJECT.md",
+      "sha256": "cdd2d86801fbaa0578b8957dfc033a0a1d98b9cacd1cef10b5971417f1955e6c",
+      "bytes": 4834
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/TASK.md",
+      "sha256": "546a476be5265f4a73090615362a28d45e2dc812d3c73d6b620590b685ac02c2",
+      "bytes": 2313
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/HANDOFF.md",
+      "sha256": "bcb480e7956f2ec4d17ed517ceb792173cd5d5a732bde1207f7287ac4b73da2b",
+      "bytes": 3469
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/LOG.md",
+      "sha256": "ef42fb162fe2128a888018768cfce8f374107034ed2fbd1dc4083d1baddf5bb1",
+      "bytes": 4355
+    },
+    {
+      "path": "collaboration/tasks/r109-harbor-sync/agents/wb-main/checkpoints/20261113T140607Z-r108-final/CHECKPOINT.md",
+      "sha256": "3f893c2e73f7c275360862dd16d4454c1bce4cff0a9181002ce323083965f9e9",
+      "bytes": 4341
+    },
+    {
+      "path": "evidence/R108-HARBOR-TRIAL.md",
+      "sha256": "c1312050ac1e73215cfc72e4c5b99d5b737af7d6f946aa757a14efecf2aeb9ee",
+      "bytes": 12523
+    },
+    {
+      "path": "evidence/R108-FINAL-VERIFICATION.md",
+      "sha256": "c2b79cf436d5d1724d0e894fc3e850f6618534568a7aa6fc968daa58fb79dd38",
+      "bytes": 4714
+    },
+    {
+      "path": "evidence/harbor-r108/task.toml",
+      "sha256": "dae0940c64b92f5d29567284152f05e159ad8a4431b1154d715eebf5bac9e67a",
+      "bytes": 413
+    },
+    {
+      "path": "evidence/harbor-r108/instruction.md",
+      "sha256": "19fa8472682515d27bbd5b485a7a51b195876e79508b11ce01a4e46747de7013",
+      "bytes": 1608
+    },
+    {
+      "path": "evidence/harbor-r108/tests/probe.py",
+      "sha256": "d3659dcb886a89ae65098a6f3f51b0f350c63307d029a66d33f843bed24f883c",
+      "bytes": 3300
+    },
+    {
+      "path": "evidence/harbor-r108/tests/test.sh",
+      "sha256": "4ff5bfc71b4eb00586e25f2466c9ad951c527004ded723d9b20187fa3915d31e",
+      "bytes": 2999
+    },
+    {
+      "path": "evidence/harbor-r108/solution/solve.sh",
+      "sha256": "28e9f96963e42a95797f67fe4da925e204f8ec07368d36906fda27e59db81802",
+      "bytes": 234
+    }
+  ]
+}

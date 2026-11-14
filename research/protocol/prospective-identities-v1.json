@@ -1,0 +1,565 @@
+{
+  "status": "proposed_before_any_task_model_outcome_not_yet_accepted_guidance",
+  "scientific_backend": "Novix exp-4090 under current contract; local development-pilot alternative awaits user choice",
+  "development_models": [
+    "000",
+    "001"
+  ],
+  "confirmation_models": [
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026",
+    "027",
+    "028",
+    "029",
+    "030",
+    "031",
+    "032",
+    "033",
+    "034",
+    "035",
+    "036",
+    "037",
+    "038",
+    "039"
+  ],
+  "model_identity_manifest": "code-audit/official-model-input-identities-v1.json",
+  "model_identity_manifest_sha256": "d115fd5d5ffb6761fa8052bf72b97d76ea88a140c47d849cba474d87da93fff5",
+  "development_render_manifest": "sources/sintel-development-subset-v1/rendered-attempt-1/render-manifest.json",
+  "development_render_manifest_sha256": "ad4d418eb5b3a60baf5c12810ca6b17d9662c1c06a68b7bc2b2e83b20c95daa5",
+  "development_primary_crop": 1,
+  "development_scenes": [
+    "alley_1",
+    "bamboo_1",
+    "market_2",
+    "mountain_1"
+  ],
+  "development_windows": [
+    {
+      "scene": "alley_1",
+      "window": 0,
+      "file": "alley_1-window-0.npz",
+      "sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d",
+      "bytes": 1219541,
+      "raw_luminance_frames": [
+        2,
+        20
+      ],
+      "raw_flow_frames": [
+        1,
+        19
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "alley_1",
+      "window": 1,
+      "file": "alley_1-window-1.npz",
+      "sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d",
+      "bytes": 1218745,
+      "raw_luminance_frames": [
+        21,
+        39
+      ],
+      "raw_flow_frames": [
+        20,
+        38
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "bamboo_1",
+      "window": 0,
+      "file": "bamboo_1-window-0.npz",
+      "sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee",
+      "bytes": 1207321,
+      "raw_luminance_frames": [
+        2,
+        20
+      ],
+      "raw_flow_frames": [
+        1,
+        19
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "bamboo_1",
+      "window": 1,
+      "file": "bamboo_1-window-1.npz",
+      "sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094",
+      "bytes": 1207129,
+      "raw_luminance_frames": [
+        21,
+        39
+      ],
+      "raw_flow_frames": [
+        20,
+        38
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "market_2",
+      "window": 0,
+      "file": "market_2-window-0.npz",
+      "sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97",
+      "bytes": 1243010,
+      "raw_luminance_frames": [
+        2,
+        20
+      ],
+      "raw_flow_frames": [
+        1,
+        19
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "market_2",
+      "window": 1,
+      "file": "market_2-window-1.npz",
+      "sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7",
+      "bytes": 1240323,
+      "raw_luminance_frames": [
+        21,
+        39
+      ],
+      "raw_flow_frames": [
+        20,
+        38
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "mountain_1",
+      "window": 0,
+      "file": "mountain_1-window-0.npz",
+      "sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97",
+      "bytes": 1202493,
+      "raw_luminance_frames": [
+        2,
+        20
+      ],
+      "raw_flow_frames": [
+        1,
+        19
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "scene": "mountain_1",
+      "window": 1,
+      "file": "mountain_1-window-1.npz",
+      "sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466",
+      "bytes": 1188981,
+      "raw_luminance_frames": [
+        21,
+        39
+      ],
+      "raw_flow_frames": [
+        20,
+        38
+      ],
+      "arrays": {
+        "lum_source": {
+          "shape": [
+            3,
+            19,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_source": {
+          "shape": [
+            3,
+            19,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "lum_resampled": {
+          "shape": [
+            3,
+            40,
+            1,
+            721
+          ],
+          "dtype": "float32"
+        },
+        "flow_resampled": {
+          "shape": [
+            3,
+            40,
+            2,
+            721
+          ],
+          "dtype": "float32"
+        }
+      }
+    }
+  ],
+  "mask_family_seeds": {
+    "development": [
+      2026111201,
+      2026111202
+    ],
+    "confirmation": [
+      2026111301,
+      2026111302,
+      2026111303
+    ]
+  },
+  "noise_seed_key": "response-null-noise-v1-20261112",
+  "noise_draws_per_model_clip": 4,
+  "noise_seed_rule": "First8SHA256bytes of key|model|scene|window|draw, masked to63bits; dedicated CPU Torch generator, realized arrays hashed; no historical seed claim",
+  "natural_confirmation": {
+    "source": "https://files.is.tue.mpg.de/sintel/MPI-Sintel-testing.zip",
+    "sequences": [
+      "PERTURBED_shaman_1",
+      "ambush_1",
+      "ambush_3",
+      "cave_3",
+      "temple_1",
+      "tiger",
+      "wall"
+    ],
+    "family_groups": {
+      "PERTURBED_shaman_1": "shaman",
+      "ambush_1": "ambush",
+      "ambush_3": "ambush",
+      "cave_3": "cave",
+      "temple_1": "temple",
+      "tiger": "tiger",
+      "wall": "wall"
+    },
+    "window_rule": "raw images2..20 and21..39 if available; ambush_1 supplies first window only; central spatial crop1",
+    "clips": 13,
+    "group_count": 6,
+    "excluded_families": [
+      "alley",
+      "bamboo",
+      "market",
+      "mountain"
+    ],
+    "exclusion_reason": "Keep generator-development and engineering-exposed sequence families outside confirmation. Different sequences from the same rendered film are not independent real-world environments.",
+    "accuracy_labels": "withheld; function agreement only",
+    "original_model_pretraining_scope": "These are held out from null-generator development, not a guarantee about every historical use of a public pretrained model."
+  },
+  "procedural_confirmation": {
+    "texture_seeds": [
+      2026111400,
+      2026111401,
+      2026111402,
+      2026111403,
+      2026111404,
+      2026111405,
+      2026111406,
+      2026111407,
+      2026111408,
+      2026111409
+    ],
+    "wave_periods_in_receptor_pitch_units": [
+      4,
+      6,
+      9,
+      13
+    ],
+    "waves": 4,
+    "wave_angles_and_phases": "Independent uniform[0,2pi) from NumPy default_rng(texture_seed), frozen with generator code",
+    "motion_angles_radians": "k*pi/4 for k=0..7",
+    "speeds_pitch_units_per_second": [
+      2,
+      6
+    ],
+    "contrasts": [
+      0.25,
+      0.75
+    ],
+    "source_frames": 19,
+    "source_fps": 24,
+    "integration_steps": 40,
+    "integration_dt": 0.02,
+    "luminance_rule": "0.5 + contrast/(2*4) sum_k box_mean_gain_k*cos(2pi*q_k dot (receptor_position-velocity*time) + phase_k)",
+    "receptor_positions": "Native BoxEye integer(y,x) centers divided by13, ordered identically to input hexals",
+    "box_mean_gain": "Exact separable13x13 symmetric discrete box-mean Fourier gain; no unfiltered-input substitution",
+    "virtual_image_height": 436,
+    "source_target_flow_rule": "constant(velocity_x,-velocity_y)*13*169/(24*436), in native source target units",
+    "clips": 320,
+    "grouping_unit": "texture seed; directions/speeds/contrasts are paired conditions, not independent seeds",
+    "reference_sanity": "Report known-motion directional alignment, speed response and input sensitivity. A trivial/nonresponsive reference cannot carry E3; do not discard unfavorable conditions or redesign confirmation after outputs.",
+    "execution_status": "generator/protocol proposal only; no procedural model query run"
+  },
+  "primary_arms": [
+    "naturalistic within-checkpoint",
+    "naturalistic transferred masks",
+    "procedural shifted within-checkpoint"
+  ],
+  "primary_directional_endpoints": 45,
+  "confirmation_exposure": "No confirmation model forward or null outcome has been produced in this recovery."
+}

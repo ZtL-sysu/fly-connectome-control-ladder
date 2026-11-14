@@ -1,0 +1,2070 @@
+{
+  "config": {
+    "data": {
+      "annotations_file": "/home/novix/workspace/project/data/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "annotations_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "visual_match_columns": [
+        "superclass",
+        "class",
+        "subclass",
+        "type"
+      ],
+      "visual_regex": "visual|optic|lamina|medulla|lobula|\\bt4\\w*|\\bt5\\w*|\\blc\\w*",
+      "weights_file": "/home/novix/workspace/project/data/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "weights_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather"
+    },
+    "family": {
+      "degree_subsample_frac": 0.8,
+      "graph_seed_base": 51000,
+      "n_graph_seeds": 4,
+      "null_edge_swap_mult": 20,
+      "null_seed_base": 61000,
+      "top_n_nodes": 768,
+      "topk_in_edges": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        12
+      ]
+    },
+    "logo_cv": {
+      "bh_alpha": 0.05,
+      "constant_baseline": "per-fold train-set mean delta",
+      "feature_selection": "max |Spearman(feature, delta)| within train folds",
+      "majority_baseline": "global majority sign fraction over 24 graphs",
+      "n_folds": 24,
+      "predictor": "univariate OLS on selected feature; sign = sign(prediction)"
+    },
+    "metrics12": [
+      "conv2",
+      "d_conv2",
+      "motif_edges_kept",
+      "motif_fraction",
+      "reach_a",
+      "reach_b",
+      "reach_relay",
+      "d_reach_ab",
+      "density",
+      "in_deg_var",
+      "recip",
+      "module_density"
+    ],
+    "model": {
+      "activation": "relu",
+      "aggregation": "W = A.T / colsum(A)  (in-neighbour normalised, binary A)",
+      "feat_dim": 16,
+      "hidden": 64,
+      "loss": "BCEWithLogits",
+      "readout": "linear(64->1) on target-node hidden state",
+      "rounds": 2
+    },
+    "optim": {
+      "batch": 128,
+      "epochs": 120,
+      "lr": 0.006,
+      "optimizer": "Adam"
+    },
+    "preregistered_decision": {
+      "criterion_i": "the 24 per-graph observed_delta signs are not all identical",
+      "criterion_ii": "LOGO sign_agreement >= majority_baseline + 0.15",
+      "criterion_iii": "at least 3 of 12 features have BH q < 0.05",
+      "criterion_iv": "LOGO magnitude MAE < constant-baseline MAE",
+      "independent_family_validated": "true iff (i) AND (ii) AND (iii) AND (iv)"
+    },
+    "seeds": {
+      "init_seed_base": 81000,
+      "n_train_seeds": 6,
+      "train_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "task": "r51_independent_family (Task C / C4)",
+    "task_protocol": {
+      "data_seed_base": 71000,
+      "description": "2-hop convergence XOR probe (isomorphic to r39_density_sweep): sources a,b -> relay r -> target t. Bit of a encoded in feature dims 0..7 of node a, bit of b in dims 8..15 of node b; label = XOR. Readout at target t after 2 message-passing rounds.",
+      "n_test": 2048,
+      "n_train": 8192
+    }
+  },
+  "data_stats": {
+    "annotations_bytes": 14483314,
+    "body_id_column": "bodyId",
+    "dense_visual_graph_edges": 1209595,
+    "dense_visual_graph_mean_in_degree": 44.84964775676678,
+    "dense_visual_graph_nodes": 26970,
+    "match_columns_used": [
+      "superclass",
+      "class",
+      "subclass",
+      "type"
+    ],
+    "n_annotation_rows": 211577,
+    "n_visual_body_ids": 29534,
+    "post_col": "body_post",
+    "pre_col": "body_pre",
+    "visual_edges_dedup": 1209595,
+    "visual_edges_raw": 1209595,
+    "weight_col": "weight",
+    "weights_bytes": 1051241946,
+    "weights_rows_scanned": 151856684
+  },
+  "environment": "3.11.18 2.11.0+cu130 2.4.6 1.17.1 26.0.0 NVIDIA GeForce RTX 4090",
+  "family_stats": [
+    {
+      "graph": "g_s0_k2",
+      "graph_seed": 0,
+      "mean_in_degree": 2.0,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 1536,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 2
+    },
+    {
+      "graph": "g_s0_k3",
+      "graph_seed": 0,
+      "mean_in_degree": 3.0,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 2304,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 3
+    },
+    {
+      "graph": "g_s0_k4",
+      "graph_seed": 0,
+      "mean_in_degree": 4.0,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 3072,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 4
+    },
+    {
+      "graph": "g_s0_k6",
+      "graph_seed": 0,
+      "mean_in_degree": 6.0,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 4608,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 6
+    },
+    {
+      "graph": "g_s0_k8",
+      "graph_seed": 0,
+      "mean_in_degree": 8.0,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 6144,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 8
+    },
+    {
+      "graph": "g_s0_k12",
+      "graph_seed": 0,
+      "mean_in_degree": 11.96484375,
+      "motif_abrt": [
+        697,
+        359,
+        0,
+        720
+      ],
+      "n_edges": 9189,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        768
+      ],
+      "topk": 12
+    },
+    {
+      "graph": "g_s1_k2",
+      "graph_seed": 1,
+      "mean_in_degree": 2.0,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 1536,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 2
+    },
+    {
+      "graph": "g_s1_k3",
+      "graph_seed": 1,
+      "mean_in_degree": 3.0,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 2304,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 3
+    },
+    {
+      "graph": "g_s1_k4",
+      "graph_seed": 1,
+      "mean_in_degree": 4.0,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 3072,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 4
+    },
+    {
+      "graph": "g_s1_k6",
+      "graph_seed": 1,
+      "mean_in_degree": 6.0,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 4608,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 6
+    },
+    {
+      "graph": "g_s1_k8",
+      "graph_seed": 1,
+      "mean_in_degree": 8.0,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 6144,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 8
+    },
+    {
+      "graph": "g_s1_k12",
+      "graph_seed": 1,
+      "mean_in_degree": 11.963541666666666,
+      "motif_abrt": [
+        700,
+        357,
+        0,
+        723
+      ],
+      "n_edges": 9188,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        737,
+        768
+      ],
+      "topk": 12
+    },
+    {
+      "graph": "g_s2_k2",
+      "graph_seed": 2,
+      "mean_in_degree": 2.0,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 1536,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 2
+    },
+    {
+      "graph": "g_s2_k3",
+      "graph_seed": 2,
+      "mean_in_degree": 3.0,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 2304,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 3
+    },
+    {
+      "graph": "g_s2_k4",
+      "graph_seed": 2,
+      "mean_in_degree": 4.0,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 3072,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 4
+    },
+    {
+      "graph": "g_s2_k6",
+      "graph_seed": 2,
+      "mean_in_degree": 6.0,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 4608,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 6
+    },
+    {
+      "graph": "g_s2_k8",
+      "graph_seed": 2,
+      "mean_in_degree": 8.0,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 6144,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 8
+    },
+    {
+      "graph": "g_s2_k12",
+      "graph_seed": 2,
+      "mean_in_degree": 11.96484375,
+      "motif_abrt": [
+        701,
+        359,
+        0,
+        722
+      ],
+      "n_edges": 9189,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        739,
+        743,
+        768
+      ],
+      "topk": 12
+    },
+    {
+      "graph": "g_s3_k2",
+      "graph_seed": 3,
+      "mean_in_degree": 2.0,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 1536,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 2
+    },
+    {
+      "graph": "g_s3_k3",
+      "graph_seed": 3,
+      "mean_in_degree": 3.0,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 2304,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 3
+    },
+    {
+      "graph": "g_s3_k4",
+      "graph_seed": 3,
+      "mean_in_degree": 4.0,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 3072,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 4
+    },
+    {
+      "graph": "g_s3_k6",
+      "graph_seed": 3,
+      "mean_in_degree": 6.0,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 4608,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 6
+    },
+    {
+      "graph": "g_s3_k8",
+      "graph_seed": 3,
+      "mean_in_degree": 8.0,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 6144,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 8
+    },
+    {
+      "graph": "g_s3_k12",
+      "graph_seed": 3,
+      "mean_in_degree": 11.96875,
+      "motif_abrt": [
+        700,
+        358,
+        0,
+        722
+      ],
+      "n_edges": 9192,
+      "n_nodes": 768,
+      "subset_overlap_with_previous": [
+        735,
+        738,
+        741,
+        768
+      ],
+      "topk": 12
+    }
+  ],
+  "results": {
+    "bh_table": [
+      {
+        "bh_q": 2.0555470693900536e-07,
+        "feature": "conv2",
+        "p_value": 1.3703647129267024e-07,
+        "spearman_rho": 0.8509629433967633
+      },
+      {
+        "bh_q": 2.0555470693900536e-07,
+        "feature": "d_conv2",
+        "p_value": 1.3703647129267024e-07,
+        "spearman_rho": 0.8509629433967633
+      },
+      {
+        "bh_q": 3.938207033669189e-09,
+        "feature": "motif_edges_kept",
+        "p_value": 1.3127356778897299e-09,
+        "spearman_rho": 0.9046020485597297
+      },
+      {
+        "bh_q": 3.938207033669189e-09,
+        "feature": "motif_fraction",
+        "p_value": 1.3127356778897299e-09,
+        "spearman_rho": 0.9046020485597297
+      },
+      {
+        "bh_q": 3.938207033669189e-09,
+        "feature": "reach_a",
+        "p_value": 1.171584968189512e-09,
+        "spearman_rho": 0.9056254703459777
+      },
+      {
+        "bh_q": 3.938207033669189e-09,
+        "feature": "reach_b",
+        "p_value": 3.528733442996386e-10,
+        "spearman_rho": 0.9157495280745128
+      },
+      {
+        "bh_q": 3.684097180919834e-07,
+        "feature": "reach_relay",
+        "p_value": 2.763072885689876e-07,
+        "spearman_rho": 0.8404022984141731
+      },
+      {
+        "bh_q": 0.001903227674241896,
+        "feature": "d_reach_ab",
+        "p_value": 0.001903227674241896,
+        "spearman_rho": -0.6008545775936458
+      },
+      {
+        "bh_q": 1.8117767852099653e-07,
+        "feature": "density",
+        "p_value": 9.058883926049828e-08,
+        "spearman_rho": 0.8568412195653404
+      },
+      {
+        "bh_q": 0.00020310548030346676,
+        "feature": "in_deg_var",
+        "p_value": 0.0001861800236115112,
+        "spearman_rho": 0.6908057286338578
+      },
+      {
+        "bh_q": 5.886981545692879e-07,
+        "feature": "recip",
+        "p_value": 4.905817954744066e-07,
+        "spearman_rho": 0.8311537776746207
+      },
+      {
+        "bh_q": 1.5629542903494252e-08,
+        "feature": "module_density",
+        "p_value": 6.512309543122605e-09,
+        "spearman_rho": 0.8888919327109859
+      }
+    ],
+    "criteria": {
+      "i_signs_not_all_same": false,
+      "ii_sign_agreement_margin": false,
+      "iii_at_least_3_features_bh_q_lt_0.05": true,
+      "iv_mae_beats_constant": true
+    },
+    "deltas": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4990234375,
+      0.5013834635416667,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.49910481770833337,
+      0.49837239583333337,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.48966471354166663,
+      0.49918619791666663,
+      0.0,
+      0.0,
+      0.0,
+      0.0036621093749999445,
+      0.49755859375,
+      0.5026041666666667
+    ],
+    "feature_matrix": [
+      [
+        1.0,
+        -65.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        15.0,
+        0.0,
+        0.002607561929595828,
+        0.0,
+        0.09635416666666667,
+        0.0
+      ],
+      [
+        3.0,
+        -63.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        33.0,
+        0.0,
+        0.003911342894393742,
+        0.0,
+        0.140625,
+        0.0
+      ],
+      [
+        6.0,
+        -60.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        36.0,
+        0.0,
+        0.005215123859191656,
+        0.0,
+        0.16145833333333334,
+        0.0
+      ],
+      [
+        15.0,
+        -51.0,
+        1.0,
+        0.3333333333333333,
+        4.0,
+        33.0,
+        57.0,
+        -29.0,
+        0.007822685788787484,
+        0.0,
+        0.20572916666666666,
+        0.059714795008912656
+      ],
+      [
+        28.0,
+        -38.0,
+        3.0,
+        1.0,
+        19.0,
+        48.0,
+        77.0,
+        -29.0,
+        0.010430247718383311,
+        0.0,
+        0.23307291666666666,
+        0.06462585034013606
+      ],
+      [
+        66.0,
+        0.0,
+        3.0,
+        1.0,
+        54.0,
+        56.0,
+        102.0,
+        -2.0,
+        0.01559953552803129,
+        0.1120452880859375,
+        0.27707041027315266,
+        0.08646616541353383
+      ],
+      [
+        1.0,
+        -65.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        15.0,
+        0.0,
+        0.002607561929595828,
+        0.0,
+        0.09505208333333333,
+        0.0
+      ],
+      [
+        3.0,
+        -63.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        30.0,
+        0.0,
+        0.003911342894393742,
+        0.0,
+        0.1423611111111111,
+        0.0
+      ],
+      [
+        6.0,
+        -60.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        33.0,
+        0.0,
+        0.005215123859191656,
+        0.0,
+        0.15885416666666666,
+        0.0
+      ],
+      [
+        15.0,
+        -51.0,
+        1.0,
+        0.3333333333333333,
+        4.0,
+        34.0,
+        53.0,
+        -30.0,
+        0.007822685788787484,
+        0.0,
+        0.2035590277777778,
+        0.05966386554621849
+      ],
+      [
+        28.0,
+        -38.0,
+        3.0,
+        1.0,
+        19.0,
+        50.0,
+        74.0,
+        -31.0,
+        0.010430247718383311,
+        0.0,
+        0.22981770833333334,
+        0.06156862745098039
+      ],
+      [
+        66.0,
+        0.0,
+        3.0,
+        1.0,
+        55.0,
+        56.0,
+        102.0,
+        -1.0,
+        0.01559783789656671,
+        0.11846245659722225,
+        0.27949499346974316,
+        0.08208020050125313
+      ],
+      [
+        1.0,
+        -65.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        15.0,
+        0.0,
+        0.002607561929595828,
+        0.0,
+        0.09635416666666667,
+        0.0
+      ],
+      [
+        3.0,
+        -63.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        30.0,
+        0.0,
+        0.003911342894393742,
+        0.0,
+        0.13975694444444445,
+        0.0
+      ],
+      [
+        6.0,
+        -60.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        33.0,
+        0.0,
+        0.005215123859191656,
+        0.0,
+        0.16276041666666666,
+        0.0
+      ],
+      [
+        15.0,
+        -51.0,
+        1.0,
+        0.3333333333333333,
+        4.0,
+        34.0,
+        55.0,
+        -30.0,
+        0.007822685788787484,
+        0.0,
+        0.2048611111111111,
+        0.058823529411764705
+      ],
+      [
+        28.0,
+        -38.0,
+        3.0,
+        1.0,
+        18.0,
+        49.0,
+        72.0,
+        -31.0,
+        0.010430247718383311,
+        0.0,
+        0.2353515625,
+        0.062040816326530614
+      ],
+      [
+        66.0,
+        0.0,
+        3.0,
+        1.0,
+        54.0,
+        55.0,
+        98.0,
+        -1.0,
+        0.01559953552803129,
+        0.1120452880859375,
+        0.2794645772118838,
+        0.08603896103896104
+      ],
+      [
+        1.0,
+        -65.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        15.0,
+        0.0,
+        0.002607561929595828,
+        0.0,
+        0.09765625,
+        0.0
+      ],
+      [
+        3.0,
+        -63.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        23.0,
+        0.0,
+        0.003911342894393742,
+        0.0,
+        0.14149305555555555,
+        0.0
+      ],
+      [
+        6.0,
+        -60.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        35.0,
+        0.0,
+        0.005215123859191656,
+        0.0,
+        0.16276041666666666,
+        0.0
+      ],
+      [
+        15.0,
+        -51.0,
+        2.0,
+        0.6666666666666666,
+        4.0,
+        36.0,
+        54.0,
+        -32.0,
+        0.007822685788787484,
+        0.0,
+        0.20442708333333334,
+        0.05555555555555555
+      ],
+      [
+        28.0,
+        -38.0,
+        3.0,
+        1.0,
+        19.0,
+        49.0,
+        74.0,
+        -30.0,
+        0.010430247718383311,
+        0.0,
+        0.23274739583333334,
+        0.062448979591836734
+      ],
+      [
+        66.0,
+        0.0,
+        3.0,
+        1.0,
+        56.0,
+        57.0,
+        100.0,
+        -1.0,
+        0.015604628422425033,
+        0.09798177083333333,
+        0.28133159268929503,
+        0.08318209316394434
+      ]
+    ],
+    "features": [
+      "conv2",
+      "d_conv2",
+      "motif_edges_kept",
+      "motif_fraction",
+      "reach_a",
+      "reach_b",
+      "reach_relay",
+      "d_reach_ab",
+      "density",
+      "in_deg_var",
+      "recip",
+      "module_density"
+    ],
+    "graph_names": [
+      "g_s0_k2",
+      "g_s0_k3",
+      "g_s0_k4",
+      "g_s0_k6",
+      "g_s0_k8",
+      "g_s0_k12",
+      "g_s1_k2",
+      "g_s1_k3",
+      "g_s1_k4",
+      "g_s1_k6",
+      "g_s1_k8",
+      "g_s1_k12",
+      "g_s2_k2",
+      "g_s2_k3",
+      "g_s2_k4",
+      "g_s2_k6",
+      "g_s2_k8",
+      "g_s2_k12",
+      "g_s3_k2",
+      "g_s3_k3",
+      "g_s3_k4",
+      "g_s3_k6",
+      "g_s3_k8",
+      "g_s3_k12"
+    ],
+    "independent_family_validated": false,
+    "logo_cv": {
+      "chosen_features_per_fold": [
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_b",
+        "reach_a",
+        "reach_b",
+        "reach_b"
+      ],
+      "constant_baseline_mae": 0.2310183612620773,
+      "magnitude_mae": 0.08404463236492347,
+      "majority_baseline": 1.0,
+      "predictions": [
+        -0.031083478558012547,
+        -0.031083478558012547,
+        -0.031083478558012547,
+        0.2611654352877396,
+        0.3627302432680978,
+        0.4335263864114936,
+        -0.031083478558012512,
+        -0.031083478558012512,
+        -0.031083478558012512,
+        0.27041017701745185,
+        0.3801266173736899,
+        0.43393272989543147,
+        -0.031083478558012547,
+        -0.031083478558012547,
+        -0.031083478558012547,
+        0.27041017701745185,
+        0.37232662110316544,
+        0.42468601623312696,
+        -0.031083478558012547,
+        -0.031083478558012547,
+        -0.031083478558012547,
+        0.08029263913578004,
+        0.37155116620641815,
+        0.44256489098832036
+      ],
+      "sign_agreement": 0.5
+    },
+    "n_features_bh_q_lt_0.05": 12,
+    "n_negative_deltas": 0,
+    "n_positive_deltas": 24,
+    "per_graph": [
+      {
+        "acc_null_mean": 0.4969075520833333,
+        "acc_null_seeds": [
+          0.50146484375,
+          0.49169921875,
+          0.48828125,
+          0.50244140625,
+          0.48828125,
+          0.50927734375
+        ],
+        "acc_null_std": 0.007961962766038416,
+        "acc_real_mean": 0.4969075520833333,
+        "acc_real_seeds": [
+          0.50146484375,
+          0.49169921875,
+          0.48828125,
+          0.50244140625,
+          0.48828125,
+          0.50927734375
+        ],
+        "acc_real_std": 0.007961962766038416,
+        "conv2": 1.0,
+        "d_conv2": -65.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.002607561929595828,
+        "graph": "g_s0_k2",
+        "graph_seed": 0,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 15.0,
+        "recip": 0.09635416666666667,
+        "topk": 2
+      },
+      {
+        "acc_null_mean": 0.5049641927083334,
+        "acc_null_seeds": [
+          0.49853515625,
+          0.50927734375,
+          0.5029296875,
+          0.49609375,
+          0.5107421875,
+          0.51220703125
+        ],
+        "acc_null_std": 0.006172569439714014,
+        "acc_real_mean": 0.5049641927083334,
+        "acc_real_seeds": [
+          0.49853515625,
+          0.50927734375,
+          0.5029296875,
+          0.49609375,
+          0.5107421875,
+          0.51220703125
+        ],
+        "acc_real_std": 0.006172569439714014,
+        "conv2": 3.0,
+        "d_conv2": -63.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.003911342894393742,
+        "graph": "g_s0_k3",
+        "graph_seed": 0,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 33.0,
+        "recip": 0.140625,
+        "topk": 3
+      },
+      {
+        "acc_null_mean": 0.5021158854166666,
+        "acc_null_seeds": [
+          0.5,
+          0.50537109375,
+          0.48486328125,
+          0.51171875,
+          0.4921875,
+          0.5185546875
+        ],
+        "acc_null_std": 0.011355965847989851,
+        "acc_real_mean": 0.5021158854166666,
+        "acc_real_seeds": [
+          0.5,
+          0.50537109375,
+          0.48486328125,
+          0.51171875,
+          0.4921875,
+          0.5185546875
+        ],
+        "acc_real_std": 0.011355965847989851,
+        "conv2": 6.0,
+        "d_conv2": -60.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.005215123859191656,
+        "graph": "g_s0_k4",
+        "graph_seed": 0,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 36.0,
+        "recip": 0.16145833333333334,
+        "topk": 4
+      },
+      {
+        "acc_null_mean": 0.5107421875,
+        "acc_null_seeds": [
+          0.50390625,
+          0.521484375,
+          0.513671875,
+          0.50927734375,
+          0.501953125,
+          0.51416015625
+        ],
+        "acc_null_std": 0.006605346317611662,
+        "acc_real_mean": 0.5107421875,
+        "acc_real_seeds": [
+          0.50390625,
+          0.521484375,
+          0.513671875,
+          0.50927734375,
+          0.501953125,
+          0.51416015625
+        ],
+        "acc_real_std": 0.006605346317611662,
+        "conv2": 15.0,
+        "d_conv2": -51.0,
+        "d_reach_ab": -29.0,
+        "delta": 0.0,
+        "density": 0.007822685788787484,
+        "graph": "g_s0_k6",
+        "graph_seed": 0,
+        "in_deg_var": 0.0,
+        "module_density": 0.059714795008912656,
+        "motif_edges_kept": 1.0,
+        "motif_fraction": 0.3333333333333333,
+        "reach_a": 4.0,
+        "reach_b": 33.0,
+        "reach_relay": 57.0,
+        "recip": 0.20572916666666666,
+        "topk": 6
+      },
+      {
+        "acc_null_mean": 0.5009765625,
+        "acc_null_seeds": [
+          0.52197265625,
+          0.49755859375,
+          0.49365234375,
+          0.49365234375,
+          0.51611328125,
+          0.48291015625
+        ],
+        "acc_null_std": 0.013634038977482726,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 28.0,
+        "d_conv2": -38.0,
+        "d_reach_ab": -29.0,
+        "delta": 0.4990234375,
+        "density": 0.010430247718383311,
+        "graph": "g_s0_k8",
+        "graph_seed": 0,
+        "in_deg_var": 0.0,
+        "module_density": 0.06462585034013606,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 19.0,
+        "reach_b": 48.0,
+        "reach_relay": 77.0,
+        "recip": 0.23307291666666666,
+        "topk": 8
+      },
+      {
+        "acc_null_mean": 0.4986165364583333,
+        "acc_null_seeds": [
+          0.50537109375,
+          0.48095703125,
+          0.50146484375,
+          0.48974609375,
+          0.5107421875,
+          0.50341796875
+        ],
+        "acc_null_std": 0.010118999801650987,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 66.0,
+        "d_conv2": 0.0,
+        "d_reach_ab": -2.0,
+        "delta": 0.5013834635416667,
+        "density": 0.01559953552803129,
+        "graph": "g_s0_k12",
+        "graph_seed": 0,
+        "in_deg_var": 0.1120452880859375,
+        "module_density": 0.08646616541353383,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 54.0,
+        "reach_b": 56.0,
+        "reach_relay": 102.0,
+        "recip": 0.27707041027315266,
+        "topk": 12
+      },
+      {
+        "acc_null_mean": 0.5017903645833334,
+        "acc_null_seeds": [
+          0.4912109375,
+          0.51611328125,
+          0.4931640625,
+          0.50341796875,
+          0.513671875,
+          0.4931640625
+        ],
+        "acc_null_std": 0.010080639692188817,
+        "acc_real_mean": 0.5017903645833334,
+        "acc_real_seeds": [
+          0.4912109375,
+          0.51611328125,
+          0.4931640625,
+          0.50341796875,
+          0.513671875,
+          0.4931640625
+        ],
+        "acc_real_std": 0.010080639692188817,
+        "conv2": 1.0,
+        "d_conv2": -65.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.002607561929595828,
+        "graph": "g_s1_k2",
+        "graph_seed": 1,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 15.0,
+        "recip": 0.09505208333333333,
+        "topk": 2
+      },
+      {
+        "acc_null_mean": 0.5039876302083334,
+        "acc_null_seeds": [
+          0.509765625,
+          0.49267578125,
+          0.5107421875,
+          0.49853515625,
+          0.51318359375,
+          0.4990234375
+        ],
+        "acc_null_std": 0.007592821410675975,
+        "acc_real_mean": 0.5039876302083334,
+        "acc_real_seeds": [
+          0.509765625,
+          0.49267578125,
+          0.5107421875,
+          0.49853515625,
+          0.51318359375,
+          0.4990234375
+        ],
+        "acc_real_std": 0.007592821410675975,
+        "conv2": 3.0,
+        "d_conv2": -63.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.003911342894393742,
+        "graph": "g_s1_k3",
+        "graph_seed": 1,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 30.0,
+        "recip": 0.1423611111111111,
+        "topk": 3
+      },
+      {
+        "acc_null_mean": 0.5048014322916666,
+        "acc_null_seeds": [
+          0.49462890625,
+          0.50830078125,
+          0.49853515625,
+          0.52001953125,
+          0.49755859375,
+          0.509765625
+        ],
+        "acc_null_std": 0.008790946099280108,
+        "acc_real_mean": 0.5048014322916666,
+        "acc_real_seeds": [
+          0.49462890625,
+          0.50830078125,
+          0.49853515625,
+          0.52001953125,
+          0.49755859375,
+          0.509765625
+        ],
+        "acc_real_std": 0.008790946099280108,
+        "conv2": 6.0,
+        "d_conv2": -60.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.005215123859191656,
+        "graph": "g_s1_k4",
+        "graph_seed": 1,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 33.0,
+        "recip": 0.15885416666666666,
+        "topk": 4
+      },
+      {
+        "acc_null_mean": 0.5028483072916666,
+        "acc_null_seeds": [
+          0.50341796875,
+          0.51416015625,
+          0.490234375,
+          0.51220703125,
+          0.5087890625,
+          0.48828125
+        ],
+        "acc_null_std": 0.010185538552316298,
+        "acc_real_mean": 0.5028483072916666,
+        "acc_real_seeds": [
+          0.50341796875,
+          0.51416015625,
+          0.490234375,
+          0.51220703125,
+          0.5087890625,
+          0.48828125
+        ],
+        "acc_real_std": 0.010185538552316298,
+        "conv2": 15.0,
+        "d_conv2": -51.0,
+        "d_reach_ab": -30.0,
+        "delta": 0.0,
+        "density": 0.007822685788787484,
+        "graph": "g_s1_k6",
+        "graph_seed": 1,
+        "in_deg_var": 0.0,
+        "module_density": 0.05966386554621849,
+        "motif_edges_kept": 1.0,
+        "motif_fraction": 0.3333333333333333,
+        "reach_a": 4.0,
+        "reach_b": 34.0,
+        "reach_relay": 53.0,
+        "recip": 0.2035590277777778,
+        "topk": 6
+      },
+      {
+        "acc_null_mean": 0.5008951822916666,
+        "acc_null_seeds": [
+          0.509765625,
+          0.48828125,
+          0.51171875,
+          0.50732421875,
+          0.5,
+          0.48828125
+        ],
+        "acc_null_std": 0.009628004367590887,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 28.0,
+        "d_conv2": -38.0,
+        "d_reach_ab": -31.0,
+        "delta": 0.49910481770833337,
+        "density": 0.010430247718383311,
+        "graph": "g_s1_k8",
+        "graph_seed": 1,
+        "in_deg_var": 0.0,
+        "module_density": 0.06156862745098039,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 19.0,
+        "reach_b": 50.0,
+        "reach_relay": 74.0,
+        "recip": 0.22981770833333334,
+        "topk": 8
+      },
+      {
+        "acc_null_mean": 0.5016276041666666,
+        "acc_null_seeds": [
+          0.5029296875,
+          0.4951171875,
+          0.49560546875,
+          0.50830078125,
+          0.51318359375,
+          0.49462890625
+        ],
+        "acc_null_std": 0.00715775827711459,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 66.0,
+        "d_conv2": 0.0,
+        "d_reach_ab": -1.0,
+        "delta": 0.49837239583333337,
+        "density": 0.01559783789656671,
+        "graph": "g_s1_k12",
+        "graph_seed": 1,
+        "in_deg_var": 0.11846245659722225,
+        "module_density": 0.08208020050125313,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 55.0,
+        "reach_b": 56.0,
+        "reach_relay": 102.0,
+        "recip": 0.27949499346974316,
+        "topk": 12
+      },
+      {
+        "acc_null_mean": 0.5013020833333334,
+        "acc_null_seeds": [
+          0.48291015625,
+          0.49951171875,
+          0.501953125,
+          0.50634765625,
+          0.5166015625,
+          0.50048828125
+        ],
+        "acc_null_std": 0.010017371454055415,
+        "acc_real_mean": 0.5013020833333334,
+        "acc_real_seeds": [
+          0.48291015625,
+          0.49951171875,
+          0.501953125,
+          0.50634765625,
+          0.5166015625,
+          0.50048828125
+        ],
+        "acc_real_std": 0.010017371454055415,
+        "conv2": 1.0,
+        "d_conv2": -65.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.002607561929595828,
+        "graph": "g_s2_k2",
+        "graph_seed": 2,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 15.0,
+        "recip": 0.09635416666666667,
+        "topk": 2
+      },
+      {
+        "acc_null_mean": 0.500732421875,
+        "acc_null_seeds": [
+          0.49560546875,
+          0.49853515625,
+          0.5087890625,
+          0.49658203125,
+          0.50439453125,
+          0.50048828125
+        ],
+        "acc_null_std": 0.004595640593585775,
+        "acc_real_mean": 0.500732421875,
+        "acc_real_seeds": [
+          0.49560546875,
+          0.49853515625,
+          0.5087890625,
+          0.49658203125,
+          0.50439453125,
+          0.50048828125
+        ],
+        "acc_real_std": 0.004595640593585775,
+        "conv2": 3.0,
+        "d_conv2": -63.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.003911342894393742,
+        "graph": "g_s2_k3",
+        "graph_seed": 2,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 30.0,
+        "recip": 0.13975694444444445,
+        "topk": 3
+      },
+      {
+        "acc_null_mean": 0.5064290364583334,
+        "acc_null_seeds": [
+          0.505859375,
+          0.50927734375,
+          0.50244140625,
+          0.4990234375,
+          0.50732421875,
+          0.5146484375
+        ],
+        "acc_null_std": 0.004958853429876993,
+        "acc_real_mean": 0.5064290364583334,
+        "acc_real_seeds": [
+          0.505859375,
+          0.50927734375,
+          0.50244140625,
+          0.4990234375,
+          0.50732421875,
+          0.5146484375
+        ],
+        "acc_real_std": 0.004958853429876993,
+        "conv2": 6.0,
+        "d_conv2": -60.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.005215123859191656,
+        "graph": "g_s2_k4",
+        "graph_seed": 2,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 33.0,
+        "recip": 0.16276041666666666,
+        "topk": 4
+      },
+      {
+        "acc_null_mean": 0.5035807291666666,
+        "acc_null_seeds": [
+          0.4921875,
+          0.5,
+          0.51025390625,
+          0.5068359375,
+          0.49658203125,
+          0.515625
+        ],
+        "acc_null_std": 0.008080853897985943,
+        "acc_real_mean": 0.5035807291666666,
+        "acc_real_seeds": [
+          0.4921875,
+          0.5,
+          0.51025390625,
+          0.5068359375,
+          0.49658203125,
+          0.515625
+        ],
+        "acc_real_std": 0.008080853897985943,
+        "conv2": 15.0,
+        "d_conv2": -51.0,
+        "d_reach_ab": -30.0,
+        "delta": 0.0,
+        "density": 0.007822685788787484,
+        "graph": "g_s2_k6",
+        "graph_seed": 2,
+        "in_deg_var": 0.0,
+        "module_density": 0.058823529411764705,
+        "motif_edges_kept": 1.0,
+        "motif_fraction": 0.3333333333333333,
+        "reach_a": 4.0,
+        "reach_b": 34.0,
+        "reach_relay": 55.0,
+        "recip": 0.2048611111111111,
+        "topk": 6
+      },
+      {
+        "acc_null_mean": 0.5103352864583334,
+        "acc_null_seeds": [
+          0.52001953125,
+          0.517578125,
+          0.5078125,
+          0.4931640625,
+          0.52685546875,
+          0.49658203125
+        ],
+        "acc_null_std": 0.01231210206018595,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 28.0,
+        "d_conv2": -38.0,
+        "d_reach_ab": -31.0,
+        "delta": 0.48966471354166663,
+        "density": 0.010430247718383311,
+        "graph": "g_s2_k8",
+        "graph_seed": 2,
+        "in_deg_var": 0.0,
+        "module_density": 0.062040816326530614,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 18.0,
+        "reach_b": 49.0,
+        "reach_relay": 72.0,
+        "recip": 0.2353515625,
+        "topk": 8
+      },
+      {
+        "acc_null_mean": 0.5008138020833334,
+        "acc_null_seeds": [
+          0.49267578125,
+          0.5048828125,
+          0.5068359375,
+          0.50048828125,
+          0.4951171875,
+          0.5048828125
+        ],
+        "acc_null_std": 0.005294093739352407,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 66.0,
+        "d_conv2": 0.0,
+        "d_reach_ab": -1.0,
+        "delta": 0.49918619791666663,
+        "density": 0.01559953552803129,
+        "graph": "g_s2_k12",
+        "graph_seed": 2,
+        "in_deg_var": 0.1120452880859375,
+        "module_density": 0.08603896103896104,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 54.0,
+        "reach_b": 55.0,
+        "reach_relay": 98.0,
+        "recip": 0.2794645772118838,
+        "topk": 12
+      },
+      {
+        "acc_null_mean": 0.50146484375,
+        "acc_null_seeds": [
+          0.50244140625,
+          0.4912109375,
+          0.5087890625,
+          0.49951171875,
+          0.49365234375,
+          0.51318359375
+        ],
+        "acc_null_std": 0.007766588730755306,
+        "acc_real_mean": 0.50146484375,
+        "acc_real_seeds": [
+          0.50244140625,
+          0.4912109375,
+          0.5087890625,
+          0.49951171875,
+          0.49365234375,
+          0.51318359375
+        ],
+        "acc_real_std": 0.007766588730755306,
+        "conv2": 1.0,
+        "d_conv2": -65.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.002607561929595828,
+        "graph": "g_s3_k2",
+        "graph_seed": 3,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 15.0,
+        "recip": 0.09765625,
+        "topk": 2
+      },
+      {
+        "acc_null_mean": 0.5048828125,
+        "acc_null_seeds": [
+          0.51171875,
+          0.52392578125,
+          0.49267578125,
+          0.50390625,
+          0.501953125,
+          0.4951171875
+        ],
+        "acc_null_std": 0.010514121353847144,
+        "acc_real_mean": 0.5048828125,
+        "acc_real_seeds": [
+          0.51171875,
+          0.52392578125,
+          0.49267578125,
+          0.50390625,
+          0.501953125,
+          0.4951171875
+        ],
+        "acc_real_std": 0.010514121353847144,
+        "conv2": 3.0,
+        "d_conv2": -63.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.003911342894393742,
+        "graph": "g_s3_k3",
+        "graph_seed": 3,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 23.0,
+        "recip": 0.14149305555555555,
+        "topk": 3
+      },
+      {
+        "acc_null_mean": 0.4973958333333333,
+        "acc_null_seeds": [
+          0.49853515625,
+          0.50830078125,
+          0.49951171875,
+          0.4931640625,
+          0.4912109375,
+          0.49365234375
+        ],
+        "acc_null_std": 0.0056989392578162745,
+        "acc_real_mean": 0.4973958333333333,
+        "acc_real_seeds": [
+          0.49853515625,
+          0.50830078125,
+          0.49951171875,
+          0.4931640625,
+          0.4912109375,
+          0.49365234375
+        ],
+        "acc_real_std": 0.0056989392578162745,
+        "conv2": 6.0,
+        "d_conv2": -60.0,
+        "d_reach_ab": 0.0,
+        "delta": 0.0,
+        "density": 0.005215123859191656,
+        "graph": "g_s3_k4",
+        "graph_seed": 3,
+        "in_deg_var": 0.0,
+        "module_density": 0.0,
+        "motif_edges_kept": 0.0,
+        "motif_fraction": 0.0,
+        "reach_a": 0.0,
+        "reach_b": 0.0,
+        "reach_relay": 35.0,
+        "recip": 0.16276041666666666,
+        "topk": 4
+      },
+      {
+        "acc_null_mean": 0.4965006510416667,
+        "acc_null_seeds": [
+          0.50732421875,
+          0.49267578125,
+          0.48876953125,
+          0.4921875,
+          0.49267578125,
+          0.50537109375
+        ],
+        "acc_null_std": 0.007111810772304978,
+        "acc_real_mean": 0.5001627604166666,
+        "acc_real_seeds": [
+          0.50732421875,
+          0.49267578125,
+          0.50146484375,
+          0.50146484375,
+          0.49267578125,
+          0.50537109375
+        ],
+        "acc_real_std": 0.005684976952009434,
+        "conv2": 15.0,
+        "d_conv2": -51.0,
+        "d_reach_ab": -32.0,
+        "delta": 0.0036621093749999445,
+        "density": 0.007822685788787484,
+        "graph": "g_s3_k6",
+        "graph_seed": 3,
+        "in_deg_var": 0.0,
+        "module_density": 0.05555555555555555,
+        "motif_edges_kept": 2.0,
+        "motif_fraction": 0.6666666666666666,
+        "reach_a": 4.0,
+        "reach_b": 36.0,
+        "reach_relay": 54.0,
+        "recip": 0.20442708333333334,
+        "topk": 6
+      },
+      {
+        "acc_null_mean": 0.50244140625,
+        "acc_null_seeds": [
+          0.5107421875,
+          0.51318359375,
+          0.50390625,
+          0.51611328125,
+          0.48876953125,
+          0.48193359375
+        ],
+        "acc_null_std": 0.01278576053287294,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 28.0,
+        "d_conv2": -38.0,
+        "d_reach_ab": -30.0,
+        "delta": 0.49755859375,
+        "density": 0.010430247718383311,
+        "graph": "g_s3_k8",
+        "graph_seed": 3,
+        "in_deg_var": 0.0,
+        "module_density": 0.062448979591836734,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 19.0,
+        "reach_b": 49.0,
+        "reach_relay": 74.0,
+        "recip": 0.23274739583333334,
+        "topk": 8
+      },
+      {
+        "acc_null_mean": 0.4973958333333333,
+        "acc_null_seeds": [
+          0.494140625,
+          0.4892578125,
+          0.4814453125,
+          0.50244140625,
+          0.50390625,
+          0.51318359375
+        ],
+        "acc_null_std": 0.010395027572809743,
+        "acc_real_mean": 1.0,
+        "acc_real_seeds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "acc_real_std": 0.0,
+        "conv2": 66.0,
+        "d_conv2": 0.0,
+        "d_reach_ab": -1.0,
+        "delta": 0.5026041666666667,
+        "density": 0.015604628422425033,
+        "graph": "g_s3_k12",
+        "graph_seed": 3,
+        "in_deg_var": 0.09798177083333333,
+        "module_density": 0.08318209316394434,
+        "motif_edges_kept": 3.0,
+        "motif_fraction": 1.0,
+        "reach_a": 56.0,
+        "reach_b": 57.0,
+        "reach_relay": 100.0,
+        "recip": 0.28133159268929503,
+        "topk": 12
+      }
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "script_sha256": {
+    "entrypoint.sh": "70cdd264543b7b7291431e9aabda6c377353cfd27537104e00052c24146d91ef",
+    "r51_analysis.py": "f35a48ebf9de0935c2acc064434b694df946cc12f413b4eef0e0a76eaf5cfb25",
+    "r51_common.py": "5f034627b2c8ce939f140075f95ae0362ce11782edeb333c4d505f0170c6b4dd",
+    "r51_data.py": "c31538fb6dad383f0204258f195898a63f8f2a5a03efb098db1a720bb632ef1c",
+    "r51_family.py": "07e5acb63f6dfe505e87d69d50005e1225f6b99e7aa5b19f4dc4d8cabf4a2d8f",
+    "r51_gnn.py": "24847e159c64ca8c208093abb5b7fe6d710051291dcccaea7deabe2b894ff16a",
+    "r51_main.py": "4b2bdd7e9d1ef954c009a2f51918fc19e5922ed3da6a4b1eb4f522daced810a5"
+  },
+  "step_timings_seconds": {
+    "r51_analysis": 10.598758697509766,
+    "r51_data": 0.0,
+    "r51_family": 28.5,
+    "r51_gnn": 6088.628160333634
+  },
+  "task": "r51_independent_family (Task C / C4)",
+  "timestamp_utc": "2026-11-08T05:02:21Z"
+}

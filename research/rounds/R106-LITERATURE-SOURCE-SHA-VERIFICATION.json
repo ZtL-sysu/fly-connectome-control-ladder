@@ -1,0 +1,52 @@
+{
+  "round": "R106",
+  "status": "READONLY_SOURCE_VERIFICATION_NOT_SCIENTIFIC_RESULT",
+  "note": "Verify declared bytes+sha of saved primary literature HTML against actual local files. Does not pass G0 or any gate.",
+  "records": [
+    {
+      "name": "toposens2026",
+      "url": "https://arxiv.org/html/2604.04033v1",
+      "declared_bytes": 215470,
+      "declared_sha": "85ddec17c98d81f233ccfef6e576f6458a2314a54cd829a59b98b3b15fdbfdd4",
+      "matched_local_path": "literature-search/toposens2026.html",
+      "match": true
+    },
+    {
+      "name": "boundary2026",
+      "url": "https://arxiv.org/html/2609.39248v1",
+      "declared_bytes": 304810,
+      "declared_sha": "b13802566242c74bdede46401f5e00f0af51b78714cd8842685891bda6ff6bbe",
+      "matched_local_path": "literature-search/boundary2026.html",
+      "match": true
+    },
+    {
+      "name": "flyhack2026",
+      "url": "https://arxiv.org/html/2610.13018v1",
+      "declared_bytes": 346042,
+      "declared_sha": "f98ec7c77e421824a4fa5b63ce27bd4f41b95098bf7eccc5d1343e70fbfc7120",
+      "matched_local_path": "literature-search/flyhack2026.html",
+      "match": true
+    },
+    {
+      "name": "structure2026",
+      "url": "https://arxiv.org/html/2610.10023v1",
+      "declared_bytes": 207365,
+      "declared_sha": "33c5d1a01ec14bb0f15db41f74874ce18e1a0a60b1a5df871af58c2e06d9b2ab",
+      "matched_local_path": "literature-search/structure2026.html",
+      "match": true
+    },
+    {
+      "name": "flyvis2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11525180/",
+      "declared_bytes": 21444,
+      "declared_sha": "ec7eb823535a7097be40be17babc023d294c35dae1a5044b201dd775b21ce615",
+      "matched_local_path": "literature-search/flyvis2024.html",
+      "match": true
+    }
+  ],
+  "all_match": true,
+  "gates_mutated": false,
+  "model_forward_passes": 0,
+  "training_runs": 0,
+  "labels_used": 0
+}

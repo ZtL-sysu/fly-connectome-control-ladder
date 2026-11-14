@@ -140,3 +140,96 @@ do not enter an unbounded patch loop (R105 precedent).
    and STOP harbor retries. Report the platform build-service blocker.
 4. Only a verified reward makes harbor a viable heavy-work entry point.
    Until then: experimental, no GPU execution claim, no 4090 claim.
+
+---
+
+## Attempt 3 milestone — BUILD SUCCEEDED, run in progress (2026-11-13 21:0x)
+
+Background tracker `dNf5Pa` (55 × 1 min) recorded the phase transition:
+`building` through 20:39:57 → **`running` from 20:41:04 through 21:04:16**,
+still `processing`. The tracker exhausted its poll count; the task did NOT
+terminate.
+
+Direct re-check confirms:
+- `harborPhase = "running"`, `status = "processing"`, `errorCode = None`.
+- **`harborImageDigest = sha256:3f6290d03df10654a0243bb0fc40c8c9bb27383685760e7811a4d8232f583e79`**
+  — the first successfully built image digest in all three attempts.
+- `debug build-logs 25092` returns `status = "success"`, ending with
+  `run cache step successfully!`.
+- `harborResult = None`, `steps = []`, no `reward` yet; the agent is executing
+  `instruction.md` inside the container.
+
+**Interpretation**: the single `--build-timeout 3600` fix worked. The 1.36 GB
+CUDA base pull finished within the raised ceiling, the `apt-get` layer
+completed, and the image was pushed. This is an **engineering milestone, not a
+result**: no probe output, no verifier reward, no scientific claim yet.
+
+A fresh tracker `D8mdCU` polls the run phase. Recovery on finish:
+`novix --json task result 25092` → read `harborResult` →
+`novix debug pull task:25092 <out> --sub project/results/r108_probe` →
+independently recompute the probe arithmetic from raw artifacts. On error:
+`novix debug build-logs` / `task result` verbatim, record, and stop harbor
+retries as previously declared.
+
+---
+
+## Run-phase observation — torch absent in default image (2026-11-13 21:2x)
+
+Tracker `D8mdCU` ended with an empty `TERMINAL` line at 21:23:36. **That was a
+false terminal detection**: the `task result` call returned an empty/parseable
+response once, and the tracker treated a non-`processing` blank status as final.
+Direct re-check shows `status=processing`, `harborPhase=running`,
+`errorCode=None`, and **steps grew from 0 to 75** — the agent is actively
+working. A corrected tracker (`XyCcV5`) treats empty status as
+`transient_empty` and does not stop.
+
+`task get 25092` step trajectory (75 steps) shows the agent inside the container
+running `pip install --dry-run torch`, `find / -name torch` (empty), and
+`ModuleNotFoundError` / `No module named` when importing torch. It is now
+installing torch and its CUDA dependencies.
+
+**Correction to an earlier inference in this file**: attempt 2's note said the
+platform default `ubuntu/cuda` image "is what supplies torch/CUDA". That was an
+inference, not a measurement, and the run-phase trajectory **falsifies it**.
+The default image does not contain an importable torch. This is exactly why the
+frozen probe reports `cuda_available` and runs a CPU fallback honestly rather
+than assuming a device. If the agent finishes installing torch, the probe may
+still produce a valid result; if not, the probe writes `status=failure` and the
+verifier takes the apparatus/scored-failure path. Either way the package's
+EXEC LOCK and SHA checks still apply and no result is fabricated.
+
+No reward, no `harborResult`, no scientific claim yet.
+
+---
+
+## FINAL — task 25092 finished with verified reward (2026-11-13 22:0x)
+
+Tracker `XyCcV5` caught the real terminal state at 22:00:26. Double-confirmed
+with `task result` + `task get`: `status=finish`, `harborPhase=done`, 169 steps,
+`harborResult.reward=1.0`, `measurementValid=true`, `tamperSuspected=false`,
+`testsDigestExpected == testsDigestObserved =
+d772852a5783ab75b296cacade300c02d4c12bc6351ea2fdc3b055e173c861ac`,
+`rewardSource=reward.json`, `result_subtype=success`.
+
+**`debug pull` failed twice**: track-ops `/healthz` unreachable, so no workspace
+files were retrieved. Verification instead used the raw values embedded in the
+169-step trajectory (`task get`, 229 KB) plus the frozen local probe script.
+
+Independent local recomputation (full detail in
+`../novix/r108-25092-final/R108-FINAL-VERIFICATION.md`):
+- `probe_device=cuda`, `cuda_available=true`, **`device_name=NVIDIA H20`**,
+  `torch_version=2.5.1+cu124`. **Not a 4090.**
+- `probe_matrix_flat`: 16 finite values, `sum=360.0`; `probe_expected=360.0`;
+  `probe_observed=360.0`. All three agree.
+- `probe_script_sha256 = d3659dcb…883c` **equals local `sha256(tests/probe.py)`**
+  ⇒ EXEC LOCK held, remote agent did not modify the frozen probe.
+- `scientific_result=false`, `training=false`, reward scope
+  `ENGINEERING_ONLY_NO_SCIENTIFIC_RESULT`.
+
+**Conclusion**: harbor is now a **usable heavy-work entry point** for
+engineering GPU tasks — the first end-to-end verified run in this project.
+Caveats for future runs: the default image has no importable torch (agent had
+to install it at runtime), build timeout must be >=3600 s for a cold 1.36 GB
+base pull, and **the allocated GPU model is not guaranteed** (H20 here, not
+4090). No scientific result, no score change, no 4090 claim.
+All three tasks 25075 / 25076 / 25092 and both failed attempts remain on disk.

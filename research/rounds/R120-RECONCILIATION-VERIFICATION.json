@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "round": "R120",
+  "generated_at_utc": "2026-11-14T00:42:49.115599+00:00",
+  "boundary": "READ_ONLY_VERIFICATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "independence": "no import of R120-raw.py; no R120 JSON read; all values recomputed from original source bytes",
+  "n_checks": 75,
+  "n_match": 75,
+  "n_mismatch": 0,
+  "checks": [
+    {
+      "id": "A1a",
+      "expected": [
+        90
+      ],
+      "observed": [
+        90
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A1b",
+      "expected": [
+        91
+      ],
+      "observed": [
+        91
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A2a",
+      "expected": 175,
+      "observed": 175,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A2b",
+      "expected": 175,
+      "observed": 175,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A2c",
+      "expected": 116,
+      "observed": 116,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A2d",
+      "expected": 180,
+      "observed": 180,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A3a",
+      "expected": [
+        48
+      ],
+      "observed": [
+        48
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A3b",
+      "expected": 1,
+      "observed": 1,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A3c",
+      "expected": [
+        139
+      ],
+      "observed": [
+        139
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A4a",
+      "expected": 161,
+      "observed": 161,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A4b",
+      "expected": 166,
+      "observed": 166,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A4c",
+      "expected": 168,
+      "observed": 168,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A4d",
+      "expected": 169,
+      "observed": 169,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "A5",
+      "expected": [
+        26
+      ],
+      "observed": [
+        26
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1a",
+      "expected": "f-guidance-builder-v1",
+      "observed": "f-guidance-builder-v1",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1b",
+      "expected": "v2",
+      "observed": "v2",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1c",
+      "expected": 12,
+      "observed": 12,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1d",
+      "expected": [
+        "CCFA-startup",
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "validation",
+        "handoff"
+      ],
+      "observed": [
+        "CCFA-startup",
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "validation",
+        "handoff"
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1e",
+      "expected": [
+        "CCFA-startup"
+      ],
+      "observed": [
+        "CCFA-startup"
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1f",
+      "expected": 11,
+      "observed": 11,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1g",
+      "expected": "pending",
+      "observed": "pending",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1h",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1i",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B1j",
+      "expected": [],
+      "observed": [],
+      "status": "MATCH",
+      "note": "no P stage was inserted into guidance state"
+    },
+    {
+      "id": "B2a",
+      "expected": "f-research-v1",
+      "observed": "f-research-v1",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2b",
+      "expected": "v1-R108-U6W2-draft",
+      "observed": "v1-R108-U6W2-draft",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2c",
+      "expected": 26,
+      "observed": 26,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2d",
+      "expected": [
+        "pending"
+      ],
+      "observed": [
+        "pending"
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2e",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2f",
+      "expected": [
+        "P0",
+        "P21"
+      ],
+      "observed": [
+        "P0",
+        "P21"
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B2g",
+      "expected": 2,
+      "observed": 2,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B3a",
+      "expected": 7307,
+      "observed": 7307,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B3b",
+      "expected": 1,
+      "observed": 1,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B3c",
+      "expected": 3,
+      "observed": 3,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B3d",
+      "expected": 5,
+      "observed": 5,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B3e",
+      "expected": 5,
+      "observed": 5,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B4a",
+      "expected": 3,
+      "observed": 3,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B4b",
+      "expected": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6"
+      ],
+      "observed": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6"
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B4c",
+      "expected": 42,
+      "observed": 42,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B4d",
+      "expected": 59,
+      "observed": 59,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B5a",
+      "expected": 9445,
+      "observed": 9445,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B5b",
+      "expected": [
+        46
+      ],
+      "observed": [
+        46
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B5c",
+      "expected": [
+        47
+      ],
+      "observed": [
+        47
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B5d",
+      "expected": [
+        9
+      ],
+      "observed": [
+        9
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B5e",
+      "expected": [
+        10
+      ],
+      "observed": [
+        10
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B6a",
+      "expected": 133,
+      "observed": 133,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B6b",
+      "expected": 146,
+      "observed": 146,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B6c",
+      "expected": 155,
+      "observed": 155,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B6d",
+      "expected": 148,
+      "observed": 148,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B7a",
+      "expected": 132,
+      "observed": 132,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B7b",
+      "expected": 136,
+      "observed": 136,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B7c",
+      "expected": 134,
+      "observed": 134,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B7d",
+      "expected": 138,
+      "observed": 138,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8a",
+      "expected": "NOT_QUALIFIED",
+      "observed": "NOT_QUALIFIED",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8b",
+      "expected": 6.0,
+      "observed": 6.0,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8c",
+      "expected": 7.0,
+      "observed": 7.0,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8d",
+      "expected": ">=",
+      "observed": ">=",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8e",
+      "expected": false,
+      "observed": false,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8f",
+      "expected": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "observed": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8g",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8h",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8i",
+      "expected": 7,
+      "observed": 7,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B8j",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "B9a",
+      "expected": "paper-null-ladder-r95-independent-review-20261111.md",
+      "observed": "paper-null-ladder-r95-independent-review-20261111.md",
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C1",
+      "expected": [
+        32,
+        38,
+        43,
+        48,
+        53
+      ],
+      "observed": [
+        32,
+        38,
+        43,
+        48,
+        53
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C2a",
+      "expected": 112,
+      "observed": 112,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C2b",
+      "expected": 113,
+      "observed": 113,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C2c",
+      "expected": 114,
+      "observed": 114,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C3",
+      "expected": 61,
+      "observed": 61,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C4",
+      "expected": 85,
+      "observed": 85,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C5",
+      "expected": 75,
+      "observed": 75,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C6",
+      "expected": 61,
+      "observed": 61,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C7",
+      "expected": [
+        54,
+        57,
+        121
+      ],
+      "observed": [
+        54,
+        57,
+        121
+      ],
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C8a",
+      "expected": 50,
+      "observed": 50,
+      "status": "MATCH",
+      "note": ""
+    },
+    {
+      "id": "C8b",
+      "expected": 74,
+      "observed": 74,
+      "status": "MATCH",
+      "note": ""
+    }
+  ],
+  "scope_note": "same host / same hashlib / same data sources => necessary consistency check, NOT independent cross-verification (R115 W4 / R114 D1); truly independent recomputation is delegated to a fresh isolated sub-agent"
+}

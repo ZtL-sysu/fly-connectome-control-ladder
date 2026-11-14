@@ -1,0 +1,41 @@
+﻿metric,value,unit,scope,kind
+sources_probed,31,files,R120 collector read-only source table,measurement
+isolated_byte_identical_copies,31,copies,reconciliation-R120/isolated,measurement
+independent_verification_checks,75,checks,R120-RECONCILIATION-VERIFICATION.json,measurement
+independent_verification_matches,75,checks,R120-RECONCILIATION-VERIFICATION.json,measurement
+independent_verification_mismatches,0,checks,R120-RECONCILIATION-VERIFICATION.json,measurement
+main_line_guidance_stages,12,stages,run root pipeline-state.json,measurement
+main_line_stages_passed,1,stages,CCFA-startup only,measurement
+main_line_stages_pending,11,stages,G0-G8 + validation + handoff,measurement
+p_stages_inserted_into_guidance_state,0,stages,"no P stage ID present",measurement
+r108_draft_scaffold_stages,26,stages,state-handoff-R108 f-research-v1-state/pipeline-state.json,measurement
+r108_draft_scaffold_stages_pending,26,stages,all P0-P21 pending,measurement
+r108_draft_scaffold_history_entries,0,entries,history array,measurement
+r108_versioned_contract_bytes,7307,bytes,R108-U6-W2-VERSIONED-CONTRACT.md,measurement
+historical_v2_stages,26,stages,papers/paper-null-ladder v2 pipeline-state.json,measurement
+historical_v2_stages_passed,13,stages,P0-P8,measurement
+historical_v2_stages_pending,13,stages,P9-P21,measurement
+distinct_pipeline_state_namespaces,3,namespaces,"main-line / R108 draft / historical v2",measurement
+g0_status_pending,1,boolean,G0 pending inputs=0 evidence=0,measurement
+g0_inputs_entries,0,entries,G0 inputs array,measurement
+g0_evidence_entries,0,entries,G0 evidence array,measurement
+validator_verdict_not_qualified,1,boolean,R120-validator-out.json,measurement
+validator_overall_score,6.0,score,governing r95 (not a new review),measurement
+validator_threshold,7.0,threshold,R107 authorized final value,measurement
+validator_checks_failing,3,checks,D2 D3 D5,measurement
+guard_verdict_incomplete,1,boolean,R120-guard-check.txt,measurement
+guard_acceptance_items_failing,2,items,A2 A6,measurement
+guard_steps_pending,7,steps,S1-S7,measurement
+guard_action_sequence_entries,0,entries,action sequence,measurement
+independent_full_reviews_in_dir,10,files,ccfa-review-reports/*.md,measurement
+numeric_overall_score_lines_after_r95,0,lines,project-wide scan,measurement
+consolidated_decision_groups,10,groups,R120-CONSOLIDATED-DECISION-REGISTER.md,derived
+minimal_unblocking_decisions,3,groups,G1 + G4 + G10,derived
+strict_secret_value_pattern_hits,0,hits,public upload set,measurement
+public_upload_local_absolute_path_hits,0,hits,public upload set,measurement
+public_upload_real_score_line_hits,0,hits,public upload set,measurement
+network_requests,0,requests,this round,measurement
+forward_passes_performed,0,passes,this round,measurement
+gate_promotions,0,gates,this round,measurement
+scientific_results_claimed,0,results,this round,measurement
+papers_qualified,0,papers,governing unchanged,measurement

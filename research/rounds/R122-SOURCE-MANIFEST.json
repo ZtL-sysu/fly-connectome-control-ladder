@@ -1,0 +1,37 @@
+[
+  {
+    "file": "arxiv-2609.24565v1-abs.html",
+    "url": "https://arxiv.org/abs/2609.24565v1",
+    "kind": "abs_v1",
+    "bytes": 41581,
+    "sha256": "0075412eb10447864bb2b139c6d8ec8eb1c8f256b2d91e69a913203027bbd367"
+  },
+  {
+    "file": "arxiv-2609.24565v2-abs.html",
+    "url": "https://arxiv.org/abs/2609.24565v2",
+    "kind": "abs_v2",
+    "bytes": 43656,
+    "sha256": "cbcbce7343f999ebae1f63c43963a477e96ebe827679b6f973e25e177ca7029e"
+  },
+  {
+    "file": "arxiv-2609.24565v1-html.html",
+    "url": "https://arxiv.org/html/2609.24565v1",
+    "kind": "html_v1",
+    "bytes": 50485,
+    "sha256": "2726ef63d6cda79393d1faa725267cb1ede474f1189caba51cc583c9a4af648c"
+  },
+  {
+    "file": "arxiv-2609.24565v2-html.html",
+    "url": "https://arxiv.org/html/2609.24565v2",
+    "kind": "html_v2",
+    "bytes": 182710,
+    "sha256": "f4e7fb8747165a4f4caf0a50e34ca15f7a837536699189bffe267502ca12e7ad"
+  },
+  {
+    "file": "arxiv-2609.24565-api.xml",
+    "url": "https://export.arxiv.org/api/query?id_list=2609.24565",
+    "kind": "atom_api",
+    "bytes": 3139,
+    "sha256": "5e1c68e2e21be996a3d2244d67b2d1c0e7a6e5c8a7d829657d7faa3f2341377d"
+  }
+]

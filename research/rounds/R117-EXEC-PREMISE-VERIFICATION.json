@@ -1,0 +1,289 @@
+{
+  "round": "R117",
+  "classification": "SECOND_SCRIPT_CONSISTENCY_CHECK_NOT_INDEPENDENT_CROSS_VALIDATION",
+  "generated_utc": "2026-11-13T19:19:04.639012+00:00",
+  "generated_utc_note": "Product-generation wall clock; NOT an acquisition timestamp (R115 W3).",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "independence_note": "Shares host + hashlib with R117-probe.py; agreement is necessary consistency, not independent verification. Fresh isolated sub-agent performs the genuine recomputation.",
+  "checks": [
+    {
+      "id": "SRC-flyvis_init",
+      "description": "local-provisioning/flyvis-work/flyvis/__init__.py",
+      "result": "MATCH",
+      "detail": "bytes=1801 sha=aea219a5e7fe78d4"
+    },
+    {
+      "id": "SRC-flyvis_version_reconstructed",
+      "description": "local-provisioning/flyvis-work/flyvis/version.py",
+      "result": "MATCH",
+      "detail": "bytes=255 sha=15efb6b02134350a"
+    },
+    {
+      "id": "SRC-official_chkpt_00000",
+      "description": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/chkpts/chkpt_00000",
+      "result": "MATCH",
+      "detail": "bytes=49396 sha=d0e42857e738d031"
+    },
+    {
+      "id": "SRC-official_meta_yaml",
+      "description": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/_meta.yaml",
+      "result": "MATCH",
+      "detail": "bytes=2222 sha=2aa8a9505324c82b"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-0.npz",
+      "result": "MATCH",
+      "detail": "bytes=1219541 sha=962912eb013325b0"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-1.npz",
+      "result": "MATCH",
+      "detail": "bytes=1218745 sha=b79161e3cf4bf8ce"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-0.npz",
+      "result": "MATCH",
+      "detail": "bytes=1207321 sha=d5e5293b2e6a7694"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-1.npz",
+      "result": "MATCH",
+      "detail": "bytes=1207129 sha=7cb13aac8628e03f"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-0.npz",
+      "result": "MATCH",
+      "detail": "bytes=1243010 sha=a2d0ef52252651ee"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-1.npz",
+      "result": "MATCH",
+      "detail": "bytes=1240323 sha=b334aaf685acd191"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-0.npz",
+      "result": "MATCH",
+      "detail": "bytes=1202493 sha=1decfaddcac19761"
+    },
+    {
+      "id": "SRC-sintel_clip",
+      "description": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-1.npz",
+      "result": "MATCH",
+      "detail": "bytes=1188981 sha=38b40eee85feb431"
+    },
+    {
+      "id": "CLIP-alley_1-window-0.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=962912eb013325b0 measured=962912eb013325b0"
+    },
+    {
+      "id": "CRC-alley_1-window-0.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-alley_1-window-1.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=b79161e3cf4bf8ce measured=b79161e3cf4bf8ce"
+    },
+    {
+      "id": "CRC-alley_1-window-1.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-bamboo_1-window-0.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=d5e5293b2e6a7694 measured=d5e5293b2e6a7694"
+    },
+    {
+      "id": "CRC-bamboo_1-window-0.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-bamboo_1-window-1.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=7cb13aac8628e03f measured=7cb13aac8628e03f"
+    },
+    {
+      "id": "CRC-bamboo_1-window-1.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-market_2-window-0.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=a2d0ef52252651ee measured=a2d0ef52252651ee"
+    },
+    {
+      "id": "CRC-market_2-window-0.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-market_2-window-1.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=b334aaf685acd191 measured=b334aaf685acd191"
+    },
+    {
+      "id": "CRC-market_2-window-1.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-mountain_1-window-0.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=1decfaddcac19761 measured=1decfaddcac19761"
+    },
+    {
+      "id": "CRC-mountain_1-window-0.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CLIP-mountain_1-window-1.npz",
+      "description": "R106 declared SHA",
+      "result": "MATCH",
+      "detail": "declared=38b40eee85feb431 measured=38b40eee85feb431"
+    },
+    {
+      "id": "CRC-mountain_1-window-1.npz",
+      "description": "zip central-directory CRC",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CHKPT-sha",
+      "description": "official chkpt_00000 SHA vs R101",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "CHKPT-restored",
+      "description": "weights_only restore dict{network,decoder}/14 tensors",
+      "result": "MATCH",
+      "detail": "14"
+    },
+    {
+      "id": "CHKPT-finite",
+      "description": "all restored tensors finite",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "VERBATIM-device",
+      "description": "FlyVis upstream device line",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "VERBATIM-setdefault",
+      "description": "torch.set_default_device(device)",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "VERBATIM-reconstructed",
+      "description": "version.py explicitly NON-official reconstruction",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "IMPORT-count",
+      "description": "7 configurations measured",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "IMPORT-5fail",
+      "description": "5 non-sandbox configs FAIL",
+      "result": "MATCH",
+      "detail": "['A_base_default', 'B_ceg_default', 'C_ceg_cwd_sources', 'D_ceg_syspath_sources', 'E_base_syspath_sources']"
+    },
+    {
+      "id": "IMPORT-2ok",
+      "description": "2 sandbox configs OK",
+      "result": "MATCH",
+      "detail": "['F_ceg_r101_sandbox', 'G_ceg_sandbox_plus_deps']"
+    },
+    {
+      "id": "IMPORT-device-cpu",
+      "description": "both OK configs resolve flyvis.device=cpu",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "IMPORT-mps-available",
+      "description": "MPS available in all configs",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "IMPORT-cuda-absent",
+      "description": "CUDA unavailable in all configs",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "BOUNDARY-all-zero",
+      "description": "all 9 scientific-execution flags false",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "READINESS-no-gate-pass",
+      "description": "no readiness item claims a gate pass",
+      "result": "MATCH",
+      "detail": ""
+    },
+    {
+      "id": "SECRET-free",
+      "description": "9 credential/token/account/key patterns: 0 hits",
+      "result": "MATCH",
+      "detail": "[]"
+    },
+    {
+      "id": "LOCALPATH-registered",
+      "description": "local absolute paths registered, NOT claimed zero",
+      "result": "MATCH",
+      "detail": "19 hits, all '/Users/<user>/' interpreter/config paths; public sync copies must use '<local>/' (R109)."
+    },
+    {
+      "id": "STATE-unchanged",
+      "description": "pipeline-state.json SHA vs R107 frozen",
+      "result": "MATCH",
+      "detail": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d"
+    }
+  ],
+  "total": 45,
+  "matches": 45,
+  "mismatches": [],
+  "credential_hits": [],
+  "local_absolute_path_hits": 19,
+  "local_path_disposition": "Main-project internal artifacts only. Every public GitHub sync copy redacts them to '<local>/' before staging (R109). Zero local paths are claimed absent.",
+  "v1_false_mismatch_note": "First verify run merged credential and local-path patterns into one boolean and reported SECRET-free=MISMATCH with 17 hits; all 17 were '/Users/<user>/' paths and zero were credentials. Category split applied in this final version; both readings are registered, the v1 product is preserved as .v1-superseded.json (R116 v1/v2 precedent).",
+  "pipeline_state_sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+  "pipeline_state_bytes": 3723
+}

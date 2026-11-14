@@ -1,0 +1,89 @@
+{
+ "round": "R125",
+ "kind": "READONLY_FIRST_HAND_ROUTE_EXHAUSTION",
+ "raw_dir": "raw/",
+ "count": 13,
+ "total_bytes": 135063,
+ "items": [
+  {
+   "file": "api-details-v1.json",
+   "bytes": 64741,
+   "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+   "sha256_prefix16": "09abab7233199506"
+  },
+  {
+   "file": "api-jats.json",
+   "bytes": 196,
+   "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+   "sha256_prefix16": "80c3fe2ae1062abf"
+  },
+  {
+   "file": "biorxiv-v1-full.xml",
+   "bytes": 17,
+   "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "sha256_prefix16": "e395ad55dd18b1bf"
+  },
+  {
+   "file": "biorxiv-v1-source.xml",
+   "bytes": 17,
+   "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "sha256_prefix16": "e395ad55dd18b1bf"
+  },
+  {
+   "file": "biorxiv-v1-source2.xml",
+   "bytes": 17,
+   "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "sha256_prefix16": "e395ad55dd18b1bf"
+  },
+  {
+   "file": "connect-jats.xml",
+   "bytes": 58714,
+   "sha256": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+   "sha256_prefix16": "8501cd131ae26cb7"
+  },
+  {
+   "file": "epmc-core.json",
+   "bytes": 6367,
+   "sha256": "0875d916d4800f2bf9e972d2efe47f4b582fd15aaefeb5c834200988cd4dc9ac",
+   "sha256_prefix16": "0875d916d4800f2b"
+  },
+  {
+   "file": "epmc-fulltext-v2.xml",
+   "bytes": 150,
+   "sha256": "7638ab17cbd5b178781ea8184278412849c3120eb0b953b6a29cfa53fca7a6e7",
+   "sha256_prefix16": "7638ab17cbd5b178"
+  },
+  {
+   "file": "epmc-fulltext.xml",
+   "bytes": 150,
+   "sha256": "c240883c1ab45c19541f1ca4c89abe87ab99e8ff494aedaf99b2f91c0bb5f19c",
+   "sha256_prefix16": "c240883c1ab45c19"
+  },
+  {
+   "file": "jats-v12.xml",
+   "bytes": 17,
+   "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "sha256_prefix16": "e395ad55dd18b1bf"
+  },
+  {
+   "file": "jats-v3.xml",
+   "bytes": 17,
+   "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+   "sha256_prefix16": "e395ad55dd18b1bf"
+  },
+  {
+   "file": "wayback-cdx.json",
+   "bytes": 3,
+   "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+   "sha256_prefix16": "37517e5f3dc66819"
+  },
+  {
+   "file": "wayback-v1.html",
+   "bytes": 4657,
+   "sha256": "91cc23843494a080580be5f537716ecfb1007091754e50848487d6a0080d48c7",
+   "sha256_prefix16": "91cc23843494a080"
+  }
+ ],
+ "scope": "third-party public small text only; negative endpoints preserved verbatim",
+ "not": "NOT a gate pass, NOT a scientific result, NOT a forward pass, NOT a score change"
+}

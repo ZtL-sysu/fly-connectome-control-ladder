@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "round": "R120",
+  "generated_at_utc": "2026-11-14T00:40:52.710249+00:00",
+  "generated_at_local": "2026-11-14T08:40:52.710390+08:00",
+  "python": "<local>//miniconda3/bin/python",
+  "python_version": "3.14.6",
+  "boundary": "READ_ONLY_RECONCILIATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "network_requests": 0,
+  "forward_pass_performed": false,
+  "scientific_result_claimed": false,
+  "pre_existing_bytes_modified": 0,
+  "path_masking": "all absolute local paths masked to <local>/ in emitted JSON fields",
+  "notes": [
+    "The standing heartbeat instruction is an in-context automation prompt, NOT a disk file; disk restatements of its step-1 list are anchored in group A.",
+    "Double-gate readouts are byte-anchored inside this directory (R120-validator-out.json / R120-guard-check.txt), addressing R118 W7 / R119 M2 snapshot-scope defects.",
+    "Ledger / state SHA entries are snapshot-at-collection-time readings; standard append-only ledger bookkeeping after capture changes live hashes but no historical byte."
+  ],
+  "sources": [
+    {
+      "path": "GOAL-ITERATION-R107.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "goal-ledger.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "readonly-validator/validate_single_paper.py",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "guard/criteria-null-ladder.json",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "guard/ledger-null-ladder.json",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "R99-design-block-decision.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "pipeline-state.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime_epoch": 1794451392.5066164
+    },
+    {
+      "path": "guidance-pipeline-state.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 2096,
+      "sha256": "4051add8e7eca5aad6d85b81cd2225840a40844dd42004b4f5110d9563bcceab",
+      "mtime_epoch": 1794467757.816386
+    },
+    {
+      "path": "literature-baseline-matrix.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2",
+      "mtime_epoch": 1794473177.290743
+    },
+    {
+      "path": "gate-G0-evidence-review-R98.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 3742,
+      "sha256": "6bccf27dcb75dab8d45c37a80bd56724583ffc4e6d3859b7ef81b9b2bafd8ea9",
+      "mtime_epoch": 1794467725.068657
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "mtime_epoch": 1794514649.7575464
+    },
+    {
+      "path": "gate-G0-R107/R107-G0-PASS-CRITERION-REGISTER.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 5952,
+      "sha256": "1297b3f26f1d02cf7d12e765c0ba8c227bf9dfdb4881c53baf5cf55820241685",
+      "mtime_epoch": 1794520274.6761463
+    },
+    {
+      "path": "gate-G0-R107/R107-R1-R8-G0-CLOSURE-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15908,
+      "sha256": "960957561291eec207f6fbdadd94acd2a41ff2e7c0dc04646eb4aa9e0ad9a2af",
+      "mtime_epoch": 1794520177.2366915
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-R1-R8-G0-CLOSURE-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15908,
+      "sha256": "960957561291eec207f6fbdadd94acd2a41ff2e7c0dc04646eb4aa9e0ad9a2af",
+      "mtime_epoch": 1794520177.2366915
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9728,
+      "sha256": "d9c0e88345ff1a47e75c8c557b7556d2af107378b4c22e70abc71c7e763d9069",
+      "mtime_epoch": 1794520365.8072202
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-INDEPENDENT-REVIEW-RECOVERY.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15064,
+      "sha256": "e3b60a80d63f0a299c042df7dbc4f5a9c6ebd804c5839b8de672a47d6198e088",
+      "mtime_epoch": 1794521652.3714225
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/pipeline-state.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "mtime_epoch": 1794527067.8194063
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/R108-U6-W2-VERSIONED-CONTRACT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 7307,
+      "sha256": "5742e36f5d08e3e0fc8eaeb8cdada0b442c92e47b98233b7ef70968717fb54b0",
+      "mtime_epoch": 1794527019.0393806
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/R108-U6-W2-STATE-INPUT-MANIFEST.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 2361,
+      "sha256": "492b4d8b0788176102529eef558a5ac8dfd134355946a7d1073fea0c8aa27bcd",
+      "mtime_epoch": 1794527067.8191497
+    },
+    {
+      "path": "state-handoff-R108/R108-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9224,
+      "sha256": "0e3875250b1cb72c6743bad03b8561ffd824497a2786a667b6a837d579f1f2be",
+      "mtime_epoch": 1794528786.8996296
+    },
+    {
+      "path": "state-handoff-R110/R110-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9767,
+      "sha256": "4e41e97d1cfa981be99a4d2e543ab4e54e3bc83e72fd29ecd1b6598e3c817910",
+      "mtime_epoch": 1794543745.757888
+    },
+    {
+      "path": "state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "mtime_epoch": 1794568261.237396
+    },
+    {
+      "path": "state-handoff-R111/R111-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 13413,
+      "sha256": "bb2dc886f9bf75a6ddb549447b4ecae27885997f9b5a67c963358e349b1903a6",
+      "mtime_epoch": 1794568240.809487
+    },
+    {
+      "path": "gate-G0-R114/R114-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "mtime_epoch": 1794581364.193128
+    },
+    {
+      "path": "gate-G0-R115/R115-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "mtime_epoch": 1794587117.6902232
+    },
+    {
+      "path": "gate-G0-R116/R116-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "mtime_epoch": 1794593175.781969
+    },
+    {
+      "path": "exec-premise-R117/R117-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "mtime_epoch": 1794598372.8718681
+    },
+    {
+      "path": "gate-G0-R118/R118-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "mtime_epoch": 1794604833.4327528
+    },
+    {
+      "path": "review-protocol-R119/R119-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "mtime_epoch": 1794609964.4522092
+    },
+    {
+      "path": "reconciliation-R120/R120-validator-out.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14",
+      "mtime_epoch": 1794616752.0588899
+    },
+    {
+      "path": "reconciliation-R120/R120-guard-check.txt",
+      "base": "run",
+      "exists": true,
+      "bytes": 4757,
+      "sha256": "1ed11575c27548a39e856ae7a3f1ba6b85596de036f7a0c0c5d8f3f083814cff",
+      "mtime_epoch": 1794616752.3768528
+    }
+  ],
+  "group_A_standing_instruction_anchors": {
+    "A1_goal_frozen_contracts_clause": {
+      "needle": "`guidance-v2.md`, `execution-contract-v1/v2/v3.md`, `protocols/`",
+      "lines": [],
+      "v4_clause_lines": []
+    },
+    "A2_r107_handoff_step1b": {
+      "needle": "U6/W2 版本化契约处理 guidance handoff → 新建 f-research-v1 P0 state",
+      "closure_pkg_isolated_line": 175,
+      "closure_pkg_main_line": 175,
+      "round_audit_line": 116,
+      "recovery_line": 180
+    },
+    "A3_r106_no_g0_written_criterion": {
+      "needle": "全文没有 G0 的定义",
+      "lines": [
+        48
+      ],
+      "w13_lines": [
+        139
+      ],
+      "verdict_line": 1
+    },
+    "A4_r106_r1_r9": {
+      "r1_line": 161,
+      "r6_line": 166,
+      "r7_line": 167,
+      "r9_line": 56
+    },
+    "A5_r111_stale_prompt_note": {
+      "needle": "心跳 prompt 内嵌「交下轮」仍是 **R106 清单**",
+      "lines": [
+        26
+      ]
+    }
+  },
+  "group_B_on_disk_state": {
+    "B1_guidance_state": {
+      "pipeline": "f-guidance-builder-v1",
+      "contract_version": "v2",
+      "n_stages": 12,
+      "stage_ids": [
+        "CCFA-startup",
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "validation",
+        "handoff"
+      ],
+      "passed_ids": [
+        "CCFA-startup"
+      ],
+      "pending_ids": [
+        "G0",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7",
+        "G8",
+        "validation",
+        "handoff"
+      ],
+      "G0_status": "pending",
+      "G0_inputs_len": 0,
+      "G0_evidence_len": 0,
+      "G0_gate_verdict": "pending",
+      "p_stage_ids_present_in_guidance": []
+    },
+    "B2_r108_f_research_v1_p0_state": {
+      "pipeline": "f-research-v1",
+      "contract_version": "v1-R108-U6W2-draft",
+      "n_stages": 26,
+      "stage_ids": [
+        "P0",
+        "P1",
+        "P1A",
+        "P1B",
+        "P2",
+        "P3",
+        "P3A",
+        "P4",
+        "P5",
+        "P5A",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P21"
+      ],
+      "statuses": [
+        "pending"
+      ],
+      "n_history": 0,
+      "n_contract_entries": 2,
+      "contract_paths": [
+        "R108-U6-W2-VERSIONED-CONTRACT.md",
+        "R108-U6-W2-STATE-INPUT-MANIFEST.json"
+      ]
+    },
+    "B3_r108_versioned_contract": {
+      "bytes": 7307,
+      "draft_line": 0,
+      "boundary_line": 3,
+      "authorization_line": 5,
+      "not_p0_start_line": 5
+    },
+    "B4_r107_g0_pass_criterion_register": {
+      "status_line": 3,
+      "not_effective_line": 1,
+      "pc_ids": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6"
+      ],
+      "pc4_not_done_line": 42,
+      "pc5_not_done_line": 45,
+      "no_byte_change_line": 59
+    },
+    "B5_gap2_matrix_stale": {
+      "bytes": 9445,
+      "stale_open_question_lines": [],
+      "asset_unverified_lines": [
+        9
+      ],
+      "code_path_unverified_lines": [
+        10
+      ]
+    },
+    "B6_validator_live_config": {
+      "default_threshold_line": 0,
+      "ge_operator_line": 0,
+      "score_meets_threshold_line": 0,
+      "contract_line": 0
+    },
+    "B7_guard_a6_dual_wording": {
+      "criteria_ge7_line": 0,
+      "criteria_ge7_text_line": 0,
+      "criteria_cmd_ge_line": 0,
+      "ledger_gt8_text_line": 0,
+      "ledger_cmd_gt_line": 0
+    },
+    "B8_double_gate_readouts_this_round": {
+      "validator": {
+        "contract": "R107 single paper, independent full review Overall >= 7.0",
+        "threshold": 7.0,
+        "acceptance_rule": "governing independent Overall must be >= threshold (R107); equality QUALIFIES",
+        "overall_score": 6.0,
+        "governing_review": "LATEST independent full review governs; >= threshold; no self-authored review counts",
+        "score_gt_threshold": false,
+        "score_gt_threshold_note": "R107: backward-compatible field name; value now uses >= (equality qualifies)",
+        "score_meets_threshold": false,
+        "comparison_operator": ">=",
+        "independent_review_governs": true,
+        "checks": {
+          "D1_guidance_validated": {
+            "pass": true,
+            "detail": "guidance-v2.md=12631B, packet-v2=True, validation ledger-v2=True"
+          },
+          "D2_tex_pdf_pipeline_all_passed": {
+            "pass": false,
+            "detail": "stages=26, not_passed=['P9', 'P10', 'P11', 'P12', 'P13', 'P14', 'P15', 'P16', 'P17', 'P18', 'P19', 'P20', 'P21'], md_pending_rows=52, pdf=2149921B"
+          },
+          "D3_independent_full_review": {
+            "pass": false,
+            "detail": "governing=6.0 in paper-null-ladder-r95-independent-review-20261111.md (**Overall:** 6); LATEST independent full review governs (supersedes earlier reviews after revision); all_scores=[7.5, 8.2, 7.0, 7.5, 7.5, 6.9, 6.3, 5.4, 5.2, 6.0]"
+          },
+          "D4_novix_experiment_evidence": {
+            "pass": true,
+            "detail": "present=15/15, missing=[], sizes={'metrics.json': 46846, 'metrics_completed.json': 35660, 'run.log': 2848, 'config.json': 2931, 'summary.txt': 3108, 'metrics_pathblock.json': 16801, 'config_pathblock.json': 8251}"
+          },
+          "D5_six_sections_traceability": {
+            "pass": false,
+            "detail": "sections=6/6 ['Introduction', 'Related Work', 'Method', 'Experiments and Results', 'Discussion', 'Conclusion'], traceability=True, claim_evidence_matrix=False"
+          }
+        },
+        "all_pass": false,
+        "verdict": "NOT_QUALIFIED"
+      },
+      "guard_check_sha256": "1ed11575c27548a39e856ae7a3f1ba6b85596de036f7a0c0c5d8f3f083814cff",
+      "guard_incomplete_line": 9,
+      "guard_a2_fail_line": 31,
+      "guard_a6_fail_line": 39,
+      "guard_s_pending_count": 7,
+      "guard_action_sequence_line": 51
+    },
+    "B9_review_dir_governing": {
+      "newest_review_file": null,
+      "numeric_overall_lines_after_r95": [],
+      "newest_idea_review_file": null
+    }
+  },
+  "group_C_decision_debt_anchors": {
+    "C1_r111_five_decisions": {
+      "D-1_line": 32,
+      "D-2_line": 38,
+      "D-3_line": 43,
+      "D-4_line": 48,
+      "D-5_line": 53
+    },
+    "C2_r111_round_decision_table": {
+      "header_line": 105,
+      "a6_row_line": 112,
+      "g0_row_line": 113,
+      "confirm_row_line": 114
+    },
+    "C3_r114_gap4": {
+      "line": 61
+    },
+    "C4_r116_gap1_remaining_three": {
+      "line": 85,
+      "needle": "checkpoint 权重分发条款、natural clips 独立许可文本",
+      "present": true
+    },
+    "C5_r117_p3_preconditions": {
+      "line": 75
+    },
+    "C6_r118_registry_matrix": {
+      "line": 61
+    },
+    "C7_r119_versioned_contract": {
+      "v4_lines": [
+        54,
+        57,
+        121
+      ],
+      "decision_lines": [
+        26,
+        140
+      ]
+    },
+    "C8_r99_confirmation_block": {
+      "line": 0,
+      "k45_line": 0
+    }
+  }
+}

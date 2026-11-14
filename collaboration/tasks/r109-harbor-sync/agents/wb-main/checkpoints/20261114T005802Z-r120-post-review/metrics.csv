@@ -1,0 +1,37 @@
+﻿metric,value,unit,scope,kind
+independent_review_bytes,23074,bytes,R120-INDEPENDENT-REVIEW.md,measurement
+independent_review_sha256_prefix,c7c613c54bd08cad,sha256_prefix,R120-INDEPENDENT-REVIEW.md,measurement
+independent_review_write_count,1,writes,single final write no intermediate state,measurement
+claims_groups_matching,10,groups,A-H J L,measurement
+claims_groups_mismatching,2,groups,I and K,measurement
+overclaim_categories_confirmed,0,categories,(a)-(l),measurement
+overclaim_categories_refuted,12,categories,(a)-(l),measurement
+defects_total,7,defects,accepted append-only,measurement
+defects_high,1,defects,W1,measurement
+defects_medium,3,defects,W2 W3 W4,measurement
+defects_low,3,defects,W5 W6 W7,measurement
+defects_fabrication,0,defects,reviewer finding,measurement
+defects_data_inconsistency,0,defects,reviewer finding,measurement
+reviewer_scan_files,13704,files,isolated sub-agent scan,measurement
+reviewer_literal_overall_lines,647,lines,isolated sub-agent scan,measurement
+reviewer_inline_numeric_lines,109,lines,isolated sub-agent scan,measurement
+reviewer_line_start_numeric_lines,14,lines,isolated sub-agent scan,measurement
+i2_evidence_scan_files,13706,files,R120-I2-EVIDENCE.json,measurement
+i2_evidence_literal_overall_lines,662,lines,R120-I2-EVIDENCE.json,measurement
+i2_evidence_inline_numeric_lines,109,lines,R120-I2-EVIDENCE.json,measurement
+i2_evidence_line_start_numeric_lines,14,lines,R120-I2-EVIDENCE.json,measurement
+i2_evidence_line_start_numeric_files,12,files,R120-I2-EVIDENCE.json,measurement
+i2_newer_than_r95_files_with_inline_numeric,39,files,post-review first-hand recomputation,measurement
+i2_newer_than_r95_inline_numeric_lines,83,lines,post-review first-hand recomputation,measurement
+i2_narrowed_claim_qualifying_new_reviews,0,files,qualifying_files empty,measurement
+i2_narrowed_claim_supported,1,boolean,supported=true,measurement
+r107_closure_copies_on_disk,3,files,byte-identical SHA16 960957561291,measurement
+r107_closure_copies_in_evidence_set,2,files,R120 SOURCES list,measurement
+independent_report_local_path_hits,2,hits,reason original not uploaded,measurement
+public_upload_credential_hits,0,hits,full repo strict scan,measurement
+public_upload_local_absolute_path_hits,0,hits,full repo strict scan,measurement
+public_upload_real_score_line_hits,0,hits,full repo strict scan,measurement
+papers_qualified,0,papers,governing unchanged,measurement
+gate_promotions,0,gates,this round,measurement
+scientific_results_claimed,0,results,this round,measurement
+forward_passes_performed,0,passes,this round,measurement

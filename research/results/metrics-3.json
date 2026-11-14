@@ -1,0 +1,1770 @@
+{
+  "meta": {
+    "generated_by": "scripts/i1_null_ladder_smoke.py",
+    "python": "conda /Users/xhf/miniconda3/bin/python",
+    "runtime_seconds": 4.6262,
+    "synthetic_fallback": true,
+    "not_malecns": true,
+    "not_real_visual_benchmark": true,
+    "not_4090": true
+  },
+  "config": {
+    "purpose": "I1 null-ladder methodology smoke (synthetic, CPU, not a CVPR result)",
+    "n_nodes": 64,
+    "n_modules": 4,
+    "n_inputs": 16,
+    "time_steps": 10,
+    "n_train": 240,
+    "n_test": 120,
+    "seeds": [
+      11,
+      17,
+      23,
+      29,
+      37
+    ],
+    "spectral_radius_matched": 0.85,
+    "ridge_lambda": 0.01,
+    "noise": 2.0,
+    "common_scale": 0.4,
+    "local_scale": 1.5,
+    "signal_version": 2,
+    "feature": "time_mean_plus_final_state",
+    "variants": [
+      {
+        "p_in": 0.18,
+        "p_out": 0.07,
+        "n_triads": 0
+      },
+      {
+        "p_in": 0.22,
+        "p_out": 0.06,
+        "n_triads": 8
+      },
+      {
+        "p_in": 0.26,
+        "p_out": 0.05,
+        "n_triads": 16
+      },
+      {
+        "p_in": 0.3,
+        "p_out": 0.04,
+        "n_triads": 24
+      },
+      {
+        "p_in": 0.34,
+        "p_out": 0.03,
+        "n_triads": 32
+      },
+      {
+        "p_in": 0.38,
+        "p_out": 0.02,
+        "n_triads": 40
+      }
+    ],
+    "quick": false,
+    "null_levels": [
+      "ref",
+      "L0_er",
+      "L1_degree",
+      "L2_module",
+      "L3_triad",
+      "L4_samegen"
+    ],
+    "controls": [
+      "random_label_negative_control",
+      "shuffled_module_input_alignment_control"
+    ]
+  },
+  "per_variant": [
+    {
+      "variant_index": 0,
+      "variant": {
+        "p_in": 0.18,
+        "p_out": 0.07,
+        "n_triads": 0
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.1701,
+        "triad_path_count_ref": 291.0,
+        "triad_z_vs_L1": 1.8227,
+        "spectral_gap_ratio": 0.5878,
+        "edges": 416,
+        "triad_L3_residual_mean": 290.6,
+        "triad_L3_target": 291.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.8917,
+            0.8417,
+            0.825,
+            0.8083,
+            0.875
+          ],
+          "mean": 0.8483,
+          "sd": 0.0309
+        },
+        "L0_er": {
+          "per_seed": [
+            0.9167,
+            0.8667,
+            0.8333,
+            0.8583,
+            0.85
+          ],
+          "mean": 0.865,
+          "sd": 0.0281
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.8583,
+            0.85,
+            0.875,
+            0.8,
+            0.9083
+          ],
+          "mean": 0.8583,
+          "sd": 0.0354
+        },
+        "L2_module": {
+          "per_seed": [
+            0.8917,
+            0.8917,
+            0.875,
+            0.7917,
+            0.8083
+          ],
+          "mean": 0.8517,
+          "sd": 0.0429
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.8167,
+            0.8833,
+            0.8333,
+            0.7833,
+            0.8583
+          ],
+          "mean": 0.835,
+          "sd": 0.0343
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.8917,
+            0.8333,
+            0.9083,
+            0.8583,
+            0.9083
+          ],
+          "mean": 0.88,
+          "sd": 0.0296
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.2833,
+            0.325,
+            0.1833,
+            0.2833,
+            0.25
+          ],
+          "mean": 0.265,
+          "sd": 0.0473
+        },
+        "L0_er": {
+          "per_seed": [
+            0.25,
+            0.275,
+            0.225,
+            0.2167,
+            0.2417
+          ],
+          "mean": 0.2417,
+          "sd": 0.0204
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.2583,
+            0.3,
+            0.2,
+            0.2583,
+            0.1917
+          ],
+          "mean": 0.2417,
+          "sd": 0.0405
+        },
+        "L2_module": {
+          "per_seed": [
+            0.2583,
+            0.3083,
+            0.2167,
+            0.2083,
+            0.1417
+          ],
+          "mean": 0.2267,
+          "sd": 0.0554
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.2833,
+            0.2667,
+            0.2167,
+            0.25,
+            0.1917
+          ],
+          "mean": 0.2417,
+          "sd": 0.0333
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.25,
+            0.2917,
+            0.2,
+            0.3,
+            0.2167
+          ],
+          "mean": 0.2517,
+          "sd": 0.0396
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.8833,
+            0.8417,
+            0.8833,
+            0.8833,
+            0.8667
+          ],
+          "mean": 0.8717,
+          "sd": 0.0163
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8667,
+            0.8333,
+            0.8917,
+            0.8417,
+            0.8583
+          ],
+          "mean": 0.8583,
+          "sd": 0.0204
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            -0.025,
+            -0.025,
+            -0.0083,
+            -0.05,
+            0.025
+          ],
+          "mean": -0.0167,
+          "sd": 0.0247,
+          "ci95": [
+            -0.0367,
+            0.005
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.0333,
+            -0.0083,
+            -0.05,
+            0.0083,
+            -0.0333
+          ],
+          "mean": -0.01,
+          "sd": 0.0295,
+          "ci95": [
+            -0.035,
+            0.015
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            0.0,
+            -0.05,
+            -0.05,
+            0.0167,
+            0.0667
+          ],
+          "mean": -0.0033,
+          "sd": 0.044,
+          "ci95": [
+            -0.04,
+            0.0333
+          ],
+          "ci_includes_zero": true
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.075,
+            -0.0417,
+            -0.0083,
+            0.025,
+            0.0167
+          ],
+          "mean": 0.0133,
+          "sd": 0.0386,
+          "ci95": [
+            -0.0183,
+            0.0483
+          ],
+          "ci_includes_zero": true
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.0,
+            0.0083,
+            -0.0833,
+            -0.05,
+            -0.0333
+          ],
+          "mean": -0.0317,
+          "sd": 0.0335,
+          "ci95": [
+            -0.06,
+            -0.0033
+          ],
+          "ci_includes_zero": false
+        }
+      },
+      "shuffled_delta_mean": 0.0133
+    },
+    {
+      "variant_index": 1,
+      "variant": {
+        "p_in": 0.22,
+        "p_out": 0.06,
+        "n_triads": 8
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.3008,
+        "triad_path_count_ref": 310.0,
+        "triad_z_vs_L1": 5.3374,
+        "spectral_gap_ratio": 0.5331,
+        "edges": 407,
+        "triad_L3_residual_mean": 310.6,
+        "triad_L3_target": 310.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.9,
+            0.8667,
+            0.8833,
+            0.825,
+            0.8833
+          ],
+          "mean": 0.8717,
+          "sd": 0.0256
+        },
+        "L0_er": {
+          "per_seed": [
+            0.875,
+            0.85,
+            0.8417,
+            0.8917,
+            0.8333
+          ],
+          "mean": 0.8583,
+          "sd": 0.0217
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.85,
+            0.85,
+            0.8167,
+            0.8583,
+            0.9
+          ],
+          "mean": 0.855,
+          "sd": 0.0267
+        },
+        "L2_module": {
+          "per_seed": [
+            0.875,
+            0.8667,
+            0.8833,
+            0.8083,
+            0.8083
+          ],
+          "mean": 0.8483,
+          "sd": 0.0331
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.8833,
+            0.925,
+            0.8667,
+            0.8167,
+            0.9
+          ],
+          "mean": 0.8783,
+          "sd": 0.0364
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.9083,
+            0.8917,
+            0.8833,
+            0.85,
+            0.85
+          ],
+          "mean": 0.8767,
+          "sd": 0.0232
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.2583,
+            0.2417,
+            0.2333,
+            0.2583,
+            0.2333
+          ],
+          "mean": 0.245,
+          "sd": 0.0113
+        },
+        "L0_er": {
+          "per_seed": [
+            0.175,
+            0.2417,
+            0.2417,
+            0.25,
+            0.2
+          ],
+          "mean": 0.2217,
+          "sd": 0.0292
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.2583,
+            0.3333,
+            0.2667,
+            0.2667,
+            0.1583
+          ],
+          "mean": 0.2567,
+          "sd": 0.0561
+        },
+        "L2_module": {
+          "per_seed": [
+            0.275,
+            0.2417,
+            0.3,
+            0.2667,
+            0.2083
+          ],
+          "mean": 0.2583,
+          "sd": 0.0312
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.25,
+            0.2083,
+            0.25,
+            0.25,
+            0.275
+          ],
+          "mean": 0.2467,
+          "sd": 0.0215
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.2,
+            0.275,
+            0.1833,
+            0.3333,
+            0.1833
+          ],
+          "mean": 0.235,
+          "sd": 0.0597
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.875,
+            0.8667,
+            0.9,
+            0.8167,
+            0.9
+          ],
+          "mean": 0.8717,
+          "sd": 0.0306
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8417,
+            0.825,
+            0.9083,
+            0.85,
+            0.8333
+          ],
+          "mean": 0.8517,
+          "sd": 0.0295
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            0.025,
+            0.0167,
+            0.0417,
+            -0.0667,
+            0.05
+          ],
+          "mean": 0.0133,
+          "sd": 0.0417,
+          "ci95": [
+            -0.0267,
+            0.0417
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.05,
+            0.0167,
+            0.0667,
+            -0.0333,
+            -0.0167
+          ],
+          "mean": 0.0167,
+          "sd": 0.038,
+          "ci95": [
+            -0.02,
+            0.05
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            0.025,
+            0.0,
+            0.0,
+            0.0167,
+            0.075
+          ],
+          "mean": 0.0233,
+          "sd": 0.0276,
+          "ci95": [
+            0.0033,
+            0.05
+          ],
+          "ci_includes_zero": false
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.0167,
+            -0.0583,
+            0.0167,
+            0.0083,
+            -0.0167
+          ],
+          "mean": -0.0067,
+          "sd": 0.0286,
+          "ci95": [
+            -0.035,
+            0.015
+          ],
+          "ci_includes_zero": true
+        },
+        "L4_samegen": {
+          "per_seed": [
+            -0.0083,
+            -0.025,
+            0.0,
+            -0.025,
+            0.0333
+          ],
+          "mean": -0.005,
+          "sd": 0.0215,
+          "ci95": [
+            -0.0217,
+            0.015
+          ],
+          "ci_includes_zero": true
+        }
+      },
+      "shuffled_delta_mean": 0.02
+    },
+    {
+      "variant_index": 2,
+      "variant": {
+        "p_in": 0.26,
+        "p_out": 0.05,
+        "n_triads": 16
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.3902,
+        "triad_path_count_ref": 463.0,
+        "triad_z_vs_L1": 47.9326,
+        "spectral_gap_ratio": 0.4594,
+        "edges": 440,
+        "triad_L3_residual_mean": 463.0,
+        "triad_L3_target": 463.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.85,
+            0.8833,
+            0.9,
+            0.825,
+            0.8833
+          ],
+          "mean": 0.8683,
+          "sd": 0.0271
+        },
+        "L0_er": {
+          "per_seed": [
+            0.9167,
+            0.8833,
+            0.8917,
+            0.825,
+            0.8833
+          ],
+          "mean": 0.88,
+          "sd": 0.0301
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.8917,
+            0.875,
+            0.8333,
+            0.8,
+            0.825
+          ],
+          "mean": 0.845,
+          "sd": 0.0336
+        },
+        "L2_module": {
+          "per_seed": [
+            0.875,
+            0.925,
+            0.85,
+            0.8333,
+            0.8417
+          ],
+          "mean": 0.865,
+          "sd": 0.0331
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.9,
+            0.9,
+            0.8667,
+            0.85,
+            0.9
+          ],
+          "mean": 0.8833,
+          "sd": 0.0211
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.8833,
+            0.8333,
+            0.8583,
+            0.8583,
+            0.8833
+          ],
+          "mean": 0.8633,
+          "sd": 0.0187
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.35,
+            0.3333,
+            0.2583,
+            0.2833,
+            0.2167
+          ],
+          "mean": 0.2883,
+          "sd": 0.0488
+        },
+        "L0_er": {
+          "per_seed": [
+            0.225,
+            0.2083,
+            0.2917,
+            0.225,
+            0.2167
+          ],
+          "mean": 0.2333,
+          "sd": 0.0298
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.2833,
+            0.2583,
+            0.25,
+            0.275,
+            0.1917
+          ],
+          "mean": 0.2517,
+          "sd": 0.0322
+        },
+        "L2_module": {
+          "per_seed": [
+            0.275,
+            0.2417,
+            0.3,
+            0.2333,
+            0.2833
+          ],
+          "mean": 0.2667,
+          "sd": 0.0253
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.225,
+            0.225,
+            0.1917,
+            0.2417,
+            0.2083
+          ],
+          "mean": 0.2183,
+          "sd": 0.017
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.3083,
+            0.2167,
+            0.2083,
+            0.2083,
+            0.2083
+          ],
+          "mean": 0.23,
+          "sd": 0.0393
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.8333,
+            0.825,
+            0.875,
+            0.7917,
+            0.8333
+          ],
+          "mean": 0.8317,
+          "sd": 0.0266
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8417,
+            0.85,
+            0.8083,
+            0.8333,
+            0.85
+          ],
+          "mean": 0.8367,
+          "sd": 0.0155
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            -0.0667,
+            0.0,
+            0.0083,
+            0.0,
+            0.0
+          ],
+          "mean": -0.0117,
+          "sd": 0.0277,
+          "ci95": [
+            -0.04,
+            0.005
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            -0.0417,
+            0.0083,
+            0.0667,
+            0.025,
+            0.0583
+          ],
+          "mean": 0.0233,
+          "sd": 0.0389,
+          "ci95": [
+            -0.0117,
+            0.0533
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            -0.025,
+            -0.0417,
+            0.05,
+            -0.0083,
+            0.0417
+          ],
+          "mean": 0.0033,
+          "sd": 0.0364,
+          "ci95": [
+            -0.0283,
+            0.0333
+          ],
+          "ci_includes_zero": true
+        },
+        "L3_triad": {
+          "per_seed": [
+            -0.05,
+            -0.0167,
+            0.0333,
+            -0.025,
+            -0.0167
+          ],
+          "mean": -0.015,
+          "sd": 0.0271,
+          "ci95": [
+            -0.0367,
+            0.0117
+          ],
+          "ci_includes_zero": true
+        },
+        "L4_samegen": {
+          "per_seed": [
+            -0.0333,
+            0.05,
+            0.0417,
+            -0.0333,
+            0.0
+          ],
+          "mean": 0.005,
+          "sd": 0.0356,
+          "ci95": [
+            -0.0267,
+            0.0367
+          ],
+          "ci_includes_zero": true
+        }
+      },
+      "shuffled_delta_mean": -0.005
+    },
+    {
+      "variant_index": 3,
+      "variant": {
+        "p_in": 0.3,
+        "p_out": 0.04,
+        "n_triads": 24
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.4601,
+        "triad_path_count_ref": 715.0,
+        "triad_z_vs_L1": 24.4439,
+        "spectral_gap_ratio": 0.3042,
+        "edges": 469,
+        "triad_L3_residual_mean": 714.4,
+        "triad_L3_target": 715.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.85,
+            0.825,
+            0.8833,
+            0.8,
+            0.875
+          ],
+          "mean": 0.8467,
+          "sd": 0.031
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8583,
+            0.875,
+            0.8583,
+            0.8,
+            0.9
+          ],
+          "mean": 0.8583,
+          "sd": 0.0329
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.8833,
+            0.875,
+            0.8917,
+            0.8083,
+            0.8417
+          ],
+          "mean": 0.86,
+          "sd": 0.0309
+        },
+        "L2_module": {
+          "per_seed": [
+            0.8917,
+            0.8583,
+            0.875,
+            0.8167,
+            0.9083
+          ],
+          "mean": 0.87,
+          "sd": 0.0314
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.8583,
+            0.85,
+            0.8583,
+            0.8,
+            0.8833
+          ],
+          "mean": 0.85,
+          "sd": 0.0274
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.8833,
+            0.8417,
+            0.85,
+            0.8667,
+            0.925
+          ],
+          "mean": 0.8733,
+          "sd": 0.0295
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.25,
+            0.25,
+            0.225,
+            0.275,
+            0.2167
+          ],
+          "mean": 0.2433,
+          "sd": 0.0207
+        },
+        "L0_er": {
+          "per_seed": [
+            0.2667,
+            0.3,
+            0.2,
+            0.275,
+            0.2417
+          ],
+          "mean": 0.2567,
+          "sd": 0.0339
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.2417,
+            0.2667,
+            0.225,
+            0.2583,
+            0.2667
+          ],
+          "mean": 0.2517,
+          "sd": 0.0162
+        },
+        "L2_module": {
+          "per_seed": [
+            0.2333,
+            0.2917,
+            0.2667,
+            0.2833,
+            0.2
+          ],
+          "mean": 0.255,
+          "sd": 0.034
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.2583,
+            0.3,
+            0.2,
+            0.3,
+            0.1833
+          ],
+          "mean": 0.2483,
+          "sd": 0.049
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.225,
+            0.1917,
+            0.2167,
+            0.275,
+            0.225
+          ],
+          "mean": 0.2267,
+          "sd": 0.0271
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.875,
+            0.8417,
+            0.875,
+            0.7917,
+            0.875
+          ],
+          "mean": 0.8517,
+          "sd": 0.0327
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8833,
+            0.8917,
+            0.8167,
+            0.85,
+            0.825
+          ],
+          "mean": 0.8533,
+          "sd": 0.0301
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            -0.0083,
+            -0.05,
+            0.025,
+            0.0,
+            -0.025
+          ],
+          "mean": -0.0117,
+          "sd": 0.0251,
+          "ci95": [
+            -0.035,
+            0.01
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            -0.0333,
+            -0.05,
+            -0.0083,
+            -0.0083,
+            0.0333
+          ],
+          "mean": -0.0133,
+          "sd": 0.0282,
+          "ci95": [
+            -0.035,
+            0.0117
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            -0.0417,
+            -0.0333,
+            0.0083,
+            -0.0167,
+            -0.0333
+          ],
+          "mean": -0.0233,
+          "sd": 0.0178,
+          "ci95": [
+            -0.0367,
+            -0.0067
+          ],
+          "ci_includes_zero": false
+        },
+        "L3_triad": {
+          "per_seed": [
+            -0.0083,
+            -0.025,
+            0.025,
+            0.0,
+            -0.0083
+          ],
+          "mean": -0.0033,
+          "sd": 0.0163,
+          "ci95": [
+            -0.0167,
+            0.0117
+          ],
+          "ci_includes_zero": true
+        },
+        "L4_samegen": {
+          "per_seed": [
+            -0.0333,
+            -0.0167,
+            0.0333,
+            -0.0667,
+            -0.05
+          ],
+          "mean": -0.0267,
+          "sd": 0.0343,
+          "ci95": [
+            -0.0533,
+            0.0033
+          ],
+          "ci_includes_zero": true
+        }
+      },
+      "shuffled_delta_mean": -0.0017
+    },
+    {
+      "variant_index": 4,
+      "variant": {
+        "p_in": 0.34,
+        "p_out": 0.03,
+        "n_triads": 32
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.5842,
+        "triad_path_count_ref": 769.0,
+        "triad_z_vs_L1": 24.1844,
+        "spectral_gap_ratio": 0.1559,
+        "edges": 441,
+        "triad_L3_residual_mean": 769.2,
+        "triad_L3_target": 769.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.8667,
+            0.8917,
+            0.8417,
+            0.8667,
+            0.8833
+          ],
+          "mean": 0.87,
+          "sd": 0.0172
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8667,
+            0.8833,
+            0.8333,
+            0.9,
+            0.9
+          ],
+          "mean": 0.8767,
+          "sd": 0.0249
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.875,
+            0.8667,
+            0.8417,
+            0.8083,
+            0.8667
+          ],
+          "mean": 0.8517,
+          "sd": 0.0244
+        },
+        "L2_module": {
+          "per_seed": [
+            0.8833,
+            0.8417,
+            0.875,
+            0.8417,
+            0.8583
+          ],
+          "mean": 0.86,
+          "sd": 0.017
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.8583,
+            0.8583,
+            0.8417,
+            0.8667,
+            0.8333
+          ],
+          "mean": 0.8517,
+          "sd": 0.0122
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.8417,
+            0.8417,
+            0.8833,
+            0.85,
+            0.8583
+          ],
+          "mean": 0.855,
+          "sd": 0.0155
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.2333,
+            0.2917,
+            0.2333,
+            0.25,
+            0.225
+          ],
+          "mean": 0.2467,
+          "sd": 0.0239
+        },
+        "L0_er": {
+          "per_seed": [
+            0.2667,
+            0.2417,
+            0.225,
+            0.225,
+            0.2
+          ],
+          "mean": 0.2317,
+          "sd": 0.022
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.2333,
+            0.1917,
+            0.2333,
+            0.1917,
+            0.175
+          ],
+          "mean": 0.205,
+          "sd": 0.0239
+        },
+        "L2_module": {
+          "per_seed": [
+            0.2583,
+            0.225,
+            0.2917,
+            0.2417,
+            0.2583
+          ],
+          "mean": 0.255,
+          "sd": 0.0221
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.275,
+            0.225,
+            0.2667,
+            0.25,
+            0.2
+          ],
+          "mean": 0.2433,
+          "sd": 0.0276
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.3083,
+            0.2833,
+            0.2583,
+            0.275,
+            0.2083
+          ],
+          "mean": 0.2667,
+          "sd": 0.0333
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.8583,
+            0.875,
+            0.8667,
+            0.8333,
+            0.875
+          ],
+          "mean": 0.8617,
+          "sd": 0.0155
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8583,
+            0.8083,
+            0.8667,
+            0.875,
+            0.8417
+          ],
+          "mean": 0.85,
+          "sd": 0.0236
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            0.0,
+            0.0083,
+            0.0083,
+            -0.0333,
+            -0.0167
+          ],
+          "mean": -0.0067,
+          "sd": 0.0162,
+          "ci95": [
+            -0.0217,
+            0.0067
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            -0.0083,
+            0.025,
+            0.0,
+            0.0583,
+            0.0167
+          ],
+          "mean": 0.0183,
+          "sd": 0.0232,
+          "ci95": [
+            0.0,
+            0.0383
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            -0.0167,
+            0.05,
+            -0.0333,
+            0.025,
+            0.025
+          ],
+          "mean": 0.01,
+          "sd": 0.0305,
+          "ci95": [
+            -0.015,
+            0.035
+          ],
+          "ci_includes_zero": true
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.0083,
+            0.0333,
+            0.0,
+            0.0,
+            0.05
+          ],
+          "mean": 0.0183,
+          "sd": 0.02,
+          "ci95": [
+            0.0017,
+            0.0367
+          ],
+          "ci_includes_zero": false
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.025,
+            0.05,
+            -0.0417,
+            0.0167,
+            0.025
+          ],
+          "mean": 0.015,
+          "sd": 0.0305,
+          "ci95": [
+            -0.015,
+            0.0383
+          ],
+          "ci_includes_zero": true
+        }
+      },
+      "shuffled_delta_mean": 0.0117
+    },
+    {
+      "variant_index": 5,
+      "variant": {
+        "p_in": 0.38,
+        "p_out": 0.02,
+        "n_triads": 40
+      },
+      "graph_metrics": {
+        "modularity_Q": 0.639,
+        "triad_path_count_ref": 1314.0,
+        "triad_z_vs_L1": 106.248,
+        "spectral_gap_ratio": 0.1589,
+        "edges": 488,
+        "triad_L3_residual_mean": 1313.8,
+        "triad_L3_target": 1314.0
+      },
+      "accuracy": {
+        "ref": {
+          "per_seed": [
+            0.875,
+            0.8583,
+            0.8833,
+            0.8333,
+            0.8833
+          ],
+          "mean": 0.8667,
+          "sd": 0.019
+        },
+        "L0_er": {
+          "per_seed": [
+            0.8917,
+            0.875,
+            0.8583,
+            0.8583,
+            0.8417
+          ],
+          "mean": 0.865,
+          "sd": 0.017
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.8917,
+            0.8583,
+            0.875,
+            0.8417,
+            0.8667
+          ],
+          "mean": 0.8667,
+          "sd": 0.0167
+        },
+        "L2_module": {
+          "per_seed": [
+            0.8333,
+            0.85,
+            0.875,
+            0.8417,
+            0.8417
+          ],
+          "mean": 0.8483,
+          "sd": 0.0143
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.8917,
+            0.85,
+            0.8333,
+            0.8167,
+            0.875
+          ],
+          "mean": 0.8533,
+          "sd": 0.0272
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.8667,
+            0.8167,
+            0.8667,
+            0.85,
+            0.8833
+          ],
+          "mean": 0.8567,
+          "sd": 0.0226
+        }
+      },
+      "random_label_control": {
+        "ref": {
+          "per_seed": [
+            0.2583,
+            0.275,
+            0.1917,
+            0.225,
+            0.2417
+          ],
+          "mean": 0.2383,
+          "sd": 0.0287
+        },
+        "L0_er": {
+          "per_seed": [
+            0.3167,
+            0.2333,
+            0.2583,
+            0.2333,
+            0.2417
+          ],
+          "mean": 0.2567,
+          "sd": 0.0314
+        },
+        "L1_degree": {
+          "per_seed": [
+            0.25,
+            0.2,
+            0.2417,
+            0.2083,
+            0.225
+          ],
+          "mean": 0.225,
+          "sd": 0.019
+        },
+        "L2_module": {
+          "per_seed": [
+            0.2417,
+            0.3333,
+            0.2333,
+            0.2917,
+            0.2167
+          ],
+          "mean": 0.2633,
+          "sd": 0.043
+        },
+        "L3_triad": {
+          "per_seed": [
+            0.275,
+            0.225,
+            0.225,
+            0.2333,
+            0.2167
+          ],
+          "mean": 0.235,
+          "sd": 0.0207
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.2833,
+            0.2667,
+            0.2583,
+            0.2333,
+            0.2083
+          ],
+          "mean": 0.25,
+          "sd": 0.0264
+        }
+      },
+      "no_graph_control": {
+        "per_seed": [
+          0.8417,
+          0.8833,
+          0.9,
+          0.8417,
+          0.875
+        ],
+        "mean": 0.8683,
+        "sd": 0.0232
+      },
+      "shuffled_alignment_control": {
+        "ref": {
+          "per_seed": [
+            0.8667,
+            0.8667,
+            0.8583,
+            0.85,
+            0.8667
+          ],
+          "mean": 0.8617,
+          "sd": 0.0067
+        },
+        "L0_er": {
+          "per_seed": [
+            0.825,
+            0.8417,
+            0.8917,
+            0.7833,
+            0.8667
+          ],
+          "mean": 0.8417,
+          "sd": 0.0369
+        }
+      },
+      "deltas_ref_minus_level": {
+        "L0_er": {
+          "per_seed": [
+            -0.0167,
+            -0.0167,
+            0.025,
+            -0.025,
+            0.0417
+          ],
+          "mean": 0.0017,
+          "sd": 0.0266,
+          "ci95": [
+            -0.02,
+            0.0267
+          ],
+          "ci_includes_zero": true
+        },
+        "L1_degree": {
+          "per_seed": [
+            -0.0167,
+            0.0,
+            0.0083,
+            -0.0083,
+            0.0167
+          ],
+          "mean": -0.0,
+          "sd": 0.0118,
+          "ci95": [
+            -0.01,
+            0.01
+          ],
+          "ci_includes_zero": true
+        },
+        "L2_module": {
+          "per_seed": [
+            0.0417,
+            0.0083,
+            0.0083,
+            -0.0083,
+            0.0417
+          ],
+          "mean": 0.0183,
+          "sd": 0.02,
+          "ci95": [
+            0.0017,
+            0.035
+          ],
+          "ci_includes_zero": false
+        },
+        "L3_triad": {
+          "per_seed": [
+            -0.0167,
+            0.0083,
+            0.05,
+            0.0167,
+            0.0083
+          ],
+          "mean": 0.0133,
+          "sd": 0.0215,
+          "ci95": [
+            -0.005,
+            0.0333
+          ],
+          "ci_includes_zero": true
+        },
+        "L4_samegen": {
+          "per_seed": [
+            0.0083,
+            0.0417,
+            0.0167,
+            -0.0167,
+            0.0
+          ],
+          "mean": 0.01,
+          "sd": 0.0193,
+          "ci95": [
+            -0.0067,
+            0.0283
+          ],
+          "ci_includes_zero": true
+        }
+      },
+      "shuffled_delta_mean": 0.02
+    }
+  ],
+  "predictability": {
+    "per_metric": {
+      "modularity_Q": {
+        "spearman_rho_vs_delta_L0": 0.4058,
+        "n": 6
+      },
+      "triad_z": {
+        "spearman_rho_vs_delta_L0": 0.2319,
+        "n": 6
+      },
+      "spectral_gap": {
+        "spearman_rho_vs_delta_L0": -0.3479,
+        "n": 6
+      }
+    },
+    "holdout": {
+      "status": "evaluated",
+      "fit_variants": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "holdout_variants": [
+        4,
+        5
+      ],
+      "predicted_delta": [
+        -0.0064,
+        -0.0063
+      ],
+      "observed_delta": [
+        -0.0067,
+        0.0017
+      ],
+      "mae": 0.0042,
+      "sign_agreement": 0.5,
+      "note": "only 2 holdout points; exploratory, not predictive evidence"
+    }
+  },
+  "verdict": {
+    "base_effect_ref_vs_ER_mean": -0.0053,
+    "mean_delta_by_level": {
+      "L0_er": -0.0053,
+      "L1_degree": 0.0058,
+      "L2_module": 0.0047,
+      "L3_triad": 0.0033,
+      "L4_samegen": -0.0056
+    },
+    "monotone_non_increasing_delta": false,
+    "all_higher_level_CIs_include_zero": false,
+    "ci_nonzero_uncorrected": [
+      5,
+      24
+    ],
+    "ci_note": "5-seed bootstrap, no multiple-comparison correction; ~5% false positives expected under null",
+    "random_label_control_near_chance": true,
+    "shuffled_alignment_delta_mean": 0.0097,
+    "no_graph_accuracy_mean": 0.8683,
+    "ref_accuracy_mean": 0.862,
+    "interpretation": "no_structure_effect_or_non_monotone_ladder",
+    "caveat": "synthetic task is aligned with the partition; positive delta is NOT evidence that biological topology helps real vision"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "round": "R117",
+  "classification": "READONLY_SOURCE_AND_ARTIFACT_MANIFEST",
+  "generated_utc": "2026-11-13T19:19:49.560519+00:00",
+  "generated_utc_note": "Product-generation wall clock. NOT a network acquisition timestamp; must not be used to reconstruct acquisition chronology (R115 W3 / R114 D5). All sources were read from the local main-project disk, no network fetch this round.",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "sources": [
+    {
+      "label": "flyvis_init",
+      "path": "local-provisioning/flyvis-work/flyvis/__init__.py",
+      "exists": true,
+      "bytes": 1801,
+      "sha256": "aea219a5e7fe78d4eba07f8a5c9f08abfcba3ad235bcca943dd08af803ab9e3a",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "flyvis_version_reconstructed",
+      "path": "local-provisioning/flyvis-work/flyvis/version.py",
+      "exists": true,
+      "bytes": 255,
+      "sha256": "15efb6b02134350a3e29d4f1332c570bec0f61418fd73c7422ad9dca804b4e0b",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "official_chkpt_00000",
+      "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/chkpts/chkpt_00000",
+      "exists": true,
+      "bytes": 49396,
+      "sha256": "d0e42857e738d0315897c2d50fde9eb3fb1a3fb1f071d55dfc13d53d72bccc3f",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "official_meta_yaml",
+      "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/_meta.yaml",
+      "exists": true,
+      "bytes": 2222,
+      "sha256": "2aa8a9505324c82bbb4011ee2f7c375b5f8b1bddde1a5281e038baecf91fc5dd",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r101_provisioning_note",
+      "path": "local-provisioning/R101-LOCAL-PROVISIONING.md",
+      "exists": true,
+      "bytes": 9839,
+      "sha256": "0c99fce40f3bb874b52e97fd6a48b4ccd7e358ad82c2abfd02cb09d06ede3e5d",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r101_restore_json",
+      "path": "local-provisioning/weights-only-restore-R101.json",
+      "exists": true,
+      "bytes": 3611,
+      "sha256": "408f186dd5e8c413c8d1eccf07c24e8d35a351d625544982ab11f95683e94172",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r106_asset_sha_json",
+      "path": "gate-G0-R106/R106-ASSET-SHA-VERIFICATION.json",
+      "exists": true,
+      "bytes": 4978,
+      "sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r106_round_audit",
+      "path": "gate-G0-R106/R106-ROUND-AUDIT.md",
+      "exists": true,
+      "bytes": 15372,
+      "sha256": "bd2d421631f764dbf4855394ee668e61d9dc4bdb62e6de70a543524145f08f11",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r111_decision_package",
+      "path": "state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "exists": true,
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "r116_round_audit",
+      "path": "gate-G0-R116/R116-ROUND-AUDIT.md",
+      "exists": true,
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "main_pipeline_state",
+      "path": "pipeline-state.json",
+      "exists": true,
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-0.npz",
+      "exists": true,
+      "bytes": 1219541,
+      "sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-1.npz",
+      "exists": true,
+      "bytes": 1218745,
+      "sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-0.npz",
+      "exists": true,
+      "bytes": 1207321,
+      "sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-1.npz",
+      "exists": true,
+      "bytes": 1207129,
+      "sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-0.npz",
+      "exists": true,
+      "bytes": 1243010,
+      "sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-1.npz",
+      "exists": true,
+      "bytes": 1240323,
+      "sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-0.npz",
+      "exists": true,
+      "bytes": 1202493,
+      "sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-1.npz",
+      "exists": true,
+      "bytes": 1188981,
+      "sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466",
+      "acquisition": "FROM_LOCAL_DISK_BYTES",
+      "network_url": null
+    }
+  ],
+  "source_count": 19,
+  "all_sources_exist": true,
+  "artifacts": [
+    {
+      "file": "R117-EXEC-PREMISE-EVIDENCE.md",
+      "bytes": 10715,
+      "sha256": "08b8d8d3179d2cc859742063fa765f6a94c6d98f1bcfa12a6458c98fb308548b"
+    },
+    {
+      "file": "R117-EXEC-PREMISE-RAW.json",
+      "bytes": 18455,
+      "sha256": "891a950bf856e3696ebe5bda3a96ce3e36f71042fe965aac3a36ad0739c4c50a"
+    },
+    {
+      "file": "R117-EXEC-PREMISE-VERIFICATION.json",
+      "bytes": 9552,
+      "sha256": "aa1372d2bbf91e4bc5127d636dac00cbfc7de7942253ca714895a7fed625946a"
+    },
+    {
+      "file": "R117-EXEC-PREMISE-VERIFICATION.v1-superseded.json",
+      "bytes": 11505,
+      "sha256": "5eb480113395fbcc365554c79c11c3fb18f5d88f33f3cfba9fec3583ec0cc302"
+    },
+    {
+      "file": "R117-probe.py",
+      "bytes": 12777,
+      "sha256": "4f8543117463d1b685dbbb8d211a15471a80fba8dc5092dc9a5d71ac5d1ecd3a"
+    },
+    {
+      "file": "R117-verify.py",
+      "bytes": 8978,
+      "sha256": "418ef947558360a794c5bfa8b14e30c7922698ca8121c01d8a2b65d227c04454"
+    }
+  ],
+  "artifact_count": 6,
+  "network_requests_this_round": 0
+}

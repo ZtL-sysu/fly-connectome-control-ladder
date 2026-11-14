@@ -1,0 +1,40 @@
+{
+  "round": "R117",
+  "classification": "POST_REVIEW_FIRST_HAND_RECOMPUTATION_NOT_SCIENTIFIC_RESULT_NOT_GATE_PASS",
+  "purpose": "Close the R117 independent review section 6 item 1 reproducibility gap: persist the R101-original-rule digest instead of asserting it only in prose.",
+  "generated_utc": "2026-11-13T19:31:32.837273+00:00",
+  "generated_utc_note": "Product-generation wall clock; NOT an acquisition timestamp (R115 W3).",
+  "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+  "checkpoint_path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/chkpts/chkpt_00000",
+  "checkpoint_bytes": 49396,
+  "checkpoint_sha256": "d0e42857e738d0315897c2d50fde9eb3fb1a3fb1f071d55dfc13d53d72bccc3f",
+  "tensor_count": 14,
+  "total_raw_tensor_bytes": 44552,
+  "same_source_bytes_for_both_framings": true,
+  "framings": {
+    "R101_original_rule": {
+      "description": "sorted key\\0dtype\\0shape\\0raw_bytes, NO trailing NUL (R101 weights_only_restore_probe.py lines 147-158)",
+      "digest_sha256": "67ce06c5cec0a4cda9937b17f061db0c99ad9f76c0224874c9b3a673c2e13a82",
+      "registered_r101_value": "67ce06c5cec0a4cda9937b17f061db0c99ad9f76c0224874c9b3a673c2e13a82",
+      "match": true
+    },
+    "R117_probe_variant": {
+      "description": "same fields PLUS one extra trailing NUL after raw_bytes (R117-probe.py RESTORE_SRC)",
+      "digest_sha256": "bd3f2cc8a037e1f58517989fced0f233a97e647f3ab9545d865e8bb416e25f74",
+      "raw_json_value": "bd3f2cc8a037e1f58517989fced0f233a97e647f3ab9545d865e8bb416e25f74",
+      "match": true
+    }
+  },
+  "both_match": true,
+  "conclusion": "Both framings operate on the same 14 tensors and identical raw bytes; the two digest values differ ONLY by framing. Not a data inconsistency (R101 independent review 67ce06c5 vs 297e43d7 precedent).",
+  "strict_boundary": {
+    "forward_pass": false,
+    "inference": false,
+    "training": false,
+    "label_read": false,
+    "scientific_metric": false,
+    "gate_promotion": false,
+    "network_constructed": false,
+    "existing_bytes_modified": false
+  }
+}

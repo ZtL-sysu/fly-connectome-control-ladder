@@ -1,0 +1,21 @@
+﻿metric,value,unit,source
+independent_review_bytes,14138,bytes,R125-INDEPENDENT-REVIEW.md
+independent_review_lines,94,count,R125-INDEPENDENT-REVIEW.md
+independent_review_sha256_prefix,15b5879315ed9c78,hex,R125-INDEPENDENT-REVIEW.md
+correction_bytes,9234,bytes,R125-POST-REVIEW-CORRECTION.md
+correction_sha256_prefix,42506bff7a15e89b,hex,R125-POST-REVIEW-CORRECTION.md
+recheck_groups_reproduced,8,count,R125-INDEPENDENT-REVIEW.md A-H
+overclaim_classes_confirmed,0,count,R125-INDEPENDENT-REVIEW.md section 2
+overclaim_classes_refuted,12,count,R125-INDEPENDENT-REVIEW.md section 2
+defects_high,0,count,R125-INDEPENDENT-REVIEW.md section 3
+defects_medium,1,count,R125-INDEPENDENT-REVIEW.md section 3
+defects_low,1,count,R125-INDEPENDENT-REVIEW.md section 3
+fabricated_items,0,count,R125-INDEPENDENT-REVIEW.md section 4
+factual_errors,1,count,R125-INDEPENDENT-REVIEW.md section 4
+data_inconsistencies,1,count,R125-INDEPENDENT-REVIEW.md section 4
+email_shaped_occurrences,2,count,R125-EMAIL-RECHECK.json
+email_shaped_distinct,1,count,R125-EMAIL-RECHECK.json
+frozen_weak_email_check_count,0,count,R125-EMAIL-RECHECK.json
+verifier_final_checks_total,93,count,"R125-VERIFICATION.json (v3, unchanged)"
+verifier_final_checks_match,93,count,"R125-VERIFICATION.json (v3, unchanged)"
+qualifying_paper_count,0,count,goal-ledger.md

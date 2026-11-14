@@ -1,0 +1,672 @@
+{
+  "round": "R121",
+  "kind": "READONLY_SUCCESS_CRITERION_CLOSURE_AUDIT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "generated_at": "2026-11-14T10:22:03",
+  "python": "3.14.6",
+  "sources": {
+    "S01_governing_r95": {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "bytes": 52430,
+      "sha256": "c67f8cd39c17d2fe7ae6d1eab9414be1275a4b7f9ac236c36d4d44aab02fb97a",
+      "mtime": 1794380499.4734879,
+      "mtime_str": "2026-11-11T15:01:39"
+    },
+    "S02_r106_gate_review": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "mtime": 1794514649.7575464,
+      "mtime_str": "2026-11-13T04:17:29"
+    },
+    "S03_r107_goal_iteration": {
+      "path": "GOAL-ITERATION-R107.md",
+      "bytes": 5446,
+      "sha256": "1a81c8e15b361f62e027360af0d6c82d498040370610c87b657c7facd0aed4b3",
+      "mtime": 1794528517.6078324,
+      "mtime_str": "2026-11-13T08:08:37"
+    },
+    "S04_r107_pass_criterion": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R107/R107-G0-PASS-CRITERION-REGISTER.md",
+      "bytes": 5952,
+      "sha256": "1297b3f26f1d02cf7d12e765c0ba8c227bf9dfdb4881c53baf5cf55820241685",
+      "mtime": 1794520274.6761463,
+      "mtime_str": "2026-11-13T05:51:14"
+    },
+    "S05_r111_decision_package": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "mtime": 1794568261.237396,
+      "mtime_str": "2026-11-13T19:11:01"
+    },
+    "S06_r120_decision_register": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-CONSOLIDATED-DECISION-REGISTER.md",
+      "bytes": 12878,
+      "sha256": "22d432fec98708d89c1df1fdb74438254e2f70853bbba728b664b5edf9f2aacc",
+      "mtime": 1794617136.1818666,
+      "mtime_str": "2026-11-14T08:45:36"
+    },
+    "S07_mainline_state": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/pipeline-state.json",
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime": 1794451392.5066164,
+      "mtime_str": "2026-11-12T10:43:12"
+    },
+    "S08_r108_scaffold_state": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R108/f-research-v1-state/pipeline-state.json",
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "mtime": 1794527067.8194063,
+      "mtime_str": "2026-11-13T07:44:27"
+    },
+    "S09_r108_versioned_contract": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R108/f-research-v1-state/R108-U6-W2-VERSIONED-CONTRACT.md",
+      "bytes": 7307,
+      "sha256": "5742e36f5d08e3e0fc8eaeb8cdada0b442c92e47b98233b7ef70968717fb54b0",
+      "mtime": 1794527019.0393806,
+      "mtime_str": "2026-11-13T07:43:39"
+    },
+    "S10_validator": {
+      "path": "readonly-validator/validate_single_paper.py",
+      "bytes": 7845,
+      "sha256": "72240260ec2447c219a9c4717ec57da3c8e35d2a32bc5e909169daa8558a0e58",
+      "mtime": 1794528546.3931746,
+      "mtime_str": "2026-11-13T08:09:06"
+    },
+    "S11_guard_ledger": {
+      "path": "guard/ledger-null-ladder.json",
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+      "mtime": 1794528560.4745793,
+      "mtime_str": "2026-11-13T08:09:20"
+    },
+    "S12_guard_criteria": {
+      "path": "guard/criteria-null-ladder.json",
+      "bytes": 10443,
+      "sha256": "94846083217df86fff6e69ab1d3edbb7c8ef7abd6e8cbfd8272c49dc549c1a36",
+      "mtime": 1794528572.8897188,
+      "mtime_str": "2026-11-13T08:09:32"
+    },
+    "S13_goal_ledger": {
+      "path": "goal-ledger.md",
+      "bytes": 687472,
+      "sha256": "a7c246dbe3c4944b45da1197927d4264ab7a5857f6a5e673a190d34c32748251",
+      "mtime": 1794617871.0118527,
+      "mtime_str": "2026-11-14T08:57:51"
+    },
+    "S14_real_connectome_metrics": {
+      "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome_v2/metrics.json",
+      "bytes": 3346,
+      "sha256": "c634ceaf18df0b2de9764c6dd36d0b0427f23b693f5902b542060694f800b33c",
+      "mtime": 1794106105.0079207,
+      "mtime_str": "2026-11-08T10:48:25"
+    },
+    "S15_visual_task_metrics": {
+      "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_visual_task/metrics.json",
+      "bytes": 8644,
+      "sha256": "81d938a4366f4a057d181e7b2c9a5954bdbd5d3392472b41d25b4ce7c6ca9ad9",
+      "mtime": 1794106105.0500407,
+      "mtime_str": "2026-11-08T10:48:25"
+    },
+    "S16_main_tex": {
+      "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/main.tex",
+      "bytes": 45618,
+      "sha256": "4d074072734747d0b3f599d60e0fb1e75e4b9e3a35644de8d44d1ec70f92520a",
+      "mtime": 1794280997.4335148,
+      "mtime_str": "2026-11-10T11:23:17"
+    },
+    "S17_R114_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R114/R114-ROUND-AUDIT.md",
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "mtime": 1794581364.193128,
+      "mtime_str": "2026-11-13T22:49:24"
+    },
+    "S17_R115_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R115/R115-ROUND-AUDIT.md",
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "mtime": 1794587117.6902232,
+      "mtime_str": "2026-11-14T00:25:17"
+    },
+    "S17_R116_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R116/R116-ROUND-AUDIT.md",
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "mtime": 1794593175.781969,
+      "mtime_str": "2026-11-14T02:06:15"
+    },
+    "S17_R117_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-ROUND-AUDIT.md",
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "mtime": 1794598372.8718681,
+      "mtime_str": "2026-11-14T03:32:52"
+    },
+    "S17_R118_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-ROUND-AUDIT.md",
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "mtime": 1794604833.4327528,
+      "mtime_str": "2026-11-14T05:20:33"
+    },
+    "S17_R119_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-ROUND-AUDIT.md",
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "mtime": 1794609964.4522092,
+      "mtime_str": "2026-11-14T06:46:04"
+    },
+    "S17_R120_audit": {
+      "path": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-ROUND-AUDIT.md",
+      "bytes": 15418,
+      "sha256": "a61b18e88c16bfb6bf22f3892c3c3f4a9c9a4503fc25560e09b84b05f11244c4",
+      "mtime": 1794617850.9106603,
+      "mtime_str": "2026-11-14T08:57:30"
+    }
+  },
+  "needles": {
+    "N01_overall_line": {
+      "needle": "**Overall:** 6  | **Scholarly Confidence:** 4",
+      "found_lines": [
+        419
+      ],
+      "count": 1
+    },
+    "N02_no_quick_change_head": {
+      "needle": "| **No quick change** | 继续补流程/披露/格式",
+      "found_lines": [
+        450
+      ],
+      "count": 1
+    },
+    "N03_no_quick_change_reason": {
+      "needle": "不新增支持中心主张的科学证据",
+      "found_lines": [
+        450
+      ],
+      "count": 1
+    },
+    "N04_no_quick_change_effect": {
+      "needle": "不改变 evidence-capped overall",
+      "found_lines": [
+        450
+      ],
+      "count": 1
+    },
+    "N05_raise_row": {
+      "needle": "单项 +0.5；三项齐备 Overall 6→7~7.5",
+      "found_lines": [
+        448
+      ],
+      "count": 1
+    },
+    "N06_raise_a": {
+      "needle": "真实 MaleCNS 图上以预注册协议**确认** motif-survival 阈值迁移",
+      "found_lines": [
+        448
+      ],
+      "count": 1
+    },
+    "N07_raise_b": {
+      "needle": "在 flyvis/`toposens2026` 栈复跑同协议对证",
+      "found_lines": [
+        448
+      ],
+      "count": 1
+    },
+    "N08_raise_c": {
+      "needle": "至少一项真实视觉任务上该诊断标准改变了一个实际结论",
+      "found_lines": [
+        448
+      ],
+      "count": 1
+    },
+    "N15_revision": {
+      "needle": "Raising the score would require: 真实图上确认 motif-survival 阈值迁移",
+      "found_lines": [
+        473
+      ],
+      "count": 1
+    },
+    "N09_m1_noprope": {
+      "needle": "需新的真实图实验确认机制迁移（非 prose 可修）",
+      "found_lines": [
+        240
+      ],
+      "count": 1
+    },
+    "N10_m2_noprope": {
+      "needle": "无法靠 prose 补出视觉贡献",
+      "found_lines": [
+        249
+      ],
+      "count": 1
+    },
+    "N11_m3_rerun": {
+      "needle": "在 flyvis / toposens2026 栈上跑一次同协议比较",
+      "found_lines": [
+        258
+      ],
+      "count": 1
+    },
+    "N12_evidence_dim3": {
+      "needle": "| Evidence | 3 | 5 |",
+      "found_lines": [
+        413
+      ],
+      "count": 1
+    },
+    "N13_significance_dim3": {
+      "needle": "| Significance | 3 | 4 |",
+      "found_lines": [
+        414
+      ],
+      "count": 1
+    },
+    "N14_tiebreaker7": {
+      "needle": "这组 ≥3 个决定性关切不允许 Overall 上到 7",
+      "found_lines": [
+        454
+      ],
+      "count": 1
+    },
+    "N16_c2_experiment": {
+      "needle": "| C2 | major | 中心机制真实图未复现",
+      "found_lines": [
+        433
+      ],
+      "count": 1
+    },
+    "N17_c3_experiment": {
+      "needle": "| C3 | major | 零视觉证据",
+      "found_lines": [
+        434
+      ],
+      "count": 1
+    },
+    "N18_c4_experiment": {
+      "needle": "| C4 | major | 强基线（flyvis / `toposens2026`）未复跑",
+      "found_lines": [
+        435
+      ],
+      "count": 1
+    },
+    "N19_panel_min": {
+      "needle": "一条真实图上确认机制迁移的独立结果 → 8",
+      "found_lines": [
+        293
+      ],
+      "count": 1
+    }
+  },
+  "rounds": {
+    "R114": {
+      "path": "gate-G0-R114/R114-ROUND-AUDIT.md",
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "declared_label_tokens_first8": [],
+      "declared_first8": [
+        "# R114 心跳轮次审计（2026-11-13 22:21–22:4x +0800）",
+        "",
+        "**并发保护：不触发** ⇒ 主动推进。",
+        "- 唤醒 `22:21:48`，`goal-ledger.md` mtime `22:05:55`，elapsed `1079.1 s ≈ 18 min > 10 min`。",
+        "- `22:05:55` 之后**整个项目 0 个文件写入**（遍历全树实算，排除 `.git`，count=0）。",
+        "- 进程扫描：仅 1 个 Electron `--serve` 会话，即本自动化会话自身（session-id `6a296c5d…`，conversationTags 含本 automationId）；**无独立主会话、无 novix 轮询、无 tracker**。",
+        "- `ccfa-review-reports/` / `ccfa-idea-review-reports/` 无新文件；最新独立 full 评审仍 `paper-null-ladder-r95-independent-review-20261111.md` = **6.0** ⇒ 无未登记异步评审，governing 未变。",
+        ""
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R115": {
+      "path": "gate-G0-R115/R115-ROUND-AUDIT.md",
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "declared_label_tokens_first8": [
+        "READONLY",
+        "NOT_GATE_PASS",
+        "NOT_SCIENTIFIC_RESULT"
+      ],
+      "declared_first8": [
+        "# R115 轮次审计（2026-11-13 23:51– +0800）",
+        "",
+        "**性质**：`READONLY_FIRSTHAND_EVIDENCE_ACQUISITION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT`",
+        "**并发保护**：不触发（账本 mtime `22:49:12` 距唤醒 `23:51:43` = 62.5 min > 10 min；近 15 min 0 写入；无独立主会话 / 轮询；评审目录无新报告；无 R115 产物）。",
+        "**governing**：R95 = **6.0 / Confidence 4.0** 未变。",
+        "",
+        "---",
+        ""
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R116": {
+      "path": "gate-G0-R116/R116-ROUND-AUDIT.md",
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "declared_label_tokens_first8": [],
+      "declared_first8": [
+        "# R116 轮次审计（2026-11-14 01:27–02:0x +0800）",
+        "",
+        "## 1. 第 0 步并发保护：不触发",
+        "",
+        "| 检查 | 结果 |",
+        "|:--|:--|",
+        "| 账本 `goal-ledger.md` mtime | `2026-11-14 00:25:08`，距唤醒 `01:27:45` = **62.6 min > 10 min** |",
+        "| 账本后写入 | 仅 4 份 R115 自身收尾（00:25:17 / :28 / :49 / 00:26:39）；**近 15 min（01:13 后）全项目零写入** |"
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R117": {
+      "path": "exec-premise-R117/R117-ROUND-AUDIT.md",
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "declared_label_tokens_first8": [
+        "READONLY",
+        "NOT_GATE_PASS",
+        "NOT_SCIENTIFIC_RESULT",
+        "NOT_FORWARD_PASS"
+      ],
+      "declared_first8": [
+        "# R117 轮次审计（2026-11-14 03:09– +0800）",
+        "",
+        "**性质**：主线 P3 真实前向「执行前提」的一手只读实测。",
+        "`READONLY_EXECUTION_PREMISE_PROBE_NOT_SCIENTIFIC_RESULT_NOT_GATE_PASS_NOT_FORWARD_PASS`",
+        "**0 篇达标，未写 COMPLETE**；governing 仍 **R95 = 6.0 / Confidence 4.0**。",
+        "",
+        "## 1. 第 0 步并发保护：不触发",
+        ""
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R118": {
+      "path": "gate-G0-R118/R118-ROUND-AUDIT.md",
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "declared_label_tokens_first8": [],
+      "declared_first8": [
+        "# R118 轮次审计（心跳 · 2026-11-14 04:35– +0800）",
+        "",
+        "## 1. 并发保护（第 0 步）",
+        "",
+        "| 检查 | 读数 |",
+        "|:--|:--|",
+        "| 账本 mtime | `2026-11-14 03:34:35`，距唤醒 `04:35:53` = **3693 s ≈ 61.6 min > 10 min** ⇒ 不触发 |",
+        "| 近 20 min 项目写入 | **0 文件** |"
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R119": {
+      "path": "review-protocol-R119/R119-ROUND-AUDIT.md",
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "declared_label_tokens_first8": [
+        "READONLY",
+        "NOT_GATE_PASS",
+        "NOT_SCIENTIFIC_RESULT"
+      ],
+      "declared_first8": [
+        "# R119 round audit — review-launch protocol chain (read-only)",
+        "",
+        "**Round:** R119, 2026-11-14 06:28–06:5x +0800.",
+        "**Kind:** `READONLY_REVIEW_LAUNCH_PROTOCOL_CHAIN_AUDIT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT`.",
+        "**Heartbeat:** ACTIVE, `FREQ=HOURLY;INTERVAL=1;BYMINUTE=0,30` — unchanged.",
+        "",
+        "## 1. Step 0 — concurrency protection: NOT triggered",
+        ""
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    },
+    "R120": {
+      "path": "reconciliation-R120/R120-ROUND-AUDIT.md",
+      "bytes": 15418,
+      "sha256": "a61b18e88c16bfb6bf22f3892c3c3f4a9c9a4503fc25560e09b84b05f11244c4",
+      "declared_label_tokens_first8": [
+        "READ_ONLY",
+        "NOT_GATE_PASS",
+        "NOT_SCIENTIFIC_RESULT"
+      ],
+      "declared_first8": [
+        "# R120 轮次审计（2026-11-14 08:16–08:5x +0800，心跳唤醒）",
+        "",
+        "**状态：`READ_ONLY_RECONCILIATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT`**",
+        "**governing 仍 R95 = 6.0 / Confidence 4.0，`NOT_QUALIFIED` / `INCOMPLETE`；0 篇达标，未写 COMPLETE。**",
+        "",
+        "---",
+        "",
+        "## 1. 第 0 步：并发保护（不触发）"
+      ],
+      "claims_new_scientific_result": false,
+      "claims_gate_passed": false,
+      "numeric_overall_line_count": 0
+    }
+  },
+  "conditions": {
+    "a_real_graph_transfer": {
+      "source": "all papers/**/*.json with a top-level hypothesis_supported",
+      "observed": {
+        "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome_v2/metrics.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome_v2/metrics_from_trajectory.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/p3_p4_taskaware/metrics.json": true,
+        "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/p3_p4_taskaware/metrics_from_trajectory.json": true,
+        "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/r39_real_connectome/metrics.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r51_motif_survival/task_a_results.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome_v2/metrics.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome_v2/metrics_from_trajectory.json": false,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4_taskaware/metrics.json": true,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4_taskaware/metrics_from_trajectory.json": true,
+        "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_real_connectome/metrics.json": false
+      },
+      "n_files": 11,
+      "any_true": true,
+      "note": "R95 §8 M1 / §13 (a) requires hypothesis_supported=true on a REAL graph under a pre-registered protocol."
+    },
+    "b_strong_baseline_rerun": {
+      "rerun_metric_files_by_name": [],
+      "n_rerun_metric_files": 0,
+      "main_tex_admission": false,
+      "note": "R95 §8 M3 / §13 (b); a rerun is a forward-pass experiment, not a document."
+    },
+    "c_real_visual_task": {
+      "metrics_path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r39_visual_task/metrics.json",
+      "top_level_keys": [
+        "environment",
+        "data",
+        "accuracies",
+        "val_accuracies",
+        "mean_acc",
+        "mean_acc_ci95",
+        "real_minus_condition",
+        "mlp_baseline",
+        "run_complete",
+        "runtime_sec",
+        "mnist_addon"
+      ],
+      "negative_or_delta_fields": [
+        [
+          "delta",
+          -0.0004629629629628873
+        ],
+        [
+          "delta",
+          0.09953703703703698
+        ],
+        [
+          "delta",
+          -0.014814814814814836
+        ],
+        [
+          "delta",
+          -0.25370370370370376
+        ],
+        [
+          "delta",
+          0.014833333333333365
+        ],
+        [
+          "delta",
+          0.054916666666666725
+        ],
+        [
+          "delta",
+          0.0015000000000000568
+        ],
+        [
+          "delta",
+          -0.12299999999999989
+        ]
+      ],
+      "note": "R95 §8 M2 / §13 (c) records the real visual task as a NEGATIVE result; no claim of a changed conclusion."
+    }
+  },
+  "gates": {
+    "validator": {
+      "exit": 1,
+      "stdout": "{\n  \"contract\": \"R107 single paper, independent full review Overall >= 7.0\",\n  \"threshold\": 7.0,\n  \"acceptance_rule\": \"governing independent Overall must be >= threshold (R107); equality QUALIFIES\",\n  \"overall_score\": 6.0,\n  \"governing_review\": \"LATEST independent full review governs; >= threshold; no self-authored review counts\",\n  \"score_gt_threshold\": false,\n  \"score_gt_threshold_note\": \"R107: backward-compatible field name; value now uses >= (equality qualifies)\",\n  \"score_meets_threshold\": false,\n  \"comparison_operator\": \">=\",\n  \"independent_review_governs\": true,\n  \"checks\": {\n    \"D1_guidance_validated\": {\n      \"pass\": true,\n      \"detail\": \"guidance-v2.md=12631B, packet-v2=True, validation ledger-v2=True\"\n    },\n    \"D2_tex_pdf_pipeline_all_passed\": {\n      \"pass\": false,\n      \"detail\": \"stages=26, not_passed=['P9', 'P10', 'P11', 'P12', 'P13', 'P14', 'P15', 'P16', 'P17', 'P18', 'P19', 'P20', 'P21'], md_pending_rows=52, pdf=2149921B\"\n    },\n    \"D3_independent_full_review\": {\n      \"pass\": false,\n      \"detail\": \"governing=6.0 in paper-null-ladder-r95-independent-review-20261111.md (**Overall:** 6); LATEST independent full review governs (supersedes earlier reviews after revision); all_scores=[7.5, 8.2, 7.0, 7.5, 7.5, 6.9, 6.3, 5.4, 5.2, 6.0]\"\n    },\n    \"D4_novix_experiment_evidence\": {\n      \"pass\": true,\n      \"detail\": \"present=15/15, missing=[], sizes={'metrics.json': 46846, 'metrics_completed.json': 35660, 'run.log': 2848, 'config.json': 2931, 'summary.txt': 3108, 'metrics_pathblock.json': 16801, 'config_pathblock.json': 8251}\"\n    },\n    \"D5_six_sections_traceability\": {\n      \"pass\": false,\n      \"detail\": \"sections=6/6 ['Introduction', 'Related Work', 'Method', 'Experiments and Results', 'Discussion', 'Conclusion'], traceability=True, claim_evidence_matrix=False\"\n    }\n  },\n  \"all_pass\": false,\n  \"verdict\": \"NOT_QUALIFIED\"\n}"
+    },
+    "guard": {
+      "exit": 1,
+      "verdict_line": [
+        "结论      : INCOMPLETE  (退出码 1)"
+      ],
+      "fail_lines": [
+        "[FAIL] A2 pipeline-state.json 全 26 阶段 status=passed",
+        "[FAIL] A6 最新一次独立 full 评审的 Overall 严格 > 8.0（等于 8.0 不算；主会话自评不算）"
+      ],
+      "step_pending_count": 7
+    },
+    "mainline_stages": [
+      {
+        "id": "CCFA-startup",
+        "status": "passed",
+        "inputs": 2,
+        "evidence": 4,
+        "gate_verdict": "pass"
+      },
+      {
+        "id": "G0",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G1",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G2",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G3",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G4",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G5",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G6",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G7",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "G8",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "validation",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      },
+      {
+        "id": "handoff",
+        "status": "pending",
+        "inputs": 0,
+        "evidence": 0,
+        "gate_verdict": "pending"
+      }
+    ]
+  },
+  "numeric_overall_scan": {
+    "total_lines": 14,
+    "r95_mtime": 1794380499.4734879,
+    "newer_than_r95": [
+      {
+        "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/provenance/paper-null-ladder-r95-independent-review-20261111.md",
+        "score": "6",
+        "mtime": 1794408962.4274442,
+        "byte_identical_to_r95": true
+      }
+    ],
+    "new_governing_candidates": []
+  },
+  "capture_time_hashes": {
+    "goal_ledger": {
+      "bytes": 687472,
+      "sha256": "a7c246dbe3c4944b45da1197927d4264ab7a5857f6a5e673a190d34c32748251",
+      "mtime": 1794617871.0118527
+    },
+    "mainline_state": {
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime": 1794451392.5066164
+    },
+    "scaffold_state": {
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "mtime": 1794527067.8194063
+    },
+    "guard_ledger": {
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+      "mtime": 1794528560.4745793
+    }
+  }
+}
