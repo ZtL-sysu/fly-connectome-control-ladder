@@ -1,0 +1,27 @@
+﻿metric,value,unit,source
+independent_review_bytes,12680,bytes,R128-INDEPENDENT-REVIEW.md
+independent_review_lines,89,count,R128-INDEPENDENT-REVIEW.md
+independent_review_sha256_prefix,ff2bbe3c5ff3cd4d,hex,R128-INDEPENDENT-REVIEW.md
+correction_bytes,6823,bytes,R128-POST-REVIEW-CORRECTION.md
+a_to_h_groups_reproduced,8,count,R128-INDEPENDENT-REVIEW.md A-H
+overclaim_classes_confirmed,0,count,R128-INDEPENDENT-REVIEW.md section 12
+overclaim_classes_refuted,12,count,R128-INDEPENDENT-REVIEW.md section 12
+defects_high,0,count,R128-INDEPENDENT-REVIEW.md
+defects_medium,2,count,R128-INDEPENDENT-REVIEW.md D-1 accepted + D-2 frozen
+defects_low,1,count,R128-POST-REVIEW-CORRECTION.md L1 scope wording
+fabricated_items,0,count,R128-INDEPENDENT-REVIEW.md
+factual_errors,1,count,M1 prose mislabel of max-file path (append-only corrected)
+data_inconsistencies,0,count,R128-POST-REVIEW-CORRECTION.md
+v1_entropy_false_candidates,246,count,R128-VERIFICATION-V1.json (frozen)
+reviewer_wide_sk_candidates,249,count,R128-INDEPENDENT-REVIEW.md independent reproduction
+max_file_bytes,2149921,bytes,research/manuscript/main-2.pdf (corrected path)
+main_pdf_bytes,2123187,bytes,research/manuscript/main.pdf
+upload_manifest_entries_after_recovery,249,count,research/UPLOAD-MANIFEST.json
+new_files_added_recovery,3,count,git diff --cached --stat (new files only)
+governing_review_score,6.0,score,readonly-validator/validate_single_paper.py (historical R95)
+validator_threshold,7.0,score,readonly-validator/validate_single_paper.py
+score_meets_threshold,0,bool,readonly-validator/validate_single_paper.py
+guard_actions,0,count,guard/ledger-null-ladder.json
+qualifying_papers,0,count,goal-ledger.md (governing 6.0 < 7.0)
+scientific_results_this_round,0,count,scope declaration
+gates_passed_this_round,0,count,pipeline-state.json (G0-G8 pending)

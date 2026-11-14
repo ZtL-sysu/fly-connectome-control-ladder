@@ -1691,8 +1691,8 @@
       "cat": "rounds",
       "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-SOURCE-MANIFEST.json",
       "dst": "research/rounds/R128-SOURCE-MANIFEST.json",
-      "bytes": 2081,
-      "sha256": "bc6c141e86b72b4144e0c21103b85bc1ab76bff382219f6035c2929ada8cf03e"
+      "bytes": 2539,
+      "sha256": "7a1b9643f4bf9b577869d4c2c69b1e526b551f215d475b011c8d99a22e38218b"
     },
     {
       "cat": "rounds",
@@ -1721,8 +1721,29 @@
       "dst": "research/rounds/R128-TIMEPOINT-NOTE.md",
       "bytes": 1692,
       "sha256": "83914338f03423d0358a91266c593db5f8f780febaac539190dcaf135c33a4ed"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R128-INDEPENDENT-REVIEW.md",
+      "bytes": 12680,
+      "sha256": "ff2bbe3c5ff3cd4d71089f6cbde4f614776e7f80f9421fb6cb6cbae48bd8ce78"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R128-POST-REVIEW-CORRECTION.md",
+      "bytes": 6823,
+      "sha256": "865357d27d58f55418470dae664091249e91c2510ab9a1f26c8e664110d380c7"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-POST-REVIEW-BUILD-MANIFEST.py",
+      "dst": "research/rounds/R128-POST-REVIEW-BUILD-MANIFEST.py",
+      "bytes": 3887,
+      "sha256": "254d1b9849b7a85b05b4714b65fda4458f8e7eb999b7f0e8651d429e936e1acb"
     }
   ],
   "skipped": [],
-  "note": "R126 full-open upload per user instruction 2026-11-14; only real credential VALUE files excluded. The 11 verify.py/audit files contain scan-pattern literals, not secrets, and are included. R128: 12 append-only new artifacts (11 round files + 1 exact-byte ledger delta); no published file rewritten; merged public main tree attested 336 files / 0 real credential values / 233-233 manifest match."
+  "note": "R126 full-open upload per user instruction 2026-11-14; only real credential VALUE files excluded. The 11 verify.py/audit files contain scan-pattern literals, not secrets, and are included. R128: 12 append-only new artifacts (11 round files + 1 exact-byte ledger delta); no published file rewritten; merged public main tree attested 336 files / 0 real credential values / 233-233 manifest match. R128 post-review: 2 append-only files (isolated independent recheck full text + accepted corrections); no published byte rewritten."
 }

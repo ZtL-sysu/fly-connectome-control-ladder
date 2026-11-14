@@ -1,8 +1,8 @@
 {
   "round": "R128",
   "scope": "READONLY_POST_MERGE_PUBLIC_MAIN_TREE_ATTESTATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
-  "created_at_utc": "2026-11-14T11:41:35.700569+00:00",
-  "note": "v3 final regeneration: BUILD-MANIFEST.py corrected to drop main-only root README.md (agent branch is pre-merge). Source manifest rebuilt from final bytes of all round files.",
+  "created_at_utc": "2026-11-14T11:54:16.504986+00:00",
+  "note": "v4 final: isolated independent review recovered + append-only corrections; source manifest rebuilt from final bytes of all round files.",
   "files": [
     {
       "path": "R128-ACQUIRE.json",
@@ -18,6 +18,21 @@
       "path": "R128-BUILD-MANIFEST.py",
       "bytes": 3886,
       "sha256": "9c3f8fee15bacc6948f5fb5081da249c7ab1f800a0923c39d2191f9868906fc1"
+    },
+    {
+      "path": "R128-INDEPENDENT-REVIEW.md",
+      "bytes": 12680,
+      "sha256": "ff2bbe3c5ff3cd4d71089f6cbde4f614776e7f80f9421fb6cb6cbae48bd8ce78"
+    },
+    {
+      "path": "R128-POST-REVIEW-BUILD-MANIFEST.py",
+      "bytes": 3887,
+      "sha256": "254d1b9849b7a85b05b4714b65fda4458f8e7eb999b7f0e8651d429e936e1acb"
+    },
+    {
+      "path": "R128-POST-REVIEW-CORRECTION.md",
+      "bytes": 6823,
+      "sha256": "865357d27d58f55418470dae664091249e91c2510ab9a1f26c8e664110d380c7"
     },
     {
       "path": "R128-ROUND-AUDIT.md",

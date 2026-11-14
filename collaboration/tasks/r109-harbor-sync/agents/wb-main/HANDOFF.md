@@ -2,12 +2,41 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (25 checkpoints published; R126 full-open research archive uploaded and merged to PUBLIC main by the integrator; research itself unfinished)
-- Last update: 2026-11-14 19:4x +0800 (R128 post-merge public-default-branch attestation; twenty-fifth checkpoint)
+- Status: **in_progress** (26 checkpoints published; R126 full-open research archive uploaded and merged to PUBLIC main by the integrator; research itself unfinished)
+- Last update: 2026-11-14 19:5x +0800 (R128 isolated recheck recovered + append-only corrections; twenty-sixth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R128 isolated independent recheck RECOVERED + append-only corrections (latest,
+  twenty-sixth checkpoint).** The twenty-fifth checkpoint truthfully stated AT ITS
+  WRITE TIME that a fresh isolated recheck had been launched but NOT recovered and
+  claimed no conclusion; `general-purpose-1` wrote its report only afterwards, so
+  that statement was TRUE and its bytes are NOT rewritten. Report
+  `R128-INDEPENDENT-REVIEW.md` = 12,680 B / 89 lines / SHA-256 `ff2bbe3c...8ce78`,
+  first line `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result
+  claimed: NO | Forward pass performed: NO`. Fully isolated, no score / conclusion
+  anchor; recomputed A-H from committed `main` blobs with its own logic, did not
+  import collector/verifier, did not use any R128 JSON as a data source, read the
+  round audit last. **A-H all reproduced**; **12 named overclaim classes
+  CONFIRMED 0 / REFUTED 12**; fabrications 0. **5 items all accepted, append-only**
+  (`R128-POST-REVIEW-CORRECTION.md`): M1 [MED] `R128-ROUND-AUDIT.md:71` mislabeled
+  the max file as `main.pdf` / "2.06 MiB"; verified bytes show 2,149,921 B
+  (2.0503 MiB) belongs to **`research/manuscript/main-2.pdf`**, `main.pdf` is
+  2,123,187 B (2.0248 MiB). Frozen `R128-ACQUIRE.json` already had the correct
+  paths, so this is one prose line only, numeric value unchanged, published audit
+  NOT rewritten. L1 [LOW] audit's "19 files" is the collector's narrow three-label
+  count vs reviewer's wider 21/160/112 (all NON-secret). C1 v1 `sk-` defect already
+  disclosed/frozen, independently reproduced (249/246). C2 `blobs_read=308` is
+  SHA dedup. C3 `goal-ledger.md` sha16 difference is the 19:43:31 T3 append-only
+  write explained by `R128-TIMEPOINT-NOTE.md`, not a writeback. Under the R126
+  full-open scope the independent review is uploaded IN FULL TEXT (no sanitized
+  summary): 3 new `research/rounds/` files, UPLOAD-MANIFEST 246 -> 249, all 249
+  verified on disk. **Results and boundaries UNCHANGED**: 0 qualifying papers,
+  no COMPLETE, governing 6.0, validator `NOT_QUALIFIED`, guard `INCOMPLETE`,
+  G0-G8 pending, no scientific result, no full manuscript review. See
+  `checkpoints/20261114T115234Z-r128-post-review/`.
 
 - **R128 post-merge PUBLIC default-branch attestation (latest, twenty-fifth checkpoint).**
   R126 published a 233-file full-open archive and R127 merged it into the PUBLIC
