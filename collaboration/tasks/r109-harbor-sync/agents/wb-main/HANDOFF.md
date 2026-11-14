@@ -2,12 +2,33 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (24 checkpoints published; R126 full-open research archive uploaded; research itself unfinished)
-- Last update: 2026-11-14 18:2x +0800 (R126 owner-instructed full-open upload of 233 research files; twenty-fourth checkpoint)
+- Status: **in_progress** (25 checkpoints published; R126 full-open research archive uploaded and merged to PUBLIC main by the integrator; research itself unfinished)
+- Last update: 2026-11-14 19:4x +0800 (R128 post-merge public-default-branch attestation; twenty-fifth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R128 post-merge PUBLIC default-branch attestation (latest, twenty-fifth checkpoint).**
+  R126 published a 233-file full-open archive and R127 merged it into the PUBLIC
+  default branch `main` (336 files). R128 read-only attested the **committed `main`
+  tree blobs**: **0 real credential values** (the owner's sole hard exclusion), 0
+  files >50 MiB, 0 weight/dataset suffixes, and **233/233 UPLOAD-MANIFEST entries
+  byte-identical after the merge**. 19 files contain only scan-pattern literals /
+  narrative, each context-checked. Independent verifier `R128-VERIFY.py` =
+  **36/36 MATCH / 0 MISMATCH**; v1 defect (246 `sk-`-in-`Task-Aligned` false
+  candidates) frozen with both versions kept. Validator `NOT_QUALIFIED / 6.0`,
+  guard `INCOMPLETE`, G0-G8 pending, 0 qualifying papers, no COMPLETE.
+  **Finding**: `research/ledger/goal-ledger.md` (775,792 B) is a strict prefix of
+  the current primary ledger (781,988 B); the 6,196 B R126/R127 sections are
+  absent. No published byte was rewritten: an append-only exact-byte delta file
+  `research/ledger/R128-goal-ledger-delta-R126-R127.md` was added and the gap was
+  recorded for the integrator. 13 new `research/` files, UPLOAD-MANIFEST 233 ->
+  246, all 246 verified on disk. A fresh isolated recheck was dispatched but was
+  **not recovered at this checkpoint's write time; no conclusion is claimed** -
+  per R117/R119-R125 it will be published in a new non-overwritable checkpoint.
+  This is a safety/integrity check, NOT a scientific result and NOT score progress.
+  See `checkpoints/20261114T113553Z-r128-post-merge-attestation/`.
 
 - **R126 full-open research archive (latest, twenty-fourth checkpoint).** Per
   the owner's 2026-11-14 instruction, `research/` now holds **233 files /

@@ -1630,8 +1630,99 @@
       "dst": "research/harbor/route-diagnosis-20261112-v1.json",
       "bytes": 4822,
       "sha256": "85706734e44441901040fdd29ea36d3125b471429cddcbce830cec01702b7185"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-ROUND-AUDIT.md",
+      "dst": "research/rounds/R128-ROUND-AUDIT.md",
+      "bytes": 12799,
+      "sha256": "43749f6f55d571fe433a09a8d487c954a29e35d8cbefbd38f913a3bb0e333ce9"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-ACQUIRE.py",
+      "dst": "research/rounds/R128-ACQUIRE.py",
+      "bytes": 14183,
+      "sha256": "a8198ac31956e767a0d31a4151e1ae8b1c49f8a40b5ca9ce5ed7ce0d2684fd01"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-ACQUIRE.json",
+      "dst": "research/rounds/R128-ACQUIRE.json",
+      "bytes": 14299,
+      "sha256": "92699766f7829dfca2539e38ff95fc6f7394a9d812f06cccb8fdb50b0c1888d8"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-VERIFY.py",
+      "dst": "research/rounds/R128-VERIFY.py",
+      "bytes": 12201,
+      "sha256": "6fa228a1cec03da1c99477915a44b72bb27cb3767a2148e50e9d170cc57c1df9"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-VERIFICATION.json",
+      "dst": "research/rounds/R128-VERIFICATION.json",
+      "bytes": 7103,
+      "sha256": "1ebc7cc104aa1371f49cf049ccc05310bde337ba4eb65142e553814dbf02e90d"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-VERIFY-v1.py",
+      "dst": "research/rounds/R128-VERIFY-v1.py",
+      "bytes": 11645,
+      "sha256": "7c808739c527ecb65507727a50fccd101e51176aa4fb27224f7244837da24779"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-VERIFICATION-V1.json",
+      "dst": "research/rounds/R128-VERIFICATION-V1.json",
+      "bytes": 7095,
+      "sha256": "abc1f805195e397c38ba98317e66b5462de742d4fb8da227416554052d8c37f2"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-V1-DEFECTS.md",
+      "dst": "research/rounds/R128-V1-DEFECTS.md",
+      "bytes": 2551,
+      "sha256": "ee7368e6c9abe198a86314d3c156f905ce6d9640601c76007585285844f69b63"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R128-SOURCE-MANIFEST.json",
+      "bytes": 2081,
+      "sha256": "bc6c141e86b72b4144e0c21103b85bc1ab76bff382219f6035c2929ada8cf03e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-BUILD-MANIFEST.py",
+      "dst": "research/rounds/R128-BUILD-MANIFEST.py",
+      "bytes": 3886,
+      "sha256": "9c3f8fee15bacc6948f5fb5081da249c7ab1f800a0923c39d2191f9868906fc1"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/raw/tree_paths.txt",
+      "dst": "research/rounds/R128-tree-paths.txt",
+      "bytes": 34436,
+      "sha256": "48001d18a253fbd68ad27d30d71394b2843250cc80f9e09e172e64f32218d9e9"
+    },
+    {
+      "cat": "ledger",
+      "src": "goal-ledger.md#R126-R127-delta",
+      "dst": "research/ledger/R128-goal-ledger-delta-R126-R127.md",
+      "bytes": 6196,
+      "sha256": "88713b4f9fd1aeb8b0d08b757beef6dad629a14f809fb45e53b035cef9a45136"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/post-merge-R128/R128-TIMEPOINT-NOTE.md",
+      "dst": "research/rounds/R128-TIMEPOINT-NOTE.md",
+      "bytes": 1692,
+      "sha256": "83914338f03423d0358a91266c593db5f8f780febaac539190dcaf135c33a4ed"
     }
   ],
   "skipped": [],
-  "note": "R126 full-open upload per user instruction 2026-11-14; only real credential VALUE files excluded. The 11 verify.py/audit files contain scan-pattern literals, not secrets, and are included."
+  "note": "R126 full-open upload per user instruction 2026-11-14; only real credential VALUE files excluded. The 11 verify.py/audit files contain scan-pattern literals, not secrets, and are included. R128: 12 append-only new artifacts (11 round files + 1 exact-byte ledger delta); no published file rewritten; merged public main tree attested 336 files / 0 real credential values / 233-233 manifest match."
 }

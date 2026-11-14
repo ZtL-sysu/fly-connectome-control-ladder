@@ -1,0 +1,32 @@
+﻿metric,value,unit,source
+public_main_tree_files,336,count,R128-ACQUIRE.json tree_file_count
+public_main_tree_bytes,9798478,bytes,R128-ACQUIRE.json tree_total_bytes
+public_main_max_file_bytes,2149921,bytes,R128-ACQUIRE.json max_file_bytes
+public_main_over_50MiB,0,count,R128-ACQUIRE.json over_50MiB
+weights_dataset_suffix_hits,0,count,R128-ACQUIRE.json weights_datasets_suffix_hits
+upload_manifest_entries,233,count,research/UPLOAD-MANIFEST.json (pre-R128)
+upload_manifest_verified_matches,233,count,R128-VERIFICATION.json group B
+upload_manifest_mismatches,0,count,R128-VERIFICATION.json group B
+real_credential_value_hits,0,count,R128-VERIFICATION.json group C (v2)
+scan_pattern_literal_files,19,count,R128-ACQUIRE.json scan_pattern_literal_file_count
+v1_entropy_false_candidates,246,count,R128-VERIFICATION-V1.json (frozen defect E-1)
+v2_entropy_candidates,0,count,R128-VERIFICATION.json group C
+verifier_v2_checks_total,36,count,R128-VERIFICATION.json
+verifier_v2_matches,36,count,R128-VERIFICATION.json
+verifier_v2_mismatches,0,count,R128-VERIFICATION.json
+published_numeric_overall_lines,12,count,R128-ACQUIRE.json published_numeric_overall_lines
+primary_project_numeric_overall_lines,15,count,R128-ACQUIRE.json primary_project_numeric_overall_count
+primary_project_numeric_overall_files,13,count,strict line-start census (R128)
+governing_review_score,6.0,score,readonly-validator/validate_single_paper.py (historical R95)
+validator_threshold,7.0,score,readonly-validator/validate_single_paper.py
+score_meets_threshold,0,bool,readonly-validator/validate_single_paper.py
+guard_actions,0,count,guard/ledger-null-ladder.json
+structural_authority_anchors_zero_writeback,7,count,R128-ACQUIRE.json vs R128-VERIFICATION.json
+public_ledger_mirror_bytes,775792,bytes,research/ledger/goal-ledger.md on main
+primary_ledger_bytes,781988,bytes,fly-gnn-snn-vision/goal-ledger.md
+append_only_ledger_delta_bytes,6196,bytes,research/ledger/R128-goal-ledger-delta-R126-R127.md
+upload_manifest_entries_after_R128,246,count,research/UPLOAD-MANIFEST.json
+new_files_added_R128,13,count,git diff --cached --stat (new files only)
+qualifying_papers,0,count,goal-ledger.md (governing 6.0 < 7.0)
+scientific_results_this_round,0,count,scope declaration
+gates_passed_this_round,0,count,pipeline-state.json (G0-G8 pending)

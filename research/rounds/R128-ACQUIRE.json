@@ -1,0 +1,525 @@
+{
+  "scope": "READONLY_POST_MERGE_PUBLIC_MAIN_TREE_ATTESTATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "collected_at_utc": "2026-11-14T11:27:45.487387+00:00",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "refs": {
+    "local_main": "6cc2e4fbe35121e6777f3c19c4502adc95f7427d",
+    "local_head": "6cc2e4fbe35121e6777f3c19c4502adc95f7427d",
+    "remote_main": "6cc2e4fbe35121e6777f3c19c4502adc95f7427d\trefs/heads/main",
+    "agent_branch": "d76bb642dd502264230561327566c4c0c48af935",
+    "remote_agent": "d76bb642dd502264230561327566c4c0c48af935\trefs/heads/agent/r109-harbor-sync/wb-main",
+    "tree": "5a6967b7317267439dc5b8ea67ee98fa1b7e7bb3",
+    "status_porcelain": ""
+  },
+  "tree_file_count": 336,
+  "tree_total_bytes": 9798478,
+  "blobs_read": 308,
+  "blobs_read_all_match_sizes": true,
+  "real_credential_value_hits": 0,
+  "real_credential_value_hits_detail": [],
+  "scan_pattern_literal_files": {
+    "AGENTS.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ],
+    "collaboration/tasks/r109-harbor-sync/agents/wb-main/checkpoints/20261114T102224Z-r126-full-open/CHECKPOINT.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 3
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ],
+    "evidence/R122-POST-REVIEW-SANITIZED.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/README.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ],
+    "research/ledger/2026-11-13.md": [
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/ledger/goal-ledger.md": [
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R117-INDEPENDENT-REVIEW.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R117-probe.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R117-verify.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R118-verify.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R120-ROUND-AUDIT.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R122-INDEPENDENT-REVIEW.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 6
+      }
+    ],
+    "research/rounds/R122-POST-REVIEW-CORRECTION.md": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R122-verify.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R124-verify-v1.py": [
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R124-verify.py": [
+      {
+        "label": "AIza_scan_literal",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R125-verify-v1.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R125-verify-v2.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ],
+    "research/rounds/R125-verify.py": [
+      {
+        "label": "gh_scan_literal",
+        "occurrences": 1
+      },
+      {
+        "label": "b_quote_ghp",
+        "occurrences": 1
+      }
+    ]
+  },
+  "scan_pattern_literal_file_count": 19,
+  "over_50MiB": [],
+  "max_file_bytes": 2149921,
+  "weights_datasets_suffix_hits": [],
+  "pdf_files": [
+    {
+      "path": "research/manuscript/main-2.pdf",
+      "bytes": 2149921
+    },
+    {
+      "path": "research/manuscript/main.pdf",
+      "bytes": 2123187
+    }
+  ],
+  "upload_manifest": {
+    "path": "research/UPLOAD-MANIFEST.json",
+    "sha256": "3f7646ca44243fa2870099250489e032061e9c34242275bdb24adcbfe7662381",
+    "bytes": 78626,
+    "entries": 233,
+    "skipped": 0,
+    "verified_matches": 233,
+    "mismatches": [],
+    "all_233_byte_identical": true
+  },
+  "published_numeric_overall_lines": [
+    {
+      "path": "research/reviews/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r39-independent-review-20261108.md",
+      "value": "7.0"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r47-independent-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r49-independent-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r58-independent-review-20261108.md",
+      "value": "6.9"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r60-independent-review-20261108.md",
+      "value": "6.3"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r91-independent-review-20261110.md",
+      "value": "5.4"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r93-independent-review-20261110.md",
+      "value": "5.2"
+    },
+    {
+      "path": "research/reviews/paper-null-ladder-r95-independent-review-20261111.md",
+      "value": "6"
+    }
+  ],
+  "primary_review_dir_scores": [
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5",
+      "mtime": "2026-11-07T23:47:43.779505+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5",
+      "mtime": "2026-11-07T23:47:43.779505+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2",
+      "mtime": "2026-11-08T00:42:34.201109+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2",
+      "mtime": "2026-11-08T00:42:34.201109+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-independent-review-20261108.md",
+      "value": "7.0",
+      "mtime": "2026-11-08T01:04:24.373328+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r47-independent-review-20261108.md",
+      "value": "7.5",
+      "mtime": "2026-11-08T01:49:43.282417+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r49-independent-review-20261108.md",
+      "value": "7.5",
+      "mtime": "2026-11-08T02:18:08.834612+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r58-independent-review-20261108.md",
+      "value": "6.9",
+      "mtime": "2026-11-08T05:08:26.463179+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r60-independent-review-20261108.md",
+      "value": "6.3",
+      "mtime": "2026-11-08T08:30:26.627531+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r91-independent-review-20261110.md",
+      "value": "5.4",
+      "mtime": "2026-11-10T04:59:54.013452+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r93-independent-review-20261110.md",
+      "value": "5.2",
+      "mtime": "2026-11-10T05:56:55.296734+00:00"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "value": "6",
+      "mtime": "2026-11-11T07:01:39.473488+00:00"
+    }
+  ],
+  "primary_review_dir_newest": 1794380499.4734879,
+  "primary_project_numeric_overall_lines": [
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-independent-review-20261108.md",
+      "value": "7.0"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r93-independent-review-20261110.md",
+      "value": "5.2"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "value": "6"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r47-independent-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r58-independent-review-20261108.md",
+      "value": "6.9"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r91-independent-review-20261110.md",
+      "value": "5.4"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r49-independent-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-full-review-20261108.md",
+      "value": "7.5"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r39-full-review-20261108.md",
+      "value": "8.2"
+    },
+    {
+      "path": "ccfa-review-reports/paper-null-ladder-r60-independent-review-20261108.md",
+      "value": "6.3"
+    },
+    {
+      "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/provenance/paper-null-ladder-r95-independent-review-20261111.md",
+      "value": "6"
+    },
+    {
+      "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/isolated/governing_r95__paper-null-ladder-r95-independent-review-20261111.md",
+      "value": "6"
+    },
+    {
+      "path": "papers/paper-null-ladder/R49-7.5-DELIVERY/provenance/paper-null-ladder-r49-independent-review-20261108.md",
+      "value": "7.5"
+    }
+  ],
+  "primary_project_numeric_overall_count": 15,
+  "primary_project_numeric_overall_files": 13,
+  "validator": {
+    "exit": 1,
+    "verdict": "NOT_QUALIFIED",
+    "threshold": 7.0,
+    "overall_score": 6.0,
+    "score_meets_threshold": false,
+    "all_pass": false,
+    "checks": {
+      "D1_guidance_validated": true,
+      "D2_tex_pdf_pipeline_all_passed": false,
+      "D3_independent_full_review": false,
+      "D4_novix_experiment_evidence": true,
+      "D5_six_sections_traceability": false
+    },
+    "governing_detail": "governing=6.0 in paper-null-ladder-r95-independent-review-20261111.md (**Overall:** 6); LATEST independent full review governs (supersedes earlier reviews after revision); all_scores=[7.5, 8.2, 7.0, 7.5, 7.5, 6.9, 6.3, 5.4, 5.2, 6.0]"
+  },
+  "guard": {
+    "ledger_sha16": "73043b4e164a5a5f",
+    "criteria_sha16": "94846083217df86f",
+    "ledger_bytes": 9994,
+    "criteria_bytes": 10443,
+    "acceptance_ids": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "acceptance_status": {
+      "A1": null,
+      "A2": null,
+      "A3": null,
+      "A4": null,
+      "A5": null,
+      "A6": null
+    },
+    "actions_len": 0,
+    "steps": {
+      "S1": null,
+      "S2": null,
+      "S3": null,
+      "S4": null,
+      "S5": null,
+      "S6": null,
+      "S7": null
+    }
+  },
+  "structural_authority_anchors": {
+    "goal-ledger.md": {
+      "bytes": 781988,
+      "sha256": "3a694ab2070db411ccde272d81df8eb2da6f8c89692fca2144cbc6e073dab83a"
+    },
+    "readonly-validator/validate_single_paper.py": {
+      "bytes": 7845,
+      "sha256": "72240260ec2447c219a9c4717ec57da3c8e35d2a32bc5e909169daa8558a0e58"
+    },
+    "guard/criteria-null-ladder.json": {
+      "bytes": 10443,
+      "sha256": "94846083217df86fff6e69ab1d3edbb7c8ef7abd6e8cbfd8272c49dc549c1a36"
+    },
+    "guard/ledger-null-ladder.json": {
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca"
+    },
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/pipeline-state.json": {
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d"
+    },
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/literature-baseline-matrix.md": {
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2"
+    },
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/literature-search/source-manifest.json": {
+      "bytes": 1124,
+      "sha256": "541880ab1d6a287a7dbd566034a49212858973763fc943eb00d2a1b92de0357b"
+    }
+  },
+  "mainline_stages": {
+    "CCFA-startup": {
+      "status": "passed",
+      "inputs": 2,
+      "evidence": 4
+    },
+    "G0": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G1": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G2": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G3": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G4": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G5": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G6": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G7": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "G8": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "validation": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    },
+    "handoff": {
+      "status": "pending",
+      "inputs": 0,
+      "evidence": 0
+    }
+  }
+}

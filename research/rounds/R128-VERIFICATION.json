@@ -1,0 +1,308 @@
+{
+  "scope": "READONLY_POST_MERGE_PUBLIC_MAIN_TREE_ATTESTATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "verified_at_utc": "2026-11-14T11:30:12.854258+00:00",
+  "independence": "recomputed from committed main-tree blobs + live gate runs; does not import R128-ACQUIRE.py; no R128 JSON used as a data source; group A is a declared same-machine byte-identity consistency check",
+  "checks_total": 36,
+  "matches": 36,
+  "mismatches": [],
+  "group_counts": {
+    "A": 6,
+    "B": 5,
+    "C": 3,
+    "D": 3,
+    "E": 5,
+    "F": 9,
+    "G": 5
+  },
+  "real_credential_value_hits": 0,
+  "entropy_secret_candidates": 0,
+  "structural_authority_anchors": {
+    "goal-ledger.md": "3a694ab2070db411ccde272d81df8eb2da6f8c89692fca2144cbc6e073dab83a",
+    "readonly-validator/validate_single_paper.py": "72240260ec2447c219a9c4717ec57da3c8e35d2a32bc5e909169daa8558a0e58",
+    "guard/criteria-null-ladder.json": "94846083217df86fff6e69ab1d3edbb7c8ef7abd6e8cbfd8272c49dc549c1a36",
+    "guard/ledger-null-ladder.json": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/pipeline-state.json": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/literature-baseline-matrix.md": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2",
+    "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/literature-search/source-manifest.json": "541880ab1d6a287a7dbd566034a49212858973763fc943eb00d2a1b92de0357b"
+  },
+  "rows": [
+    {
+      "group": "A",
+      "check": "tree_file_count",
+      "expected": 336,
+      "computed": 336,
+      "match": true
+    },
+    {
+      "group": "A",
+      "check": "tree_total_bytes",
+      "expected": 9798478,
+      "computed": 9798478,
+      "match": true
+    },
+    {
+      "group": "A",
+      "check": "max_file_bytes_below_50MiB",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "A",
+      "check": "local_main_equals_remote_main",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "A",
+      "check": "worktree_clean",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "A",
+      "check": "all_blob_sizes_agree",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "B",
+      "check": "manifest_entries",
+      "expected": 233,
+      "computed": 233,
+      "match": true
+    },
+    {
+      "group": "B",
+      "check": "manifest_byte_sha_mismatches",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "B",
+      "check": "manifest_skipped",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "B",
+      "check": "all_233_present_and_identical",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "B",
+      "check": "manifest_distinct_dst",
+      "expected": 233,
+      "computed": 233,
+      "match": true
+    },
+    {
+      "group": "C",
+      "check": "real_credential_value_hits",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "C",
+      "check": "entropy_secret_candidates",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "C",
+      "check": "v1_task_path_false_positive_explained",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "D",
+      "check": "over_50MiB_files",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "D",
+      "check": "weights_dataset_suffix_files",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "D",
+      "check": "max_file_bytes",
+      "expected": 2149921,
+      "computed": 2149921,
+      "match": true
+    },
+    {
+      "group": "E",
+      "check": "published_numeric_overall_lines",
+      "expected": 12,
+      "computed": 12,
+      "match": true
+    },
+    {
+      "group": "E",
+      "check": "published_score_lines_all_in_research_reviews",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "E",
+      "check": "published_values_sorted_equals_expected",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "E",
+      "check": "r95_governing_value",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "E",
+      "check": "no_score_line_after_r95_date",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "validator_verdict",
+      "expected": "NOT_QUALIFIED",
+      "computed": "NOT_QUALIFIED",
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "validator_threshold",
+      "expected": 7.0,
+      "computed": 7.0,
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "validator_overall_score",
+      "expected": 6.0,
+      "computed": 6.0,
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "validator_score_meets_threshold",
+      "expected": false,
+      "computed": false,
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "validator_checks",
+      "expected": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "computed": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "guard_ledger_sha16",
+      "expected": "73043b4e164a5a5f",
+      "computed": "73043b4e164a5a5f",
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "guard_criteria_sha16",
+      "expected": "94846083217df86f",
+      "computed": "94846083217df86f",
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "guard_actions_len",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "F",
+      "check": "guard_acceptance_ids",
+      "expected": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
+      "computed": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
+      "match": true
+    },
+    {
+      "group": "G",
+      "check": "stage_count",
+      "expected": 12,
+      "computed": 12,
+      "match": true
+    },
+    {
+      "group": "G",
+      "check": "CCFA_startup_passed",
+      "expected": "passed",
+      "computed": "passed",
+      "match": true
+    },
+    {
+      "group": "G",
+      "check": "all_remaining_stages_pending",
+      "expected": true,
+      "computed": true,
+      "match": true
+    },
+    {
+      "group": "G",
+      "check": "G0_inputs_empty",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    },
+    {
+      "group": "G",
+      "check": "G0_evidence_empty",
+      "expected": 0,
+      "computed": 0,
+      "match": true
+    }
+  ]
+}

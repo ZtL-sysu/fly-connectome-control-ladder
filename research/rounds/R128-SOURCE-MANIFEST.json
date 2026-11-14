@@ -1,0 +1,63 @@
+{
+  "round": "R128",
+  "scope": "READONLY_POST_MERGE_PUBLIC_MAIN_TREE_ATTESTATION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "created_at_utc": "2026-11-14T11:41:35.700569+00:00",
+  "note": "v3 final regeneration: BUILD-MANIFEST.py corrected to drop main-only root README.md (agent branch is pre-merge). Source manifest rebuilt from final bytes of all round files.",
+  "files": [
+    {
+      "path": "R128-ACQUIRE.json",
+      "bytes": 14299,
+      "sha256": "92699766f7829dfca2539e38ff95fc6f7394a9d812f06cccb8fdb50b0c1888d8"
+    },
+    {
+      "path": "R128-ACQUIRE.py",
+      "bytes": 14183,
+      "sha256": "a8198ac31956e767a0d31a4151e1ae8b1c49f8a40b5ca9ce5ed7ce0d2684fd01"
+    },
+    {
+      "path": "R128-BUILD-MANIFEST.py",
+      "bytes": 3886,
+      "sha256": "9c3f8fee15bacc6948f5fb5081da249c7ab1f800a0923c39d2191f9868906fc1"
+    },
+    {
+      "path": "R128-ROUND-AUDIT.md",
+      "bytes": 12799,
+      "sha256": "43749f6f55d571fe433a09a8d487c954a29e35d8cbefbd38f913a3bb0e333ce9"
+    },
+    {
+      "path": "R128-TIMEPOINT-NOTE.md",
+      "bytes": 1692,
+      "sha256": "83914338f03423d0358a91266c593db5f8f780febaac539190dcaf135c33a4ed"
+    },
+    {
+      "path": "R128-V1-DEFECTS.md",
+      "bytes": 2551,
+      "sha256": "ee7368e6c9abe198a86314d3c156f905ce6d9640601c76007585285844f69b63"
+    },
+    {
+      "path": "R128-VERIFICATION-V1.json",
+      "bytes": 7095,
+      "sha256": "abc1f805195e397c38ba98317e66b5462de742d4fb8da227416554052d8c37f2"
+    },
+    {
+      "path": "R128-VERIFICATION.json",
+      "bytes": 7103,
+      "sha256": "1ebc7cc104aa1371f49cf049ccc05310bde337ba4eb65142e553814dbf02e90d"
+    },
+    {
+      "path": "R128-VERIFY-v1.py",
+      "bytes": 11645,
+      "sha256": "7c808739c527ecb65507727a50fccd101e51176aa4fb27224f7244837da24779"
+    },
+    {
+      "path": "R128-VERIFY.py",
+      "bytes": 12201,
+      "sha256": "6fa228a1cec03da1c99477915a44b72bb27cb3767a2148e50e9d170cc57c1df9"
+    },
+    {
+      "path": "raw/tree_paths.txt",
+      "bytes": 34436,
+      "sha256": "48001d18a253fbd68ad27d30d71394b2843250cc80f9e09e172e64f32218d9e9"
+    }
+  ]
+}
