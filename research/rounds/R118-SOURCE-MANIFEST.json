@@ -1,0 +1,1511 @@
+{
+  "round": "R118",
+  "kind": "READONLY_SOURCE_REGISTRY_GAP_AUDIT",
+  "scope": "literature-search/ + gate-G0-R107/sources/kuklev_* + registry/matrix/R98/pipeline-state claims",
+  "generated_at_utc_note": "artifact-generation instant; NOT a fetch timestamp; do not use to reconstruct acquisition order (R115 W3 / R114 D5)",
+  "generated_at_utc": "2026-11-13T20:51:40+00:00",
+  "network_requests_this_round": 0,
+  "classification_rule": {
+    "FIRSTHAND_CANDIDATE_suffixes": [
+      ".html",
+      ".pdf",
+      ".txt",
+      ".xml"
+    ],
+    "PROJECT_ARTIFACT_suffixes": [
+      ".ipynb",
+      ".json",
+      ".md",
+      ".npy",
+      ".npz",
+      ".png",
+      ".py",
+      ".zip"
+    ],
+    "note": "candidate != verified first-hand source; see R118-verify.py for the field-level check"
+  },
+  "counts": {
+    "all_files_under_literature_search": 167,
+    "firsthand_candidates": 26,
+    "firsthand_candidates_registered": 5,
+    "firsthand_candidates_unregistered": 21,
+    "project_artifacts": 141,
+    "kuklev_frozen_bytes": 5
+  },
+  "registry": {
+    "path": "literature-search/source-manifest.json",
+    "bytes": 1124,
+    "sha256": "541880ab1d6a287a7dbd566034a49212858973763fc943eb00d2a1b92de0357b",
+    "entry_count": 5,
+    "names": [
+      "toposens2026",
+      "boundary2026",
+      "flyhack2026",
+      "structure2026",
+      "flyvis2024"
+    ],
+    "contains_2609_24565": false
+  },
+  "declared_entries_check": [
+    {
+      "name": "toposens2026",
+      "declared_url": "https://arxiv.org/html/2604.04033v1",
+      "declared_bytes": 215470,
+      "declared_sha256": "85ddec17c98d81f233ccfef6e576f6458a2314a54cd829a59b98b3b15fdbfdd4",
+      "matched_disk_path": "literature-search/toposens2026.html",
+      "disk_bytes": 215470,
+      "disk_sha256": "85ddec17c98d81f233ccfef6e576f6458a2314a54cd829a59b98b3b15fdbfdd4",
+      "bytes_match": true,
+      "sha_match": true
+    },
+    {
+      "name": "boundary2026",
+      "declared_url": "https://arxiv.org/html/2609.39248v1",
+      "declared_bytes": 304810,
+      "declared_sha256": "b13802566242c74bdede46401f5e00f0af51b78714cd8842685891bda6ff6bbe",
+      "matched_disk_path": "literature-search/boundary2026.html",
+      "disk_bytes": 304810,
+      "disk_sha256": "b13802566242c74bdede46401f5e00f0af51b78714cd8842685891bda6ff6bbe",
+      "bytes_match": true,
+      "sha_match": true
+    },
+    {
+      "name": "flyhack2026",
+      "declared_url": "https://arxiv.org/html/2610.13018v1",
+      "declared_bytes": 346042,
+      "declared_sha256": "f98ec7c77e421824a4fa5b63ce27bd4f41b95098bf7eccc5d1343e70fbfc7120",
+      "matched_disk_path": "literature-search/flyhack2026.html",
+      "disk_bytes": 346042,
+      "disk_sha256": "f98ec7c77e421824a4fa5b63ce27bd4f41b95098bf7eccc5d1343e70fbfc7120",
+      "bytes_match": true,
+      "sha_match": true
+    },
+    {
+      "name": "structure2026",
+      "declared_url": "https://arxiv.org/html/2610.10023v1",
+      "declared_bytes": 207365,
+      "declared_sha256": "33c5d1a01ec14bb0f15db41f74874ce18e1a0a60b1a5df871af58c2e06d9b2ab",
+      "matched_disk_path": "literature-search/structure2026.html",
+      "disk_bytes": 207365,
+      "disk_sha256": "33c5d1a01ec14bb0f15db41f74874ce18e1a0a60b1a5df871af58c2e06d9b2ab",
+      "bytes_match": true,
+      "sha_match": true
+    },
+    {
+      "name": "flyvis2024",
+      "declared_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11525180/",
+      "declared_bytes": 21444,
+      "declared_sha256": "ec7eb823535a7097be40be17babc023d294c35dae1a5044b201dd775b21ce615",
+      "matched_disk_path": "literature-search/flyvis2024.html",
+      "disk_bytes": 21444,
+      "disk_sha256": "ec7eb823535a7097be40be17babc023d294c35dae1a5044b201dd775b21ce615",
+      "bytes_match": true,
+      "sha_match": true
+    }
+  ],
+  "kuklev_frozen_bytes": [
+    {
+      "path": "gate-G0-R107/sources/kuklev_abs_latest.html",
+      "bytes": 43642,
+      "sha256": "c3d4fa3d0e1b289e29ad2c67a337602f2865da86949d99a47960b873df9d80ed"
+    },
+    {
+      "path": "gate-G0-R107/sources/kuklev_abs_v1.html",
+      "bytes": 41581,
+      "sha256": "0075412eb10447864bb2b139c6d8ec8eb1c8f256b2d91e69a913203027bbd367"
+    },
+    {
+      "path": "gate-G0-R107/sources/kuklev_abs_v2.html",
+      "bytes": 43656,
+      "sha256": "cbcbce7343f999ebae1f63c43963a477e96ebe827679b6f973e25e177ca7029e"
+    },
+    {
+      "path": "gate-G0-R107/sources/kuklev_html_v1.html",
+      "bytes": 50485,
+      "sha256": "2726ef63d6cda79393d1faa725267cb1ede474f1189caba51cc583c9a4af648c"
+    },
+    {
+      "path": "gate-G0-R107/sources/kuklev_html_v2.html",
+      "bytes": 182710,
+      "sha256": "f4e7fb8747165a4f4caf0a50e34ca15f7a837536699189bffe267502ca12e7ad"
+    }
+  ],
+  "reference_claims": {
+    "literature-baseline-matrix.md": {
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2"
+    },
+    "gate-G0-evidence-review-R98.md": {
+      "bytes": 3742,
+      "sha256": "6bccf27dcb75dab8d45c37a80bd56724583ffc4e6d3859b7ef81b9b2bafd8ea9"
+    },
+    "pipeline-state.json": {
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d"
+    }
+  },
+  "files": [
+    {
+      "path": "literature-search/boundary2026.html",
+      "bytes": 304810,
+      "sha256": "b13802566242c74bdede46401f5e00f0af51b78714cd8842685891bda6ff6bbe",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:06:35+00:00",
+      "registered_in_source_manifest": true
+    },
+    {
+      "path": "literature-search/boundary2026.txt",
+      "bytes": 96313,
+      "sha256": "b5b06ca1dd2758ec739c91266b8317e1e3705de36ac726d259742dfcf9d351c2",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:08:04+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/competence-focused-screen.md",
+      "bytes": 10943,
+      "sha256": "d2ae416fe6628914f0bd6a2250c0d99bfc2297a9c3ebdc07f790926af71cf66e",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T15:30:26+00:00"
+    },
+    {
+      "path": "literature-search/flyhack2026.html",
+      "bytes": 346042,
+      "sha256": "f98ec7c77e421824a4fa5b63ce27bd4f41b95098bf7eccc5d1343e70fbfc7120",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:06:36+00:00",
+      "registered_in_source_manifest": true
+    },
+    {
+      "path": "literature-search/flyhack2026.txt",
+      "bytes": 84469,
+      "sha256": "a4c6cf5b73fd55ee2b2777033b6119461637a291c4653fd3173c0b7e3f29dc8c",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:08:04+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/flyvis2024-europepmc-metadata.json",
+      "bytes": 1505,
+      "sha256": "fbfbdd0476c19919e8c5216ee8e3de317f48f6eea68a028cfa1309187cf8a4d6",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T15:58:55+00:00"
+    },
+    {
+      "path": "literature-search/flyvis2024-primary-access-manifest.json",
+      "bytes": 416,
+      "sha256": "8b61aebcda1add0b30e5a7b282bb33c7eed68cdb159392096252774b75a63fe4",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:05:22+00:00"
+    },
+    {
+      "path": "literature-search/flyvis2024-primary-body.txt",
+      "bytes": 125982,
+      "sha256": "2fb3ba27f1b9ca57210688fb645feeb5884f906f8ca4ed5483ae4d1b7ac9d6c5",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:05:22+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/flyvis2024-primary.xml",
+      "bytes": 443143,
+      "sha256": "b5cfa9f60473ac3805e3c255bd694e10d63fc281ab8615382eca1788f4f13734",
+      "suffix": ".xml",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:59:18+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/flyvis2024.html",
+      "bytes": 21444,
+      "sha256": "ec7eb823535a7097be40be17babc023d294c35dae1a5044b201dd775b21ce615",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:06:33+00:00",
+      "registered_in_source_manifest": true
+    },
+    {
+      "path": "literature-search/flyvis2024.txt",
+      "bytes": 17774,
+      "sha256": "9bdcd41ba9848aca715de5add7115fe0d91926bf650e5d2a733c11671554242e",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:08:04+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-matched-null-screen.md",
+      "bytes": 12950,
+      "sha256": "6ef15817f004a4c9660e8469637fc8c54377764d90120a4226476d0d6d173e0f",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:00:02+00:00"
+    },
+    {
+      "path": "literature-search/search-notes.md",
+      "bytes": 1115,
+      "sha256": "0d1ce839ba82ab6cb3039944bd955260cbb7bd7058ec96e47d0857f3bd33054a",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T15:12:45+00:00"
+    },
+    {
+      "path": "literature-search/source-manifest.json",
+      "bytes": 1124,
+      "sha256": "541880ab1d6a287a7dbd566034a49212858973763fc943eb00d2a1b92de0357b",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T15:06:36+00:00"
+    },
+    {
+      "path": "literature-search/structure2026.html",
+      "bytes": 207365,
+      "sha256": "33c5d1a01ec14bb0f15db41f74874ce18e1a0a60b1a5df871af58c2e06d9b2ab",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:06:34+00:00",
+      "registered_in_source_manifest": true
+    },
+    {
+      "path": "literature-search/structure2026.txt",
+      "bytes": 66545,
+      "sha256": "5eb45c4b7b0309fd6014f5ff070cddf92738903496f23ac2586e999b19b4d220",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:08:04+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-focused-screen.md",
+      "bytes": 10631,
+      "sha256": "7434368f3547cc92b48599854f1bdb55e3e359fb2db8397814e1408507865999",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T15:38:26+00:00"
+    },
+    {
+      "path": "literature-search/toposens2026.html",
+      "bytes": 215470,
+      "sha256": "85ddec17c98d81f233ccfef6e576f6458a2314a54cd829a59b98b3b15fdbfdd4",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:06:36+00:00",
+      "registered_in_source_manifest": true
+    },
+    {
+      "path": "literature-search/toposens2026.txt",
+      "bytes": 52116,
+      "sha256": "4624da3e48f1b50c6b24b20bc754cdc844dd45c5eddbaf5ef6aca05a3889a5a5",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:08:04+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/access-manifest.json",
+      "bytes": 4717,
+      "sha256": "8a085ecd001dd2e7968cd28872aa14436fe73659fc080e3a54dab756ff4da15a",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:16:35+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/an_donggyu_2026.html.html",
+      "bytes": 218657,
+      "sha256": "4eb3b2f90c77f27be913378489beedf32da392bb5bb214a7ee4f5b025bb0a783",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:10:54+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/an_donggyu_2026.html.txt",
+      "bytes": 50384,
+      "sha256": "01fc41d19db44509965ecadd9a59c0432bba959cb42e4f38dd2593c0e3d27276",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:12:31+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/an_donggyu_2026.metadata.json",
+      "bytes": 5184,
+      "sha256": "7a07f350e5a206ce212cbc766011d2b280e1277560b75e49b132f4e8a51fc35c",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:11:01+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/an_donggyu_2026.pdf.pdf",
+      "bytes": 2162817,
+      "sha256": "4ce95da5041937318244d0777a2beabe4ff30f3a5ef8bda5f3a2337144fccc81",
+      "suffix": ".pdf",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:10:57+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/liu_yeyuan_2026.html.html",
+      "bytes": 427103,
+      "sha256": "956f7352df6b264371362142008a186bcc7f114f37476fa2399e7eede4b96086",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:11:17+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/liu_yeyuan_2026.html.txt",
+      "bytes": 78721,
+      "sha256": "2580ac036fc959d71ef5cf398f37650ac74631c59a3505ea63323b9fe0d92e01",
+      "suffix": ".txt",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:12:31+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/liu_yeyuan_2026.metadata.xml",
+      "bytes": 3447,
+      "sha256": "e62201eee6f427f943df40ea4e27bc362aad8b986f1181a258565d500cb9fe31",
+      "suffix": ".xml",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:11:20+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/liu_yeyuan_2026.pdf.pdf",
+      "bytes": 627545,
+      "sha256": "47fff929b3349a206ec465cf52ac1371acec7d0908bb557b4bfdf65ede830425",
+      "suffix": ".pdf",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T16:11:17+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/response-null-sources/source-screen-findings.md",
+      "bytes": 5825,
+      "sha256": "e431e3308c96be4635a96fc4208eddd0d881619a35127cb4dc003d39540895a3",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:16:34+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou_hasler_2026.metadata.json",
+      "bytes": 7366,
+      "sha256": "67c4805d3e2c33b1556a8e26c7d990593f76d3c195d9bafecd3618250fa689ff",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:11:13+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/archive-manifest.json",
+      "bytes": 1152,
+      "sha256": "ea964c045a1b9ce3ab5db172913f4801ae395136b9b4ac24e172ef1e0cff6e44",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:24:23+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609.zip",
+      "bytes": 12661010,
+      "sha256": "7480d75488de4156f8b1040de6083b28bebaf8f1722f9df29b2e4254f03eab00",
+      "suffix": ".zip",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:20:37+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/zhou-code-methods-audit.md",
+      "bytes": 5706,
+      "sha256": "424cce8bee1170be0e1b21f1ebd282f28779293b8a3a742a86a90328a7246229",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-11-11T16:24:23+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/METHODS.md",
+      "bytes": 52172,
+      "sha256": "52f2b9d05586227532138c8d37f81713d8e31d37137103faf144940110f84563",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/README.md",
+      "bytes": 13128,
+      "sha256": "00633460641b027b389735f3799187b9fd50f72d1653eb08ebf8a38dc1df1bd6",
+      "suffix": ".md",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/celltype_selection/effective_dimensionality.py",
+      "bytes": 4190,
+      "sha256": "e872fb1f237d14c3aeaf8bdef665eafe453cc802fd60095ea6bf9cc4bb7b01e8",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/celltype_selection/extract_structural_degrees.py",
+      "bytes": 4955,
+      "sha256": "d8dcbd171b5ee8e5b472aa132e2c7aa88713c5e97edf3a3f8e6746dd76714922",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/celltype_selection/optimal_celltype_selection.py",
+      "bytes": 8138,
+      "sha256": "a9bb8cc2feb68c06af9b55117bb2ce1c2da5dca923d90e9e37f1fe7046750b32",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/celltype_selection/structural_vs_activity_ranking.py",
+      "bytes": 6696,
+      "sha256": "30abdb815eb2a43ffbfa286dc2814720938999205eb6e0047939ec551473b2af",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/biological_reference.py",
+      "bytes": 32772,
+      "sha256": "43f6c1d26dd9db49ffb8d766168a727adbafdafa79b9f31acf32a5119629bcca",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/fib25-fib19_v2.2.json",
+      "bytes": 618148,
+      "sha256": "bfbb0766251ff09e22723d0ebbf7b14793e70b3ae8ad0eea64eac9d28223351a",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/moving_edge_on.py",
+      "bytes": 37368,
+      "sha256": "c59d5e71bb21fc84e9e9dfc18084d5be5d9f20bb23a9fa72d5bb71fa94076e5b",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/moving_edge_on_off.py",
+      "bytes": 52201,
+      "sha256": "cbccb578304c64749981d6e51dd8319bdd116bd917ed10a3bc9038c2b117797d",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/plotting_utils.py",
+      "bytes": 2671,
+      "sha256": "619f6e82a32dd12856dfc24d90d966f9d32db3ce6abc00f252aba56f3ec68ad9",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/production.py",
+      "bytes": 28562,
+      "sha256": "6245eca118870f881af77a34d52e4b3395701c7e99f10ba1894790d2d954a23a",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/randomize_connectome_schemes.py",
+      "bytes": 19684,
+      "sha256": "986b724e2a156e61ec4a827ca1653645333daf73fb09eebaada8647e260a65a1",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/core/untrained_networks.py",
+      "bytes": 31318,
+      "sha256": "a0d012b2fac98a7d48f0731bf26bc7721cbe5c0206b32a00fe0aadac82539720",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/bio_reference_exp1_permtest.png",
+      "bytes": 56731,
+      "sha256": "dfe98410f457c81d73d1f341e6aa2bf6eb9e50393ae235b87b2574bf8b82a3aa",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/bio_reference_exp2_permtest.png",
+      "bytes": 55594,
+      "sha256": "0af4aa9365a09eb54233521173d9e82bb105a50b3da24d926986e9d190cad5ff",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/biological_reference_exp1.png",
+      "bytes": 83385,
+      "sha256": "58fe82de00413ab50699affc0d2867c3d4910b55fb90135ef3fb0686e90845fd",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/biological_reference_exp2.png",
+      "bytes": 103501,
+      "sha256": "3cef6613ecf5e4f58393ad69fecaa8689f7993e1a00437761eb96849e8ecec2a",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/bootstrap_on_off_asymmetry_50models_full_shiu.png",
+      "bytes": 61807,
+      "sha256": "2df3ad907e0b7944940c37c1075c1fa03ef27c7d8a53ab1325dfc92cf4ca082a",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/cka_validation_exp1_exp2.png",
+      "bytes": 146374,
+      "sha256": "1bb5518244fe02e362813c7f4a164af921e95e8e295a97976704a63f2daaa0c3",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/exp4_sweep.png",
+      "bytes": 68132,
+      "sha256": "b79c0814c7dfad57e0abf16969239ec7ef5fb8a86403add690bdb8ea42df35c8",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/exp4_untrained_permtest.png",
+      "bytes": 30014,
+      "sha256": "2f6e00971a6c301009a0bf26fa6e0151baa2ac01713fb5a7098374d02fed236f",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/exp4_untrained_rdms.png",
+      "bytes": 96424,
+      "sha256": "2eb087ff4d118f1c37ebf196865dee938ab0cdca9d04149b3223c7782a4a7296",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/exp4_untrained_rdms_annotated.png",
+      "bytes": 735999,
+      "sha256": "5190ba1177d55422a5abe5525d2180157b090e239256591b824a9826d58d661b",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/maisak2013_t4t5_von_mises_tuning.png",
+      "bytes": 149836,
+      "sha256": "4e2a049c1decbd9551e46128718ff1654746ebde90134674917e7d13d0a5da3a",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/mds_exp1_on_edges_50models.png",
+      "bytes": 94795,
+      "sha256": "f777d1ea39013c882f5c339671e831309ccf4b771164ebee6751e96612cd05bc",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/mds_exp2_on_off_edges_50models.png",
+      "bytes": 80266,
+      "sha256": "efaeb17f373ead16c199afffbe7ac5392b4a5c48e48e3a8fe40202092a941a86",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_off_permtest_10models_full_shiu.png",
+      "bytes": 35618,
+      "sha256": "5d91c6b0c92ae7cec2273ec17031502fd9515f5362ce68182a2b58348b183d54",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_off_permtest_50models_full_shiu.png",
+      "bytes": 40601,
+      "sha256": "1f6d4fc9db807a6da36eb28738d55ca12a67adffca8857efee57e15c448c4105",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_off_rdms_10models_full_shiu.png",
+      "bytes": 100795,
+      "sha256": "2ce91791516443231535fb1678c267da0065c339d05e85d37c344748fbc9409e",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_off_rdms_50models_full_shiu.png",
+      "bytes": 100325,
+      "sha256": "27809b353f7525b896568446288fe0a9de10d6ad81164ce2de9d8ae27d35bd96",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_off_rdms_50models_synapse_only.png",
+      "bytes": 100612,
+      "sha256": "6a3a43a4638ccdf05627ce2813f68074d4a8a328601a2307171ad8daf6d81ac0",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_permtest_10models_full_shiu.png",
+      "bytes": 35312,
+      "sha256": "0750b63d94d25c8ab1ac630caabaa0b16845374412c09bf26b1b5392fa7accc3",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_permtest_50models_full_shiu.png",
+      "bytes": 35015,
+      "sha256": "91911a67200c81d48e08b710e5fa6d1c0b33a6ad9f9cbe86886f10196090d5c2",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_rdms_10models_full_shiu.png",
+      "bytes": 72606,
+      "sha256": "c63504499dfd53c4b18d449197325dc1121ae86618d342f69618126a880edf67",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_rdms_50models_full_shiu.png",
+      "bytes": 75002,
+      "sha256": "875683cdcf52c5b8f8544aac801f1ae044c0dcd4446eda6505facf4cbc413295",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/moving_edge_on_rdms_50models_synapse_only.png",
+      "bytes": 72237,
+      "sha256": "8b68d683a842194bc8e3bef0a87a40e93158b9228b1cfd3a9f27577efa48811f",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/replicate_seeds_degree_preserving_swap.png",
+      "bytes": 161354,
+      "sha256": "15c71955939084dac1c2a3275051dde983edaa6a0c3532831944ce2abc20d28b",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/replicate_seeds_erdos_renyi.png",
+      "bytes": 146877,
+      "sha256": "85cafac5b952d62268ab5d880fc87306067679517e34e25320870327d9aadf4f",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/training_convergence_start_end.png",
+      "bytes": 37988,
+      "sha256": "634d8ed8baeb9a2a73ffb233e355ede34095228c949ecae8b2c0169f680cbaa1",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/training_trajectory_plot.png",
+      "bytes": 1334259,
+      "sha256": "f3be3b48028e5ff545abb233f98961df381584bf044a37eb22514ec7ba5fac03",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/trajectory_convergence_henning.png",
+      "bytes": 89711,
+      "sha256": "00f36d0b115a6afbc93ad31c1917bc50c48d327b18aa9dec2012674970a7fd23",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/trajectory_convergence_on.png",
+      "bytes": 88370,
+      "sha256": "dc7976e77732f2b41ff9658a7ab767f3099c1032a50b45691a14e3d1fe7effd2",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/trajectory_convergence_onoff.png",
+      "bytes": 133622,
+      "sha256": "32b4a7538daa0445dce41276bda9730a2b030eeab2dc979d38538760b775df2f",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/umap_cc_ensemble_exp1.png",
+      "bytes": 85605,
+      "sha256": "b4a907d2993567de95810fc69a889bdeb6ace1ed7606939075aa3f8d4ff8b793",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/umap_cc_ensemble_exp2.png",
+      "bytes": 98806,
+      "sha256": "399950b2386901c678fa8551a58a0fffd28b4b99d5ee8409895985f9c7bfb5cf",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/untrained_rdms.png",
+      "bytes": 307825,
+      "sha256": "686c2aa4c77ec52c2c32358470af82548efc31f69f22264d0bc470fbf3cea08b",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/whitened_rdms_exp1_exp2_50models.png",
+      "bytes": 81276,
+      "sha256": "b80be301206926d53a0cd03a25cfa9eeaefd8e7a70879532908e0c380d8aa625",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/within_polarity_blocks_cc_vs_random_50models_full_shiu.png",
+      "bytes": 95314,
+      "sha256": "19e9fab4ae0ffcf9b2d7b76781e416c25bcc270687a905fc85c3429459e8be17",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/within_polarity_blocks_whitened_exp2_50models.png",
+      "bytes": 107195,
+      "sha256": "81704bfa56c909cb18596ce06e9f326a8259dcdd537bf30f24aff0752797c9bf",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/figures/within_polarity_circular_test_50models_full_shiu.png",
+      "bytes": 54672,
+      "sha256": "db01ef776d0a680bb0726aac14d001c627298a5b1cbfeb5fd521a4984222fc91",
+      "suffix": ".png",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/analyze_full_trajectory.py",
+      "bytes": 5378,
+      "sha256": "0ae78673b2e9f9e6c5dd76eba2955066292c262f2241f82d8c1b85ed9d121fed",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/analyze_raw_reference.py",
+      "bytes": 4526,
+      "sha256": "72f21858d7d67aceafe33bc0a07d29f582ec22dcf44af9499e6d55e59b27cc98",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/analyze_training_trajectory.py",
+      "bytes": 17630,
+      "sha256": "896e8767050fc9b676f1afb01c4ca928c7562247bd40a12d1c5db30eaf780919",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/build_henning_reference.py",
+      "bytes": 8277,
+      "sha256": "ee443a80c5b7df6833de351625506f90a34193788d6c8aca1ab4aceb7dc8961a",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/build_reference_from_raw.py",
+      "bytes": 6960,
+      "sha256": "6baedad45d8646bd8037f6fe283878d812bd5c41cb108c892c55a827b85cd6e6",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/build_reference_from_raw_with_fly_id.py",
+      "bytes": 10099,
+      "sha256": "6d1ead78df36f239461dfe657f2571995eeb5009cbdf580301ef46a0156fbf40",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/check_per_model_consistency_raw.py",
+      "bytes": 2857,
+      "sha256": "7bb2a047bafa1275a1a0ce806dab4003142e544b03aa1338234ed30e41f34146",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/check_reconstruction_robustness.py",
+      "bytes": 9724,
+      "sha256": "dd82336f97bf43e85e49e96e3f533be957ef054367bd4e800b8822241030f12b",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/check_residual_reliability_T4_T5.py",
+      "bytes": 5593,
+      "sha256": "09350f45a90b6be9558e88366595f872de3f07a38fa76a9439ec9c019bbc6f1a",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/compare_all_populations_henning.py",
+      "bytes": 15378,
+      "sha256": "48833a62e449aa5a6e096fbfb9191992386be3a6c22d3cfcd7aa1dbba29b65f2",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/compare_all_populations_results.json",
+      "bytes": 11551,
+      "sha256": "ad4058a753153993f8e6639ede53b08b12891316ffc4dfdd7708918846fd302e",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/correct_henning_reference.py",
+      "bytes": 7482,
+      "sha256": "51be7c56f489d14bcebbc0767b672508df76ce2f3a89409dfa4434c551db4694",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/cross_individual_substitutability.py",
+      "bytes": 12141,
+      "sha256": "aa8329513c7aa48348613a11a0a430bb29a682bfa82fcb20cc58f578a008d244",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/exp5_henning_evaluate.py",
+      "bytes": 13297,
+      "sha256": "e14bd69c100df91e2fe45bbe1220bce7038c72f44c5725714505bd4db089f985",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/exp5_henning_permutation_results.json",
+      "bytes": 1177118,
+      "sha256": "da3516d6e9d83a8d144bf56ff89a89d620711d4c5c56cabedea806ed21ac716a",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/pool_trained_vs_untrained.py",
+      "bytes": 4085,
+      "sha256": "1b3c05d7336de742cfa642096b64c063d7a0cb6698d2f60e3ab4a939ac2cf709",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/training_trajectory_henning.py",
+      "bytes": 17634,
+      "sha256": "a21be2841109ea6f86c9a69436dee20b3b120c03cf6a9b13d2c12b61cf74f537",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/training_trajectory_results.json",
+      "bytes": 582945,
+      "sha256": "27c410e5f179501ed660dca32c0c10c7f0374c0ad274b46b7ed102b3f64a4402",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/validate_exp5_henning_pvalues.py",
+      "bytes": 10214,
+      "sha256": "0808bc6de81947b4a00c27267fc7808294103f5ce28ae8094dcaba2d010691eb",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference/von_mises_artifact_test_results.json",
+      "bytes": 135,
+      "sha256": "badab89bbcf41ac3d640b200fde9d5f9a8f56e32c21eeed6727dfbae3f8a2eec",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/analyze_training_trajectory.py",
+      "bytes": 17630,
+      "sha256": "896e8767050fc9b676f1afb01c4ca928c7562247bd40a12d1c5db30eaf780919",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/compare_all_populations_results.json",
+      "bytes": 13270,
+      "sha256": "e5dee24c004dc80c2a51333d43d51863c560c550845169930d2ddd6e9753ab91",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_permutation_results.json",
+      "bytes": 1177118,
+      "sha256": "da3516d6e9d83a8d144bf56ff89a89d620711d4c5c56cabedea806ed21ac716a",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_rdms_degree_preserving_swap.npy",
+      "bytes": 12928,
+      "sha256": "e5aa02c3679a82ce938b8e1a5b36409c554dd3a89f7c5a8f9be2a8e74c4e3362",
+      "suffix": ".npy",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_rdms_erdos_renyi.npy",
+      "bytes": 12416,
+      "sha256": "8f5525ffd80180d38183e3eab29812089c8681eb3d143ec43327d776a102d50d",
+      "suffix": ".npy",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_results.json",
+      "bytes": 2271,
+      "sha256": "b40a4e709068749bea55a8a1ae6691e01b167487809722f964bdf2e96be89ffe",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_results_degree_preserving_swap_n25.json",
+      "bytes": 1941,
+      "sha256": "9706084ebad7a0b91ea2bcdc7a4919ed72755302b6837fb2b29039122d6a0de1",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/exp5_henning_results_erdos_renyi_n25.json",
+      "bytes": 1852,
+      "sha256": "0d76953be03f7dd5a152ecf1784e52822831184747ec8884da2328cd64e72473",
+      "suffix": ".json",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/henning_population_matrix.npy",
+      "bytes": 640,
+      "sha256": "e68ea2ecbc2177dd29a971fd632b665451d59f757f443b7cacc9119784fc35bb",
+      "suffix": ".npy",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/henning_reference_rdm.npy",
+      "bytes": 640,
+      "sha256": "16944814a6882c0953a45ab64d47e339d7924488da984cbff4d4aef56cb500c0",
+      "suffix": ".npy",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/raw_population_matrix.npy",
+      "bytes": 640,
+      "sha256": "d7aa593f5ac7ebe58c129e23547b4c4c6812837641c430b291455fd059ad410f",
+      "suffix": ".npy",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/raw_r_teta_progress.npz",
+      "bytes": 269985,
+      "sha256": "15b1a10067f70a7d30ff41022a66b6b1e74fd7f8d71a9d5a6fd198200af1fa8f",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/raw_r_teta_progress_with_fly.npz",
+      "bytes": 371482,
+      "sha256": "1e5fc404499ca55591474070d871ce7eb209df899a4819abbd7341ea69e79439",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/henning_reference_data/results_exp1_8dir_50models_full_shiu.npz",
+      "bytes": 240130,
+      "sha256": "08f7d9d00ddc9148e51e135f17f6c907dbcc8aac7672944fe3f2b42c86601778",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item1_untrained/analyze_within_polarity_decomposition.py",
+      "bytes": 4187,
+      "sha256": "805814ed1ca83a15bdf5219dd48eed04a859784094786769aae910a7c2944748",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item1_untrained/posthoc_mds_whitened_rdms.py",
+      "bytes": 21743,
+      "sha256": "8f4fa36560f16745ef06c99ea48496a25919124333f0ee32d55dd56b163386c9",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item1_untrained/replot_from_saved.py",
+      "bytes": 1759,
+      "sha256": "199d4277c333844535d43d83c77b70e5df72df241febab1086a424d1b074d619",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item1_untrained/test_item1_all_null_schemes.py",
+      "bytes": 18520,
+      "sha256": "e16ab1e63f78ec3964ee6cdaa60953420739edae6e4f7eb4a08b03ed8a2e5e8c",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/analyze_full_trajectory.py",
+      "bytes": 5378,
+      "sha256": "4c3eba237efc1de9437d046a0988cc77f7d09a158b87046557156fe04c653f38",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/analyze_offoff_trajectory.py",
+      "bytes": 6727,
+      "sha256": "f64b520c5a3b0ff830c201edf9e58bbc167f9b977e72c2bd6665afc4215570c3",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/cka_validation.py",
+      "bytes": 10430,
+      "sha256": "95d67ed8342509f298e3c16ebf227f547746f63e2a7733c84978243533200ed4",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/correct_exp5_circularity.py",
+      "bytes": 5067,
+      "sha256": "cb175ed07bef7e558b839151c4d3ce1d71af12d95eec58c0128ec635ac6626be",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/evaluate_full_trajectory_all_conditions.py",
+      "bytes": 5563,
+      "sha256": "eb6fbabe165d6c13835a0461b4520d318c37c36ccdd311eed124d83a05e4cef8",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item3_trained_comparison/production.py",
+      "bytes": 28562,
+      "sha256": "6245eca118870f881af77a34d52e4b3395701c7e99f10ba1894790d2d954a23a",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item4_negative_trending/exp4_perturbation_sweep.py",
+      "bytes": 19941,
+      "sha256": "cfd94c8d18cd8abae08fd079bc89638ce3726d99d9c1337698bc51707b4ccc96",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item4_negative_trending/exp4_synapse_sweep.py",
+      "bytes": 25415,
+      "sha256": "ca79e50de84388bf90e575261ddead6f85da9f94bc57631f033df3578ed3af1b",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/analyze_instability_experiment.py",
+      "bytes": 7232,
+      "sha256": "e1853176803a7216f1a5d510d634379e07f3f2ee1c297acf8c6f2fed466ba345",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/eigenspectrum_stability.py",
+      "bytes": 9330,
+      "sha256": "25e1e1f99bfd2f2526fd51c1cee4146e123c6fe2ae2f723e8a1e67d3738d418c",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/exp5_link_and_evaluate.py",
+      "bytes": 14710,
+      "sha256": "a7e0dbc27595ce9b3c754a7867ebaa633e184149826d0dbfa2a1625ed9e26d93",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/exp5_preflight.py",
+      "bytes": 10762,
+      "sha256": "82f7b530d680a433ab8aa1df155e82a8b4da252e402627b8e60f4770912ba7e0",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/exp5_stability_sweep.py",
+      "bytes": 9434,
+      "sha256": "efc371fd64104d2b4881f58daa9eef92e56cc34d8fba92ea97fbae9b25df630e",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/item5_instability/run_pilot.py",
+      "bytes": 13244,
+      "sha256": "fddf90a1c1149fffa56a145bddd791dcb6c08ec8a14efc025bfffb6becb8fb0f",
+      "suffix": ".py",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/biological_reference.ipynb",
+      "bytes": 434223,
+      "sha256": "23aa739af6a7b89fbebb106c4dac3ae26552574644ff83d6457ef298f939661e",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/cka_validation.ipynb",
+      "bytes": 144734,
+      "sha256": "a090694465720e9660dc2fb7e62c5b53155bbcfa802755dca31a3cfa482d6fc5",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/exp4_perturbation_sweep.ipynb",
+      "bytes": 146486,
+      "sha256": "9ae7af6cb1f9488a046e13e517505d02ca91115f7e0223a6393f7d2a9d93800c",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/moving_edge_on.ipynb",
+      "bytes": 959643,
+      "sha256": "92c3f5cbf0c4cd481159469e33abdcb6ded358223fd92f848730a6b5da122545",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/moving_edge_on_8dir.ipynb",
+      "bytes": 500668,
+      "sha256": "ed231658d9c3c21902f634d9511cedde9c0d76a13d27d269940e029a5c70cc22",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/moving_edge_on_off.ipynb",
+      "bytes": 1927685,
+      "sha256": "ec08c636c087caaffbe35167fab88d056232e5286fc382cc6b14460fb2f0cdd1",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/posthoc_mds_whitened_rdms.ipynb",
+      "bytes": 340517,
+      "sha256": "e83f670fcfd9977522e21dbeebebdf54291c30ba8bd568d3545c5923a11b0cc9",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/notebooks/untrained_networks.ipynb",
+      "bytes": 111420,
+      "sha256": "f36191494651752995ff2912e16dbb978bb9e9d10e0174acb435da9a6aebcab1",
+      "suffix": ".ipynb",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/cka_validation_50models_full_shiu.npz",
+      "bytes": 323058,
+      "sha256": "6f2ba5cdd412c54da4a080f367dda6f9e697b017ffa5f6f769b1b55c33bc4cf6",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/effective_dimensionality_results.npz",
+      "bytes": 1826,
+      "sha256": "d94c8fd4fba7a480a0f7a5e0ebe39f3fe25c241cf07d68402324ec3a31baf94b",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/exp4_sweep.npz",
+      "bytes": 7236,
+      "sha256": "3f06fbdf38ceb3917735b673eb9187af13af97ffcbdbd0480aba9beb30178465",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/full_trajectory_henning_8dir_on.npz",
+      "bytes": 743566,
+      "sha256": "301e0237418d5a5f2dcf14d9da5bf340dce0fd3cb09e5c73bc473bd6a37ae0a0",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/full_trajectory_moving_edge_12dir_on.npz",
+      "bytes": 1665198,
+      "sha256": "398db9dc4b1840d970d4f3249a43695ab583518cffdf32da43d53063d74f98f9",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/full_trajectory_moving_edge_12dir_on_off.npz",
+      "bytes": 6641854,
+      "sha256": "a7e73e3beb360e7db44e7306ad74c87627eb9271d85bb211f35f32df0b9db980",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/optimal_celltype_selection_results.npz",
+      "bytes": 6228,
+      "sha256": "260f79116d287fb179b143417caede9e6b549266f0e2445bae0dce6a7996988e",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/posthoc_mds_whitened_50models_full_shiu.npz",
+      "bytes": 23642,
+      "sha256": "8c1c340bf22db69585202226a43d78c2f11476d1f7a46535d7c67da2d6d35dea",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp1_10models_full_shiu.npz",
+      "bytes": 7994,
+      "sha256": "a3d7c5e63ebb6b4a68cd8ae194df4826ddf26748d32e830c04b8afbee762793c",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp1_50models_full_shiu.npz",
+      "bytes": 378382,
+      "sha256": "f893b86ce2812a5b98f68573f9c1dafd5112bd8ba0e8b90bae41e57e42b86905",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp1_8dir_50models_full_shiu.npz",
+      "bytes": 240130,
+      "sha256": "08f7d9d00ddc9148e51e135f17f6c907dbcc8aac7672944fe3f2b42c86601778",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp2_10models_full_shiu.npz",
+      "bytes": 22840,
+      "sha256": "08fe2cc4feba598f7017f828af6eed8351ac08fdcff63044dab0f6b46d8296cd",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp2_50models_full_shiu.npz",
+      "bytes": 878028,
+      "sha256": "58d284905a174f54f09ed10a598ee0ba6f53dd5d57b0057bb471a94c1725f612",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/results_exp4_untrained.npz",
+      "bytes": 813940,
+      "sha256": "ea20ece030537987b2f1b2dfd1e0da96b2a481a821a8c6c84e09e1cbeb97e115",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/structural_degrees_plain.npz",
+      "bytes": 2644,
+      "sha256": "53dc3b3d60eed4754a6349379781a35b087639627a0f145745599b774357c41e",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/response-null-sources/zhou-code/unpacked/connectome-fidelity-0cba43f5bd3fa5a043a841a1ab19a051843a2609/results/structural_degrees_synapse_weighted.npz",
+      "bytes": 2644,
+      "sha256": "00fb0ce00e45db6433765a5fb9ac2f98879649135fd2c00cdd02c23533e4eb1b",
+      "suffix": ".npz",
+      "class": "PROJECT_ARTIFACT",
+      "mtime_utc": "2026-10-16T15:04:58+00:00"
+    },
+    {
+      "path": "literature-search/task-projection-sources/ahmad-wacv2024.pdf",
+      "bytes": 3350510,
+      "sha256": "2449ef34269780edeaf631e1a2f7f7eef53b1829c246711db12586b825ad7f4b",
+      "suffix": ".pdf",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:35:54+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/alain-bengio-2016.html",
+      "bytes": 125526,
+      "sha256": "f6a3f4f3c05fb0a44e119e49f5f76a4200a32d50bd2989917d752819c47e7075",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:35:03+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/costabile-etal-2023.html",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:36:53+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/fakhar-dixit-2024.xml",
+      "bytes": 135530,
+      "sha256": "c37e5c7deec9fec82cf875f8795dce872832441c50c231bc923b1c07d8d852e0",
+      "suffix": ".xml",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:35:34+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/fakhar-hilgetag-2022.xml",
+      "bytes": 144937,
+      "sha256": "97eec6c54c3dc2e523321fca6783d3f09a1fa35fb40fded30efcfa808d998804",
+      "suffix": ".xml",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:35:39+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/hewitt-liang-2019.html",
+      "bytes": 42679,
+      "sha256": "36b72b92355d95f34db49e08b322d421ee6a8bf4e7cb7a6f71741081a121d023",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:36:49+00:00",
+      "registered_in_source_manifest": false
+    },
+    {
+      "path": "literature-search/task-projection-sources/plos-2022.html",
+      "bytes": 258826,
+      "sha256": "1830b82daaddaf9fce86b104d97c553e754656babd29d167abed7d3b43684ff2",
+      "suffix": ".html",
+      "class": "FIRSTHAND_CANDIDATE",
+      "mtime_utc": "2026-11-11T15:35:45+00:00",
+      "registered_in_source_manifest": false
+    }
+  ]
+}

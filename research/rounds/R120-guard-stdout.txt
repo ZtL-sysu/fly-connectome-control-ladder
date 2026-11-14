@@ -1,0 +1,61 @@
+[OK] 报告已落盘：auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-guard-check.txt
+task-completion-guard 判定报告
+============================================================
+任务      : R107 目标迭代（用户 2026-11-13 授权）：单篇 path-aware null ladder 完整文章；最终由独立子代理 ccf-paper-reviewer full 模式评审，Overall >= 7.0（含等于）；不投稿/commit/push
+操作人    : WorkBuddy
+判据声明  : 2026-11-08 13:55:12
+判定时间  : 2026-11-14 08:39:12
+重复阈值  : 同动作上限 2 次 / 单步重试上限 3 次
+------------------------------------------------------------
+结论      : INCOMPLETE  (退出码 1)
+------------------------------------------------------------
+
+【交付物】7 项
+  [PASS] D1 guidance.md（已通过 --strict --packet） —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/guidance-v2.md
+  [PASS] D2 run root pipeline-state.json（26 阶段） —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/pipeline-state.json
+  [PASS] D3 P3/P4 实验证据 metrics.json（novix debug pull 拉回） —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4/metrics.json
+  [PASS] D4 paper.tex（六节结构） —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/paper.tex
+  [PASS] D5 编译 PDF —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/paper.pdf
+  [PASS] D6 P9 full 独立评审报告（ccfa-review-reports/，含 **Overall:** X） —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/ccfa-review-reports/
+  [PASS] D7 唯一进度账本 goal-ledger.md —— OK
+        路径 /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/goal-ledger.md
+
+【验收条件】6 项
+  [PASS] A1 guidance.md 通过 validate_guidance.py --strict --packet
+        判定 cmd_exit_zero @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/guidance-v2.md —— 退出码 0
+  [FAIL] A2 pipeline-state.json 全 26 阶段 status=passed
+        判定 cmd_exit_zero @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/pipeline-state.json —— 退出码 1
+  [PASS] A3 P2 修复版结构敏感性 gate 判定 PASSED（后续修复版 18235 + 18017 主矩阵）
+        判定 cmd_exit_zero @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4/metrics.json —— 退出码 0
+  [PASS] A4 P3/P4 完整证据含 main_matrix、null_ladder、heldout_prediction（补齐版）
+        判定 cmd_exit_zero @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4/metrics.json —— 退出码 0
+  [PASS] A5 paper.tex 含六个编号主节
+        判定 regex_present @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/paper.tex —— 命中 1 处
+  [FAIL] A6 最新一次独立 full 评审的 Overall 严格 > 8.0（等于 8.0 不算；主会话自评不算）
+        判定 cmd_exit_zero @ /Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/ccfa-review-reports/ —— 退出码 1
+
+【步骤台账】7 步
+  S1 [pending ] 尝试 0 次 | 证据 0 条 | 确认中断点：读账本 R28+ 与 pipeline-state
+  S2 [pending ] 尝试 0 次 | 证据 0 条 | 核验 18017 任务状态并 debug pull 拉回 P3/P4 子目录
+  S3 [pending ] 尝试 0 次 | 证据 0 条 | 逐项核验 metrics.json 必查字段与脚本完整性并归档 audits/
+  S4 [pending ] 尝试 0 次 | 证据 0 条 | 写回 goal-ledger.md 新轮次与 pipeline-state.json/md
+  S5 [pending ] 尝试 0 次 | 证据 0 条 | P3 基线优先 → P3A → P4 → P5 strong-result lock
+  S6 [pending ] 尝试 0 次 | 证据 0 条 | P5A/P6–P14 写作与引用核验 → P15 TeX/PDF 编译
+  S7 [pending ] 尝试 0 次 | 证据 0 条 | P9 由 ccf-paper-reviewer full 模式独立评审并本地复核 Overall>7.0
+
+【动作序列】共 0 条
+  无超限重复动作
+
+【发现】
+  [W-W05] 验收项 A2「pipeline-state.json 全 26」未通过：退出码 1
+  [W-W05] 验收项 A6「最新一次独立 full 评审的 Overall 」未通过：退出码 1
+
+------------------------------------------------------------
+下一步：仍有未完成项 → 只对未通过项继续施工，已完成项严禁返工。
+

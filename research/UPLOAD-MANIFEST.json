@@ -1,0 +1,1637 @@
+{
+  "copied": [
+    {
+      "cat": "manuscript",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/R49-7.5-DELIVERY/revision-r97/manuscript/paper.tex",
+      "dst": "research/manuscript/paper.tex",
+      "bytes": 44652,
+      "sha256": "1ce70657f9dc09c90d8497556c7cb73a4d9345cd9f47e8d129fb28881e7b3fe5"
+    },
+    {
+      "cat": "manuscript",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/R49-7.5-DELIVERY/revision-r97/manuscript/main.pdf",
+      "dst": "research/manuscript/main.pdf",
+      "bytes": 2123187,
+      "sha256": "c2634bb70afaec6662b9bc9c4450aadf9cc9b30074549e05cf15735c11d98b3b"
+    },
+    {
+      "cat": "manuscript",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/paper.tex",
+      "dst": "research/manuscript/paper-2.tex",
+      "bytes": 45618,
+      "sha256": "4d074072734747d0b3f599d60e0fb1e75e4b9e3a35644de8d44d1ec70f92520a"
+    },
+    {
+      "cat": "manuscript",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/paper/main.pdf",
+      "dst": "research/manuscript/main-2.pdf",
+      "bytes": 2149921,
+      "sha256": "8b8eddfb7531337c84806c54451fd0fe13e04d818ff9ba627d0a97abdf8291ce"
+    },
+    {
+      "cat": "manuscript",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/paper/f-submit-v1-run-20261110-115500-phenomenon/r93-candidate/paper.tex",
+      "dst": "research/manuscript/paper-3.tex",
+      "bytes": 43467,
+      "sha256": "24ffeafa491e565f89f85590b8f9d73c86f2e2b9e50609279082578405ffd2bd"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/p3_p4/metrics.json",
+      "dst": "research/results/metrics.json",
+      "bytes": 25700,
+      "sha256": "4f3044e8d6dd233c4b8676317eea0f6535e33e8fc2600d1eb013bac701d8f4eb"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/results/p3_p4/metrics_completed.json",
+      "dst": "research/results/metrics_completed.json",
+      "bytes": 35660,
+      "sha256": "332af196893a7421a3ea87a2cb9f050d3804fac820dc805bafeabff39376bfd8"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/p3_p4/metrics_completed.json",
+      "dst": "research/results/metrics_completed-2.json",
+      "bytes": 35660,
+      "sha256": "332af196893a7421a3ea87a2cb9f050d3804fac820dc805bafeabff39376bfd8"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/results/r51_independent_family/metrics.json",
+      "dst": "research/results/metrics-2.json",
+      "bytes": 46846,
+      "sha256": "429480294338977be9199ea314deea198350a35736c4c6176e01d80510588c87"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/experiments/i1-null-ladder/metrics.json",
+      "dst": "research/results/metrics-3.json",
+      "bytes": 35670,
+      "sha256": "a7369028696991db1e8c7eea2d2748d248030fa91d3925530bf955c2739e7945"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/experiments/i1-null-ladder-noise12/metrics.json",
+      "dst": "research/results/metrics-4.json",
+      "bytes": 35556,
+      "sha256": "b100c6f3bd86beb1b19042b592472e076aa945a94db570badc6ba760f85d696d"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/R63-results/r63_density_repl/metrics.json",
+      "dst": "research/results/metrics-5.json",
+      "bytes": 36408,
+      "sha256": "aedc4314a7d8167fa448073727f5df6ba765355a91d704a9f88c6cfd397f8112"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/R63-results/r63_robust/metrics.json",
+      "dst": "research/results/metrics-6.json",
+      "bytes": 41991,
+      "sha256": "5c83a6cee3bc2625c5a5aac4e03313fa8e620550959cc4b4f98ba0098b81ce69"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/papers/R63-results/r78_control_ladder_repl/metrics.json",
+      "dst": "research/results/metrics-7.json",
+      "bytes": 110747,
+      "sha256": "b433c3e2eb927f120cc4e992f779f133902f444d30394828566813c805e3312e"
+    },
+    {
+      "cat": "results",
+      "src": "fly-gnn-snn-vision/qualified_paper.json",
+      "dst": "research/results/qualified_paper.json",
+      "bytes": 1725,
+      "sha256": "ede934c48c8158ab9d727ce5ee4b292f365818de5a851eca4da53644ae4201ec"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-full-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-full-review-20261108.md",
+      "bytes": 20618,
+      "sha256": "11a2e82d4e87d48ac0e555e707e750097154459b262d76899762ba9c3b77a682"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r39-full-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r39-full-review-20261108.md",
+      "bytes": 21586,
+      "sha256": "ece7b1cb6b49a4754681ec7e77002225a777b8eb713739c1c373698665ba8a6d"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r39-independent-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r39-independent-review-20261108.md",
+      "bytes": 55166,
+      "sha256": "1ab271f21527e1e65c6498c0329c86cd032ce2f5dc1d96859206685232a793fb"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r47-independent-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r47-independent-review-20261108.md",
+      "bytes": 59588,
+      "sha256": "8ab1ee7dd125870e0075034694ddf560da594fc623b22bddb9d71ca0f6e5ff7e"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r49-independent-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r49-independent-review-20261108.md",
+      "bytes": 71469,
+      "sha256": "1cefebc447156d2577edee41dd4384b08fd8a2d2262963369b788af5d18d4dc3"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r58-independent-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r58-independent-review-20261108.md",
+      "bytes": 59888,
+      "sha256": "88fa350aecbca15e16b413c58b01799935c94223ce8fea96506ac4c27312c003"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r60-independent-review-20261108.md",
+      "dst": "research/reviews/paper-null-ladder-r60-independent-review-20261108.md",
+      "bytes": 58021,
+      "sha256": "f6748ed61d4e6846babd1f8e108807c14a80343f8ebb5292218377f3b2f42a12"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r91-independent-review-20261110.md",
+      "dst": "research/reviews/paper-null-ladder-r91-independent-review-20261110.md",
+      "bytes": 50770,
+      "sha256": "62f56936b2a4778cb9812c139aeda3c0913c2c13e46747d07730713d6b0434bf"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r93-independent-review-20261110.md",
+      "dst": "research/reviews/paper-null-ladder-r93-independent-review-20261110.md",
+      "bytes": 75380,
+      "sha256": "c1390fdb982992416f5edd5fe744ace7e0499f0a2eab73bbbb40f495a2afc54a"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "dst": "research/reviews/paper-null-ladder-r95-independent-review-20261111.md",
+      "bytes": 52430,
+      "sha256": "c67f8cd39c17d2fe7ae6d1eab9414be1275a4b7f9ac236c36d4d44aab02fb97a"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-delay-recheck-20261106.md",
+      "dst": "research/reviews/idea-delay-recheck-20261106.md",
+      "bytes": 8690,
+      "sha256": "33bad931bf3a2b698b6677a2fdb3ae5bc58d904967bd2e189b84c707e0dbda06"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-effective-indegree-unification-20261110.md",
+      "dst": "research/reviews/idea-review-effective-indegree-unification-20261110.md",
+      "bytes": 21017,
+      "sha256": "703d2fa2d13967c68d18e6b9a0859d60fe240483a339a8d24ae9c049ecc78418"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-highscore-6-20261106.md",
+      "dst": "research/reviews/idea-review-highscore-6-20261106.md",
+      "bytes": 17810,
+      "sha256": "a04db71148fcce9edf956a0d28d1230140bf6a115d9ddbb3be2141deebf34563"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-idea_bilateral.md",
+      "dst": "research/reviews/idea-review-idea_bilateral.md",
+      "bytes": 10372,
+      "sha256": "c5a49fbc26b1ceed9ffecf709cd0eb322f970ef1eea6379dab9d5b82139d02da"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-idea_causal.md",
+      "dst": "research/reviews/idea-review-idea_causal.md",
+      "bytes": 10855,
+      "sha256": "9ed61ea0e5c91ebb8cc678aa7667c331d1390bb20aeab994ebdd3feecc385e24"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-idea_delay.md",
+      "dst": "research/reviews/idea-review-idea_delay.md",
+      "bytes": 10868,
+      "sha256": "fad4ebd3297483d28102cdbbd864e0bc7d214d6786c6a26ece1361ee17a08981"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-idea_robust.md",
+      "dst": "research/reviews/idea-review-idea_robust.md",
+      "bytes": 10139,
+      "sha256": "863e12b09af8a68538a1e8128b52f26ab350ce4a6206b842ca69e734cea45cc1"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-occlufly-crg-20261107.md",
+      "dst": "research/reviews/idea-review-occlufly-crg-20261107.md",
+      "bytes": 15105,
+      "sha256": "a976e47e750e2a43d691ebebca97836f0fbeec32ef8c7e91db2084ad28252d27"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/idea-review-tournament.md",
+      "dst": "research/reviews/idea-review-tournament.md",
+      "bytes": 4510,
+      "sha256": "1040cbd6af5b27d10e87a803f34cec891b91bd7bfcb1725ccd1887c367c0ca7f"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/novix-ideas-15634.md",
+      "dst": "research/reviews/novix-ideas-15634.md",
+      "bytes": 13135,
+      "sha256": "0b4e9783a2b7d8649a73489a65ab38c36a426d29633d3ecafa007f4b1f99a27c"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/novix-ideas-17375-20261107.md",
+      "dst": "research/reviews/novix-ideas-17375-20261107.md",
+      "bytes": 12478,
+      "sha256": "28994508f3fe5c4582373b0a4bb30a1fa6886e8b6e63ad443731b594db40cf21"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/tracking-pathway-disagreement-20261106.md",
+      "dst": "research/reviews/tracking-pathway-disagreement-20261106.md",
+      "bytes": 10217,
+      "sha256": "bc38a01de5bc14bfeac5d65e1a4d6de85442592a51edd8968b4fcdc1cef482af"
+    },
+    {
+      "cat": "reviews",
+      "src": "fly-gnn-snn-vision/ccfa-idea-review-reports/visual-bridge-event-looming-20261106.md",
+      "dst": "research/reviews/visual-bridge-event-looming-20261106.md",
+      "bytes": 9293,
+      "sha256": "2e10cac8838eb9e2f92139747344b272f1d86e3fed745fe99f1bab21520588d6"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/provenance/guidance-v2.md",
+      "dst": "research/guidance/guidance-v2.md",
+      "bytes": 12631,
+      "sha256": "bc8af0c4acc86cc31e492721b496317b38bb943fcb55e9642573e3677de72af9"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/execution-contract-v1.md",
+      "dst": "research/guidance/execution-contract-v1.md",
+      "bytes": 2904,
+      "sha256": "c4d3765041d0e36637fc23538c078415f9fe3c4ec74769ede673d4b04d5aef49"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/execution-contract-v2.md",
+      "dst": "research/guidance/execution-contract-v2.md",
+      "bytes": 2648,
+      "sha256": "20bddbb80b29e26e38c666389a853df9847f643187623353192c71439294f29b"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/execution-contract-v3.md",
+      "dst": "research/guidance/execution-contract-v3.md",
+      "bytes": 4556,
+      "sha256": "1630832599cb884064251c5dde8e22d00018dad1c910ca6b7055233bf51af302"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/GOAL-ITERATION-R107.md",
+      "dst": "research/guidance/GOAL-ITERATION-R107.md",
+      "bytes": 5446,
+      "sha256": "1a81c8e15b361f62e027360af0d6c82d498040370610c87b657c7facd0aed4b3"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/generated-research-directions.md",
+      "dst": "research/guidance/generated-research-directions.md",
+      "bytes": 7431,
+      "sha256": "76e0a8a7e461b7841db3f86913599356afca618c3eed7990e5918d82ddd8fb04"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-evidence-review-R98.md",
+      "dst": "research/guidance/gate-G0-evidence-review-R98.md",
+      "bytes": 3742,
+      "sha256": "6bccf27dcb75dab8d45c37a80bd56724583ffc4e6d3859b7ef81b9b2bafd8ea9"
+    },
+    {
+      "cat": "guidance",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-recency-review-R99.md",
+      "dst": "research/guidance/gate-G0-recency-review-R99.md",
+      "bytes": 4974,
+      "sha256": "4eb1df8ddebb15d5eb934b0060fef49eb4a84902940ffae401b367172ea06046"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/claim-evidence-matrix-v1.md",
+      "dst": "research/protocol/claim-evidence-matrix-v1.md",
+      "bytes": 8317,
+      "sha256": "95bcc8b2102c2b398e89409cb1ca56a219c6bf97896cfb3e09ea0acc873c0b2b"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/competence-baseline-spec-v1.md",
+      "dst": "research/protocol/competence-baseline-spec-v1.md",
+      "bytes": 3850,
+      "sha256": "6cf6090aed3f9d9ba1c01411f6879aebeb1228c661ebc031c87c1ae97693de43"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/competence-visibility-supplement-v1.md",
+      "dst": "research/protocol/competence-visibility-supplement-v1.md",
+      "bytes": 3008,
+      "sha256": "35de0c882a3687f9c19eea20f7d61c1bf542a56919e809303a7ed3150be6ab7a"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/design-closure-independent-review-v4.md",
+      "dst": "research/protocol/design-closure-independent-review-v4.md",
+      "bytes": 7269,
+      "sha256": "02f9b6a205a8eeccd74ff3b759e420d149dff1025968740a126db3204586bfe1"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/global-construction-static-addendum-v4.md",
+      "dst": "research/protocol/global-construction-static-addendum-v4.md",
+      "bytes": 2511,
+      "sha256": "2a5079a68a61a9b5a10f5b208fa74f71f8c73b4aecf39aaf4ba1f78b9ce6288a"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/idea-cards.md",
+      "dst": "research/protocol/idea-cards.md",
+      "bytes": 5617,
+      "sha256": "a92122468c1bf78962d34ac5a2ccea56753a1c4b76067d40088c54e3941e51e2"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/idea-red-team-review.md",
+      "dst": "research/protocol/idea-red-team-review.md",
+      "bytes": 30886,
+      "sha256": "b876a9d85923678d954b3c9f9a270cec8a1434a3201603d0b9a97c616e36df89"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/local-engineering-acceptance-v2.md",
+      "dst": "research/protocol/local-engineering-acceptance-v2.md",
+      "bytes": 3624,
+      "sha256": "cbf8788af210751c7d4ab3723a61a6e6bb51fb155606ee3628618ce1a5c02226"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/mechanism-repair-v2-independent-review.md",
+      "dst": "research/protocol/mechanism-repair-v2-independent-review.md",
+      "bytes": 17317,
+      "sha256": "4458753c1cdafc4c50fa80f7c5417241789569d28697887ca06fdabc3861a20b"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/mechanism-repair-v2.md",
+      "dst": "research/protocol/mechanism-repair-v2.md",
+      "bytes": 2846,
+      "sha256": "60d6fe723edd5ac7ad45c23770fea9ee4f9e7ae38b5104fae49ad2c0d581017c"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/mps-startup-reacceptance-review-v1.md",
+      "dst": "research/protocol/mps-startup-reacceptance-review-v1.md",
+      "bytes": 6742,
+      "sha256": "d5f9a600878aba1004dbf627db219b8094c790d9a0764a42fd693d27e784b942"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/mps-startup-reacceptance-review-v2-addendum.md",
+      "dst": "research/protocol/mps-startup-reacceptance-review-v2-addendum.md",
+      "bytes": 2912,
+      "sha256": "0b62efc03c70ee9a86fc163016350b63a1883b552ab579abf2c5be4bf8d79287"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/paired-edge-set-construction-v1.md",
+      "dst": "research/protocol/paired-edge-set-construction-v1.md",
+      "bytes": 5833,
+      "sha256": "89825025f4b0d9d36a5bbd472588dbfa3742d27b214a993a58023c1adc997979"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/paired-edge-set-construction-v2.md",
+      "dst": "research/protocol/paired-edge-set-construction-v2.md",
+      "bytes": 4354,
+      "sha256": "7fec8de7fa3f2d86d53088b81487a225f1de06f2c0b27f66af10f898e562452b"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/paired-edge-set-executable-spec-v3.md",
+      "dst": "research/protocol/paired-edge-set-executable-spec-v3.md",
+      "bytes": 6495,
+      "sha256": "224f7d8a635d48b7cdd0304257d4d2d5a9086acd50e9b024d70392818df6e9e1"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/predictor-dataflow-v1.md",
+      "dst": "research/protocol/predictor-dataflow-v1.md",
+      "bytes": 7267,
+      "sha256": "08862d3f072238adb8e7f9e0700ba50e9b1bdc0e8375997e2746744523dbb6b4"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/prior-art-opportunity-map.md",
+      "dst": "research/protocol/prior-art-opportunity-map.md",
+      "bytes": 6713,
+      "sha256": "bd99431cc168b6d44fcc9b87c7ba987063a2304a6de19fe51d943b884d53a193"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-matched-null-idea-v1.md",
+      "dst": "research/protocol/response-matched-null-idea-v1.md",
+      "bytes": 11439,
+      "sha256": "0edf2a5fdec867179173005cc00d3d12f9e8083c56029bc1b054567bf16551f7"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-matched-null-mechanism-note-v1.md",
+      "dst": "research/protocol/response-matched-null-mechanism-note-v1.md",
+      "bytes": 7195,
+      "sha256": "20b2194aef065656d55af78be5dbd51155665bba30d7404f17d43afff49fe297"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-design-repair-v2.md",
+      "dst": "research/protocol/response-null-design-repair-v2.md",
+      "bytes": 8679,
+      "sha256": "b6f50ea533e283a00a09cacfa3ab0d4570bdb0d28abdbb18d519b65396cecfa9"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-design-review-v3.md",
+      "dst": "research/protocol/response-null-design-review-v3.md",
+      "bytes": 13830,
+      "sha256": "f18ea7dc3c2dbfad41d638df38296d06a3e6b27def2176eee01bf4c8da4678f0"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-evidence-contract-v1.md",
+      "dst": "research/protocol/response-null-evidence-contract-v1.md",
+      "bytes": 11099,
+      "sha256": "5b89c5e5e5802b527f38a5c1e31922baca1794a172c7adb9a7a44fd81dfadc1e"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-independent-idea-review-v1.md",
+      "dst": "research/protocol/response-null-independent-idea-review-v1.md",
+      "bytes": 26381,
+      "sha256": "38d57e466381dfbf4194fce635fb75ccdf13c49217c7c41aa1ff2b4b36ac6cc5"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-prediction-dataflow-v1.md",
+      "dst": "research/protocol/response-null-prediction-dataflow-v1.md",
+      "bytes": 7091,
+      "sha256": "63f864301685581eb06ae16f47fd8dcd63257b71b1b020f1d09c2c237b3fd330"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-protocol-closure-v4.md",
+      "dst": "research/protocol/response-null-protocol-closure-v4.md",
+      "bytes": 7918,
+      "sha256": "b3d9acfc009d5b111d49454d04cb753d66d82717b7cefa0c264e43ecc9d48a36"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/response-null-review-addendum-v2.md",
+      "dst": "research/protocol/response-null-review-addendum-v2.md",
+      "bytes": 16294,
+      "sha256": "0ec664728cf5f3fe75808d7a1c170f911ada5ddd6fe19ea5484c10c11b95fd8a"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/startup-decision.md",
+      "dst": "research/protocol/startup-decision.md",
+      "bytes": 190,
+      "sha256": "51388b7287281c6a859b294f9d935a23e809432a4ce03fe31b86f9172bdb620a"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/startup-stage-plan.md",
+      "dst": "research/protocol/startup-stage-plan.md",
+      "bytes": 1595,
+      "sha256": "f52da719db00801c27363cb878362f3fc5f5b1289cc61c96de9dda86a5d9ca2e"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/strong-result-feasibility-contract-v1.md",
+      "dst": "research/protocol/strong-result-feasibility-contract-v1.md",
+      "bytes": 6793,
+      "sha256": "05ab04bc2b2e384f9084359383a6d4dac42ca9ec7dd9baa9d73fff24aa935a50"
+    },
+    {
+      "cat": "protocol",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/ccfa-startup-packet/prospective-identities-v1.json",
+      "dst": "research/protocol/prospective-identities-v1.json",
+      "bytes": 12700,
+      "sha256": "66afacebc2f9b1a14ae482de16beff0fe565c40fe1e5d0854f4623565c32e32f"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/discriminative-prediction-independent-review-v1.md",
+      "dst": "research/ideas/discriminative-prediction-independent-review-v1.md",
+      "bytes": 10719,
+      "sha256": "32b3223f8e3340781e93e8ff46221e19051ab5d02259001cb7020e8ea09560b7"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/discriminative-prediction-independent-review-v2.md",
+      "dst": "research/ideas/discriminative-prediction-independent-review-v2.md",
+      "bytes": 19440,
+      "sha256": "ebf8cd2cbda84637ea3faff7038c6109b620862d795cf923b8f294bc4d37afc5"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/discriminative-prediction-proposal-v1.md",
+      "dst": "research/ideas/discriminative-prediction-proposal-v1.md",
+      "bytes": 7793,
+      "sha256": "148f53a5d8e77b75488f8702070176dffcc2051698639bcbb964ad6493c7a397"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/discriminative-prediction-proposal-v2.md",
+      "dst": "research/ideas/discriminative-prediction-proposal-v2.md",
+      "bytes": 12604,
+      "sha256": "bccd738bf15e05b950a6a2c7105336238443157b26ee45aa8f1a7c99ea56dbee"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/R99-design-block-decision.md",
+      "dst": "research/ideas/R99-design-block-decision.md",
+      "bytes": 5120,
+      "sha256": "9b07d5698fd7e051fa0daf2c32422c1db2086490f7e8fc02f4538958e29eb245"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G4-POSITIONING.md",
+      "dst": "research/ideas/R106-G4-POSITIONING.md",
+      "bytes": 7302,
+      "sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/literature-baseline-matrix.md",
+      "dst": "research/ideas/literature-baseline-matrix.md",
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/dataset-access-log.md",
+      "dst": "research/ideas/dataset-access-log.md",
+      "bytes": 3490,
+      "sha256": "334cf22352ebb10c3a484e584bc0f709b1020efc9a9c5d599f0203c0696f9a68"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/hardware-profile.md",
+      "dst": "research/ideas/hardware-profile.md",
+      "bytes": 1384,
+      "sha256": "6038fa2cb860ba163dbb61330508743b3566690e2dd32d032ab4aa1ee7e662ee"
+    },
+    {
+      "cat": "ideas",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/scenario-decision-log.md",
+      "dst": "research/ideas/scenario-decision-log.md",
+      "bytes": 364,
+      "sha256": "4dcd204611587693a1c3dbff93b72d6c55d1357bf0e39ef1a0245437f312c3ee"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/goal-ledger.md",
+      "dst": "research/ledger/goal-ledger.md",
+      "bytes": 775792,
+      "sha256": "54d36c1c00b5a6c8eb8dd2f99d2e7a52521e1eab1f9c43788d8b163cbe5c6b19"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/papers/R63-results/STATUS.md",
+      "dst": "research/ledger/STATUS.md",
+      "bytes": 269976,
+      "sha256": "cb5dae41b54a5013d422e453139a3aba62e6ffabcb36814c634a03532c615851"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-06.md",
+      "dst": "research/ledger/2026-11-06.md",
+      "bytes": 1253,
+      "sha256": "01771586803536ac4a798ee391b789f9bf50444d5dceffc0d2c6b03c812c8c1b"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-08.md",
+      "dst": "research/ledger/2026-11-08.md",
+      "bytes": 10985,
+      "sha256": "0954785f8261c210b0cc22804e34cb52861faa7cc3019514e26b50ca015b3352"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-09.md",
+      "dst": "research/ledger/2026-11-09.md",
+      "bytes": 34696,
+      "sha256": "8008b866fcb9f0a2cb3906859390d305b6cde88cfea5f7f23d0fb05470c3044a"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-10.md",
+      "dst": "research/ledger/2026-11-10.md",
+      "bytes": 17462,
+      "sha256": "2904ef1a12b76bf8278a8cd7866743831086806916358d42941e696c322b9daa"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-11.md",
+      "dst": "research/ledger/2026-11-11.md",
+      "bytes": 10522,
+      "sha256": "685a8de48b532018ea1062fb1035fb2231ffa3b0bb81753e13578e5371b23470"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-12.md",
+      "dst": "research/ledger/2026-11-12.md",
+      "bytes": 19438,
+      "sha256": "380bf376d1c1e281ddc3468d18bede3b4cd4ecf89ba1cda67a7b606f701ead9d"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-13.md",
+      "dst": "research/ledger/2026-11-13.md",
+      "bytes": 70981,
+      "sha256": "1f7ee0cde3fb9f1bbedfa2738f01378b310dc89d95952cb33356b66f07ed9eda"
+    },
+    {
+      "cat": "ledger",
+      "src": "fly-gnn-snn-vision/.workbuddy/memory/2026-11-14.md",
+      "dst": "research/ledger/2026-11-14.md",
+      "bytes": 75189,
+      "sha256": "47466060e9132b4a1f60fcd33cc51a2b4e5cc36c20c587856a8448e2a64ed72d"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "dst": "research/rounds/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-END-OF-ROUND-FREEZE.json",
+      "dst": "research/rounds/R106-END-OF-ROUND-FREEZE.json",
+      "bytes": 2855,
+      "sha256": "9374efed2a026bcccc04d051a629fbf3514caa1a788549e51984568addd14168"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-LITERATURE-SOURCE-SHA-VERIFICATION.json",
+      "dst": "research/rounds/R106-LITERATURE-SOURCE-SHA-VERIFICATION.json",
+      "bytes": 1885,
+      "sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-POST-REVIEW-FREEZE.json",
+      "dst": "research/rounds/R106-POST-REVIEW-FREEZE.json",
+      "bytes": 4773,
+      "sha256": "5cc7d5a487d6cfd78a2f35cee878faee5291445a10ba2132758e13a457ead2fa"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-INDEPENDENT-RECENCY-VERIFICATION.md",
+      "dst": "research/rounds/R106-G0-INDEPENDENT-RECENCY-VERIFICATION.md",
+      "bytes": 11298,
+      "sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-ROUND-AUDIT.md",
+      "dst": "research/rounds/R106-ROUND-AUDIT.md",
+      "bytes": 15372,
+      "sha256": "bd2d421631f764dbf4855394ee668e61d9dc4bdb62e6de70a543524145f08f11"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-PRE-REVIEW-FREEZE.json",
+      "dst": "research/rounds/R106-PRE-REVIEW-FREEZE.json",
+      "bytes": 2356,
+      "sha256": "61f977901dc62f4183f2f32d1fd167df1c08e6a95ae6d7edff554a13f4b0b42b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-EVIDENCE-FREEZE.json",
+      "dst": "research/rounds/R106-G0-EVIDENCE-FREEZE.json",
+      "bytes": 3172,
+      "sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-INDEPENDENT-REVIEW-RECOVERY.md",
+      "dst": "research/rounds/R106-INDEPENDENT-REVIEW-RECOVERY.md",
+      "bytes": 11458,
+      "sha256": "573e814083292439037f1997414904a1ab04c841e936991cb49c5f003bc1f940"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-ASSET-SHA-VERIFICATION.json",
+      "dst": "research/rounds/R106-ASSET-SHA-VERIFICATION.json",
+      "bytes": 4978,
+      "sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G0-GAP1-ASSET-CHECK.md",
+      "dst": "research/rounds/R106-G0-GAP1-ASSET-CHECK.md",
+      "bytes": 4340,
+      "sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/R106-G4-POSITIONING.md",
+      "dst": "research/rounds/R106-G4-POSITIONING.md",
+      "bytes": 7302,
+      "sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "dst": "research/rounds/R106-G0-INDEPENDENT-GATE-REVIEW-2.md",
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-END-OF-ROUND-FREEZE.json",
+      "dst": "research/rounds/R106-END-OF-ROUND-FREEZE-2.json",
+      "bytes": 2855,
+      "sha256": "9374efed2a026bcccc04d051a629fbf3514caa1a788549e51984568addd14168"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-LITERATURE-SOURCE-SHA-VERIFICATION.json",
+      "dst": "research/rounds/R106-LITERATURE-SOURCE-SHA-VERIFICATION-2.json",
+      "bytes": 1885,
+      "sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-G0-INDEPENDENT-RECENCY-VERIFICATION.md",
+      "dst": "research/rounds/R106-G0-INDEPENDENT-RECENCY-VERIFICATION-2.md",
+      "bytes": 11298,
+      "sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-ROUND-AUDIT.md",
+      "dst": "research/rounds/R106-ROUND-AUDIT-2.md",
+      "bytes": 15372,
+      "sha256": "bd2d421631f764dbf4855394ee668e61d9dc4bdb62e6de70a543524145f08f11"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-PRE-REVIEW-FREEZE.json",
+      "dst": "research/rounds/R106-PRE-REVIEW-FREEZE-2.json",
+      "bytes": 2356,
+      "sha256": "61f977901dc62f4183f2f32d1fd167df1c08e6a95ae6d7edff554a13f4b0b42b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-G0-EVIDENCE-FREEZE.json",
+      "dst": "research/rounds/R106-G0-EVIDENCE-FREEZE-2.json",
+      "bytes": 3172,
+      "sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-INDEPENDENT-REVIEW-RECOVERY.md",
+      "dst": "research/rounds/R106-INDEPENDENT-REVIEW-RECOVERY-2.md",
+      "bytes": 11458,
+      "sha256": "573e814083292439037f1997414904a1ab04c841e936991cb49c5f003bc1f940"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-ASSET-SHA-VERIFICATION.json",
+      "dst": "research/rounds/R106-ASSET-SHA-VERIFICATION-2.json",
+      "bytes": 4978,
+      "sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-G0-GAP1-ASSET-CHECK.md",
+      "dst": "research/rounds/R106-G0-GAP1-ASSET-CHECK-2.md",
+      "bytes": 4340,
+      "sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R106/isolated-post-review/R106-G4-POSITIONING.md",
+      "dst": "research/rounds/R106-G4-POSITIONING-2.md",
+      "bytes": 7302,
+      "sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-DIGEST-RECOMPUTE.json",
+      "dst": "research/rounds/R117-DIGEST-RECOMPUTE.json",
+      "bytes": 2072,
+      "sha256": "1d724e96b5e8251f71dc4dbcb5f928d8a087d833fb3dd295b97cd5489d5428f2"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-EXEC-PREMISE-VERIFICATION.v1-superseded.json",
+      "dst": "research/rounds/R117-EXEC-PREMISE-VERIFICATION.v1-superseded.json",
+      "bytes": 11505,
+      "sha256": "5eb480113395fbcc365554c79c11c3fb18f5d88f33f3cfba9fec3583ec0cc302"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-EXEC-PREMISE-EVIDENCE.md",
+      "dst": "research/rounds/R117-EXEC-PREMISE-EVIDENCE.md",
+      "bytes": 10715,
+      "sha256": "08b8d8d3179d2cc859742063fa765f6a94c6d98f1bcfa12a6458c98fb308548b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-EXEC-PREMISE-VERIFICATION.json",
+      "dst": "research/rounds/R117-EXEC-PREMISE-VERIFICATION.json",
+      "bytes": 9552,
+      "sha256": "aa1372d2bbf91e4bc5127d636dac00cbfc7de7942253ca714895a7fed625946a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-EXEC-PREMISE-RAW.json",
+      "dst": "research/rounds/R117-EXEC-PREMISE-RAW.json",
+      "bytes": 18455,
+      "sha256": "891a950bf856e3696ebe5bda3a96ce3e36f71042fe965aac3a36ad0739c4c50a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R117-SOURCE-MANIFEST.json",
+      "bytes": 7765,
+      "sha256": "b113ed99f79c8867215be63c07462a557f1b3151f2c02bb2416ba0b89013ce8a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R117-POST-REVIEW-CORRECTION.md",
+      "bytes": 10803,
+      "sha256": "e5b919ecae715f930609c08be6b52244cf2ac10d25e2256c4279409f074bee1d"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-digest-r101.py",
+      "dst": "research/rounds/R117-digest-r101.py",
+      "bytes": 5146,
+      "sha256": "f1aea7348df1ea701e9a0b8d6290fcd731d7ec9abba89518581647230c082d32"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-ROUND-AUDIT.md",
+      "dst": "research/rounds/R117-ROUND-AUDIT.md",
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-REGISTRY-GAP-EVIDENCE.md",
+      "dst": "research/rounds/R118-REGISTRY-GAP-EVIDENCE.md",
+      "bytes": 13001,
+      "sha256": "5ba2085a56e431ec6a7ce96a0a208cee849aaf0e48e91b1e5c4a143d7826ec0c"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-REGISTRY-GAP-VERIFICATION.json",
+      "dst": "research/rounds/R118-REGISTRY-GAP-VERIFICATION.json",
+      "bytes": 19044,
+      "sha256": "5fc9f54d8bbc1e9aaa3d72729b6b758f6120d54620127e753bbf645efbb4cb0a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R118-INDEPENDENT-REVIEW.md",
+      "bytes": 23653,
+      "sha256": "3ffc37c9fe71ad8daeb677d62bfafd9dd789d4220a93cd1c7d5643fa0d2d7bc7"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R118-POST-REVIEW-CORRECTION.md",
+      "bytes": 9263,
+      "sha256": "e31e5a95e200f30389850e0933521c79c0806d552668eca677a2d4f6d794da43"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-REGISTRY-GAP-VERIFICATION.v1-superseded.json",
+      "dst": "research/rounds/R118-REGISTRY-GAP-VERIFICATION.v1-superseded.json",
+      "bytes": 17627,
+      "sha256": "5f44c8e401f36db4ffb83d3b207bdb1224c316fa4b5ab16b68e2a496de2857fe"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R118-SOURCE-MANIFEST.json",
+      "bytes": 70050,
+      "sha256": "13e211ae768160c211420a7ecb3e33a18c0f4c17757340a85634656baae9b541"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-manifest.py",
+      "dst": "research/rounds/R118-manifest.py",
+      "bytes": 6717,
+      "sha256": "ff499454adc552e8cbcdbd508b52b0638d8630dd06ab5fe4af203f9bb7319c88"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-ROUND-AUDIT.md",
+      "dst": "research/rounds/R118-ROUND-AUDIT.md",
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R119-INDEPENDENT-REVIEW.md",
+      "bytes": 28594,
+      "sha256": "55dbfbf130ac2fde9d7ff950d70c5718cd07d491901ac5459f173446cfd89219"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-REVIEW-LAUNCH-PROTOCOL-EVIDENCE.md",
+      "dst": "research/rounds/R119-REVIEW-LAUNCH-PROTOCOL-EVIDENCE.md",
+      "bytes": 9342,
+      "sha256": "e0fc5a72154692b170a1653f892449fcec38e311e4e3ad1a8c71c3ef97664dfc"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-REVIEW-LAUNCH-PROTOCOL-VERIFICATION.json",
+      "dst": "research/rounds/R119-REVIEW-LAUNCH-PROTOCOL-VERIFICATION.json",
+      "bytes": 7879,
+      "sha256": "57c0b1b6c0e46b209f0c5b1be80da2331e46ae6f49b6d2e919d1e3d61a21fba3"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-REVIEW-LAUNCH-PROTOCOL-RAW.json",
+      "dst": "research/rounds/R119-REVIEW-LAUNCH-PROTOCOL-RAW.json",
+      "bytes": 17177,
+      "sha256": "a67913a3de336a45bd21c225980b1afe8bfc0c28bb40b14f845981bd6f2dbe06"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R119-POST-REVIEW-CORRECTION.md",
+      "bytes": 8630,
+      "sha256": "d2bc96cb3e2ceb95563a247a4bf4a819b256785c0b3898f5e2bbfa06525661a1"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-manifest.py",
+      "dst": "research/rounds/R119-manifest.py",
+      "bytes": 4361,
+      "sha256": "dd8e6c2f31391d16ad61bf84f666750d9405208dee64312ccc1ec17b7e48b1e1"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-verify.py",
+      "dst": "research/rounds/R119-verify.py",
+      "bytes": 9584,
+      "sha256": "1a5f15e951de7f062bdc332ca60a86642f90d415eb91b5b0fa8a43676f5a416e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-raw.py",
+      "dst": "research/rounds/R119-raw.py",
+      "bytes": 15681,
+      "sha256": "fcc0ab4a572e8ba79601e113359e897ab699a13f19955667519b3d34580ab8bc"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-ROUND-AUDIT.md",
+      "dst": "research/rounds/R119-ROUND-AUDIT.md",
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/review-protocol-R119/R119-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R119-SOURCE-MANIFEST.json",
+      "bytes": 6542,
+      "sha256": "d374ea8d912be25a7bde11d7f0c73cfd3a87c254463b77ce0d8c584341f2f414"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-raw.py",
+      "dst": "research/rounds/R120-raw.py",
+      "bytes": 17103,
+      "sha256": "00712b769c95bdf524194eb83a9f5806fabb2f0f26bc7097b2cae03d57480ddc"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-guard-check.txt",
+      "dst": "research/rounds/R120-guard-check.txt",
+      "bytes": 4757,
+      "sha256": "1ed11575c27548a39e856ae7a3f1ba6b85596de036f7a0c0c5d8f3f083814cff"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-STANDING-INSTRUCTION-RECONCILIATION.md",
+      "dst": "research/rounds/R120-STANDING-INSTRUCTION-RECONCILIATION.md",
+      "bytes": 14028,
+      "sha256": "452e6144399e7f75a99ffe1fad83caa77711a7e4979410921b93d2b31ec7878e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-CONSOLIDATED-DECISION-REGISTER.md",
+      "dst": "research/rounds/R120-CONSOLIDATED-DECISION-REGISTER.md",
+      "bytes": 12878,
+      "sha256": "22d432fec98708d89c1df1fdb74438254e2f70853bbba728b664b5edf9f2aacc"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-validator-stdout.txt",
+      "dst": "research/rounds/R120-validator-stdout.txt",
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R120-POST-REVIEW-CORRECTION.md",
+      "bytes": 9879,
+      "sha256": "358d59738629c80d7d8823c73fb9768c66fed6df3abf04872d5d5ae43826a367"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-validator-out.json",
+      "dst": "research/rounds/R120-validator-out.json",
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-RECONCILIATION-RAW.v1-superseded.json",
+      "dst": "research/rounds/R120-RECONCILIATION-RAW.v1-superseded.json",
+      "bytes": 15790,
+      "sha256": "5c9871f9aaf160b7450432385ede89923c37e954591d4dd463e8314c7b09c1f2"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-I2-EVIDENCE.json",
+      "dst": "research/rounds/R120-I2-EVIDENCE.json",
+      "bytes": 5943,
+      "sha256": "df8da7c5e285a59e35ccfbeffdf763b05de72a232da75ba387aa1dc609133a50"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-SOURCE-MANIFEST.v1-superseded.json",
+      "dst": "research/rounds/R120-SOURCE-MANIFEST.v1-superseded.json",
+      "bytes": 7816,
+      "sha256": "813e960d227fbcd9095802838ffdf0f34b0c2c97358e9f34ec4ae7e81d57d9b7"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-guard-stdout.txt",
+      "dst": "research/rounds/R120-guard-stdout.txt",
+      "bytes": 4893,
+      "sha256": "d758877e70b8fe41e5cf2fd47e1cb1a39cd8f52d35a10862f4c00b730f89346e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-RECONCILIATION-VERIFICATION.json",
+      "dst": "research/rounds/R120-RECONCILIATION-VERIFICATION.json",
+      "bytes": 11247,
+      "sha256": "72fcecdff4a96572148288517afd6a42562166d9ec916b32a94907d53b2bf3a7"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R120-INDEPENDENT-REVIEW.md",
+      "bytes": 23074,
+      "sha256": "c7c613c54bd08cad1b945c5affcdf371522430e63fff84d702ac86625cf3d9ea"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R120-SOURCE-MANIFEST.json",
+      "bytes": 8283,
+      "sha256": "0ddf116cb39100e6c0df51c2b5a5e08cf57789342dbb77beae2879cbdfc8ad85"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-RECONCILIATION-RAW.json",
+      "dst": "research/rounds/R120-RECONCILIATION-RAW.json",
+      "bytes": 16541,
+      "sha256": "a3c73ca7facd3eeb68a61ccda108c0c328a12569ed2c5b0eedbd5bf23a573675"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-verify.py",
+      "dst": "research/rounds/R120-verify.py",
+      "bytes": 10251,
+      "sha256": "552207461878bc773e25654b2f10aa8b4592a8329bcc5e12b0abd149484d072b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-I2-EVIDENCE.py",
+      "dst": "research/rounds/R120-I2-EVIDENCE.py",
+      "bytes": 8080,
+      "sha256": "a35cd3aba52ceb80a33a57f8c73a8a8e486135a9d503cdb6617901f4ae14d984"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-V1-DEFECTS.md",
+      "dst": "research/rounds/R121-V1-DEFECTS.md",
+      "bytes": 2335,
+      "sha256": "4db134e51e38135a3fa9d35f89b954c1dfd939a0cc57582c0339a4c15a486d9a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-collect.py",
+      "dst": "research/rounds/R121-collect.py",
+      "bytes": 14187,
+      "sha256": "35e9ff0b3fbc8bea27770e815b9252ef296aacb1599ba75a8dfd784e2406925d"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-verify-v1.py",
+      "dst": "research/rounds/R121-verify-v1.py",
+      "bytes": 11993,
+      "sha256": "983db9b8732bf00b2d653dd4e404514771d5b578d6638c190afdd92a69496d4c"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R121-INDEPENDENT-REVIEW.md",
+      "bytes": 28736,
+      "sha256": "9650a024f84c9b1ec308db4a96c18fee26e5cfd67e3b73b0b9a50f1a0891200c"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-ROUND-AUDIT.md",
+      "dst": "research/rounds/R121-ROUND-AUDIT.md",
+      "bytes": 9443,
+      "sha256": "6ff55a5082ad335efc729b9063cf35dcef17d5f9f2ca01e0861b84f29ac16ab0"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-guard-report.md",
+      "dst": "research/rounds/R121-guard-report.md",
+      "bytes": 4757,
+      "sha256": "3d18df5cc4428bef5c4d95f2f4ea9d04248049e210117116d1c4697c01d30f71"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-RAW-v1.json",
+      "dst": "research/rounds/R121-RAW-v1.json",
+      "bytes": 26586,
+      "sha256": "6b2d0f932088e3fb17e04863ea3224ad5b649b4ffee15856ad756643df2f7f46"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-VERIFICATION.json",
+      "dst": "research/rounds/R121-VERIFICATION.json",
+      "bytes": 12356,
+      "sha256": "8f648aa1f0b5bbe999f3fe2584d0c10f6d557bb4e1194e85b5217943cdfee9f1"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-RAW-v2.json",
+      "dst": "research/rounds/R121-RAW-v2.json",
+      "bytes": 24212,
+      "sha256": "4ae72b45cd7985d0486ca2c50c30d9c3ec36cd5c5900f00cb0e7b14043970741"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-verify.py",
+      "dst": "research/rounds/R121-verify.py",
+      "bytes": 13210,
+      "sha256": "b04deaffe61912fdee6be66507b5dbc45be42ff15ca59f60f0d864342710ec84"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-VERIFICATION-v1.json",
+      "dst": "research/rounds/R121-VERIFICATION-v1.json",
+      "bytes": 12209,
+      "sha256": "295415450812772c1ddb10eb877a3dd75bcbf677b620997bf76cbb4c871ac2c8"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R121-POST-REVIEW-CORRECTION.md",
+      "bytes": 5985,
+      "sha256": "07850db4fa2e4f66269d1a81755ece01624b2d5d55ac39f587208a79fac743b3"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/success-condition-R121/R121-collect-v2.py",
+      "dst": "research/rounds/R121-collect-v2.py",
+      "bytes": 16852,
+      "sha256": "7ce2699f6bd4d193d63c4630ff24fb9611fe74cd764c52e9f7061def057a94be"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R122-SOURCE-MANIFEST.json",
+      "bytes": 1147,
+      "sha256": "8ebb4e0a12a84d82906a44cf464f32ef16fabf539f8b0f8fee41fc99271707d9"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-ROUND-AUDIT.md",
+      "dst": "research/rounds/R122-ROUND-AUDIT.md",
+      "bytes": 12114,
+      "sha256": "f7b7eb7c9c8fff23f336977cfa34486094bf0a7c9af2d96747f46efb7abbe890"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-VERIFICATION.json",
+      "dst": "research/rounds/R122-VERIFICATION.json",
+      "bytes": 9107,
+      "sha256": "0c9f84cb202ccca1c0a63a498217940f79422dd3e04fdc7b0e8b785281c21553"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-v2-PLAINTEXT.txt",
+      "dst": "research/rounds/R122-v2-PLAINTEXT.txt",
+      "bytes": 46149,
+      "sha256": "45e9420fe6cdf9b67764525bd402ed4c3b572ddd20317a78af1f5857ad2feb42"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-v2-BODY-ABSTRACT.txt",
+      "dst": "research/rounds/R122-v2-BODY-ABSTRACT.txt",
+      "bytes": 1944,
+      "sha256": "6937734888b51a28f4e8cad32512ed504409ff47490c0e229f8f27a256eb613b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-RAW-EXTRACTION.json",
+      "dst": "research/rounds/R122-RAW-EXTRACTION.json",
+      "bytes": 9753,
+      "sha256": "c8cfad6344903d1409482a8db874b4927192e935524d626241dd1b47ed0a1e7f"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-ACQUIRE.py",
+      "dst": "research/rounds/R122-ACQUIRE.py",
+      "bytes": 1464,
+      "sha256": "0791b4d075363e4927957054442c1d21793aea1a82aae24676f7757b15ee73b8"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-ACQUIRE.py",
+      "dst": "research/rounds/R124-ACQUIRE.py",
+      "bytes": 3993,
+      "sha256": "19def2b0326344d013347ee087c2087d0df40c1afd9b9145573a1834dbb425c3"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-ROUND-AUDIT.md",
+      "dst": "research/rounds/R124-ROUND-AUDIT.md",
+      "bytes": 17198,
+      "sha256": "ec481404f7f76c3b89b8550f680c596187ae57068a83dd63e019e95f5bf01d92"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-BUILD-MANIFEST.py",
+      "dst": "research/rounds/R124-BUILD-MANIFEST.py",
+      "bytes": 2509,
+      "sha256": "38fca56df9c86f2b87a634ba9c1e6d3740ba21e5af2ba198c182a35748ae16f5"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-GUARD-READOUT.txt",
+      "dst": "research/rounds/R124-GUARD-READOUT.txt",
+      "bytes": 4871,
+      "sha256": "a597475d57ecde1a99ced095f85279816d9c3e621e9337552bbc1e12810e26e5"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-VERIFICATION.json",
+      "dst": "research/rounds/R124-VERIFICATION.json",
+      "bytes": 28237,
+      "sha256": "3febef008bb096bf26d9938e43e6b9c9ea698acb4576cb8586dcb0a372bf81ae"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-verify.py",
+      "dst": "research/rounds/R124-verify.py",
+      "bytes": 14188,
+      "sha256": "cc8386ef4f66c5bc6e843031caf360f0e11190a50a76cc3d85733dd984d3e4dc"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-VALIDATOR-READOUT.json",
+      "dst": "research/rounds/R124-VALIDATOR-READOUT.json",
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R124-POST-REVIEW-CORRECTION.md",
+      "bytes": 9718,
+      "sha256": "1405ed027e3151902ccd7f8acf6e1d6632bfaff7aef097fdf9912e679b3e44be"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-verify-v1.py",
+      "dst": "research/rounds/R124-verify-v1.py",
+      "bytes": 13524,
+      "sha256": "45778a5885523bb660f0e5d249f73b7c8f57533a3a2ea2b940f459c5ebe4e098"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-VERIFICATION-V1.json",
+      "dst": "research/rounds/R124-VERIFICATION-V1.json",
+      "bytes": 28224,
+      "sha256": "fc083e5abd840632555358ccadaae000a9dea53a6b1edff44df03ab37c709ced"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R124-SOURCE-MANIFEST.json",
+      "bytes": 6898,
+      "sha256": "011de29d2b5cd9adde2e37681a2ab48b1eeafeb5c64a13daef6aa38d01941c6f"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/R124-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R124-INDEPENDENT-REVIEW.md",
+      "bytes": 28602,
+      "sha256": "76abf752a8ea1fb57804400d05c6ef8baff168a4cb07455fb03cf5c2584a5293"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/raw/biorxiv-api-v1-na.json",
+      "dst": "research/rounds/biorxiv-api-v1-na.json",
+      "bytes": 64741,
+      "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/raw/crossref-work.json",
+      "dst": "research/rounds/crossref-work.json",
+      "bytes": 11160,
+      "sha256": "1493ba22ad7f5d31a567766424d37ed7f807a7f72a09a4b957a60f481acb0971"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/raw/biorxiv-api-details.json",
+      "dst": "research/rounds/biorxiv-api-details.json",
+      "bytes": 64741,
+      "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r3r5-R124/raw/europepmc-search.json",
+      "dst": "research/rounds/europepmc-search.json",
+      "bytes": 841,
+      "sha256": "e0b3e78f345c8eb46791e01a14aef417ba5c3445bb2857e9fbe7a71685f469ba"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-ROUND-AUDIT.md",
+      "dst": "research/rounds/R125-ROUND-AUDIT.md",
+      "bytes": 14814,
+      "sha256": "a203c3738b6d2ef918464847f7fa115e09a689619ef46371fc9617d6ad39c751"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-VERIFICATION.json",
+      "dst": "research/rounds/R125-VERIFICATION.json",
+      "bytes": 18960,
+      "sha256": "78b58bd8e3a14793f8b6d9695cdbfc04e9c3380f35b7ccf5d0e3916c9cc5c529"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R125-POST-REVIEW-CORRECTION.md",
+      "bytes": 9234,
+      "sha256": "42506bff7a15e89bb03fd17838df18a23020e3b6cda40ccc29153ced2782febf"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-VERIFICATION-V2.json",
+      "dst": "research/rounds/R125-VERIFICATION-V2.json",
+      "bytes": 18741,
+      "sha256": "cd4905f18e37e2d7d9e0184e79f4d9f2e67ea8af1c7a05cc0364b0474f7daefd"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R125-INDEPENDENT-REVIEW.md",
+      "bytes": 14138,
+      "sha256": "15b5879315ed9c784c19dadc16b88c52365291dbe25d1a6bc2a6b2c6f482dcdf"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-GUARD-READOUT.txt",
+      "dst": "research/rounds/R125-GUARD-READOUT.txt",
+      "bytes": 4871,
+      "sha256": "49010894f594444111eb42bfe0039b4f6efe1e50f7f80f1ec607d9e7ea3d6d28"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-ACQUIRE.py",
+      "dst": "research/rounds/R125-ACQUIRE.py",
+      "bytes": 5290,
+      "sha256": "d19dde9e66eecf22ffc03c80336f951e178d9d88f43c0ff682310f72f3635301"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-SOURCE-MANIFEST.json",
+      "dst": "research/rounds/R125-SOURCE-MANIFEST.json",
+      "bytes": 2655,
+      "sha256": "4eba0d28859b2605403e1df4ae4561e66ba4db80fef93cb86b95506fbcfa1080"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-EMAIL-RECHECK.py",
+      "dst": "research/rounds/R125-EMAIL-RECHECK.py",
+      "bytes": 2476,
+      "sha256": "a3af7f34de9697bc6e57366c10f2db823974d290404ff92acde85b7267252a38"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-VALIDATOR-READOUT.json",
+      "dst": "research/rounds/R125-VALIDATOR-READOUT.json",
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-EMAIL-RECHECK.json",
+      "dst": "research/rounds/R125-EMAIL-RECHECK.json",
+      "bytes": 969,
+      "sha256": "54936b8114badf5d9aa5ce0106799fdd1bf00f94a949b41c7ef5ffecaf766652"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/raw/wayback-cdx.json",
+      "dst": "research/rounds/wayback-cdx.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/raw/epmc-core.json",
+      "dst": "research/rounds/epmc-core.json",
+      "bytes": 6367,
+      "sha256": "0875d916d4800f2bf9e972d2efe47f4b582fd15aaefeb5c834200988cd4dc9ac"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/raw/api-jats.json",
+      "dst": "research/rounds/api-jats.json",
+      "bytes": 196,
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/raw/api-details-v1.json",
+      "dst": "research/rounds/api-details-v1.json",
+      "bytes": 64741,
+      "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/R108-HARBOR-TRIAL.md",
+      "dst": "research/harbor/R108-HARBOR-TRIAL.md",
+      "bytes": 12523,
+      "sha256": "c1312050ac1e73215cfc72e4c5b99d5b737af7d6f946aa757a14efecf2aeb9ee"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/task.toml",
+      "dst": "research/harbor/task.toml",
+      "bytes": 413,
+      "sha256": "dae0940c64b92f5d29567284152f05e159ad8a4431b1154d715eebf5bac9e67a"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/instruction.md",
+      "dst": "research/harbor/instruction.md",
+      "bytes": 1608,
+      "sha256": "19fa8472682515d27bbd5b485a7a51b195876e79508b11ce01a4e46747de7013"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/tests/probe.py",
+      "dst": "research/harbor/probe.py",
+      "bytes": 3300,
+      "sha256": "d3659dcb886a89ae65098a6f3f51b0f350c63307d029a66d33f843bed24f883c"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/tests/test.sh",
+      "dst": "research/harbor/test.sh",
+      "bytes": 2999,
+      "sha256": "4ff5bfc71b4eb00586e25f2466c9ad951c527004ded723d9b20187fa3915d31e"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/harbor-r108/solution/solve.sh",
+      "dst": "research/harbor/solve.sh",
+      "bytes": 234,
+      "sha256": "28e9f96963e42a95797f67fe4da925e204f8ec07368d36906fda27e59db81802"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/novix/r108-25092-final/R108-FINAL-VERIFICATION.md",
+      "dst": "research/harbor/R108-FINAL-VERIFICATION.md",
+      "bytes": 4714,
+      "sha256": "c2b79cf436d5d1724d0e894fc3e850f6618534568a7aa6fc968daa58fb79dd38"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-probe.py",
+      "dst": "research/rounds/R117-probe.py",
+      "bytes": 12777,
+      "sha256": "4f8543117463d1b685dbbb8d211a15471a80fba8dc5092dc9a5d71ac5d1ecd3a"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-verify.py",
+      "dst": "research/rounds/R117-verify.py",
+      "bytes": 8978,
+      "sha256": "418ef947558360a794c5bfa8b14e30c7922698ca8121c01d8a2b65d227c04454"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/exec-premise-R117/R117-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R117-INDEPENDENT-REVIEW.md",
+      "bytes": 22725,
+      "sha256": "0d133eaca0684bc61b927378923aaf09489adb6e33b979b8c4e9be33df030a3b"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/gate-G0-R118/R118-verify.py",
+      "dst": "research/rounds/R118-verify.py",
+      "bytes": 14602,
+      "sha256": "3b743963e79db90f25f0ed20abb79ef683bed8e04357ea54247913fab87552b6"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/reconciliation-R120/R120-ROUND-AUDIT.md",
+      "dst": "research/rounds/R120-ROUND-AUDIT.md",
+      "bytes": 15418,
+      "sha256": "a61b18e88c16bfb6bf22f3892c3c3f4a9c9a4503fc25560e09b84b05f11244c4"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-verify.py",
+      "dst": "research/rounds/R122-verify.py",
+      "bytes": 7788,
+      "sha256": "cc0feb4a8ee87039587159f2a905758fe8350aa03dca9499713f5d1d2a6d859e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-POST-REVIEW-CORRECTION.md",
+      "dst": "research/rounds/R122-POST-REVIEW-CORRECTION.md",
+      "bytes": 8273,
+      "sha256": "2985987bbffb73e1df67961d9b0ad4a9407728711f7ca9b162983df569879fb4"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/first-hand-R122/R122-INDEPENDENT-REVIEW.md",
+      "dst": "research/rounds/R122-INDEPENDENT-REVIEW.md",
+      "bytes": 24434,
+      "sha256": "bcc78c27ab05ccee699199f8c01899f4a6bd912a6e24202a82397df080cace4e"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-verify-v1.py",
+      "dst": "research/rounds/R125-verify-v1.py",
+      "bytes": 11880,
+      "sha256": "e19a3c9dae1757528c7c6487fe7d3c5b5e8ded2f84f6edc93eeadfaf0602dbb4"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-verify-v2.py",
+      "dst": "research/rounds/R125-verify-v2.py",
+      "bytes": 12263,
+      "sha256": "ed5301d6f52cc80b6fefe70622dfa2dccfdbb6969689faf30a9ac64d279ccc82"
+    },
+    {
+      "cat": "rounds",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/r125-jats/R125-verify.py",
+      "dst": "research/rounds/R125-verify.py",
+      "bytes": 12655,
+      "sha256": "75fb2a413161d41d3db7188de46e78104f32eaf5e87601119d6215fabd6391e8"
+    },
+    {
+      "cat": "harbor",
+      "src": "fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/novix/route-diagnosis-20261112-v1.json",
+      "dst": "research/harbor/route-diagnosis-20261112-v1.json",
+      "bytes": 4822,
+      "sha256": "85706734e44441901040fdd29ea36d3125b471429cddcbce830cec01702b7185"
+    }
+  ],
+  "skipped": [],
+  "note": "R126 full-open upload per user instruction 2026-11-14; only real credential VALUE files excluded. The 11 verify.py/audit files contain scan-pattern literals, not secrets, and are included."
+}

@@ -1,0 +1,19 @@
+{
+ "scope": "13 R125 raw byte files only; these files are NOT uploaded to the public repo",
+ "regex": "[\\w.+-]+@[\\w.-]+\\.[A-Za-z]{2,}",
+ "total_occurrences": 2,
+ "total_distinct_strings": 1,
+ "counting_scope_note": "occurrences = every regex match (2); distinct = unique strings (1). R124 L1 lesson: any count must declare which scope it uses.",
+ "per_file": {
+  "wayback-v1.html": {
+   "occurrences": 2,
+   "distinct": [
+    "info@archive.org"
+   ]
+  }
+ },
+ "frozen_verifier_weak_check_count": 0,
+ "frozen_verifier_weak_check_rule": "file counted only if it contains BOTH '@' and '.com'",
+ "conclusion": "Two email-shaped literals exist, both the public Internet Archive contact address in the Wayback 404 page. The frozen verifier's weak check is a false-negative design flaw. No published document claims zero email literals in the raw set; the public upload set contains none of these files.",
+ "note": "No scientific result, no gate change, no score change."
+}

@@ -1,0 +1,124 @@
+{
+  "round": "R106",
+  "status": "LITERATURE_VERIFICATION_ONLY_NOT_SCIENTIFIC_RESULT",
+  "created_local": "2026-11-13T03:41:30.623867+08:00",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "purpose": "Freeze the exact bytes of G0 evidence artifacts reviewed in R106, and snapshot gate status. No artifact is modified.",
+  "files": [
+    {
+      "path": "literature-baseline-matrix.md",
+      "exists": true,
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2"
+    },
+    {
+      "path": "gate-G0-recency-review-R99.md",
+      "exists": true,
+      "bytes": 4974,
+      "sha256": "4eb1df8ddebb15d5eb934b0060fef49eb4a84902940ffae401b367172ea06046"
+    },
+    {
+      "path": "gate-G0-evidence-review-R98.md",
+      "exists": true,
+      "bytes": 3742,
+      "sha256": "6bccf27dcb75dab8d45c37a80bd56724583ffc4e6d3859b7ef81b9b2bafd8ea9"
+    },
+    {
+      "path": "ccfa-startup-packet/candidate-E-local-v2/prior-art-opportunity-map.md",
+      "exists": true,
+      "bytes": 3163,
+      "sha256": "248bcf04d57b34b8d354998c69fb8fd4684080f61e0e9a00a5a37d4460bb9be0"
+    },
+    {
+      "path": "pipeline-state.json",
+      "exists": true,
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d"
+    },
+    {
+      "path": "execution-contract-v2.md",
+      "exists": true,
+      "bytes": 2648,
+      "sha256": "20bddbb80b29e26e38c666389a853df9847f643187623353192c71439294f29b"
+    },
+    {
+      "path": "execution-contract-v3.md",
+      "exists": true,
+      "bytes": 4556,
+      "sha256": "1630832599cb884064251c5dde8e22d00018dad1c910ca6b7055233bf51af302"
+    },
+    {
+      "path": "R99-design-block-decision.md",
+      "exists": true,
+      "bytes": 5120,
+      "sha256": "9b07d5698fd7e051fa0daf2c32422c1db2086490f7e8fc02f4538958e29eb245"
+    }
+  ],
+  "pipeline_state_sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+  "gate_status_snapshot": [
+    {
+      "id": "CCFA-startup",
+      "status": "passed",
+      "gate_verdict": "pass"
+    },
+    {
+      "id": "G0",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G1",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G2",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G3",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G4",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G5",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G6",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G7",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "G8",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "validation",
+      "status": "pending",
+      "gate_verdict": "pending"
+    },
+    {
+      "id": "handoff",
+      "status": "pending",
+      "gate_verdict": "pending"
+    }
+  ],
+  "gates_mutated": false,
+  "model_forward_passes": 0,
+  "training_runs": 0,
+  "labels_used": 0
+}

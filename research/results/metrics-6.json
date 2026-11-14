@@ -1,0 +1,1215 @@
+{
+  "experiment": "R63-N8: connectome-calibrated corruption robustness (unseen-corruption generalization only; no source-domain claim)",
+  "config_sha256": "c698148b39f9cc479b0b24b4d1d8c443714ee635674987492bffb237c8f62c5f",
+  "debug_mode": false,
+  "grounding": {
+    "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "feather_file": "/home/novix/workspace/project/data/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+    "feather_bytes": 14483314,
+    "feather_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+    "dataset": "male-cns:v1.0 (FlyEM/Janelia, CC-BY), body-annotations-minconf-0.5",
+    "rows": 211577,
+    "type_column": "type",
+    "class_column": "superclass",
+    "type_counts": {
+      "L1": 1776,
+      "L2": 1779,
+      "L3": 1772,
+      "L4": 1770,
+      "L5": 1787,
+      "Mi1": 1773,
+      "Mi4": 1772,
+      "Mi9": 1775,
+      "Tm1": 1777,
+      "Tm2": 1766,
+      "Tm3": 2054,
+      "Tm4": 1670,
+      "Tm5": 0,
+      "Tm9": 1771,
+      "T1": 1777,
+      "T2": 1630,
+      "T3": 1940,
+      "T4": 0,
+      "T5": 0,
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 0,
+      "R6": 0,
+      "R7": 0,
+      "R8": 0
+    },
+    "class_counts_top30": {
+      "ol_intrinsic": 89403,
+      "cb_intrinsic": 32164,
+      "vnc_intrinsic": 13161,
+      "visual_projection": 9201,
+      "vnc_sensory": 6370,
+      "ol_sensory": 6098,
+      "cb_sensory": 4868,
+      "ascending_neuron": 1846,
+      "descending_neuron": 1314,
+      "vnc_motor": 708,
+      "visual_centrifugal": 563,
+      "sensory_ascending": 537,
+      "cb_motor": 107,
+      "vnc_efferent": 94,
+      "cb_endocrine": 72,
+      "ENS": 50,
+      "vnc_tbc": 38,
+      "vnc_sensory_tbc": 36,
+      "vnc_endocrine": 22,
+      "cb_sensory_tbc": 14,
+      "sensory_descending": 12,
+      "efferent_ascending": 8,
+      "efferent_descending": 4,
+      "cb_efferent": 4,
+      "visual_projection_tbc": 2,
+      "sensory_ascending_tbc": 2,
+      "descending_neuron_tbc": 2
+    },
+    "NOTE": "ON/OFF split is a CELL_TYPE_PROXY derived from cell-type counts in the annotation table (L1->Mi1/Tm3 ON, L2->Tm1/Tm2 OFF); NOT computed from synaptic connectivity.",
+    "CELL_TYPE_PROXY": true,
+    "N_ON": 5603,
+    "N_OFF": 5322,
+    "p_on": 0.5128604118993135,
+    "p_off": 0.48713958810068647,
+    "derived_frontend_params": {
+      "sigma_center": 0.8,
+      "sigma_surround": 1.5598786364447619,
+      "sigma_ratio": 1.9498482955559522,
+      "w_on": 1.025720823798627,
+      "w_off": 0.9742791762013729
+    },
+    "timestamp_utc": "2026-11-08T14:08:52.372551+00:00"
+  },
+  "tuned_params": {
+    "sigma_center": 0.75172911184583,
+    "sigma_ratio": 2.1071440343374213,
+    "w_on": 0.8154849349969094,
+    "w_off": 0.4306587200441311
+  },
+  "tuning_trials": [
+    {
+      "trial": 0,
+      "params": {
+        "sigma_center": 1.377750287915154,
+        "sigma_ratio": 1.9199290332889491,
+        "w_on": 1.3001234195357538,
+        "w_off": 1.9362262680182671
+      },
+      "clean_val": 0.7674,
+      "seen_corrupt_val": 0.4884666666666667,
+      "metric": 0.6279333333333333
+    },
+    {
+      "trial": 1,
+      "params": {
+        "sigma_center": 0.7138600998824771,
+        "sigma_ratio": 1.8398224882664516,
+        "w_on": 1.244831218525657,
+        "w_off": 1.19428618100536
+      },
+      "clean_val": 0.8174,
+      "seen_corrupt_val": 0.42131111111111114,
+      "metric": 0.6193555555555555
+    },
+    {
+      "trial": 2,
+      "params": {
+        "sigma_center": 1.5776774818060275,
+        "sigma_ratio": 2.0039329018534877,
+        "w_on": 0.3506720936637814,
+        "w_off": 0.5406022017875385
+      },
+      "clean_val": 0.7562,
+      "seen_corrupt_val": 0.4915333333333333,
+      "metric": 0.6238666666666667
+    },
+    {
+      "trial": 3,
+      "params": {
+        "sigma_center": 1.6118508255595239,
+        "sigma_ratio": 2.439892554981324,
+        "w_on": 1.4776756996123077,
+        "w_off": 0.4342055667041016
+      },
+      "clean_val": 0.7402,
+      "seen_corrupt_val": 0.4814222222222222,
+      "metric": 0.6108111111111111
+    },
+    {
+      "trial": 4,
+      "params": {
+        "sigma_center": 0.4742583640057639,
+        "sigma_ratio": 2.8808353828416458,
+        "w_on": 0.9879388967059073,
+        "w_off": 0.3092296135187163
+      },
+      "clean_val": 0.8226,
+      "seen_corrupt_val": 0.39566666666666667,
+      "metric": 0.6091333333333333
+    },
+    {
+      "trial": 5,
+      "params": {
+        "sigma_center": 0.75172911184583,
+        "sigma_ratio": 2.1071440343374213,
+        "w_on": 0.8154849349969094,
+        "w_off": 0.4306587200441311
+      },
+      "clean_val": 0.813,
+      "seen_corrupt_val": 0.44686666666666663,
+      "metric": 0.6299333333333332
+    },
+    {
+      "trial": 6,
+      "params": {
+        "sigma_center": 1.7224989149292442,
+        "sigma_ratio": 1.473984301528593,
+        "w_on": 0.6000327685653667,
+        "w_off": 0.5476224374492086
+      },
+      "clean_val": 0.737,
+      "seen_corrupt_val": 0.4817111111111111,
+      "metric": 0.6093555555555555
+    },
+    {
+      "trial": 7,
+      "params": {
+        "sigma_center": 1.8272229862389393,
+        "sigma_ratio": 2.5427125272927045,
+        "w_on": 1.6113282942735663,
+        "w_off": 0.3801740787601581
+      },
+      "clean_val": 0.7258,
+      "seen_corrupt_val": 0.47519999999999996,
+      "metric": 0.6005
+    },
+    {
+      "trial": 8,
+      "params": {
+        "sigma_center": 0.6112827468600722,
+        "sigma_ratio": 1.537458046939987,
+        "w_on": 0.7942815811123014,
+        "w_off": 0.4841143574984069
+      },
+      "clean_val": 0.8252,
+      "seen_corrupt_val": 0.41722222222222227,
+      "metric": 0.6212111111111112
+    },
+    {
+      "trial": 9,
+      "params": {
+        "sigma_center": 0.65241017355262,
+        "sigma_ratio": 1.3257391309883613,
+        "w_on": 0.8615058202816975,
+        "w_off": 0.44471988897186615
+      },
+      "clean_val": 0.8146,
+      "seen_corrupt_val": 0.42277777777777775,
+      "metric": 0.6186888888888888
+    },
+    {
+      "trial": 10,
+      "params": {
+        "sigma_center": 0.6480790875661935,
+        "sigma_ratio": 2.5791191012121604,
+        "w_on": 0.6492909286774121,
+        "w_off": 1.059790684098087
+      },
+      "clean_val": 0.8226,
+      "seen_corrupt_val": 0.42331111111111114,
+      "metric": 0.6229555555555556
+    },
+    {
+      "trial": 11,
+      "params": {
+        "sigma_center": 1.5062399451109196,
+        "sigma_ratio": 2.4657145589007907,
+        "w_on": 1.7347524406349604,
+        "w_off": 1.7429699747752447
+      },
+      "clean_val": 0.7562,
+      "seen_corrupt_val": 0.4875555555555555,
+      "metric": 0.6218777777777778
+    }
+  ],
+  "seeds": [
+    11,
+    17,
+    23,
+    31,
+    41
+  ],
+  "severities": [
+    1,
+    3,
+    5
+  ],
+  "per_condition_per_seed": {
+    "bio_calibrated": {
+      "11": {
+        "clean": 0.8563,
+        "per_type": {
+          "gaussian_noise": 0.4993,
+          "shot_noise": 0.21453333333333335,
+          "impulse_noise": 0.5526666666666668,
+          "defocus_blur": 0.12846666666666667,
+          "gaussian_blur": 0.5123666666666667,
+          "motion_blur": 0.14173333333333335,
+          "zoom_blur": 0.6013000000000001,
+          "fog": 0.7834333333333333,
+          "brightness": 0.7341333333333333,
+          "contrast": 0.3436333333333333,
+          "elastic_transform": 0.816,
+          "pixelate": 0.23216666666666666,
+          "jpeg_compression": 0.5541666666666666,
+          "saturate": 0.8092333333333332
+        },
+        "mCA_unseen": 0.5055666666666667,
+        "mCA_seen": 0.45396666666666663
+      },
+      "17": {
+        "clean": 0.8525,
+        "per_type": {
+          "gaussian_noise": 0.5038666666666667,
+          "shot_noise": 0.21576666666666666,
+          "impulse_noise": 0.5484000000000001,
+          "defocus_blur": 0.12736666666666666,
+          "gaussian_blur": 0.5036333333333333,
+          "motion_blur": 0.14063333333333336,
+          "zoom_blur": 0.5921333333333333,
+          "fog": 0.7816666666666667,
+          "brightness": 0.7313666666666666,
+          "contrast": 0.34919999999999995,
+          "elastic_transform": 0.8103666666666666,
+          "pixelate": 0.22056666666666666,
+          "jpeg_compression": 0.5464666666666667,
+          "saturate": 0.8107000000000001
+        },
+        "mCA_unseen": 0.5017757575757575,
+        "mCA_seen": 0.4542
+      },
+      "23": {
+        "clean": 0.8558,
+        "per_type": {
+          "gaussian_noise": 0.4958666666666667,
+          "shot_noise": 0.20623333333333335,
+          "impulse_noise": 0.5338333333333333,
+          "defocus_blur": 0.13076666666666667,
+          "gaussian_blur": 0.5018999999999999,
+          "motion_blur": 0.13776666666666668,
+          "zoom_blur": 0.5753666666666667,
+          "fog": 0.7848333333333334,
+          "brightness": 0.7289666666666667,
+          "contrast": 0.35073333333333334,
+          "elastic_transform": 0.8090333333333333,
+          "pixelate": 0.22186666666666666,
+          "jpeg_compression": 0.5405,
+          "saturate": 0.8130000000000001
+        },
+        "mCA_unseen": 0.49773333333333325,
+        "mCA_seen": 0.45186666666666664
+      },
+      "31": {
+        "clean": 0.8541,
+        "per_type": {
+          "gaussian_noise": 0.5143333333333333,
+          "shot_noise": 0.21916666666666665,
+          "impulse_noise": 0.5461999999999999,
+          "defocus_blur": 0.12476666666666665,
+          "gaussian_blur": 0.5084000000000001,
+          "motion_blur": 0.14093333333333333,
+          "zoom_blur": 0.5916666666666667,
+          "fog": 0.7885,
+          "brightness": 0.7454999999999999,
+          "contrast": 0.3614,
+          "elastic_transform": 0.8107666666666667,
+          "pixelate": 0.21403333333333333,
+          "jpeg_compression": 0.5496666666666666,
+          "saturate": 0.8109999999999999
+        },
+        "mCA_unseen": 0.5037939393939393,
+        "mCA_seen": 0.4615333333333333
+      },
+      "41": {
+        "clean": 0.8569,
+        "per_type": {
+          "gaussian_noise": 0.5223333333333332,
+          "shot_noise": 0.22783333333333333,
+          "impulse_noise": 0.5417666666666667,
+          "defocus_blur": 0.1183,
+          "gaussian_blur": 0.5001666666666668,
+          "motion_blur": 0.1406666666666667,
+          "zoom_blur": 0.5858333333333333,
+          "fog": 0.7888999999999999,
+          "brightness": 0.7379333333333333,
+          "contrast": 0.35223333333333334,
+          "elastic_transform": 0.8150333333333334,
+          "pixelate": 0.2373333333333333,
+          "jpeg_compression": 0.5590666666666667,
+          "saturate": 0.8115
+        },
+        "mCA_unseen": 0.5054848484848484,
+        "mCA_seen": 0.45952222222222217
+      }
+    },
+    "tuned_clean": {
+      "11": {
+        "clean": 0.8565,
+        "per_type": {
+          "gaussian_noise": 0.4560666666666666,
+          "shot_noise": 0.19903333333333337,
+          "impulse_noise": 0.5629000000000001,
+          "defocus_blur": 0.12936666666666666,
+          "gaussian_blur": 0.49643333333333334,
+          "motion_blur": 0.15433333333333332,
+          "zoom_blur": 0.5783,
+          "fog": 0.7846666666666667,
+          "brightness": 0.7316666666666666,
+          "contrast": 0.3648,
+          "elastic_transform": 0.8116666666666666,
+          "pixelate": 0.22173333333333334,
+          "jpeg_compression": 0.5322333333333333,
+          "saturate": 0.8120999999999999
+        },
+        "mCA_unseen": 0.5016545454545455,
+        "mCA_seen": 0.43903333333333333
+      },
+      "17": {
+        "clean": 0.8598,
+        "per_type": {
+          "gaussian_noise": 0.46246666666666664,
+          "shot_noise": 0.2015,
+          "impulse_noise": 0.5262666666666667,
+          "defocus_blur": 0.13373333333333334,
+          "gaussian_blur": 0.4889333333333334,
+          "motion_blur": 0.14153333333333332,
+          "zoom_blur": 0.5573666666666667,
+          "fog": 0.7844000000000001,
+          "brightness": 0.7201,
+          "contrast": 0.3624,
+          "elastic_transform": 0.8099666666666666,
+          "pixelate": 0.2333333333333333,
+          "jpeg_compression": 0.5417,
+          "saturate": 0.8127333333333334
+        },
+        "mCA_unseen": 0.4963757575757576,
+        "mCA_seen": 0.4387666666666667
+      },
+      "23": {
+        "clean": 0.8573,
+        "per_type": {
+          "gaussian_noise": 0.4499666666666667,
+          "shot_noise": 0.19283333333333333,
+          "impulse_noise": 0.5443666666666666,
+          "defocus_blur": 0.12516666666666668,
+          "gaussian_blur": 0.49533333333333335,
+          "motion_blur": 0.13670000000000002,
+          "zoom_blur": 0.5643333333333334,
+          "fog": 0.7852000000000001,
+          "brightness": 0.7321666666666666,
+          "contrast": 0.36813333333333337,
+          "elastic_transform": 0.8078666666666666,
+          "pixelate": 0.21116666666666664,
+          "jpeg_compression": 0.5267666666666666,
+          "saturate": 0.8141999999999999
+        },
+        "mCA_unseen": 0.4951727272727272,
+        "mCA_seen": 0.4357666666666667
+      },
+      "31": {
+        "clean": 0.8605,
+        "per_type": {
+          "gaussian_noise": 0.46926666666666667,
+          "shot_noise": 0.19440000000000002,
+          "impulse_noise": 0.5280333333333334,
+          "defocus_blur": 0.1256,
+          "gaussian_blur": 0.5025000000000001,
+          "motion_blur": 0.1439,
+          "zoom_blur": 0.5669,
+          "fog": 0.7927333333333334,
+          "brightness": 0.7421666666666665,
+          "contrast": 0.36613333333333337,
+          "elastic_transform": 0.8127999999999999,
+          "pixelate": 0.20543333333333333,
+          "jpeg_compression": 0.5452333333333333,
+          "saturate": 0.815
+        },
+        "mCA_unseen": 0.4975515151515151,
+        "mCA_seen": 0.4456777777777778
+      },
+      "41": {
+        "clean": 0.8586,
+        "per_type": {
+          "gaussian_noise": 0.47079999999999994,
+          "shot_noise": 0.2018333333333333,
+          "impulse_noise": 0.5387000000000001,
+          "defocus_blur": 0.14656666666666665,
+          "gaussian_blur": 0.5111,
+          "motion_blur": 0.14843333333333333,
+          "zoom_blur": 0.5879,
+          "fog": 0.7965,
+          "brightness": 0.7394,
+          "contrast": 0.3519333333333334,
+          "elastic_transform": 0.8155333333333333,
+          "pixelate": 0.2291,
+          "jpeg_compression": 0.5487000000000001,
+          "saturate": 0.8168666666666667
+        },
+        "mCA_unseen": 0.5042363636363636,
+        "mCA_seen": 0.4522555555555556
+      }
+    },
+    "generic_fixed": {
+      "11": {
+        "clean": 0.8421,
+        "per_type": {
+          "gaussian_noise": 0.6215333333333334,
+          "shot_noise": 0.28853333333333336,
+          "impulse_noise": 0.5549666666666667,
+          "defocus_blur": 0.12513333333333335,
+          "gaussian_blur": 0.5455666666666666,
+          "motion_blur": 0.1522,
+          "zoom_blur": 0.6432,
+          "fog": 0.7497333333333334,
+          "brightness": 0.7039333333333332,
+          "contrast": 0.32339999999999997,
+          "elastic_transform": 0.8075666666666667,
+          "pixelate": 0.3167666666666667,
+          "jpeg_compression": 0.6289666666666666,
+          "saturate": 0.8011666666666667
+        },
+        "mCA_unseen": 0.5283696969696972,
+        "mCA_seen": 0.4835333333333333
+      },
+      "17": {
+        "clean": 0.8388,
+        "per_type": {
+          "gaussian_noise": 0.6208666666666667,
+          "shot_noise": 0.27886666666666665,
+          "impulse_noise": 0.5468333333333334,
+          "defocus_blur": 0.13733333333333334,
+          "gaussian_blur": 0.5370333333333334,
+          "motion_blur": 0.1507,
+          "zoom_blur": 0.6356,
+          "fog": 0.7548666666666667,
+          "brightness": 0.7119666666666667,
+          "contrast": 0.33853333333333335,
+          "elastic_transform": 0.8070333333333334,
+          "pixelate": 0.30193333333333333,
+          "jpeg_compression": 0.6122333333333333,
+          "saturate": 0.7992666666666667
+        },
+        "mCA_unseen": 0.5239000000000001,
+        "mCA_seen": 0.4900555555555555
+      },
+      "23": {
+        "clean": 0.8416,
+        "per_type": {
+          "gaussian_noise": 0.6315333333333334,
+          "shot_noise": 0.2836,
+          "impulse_noise": 0.5458,
+          "defocus_blur": 0.13649999999999998,
+          "gaussian_blur": 0.5401666666666667,
+          "motion_blur": 0.15236666666666668,
+          "zoom_blur": 0.6391333333333334,
+          "fog": 0.7585666666666667,
+          "brightness": 0.7120000000000001,
+          "contrast": 0.3305333333333333,
+          "elastic_transform": 0.8065333333333333,
+          "pixelate": 0.2997666666666667,
+          "jpeg_compression": 0.6135,
+          "saturate": 0.799
+        },
+        "mCA_unseen": 0.5244515151515152,
+        "mCA_seen": 0.49334444444444453
+      },
+      "31": {
+        "clean": 0.8414,
+        "per_type": {
+          "gaussian_noise": 0.6333333333333334,
+          "shot_noise": 0.28886666666666666,
+          "impulse_noise": 0.5641666666666667,
+          "defocus_blur": 0.14613333333333334,
+          "gaussian_blur": 0.5536666666666666,
+          "motion_blur": 0.1505,
+          "zoom_blur": 0.6523666666666667,
+          "fog": 0.7568999999999999,
+          "brightness": 0.7159,
+          "contrast": 0.34836666666666666,
+          "elastic_transform": 0.8066333333333334,
+          "pixelate": 0.3314666666666667,
+          "jpeg_compression": 0.6179,
+          "saturate": 0.7996666666666666
+        },
+        "mCA_unseen": 0.5336818181818181,
+        "mCA_seen": 0.4984555555555556
+      },
+      "41": {
+        "clean": 0.8401,
+        "per_type": {
+          "gaussian_noise": 0.6205333333333334,
+          "shot_noise": 0.2921666666666667,
+          "impulse_noise": 0.5571,
+          "defocus_blur": 0.14063333333333333,
+          "gaussian_blur": 0.5523333333333332,
+          "motion_blur": 0.14923333333333336,
+          "zoom_blur": 0.6491666666666667,
+          "fog": 0.7451333333333333,
+          "brightness": 0.7022,
+          "contrast": 0.34103333333333335,
+          "elastic_transform": 0.8078,
+          "pixelate": 0.33246666666666663,
+          "jpeg_compression": 0.6169666666666666,
+          "saturate": 0.7956
+        },
+        "mCA_unseen": 0.5308181818181819,
+        "mCA_seen": 0.487788888888889
+      }
+    },
+    "raw_pixels": {
+      "11": {
+        "clean": 0.8815,
+        "per_type": {
+          "gaussian_noise": 0.5109,
+          "shot_noise": 0.25589999999999996,
+          "impulse_noise": 0.5292333333333333,
+          "defocus_blur": 0.1784,
+          "gaussian_blur": 0.5648666666666666,
+          "motion_blur": 0.1991666666666667,
+          "zoom_blur": 0.6636000000000001,
+          "fog": 0.8337666666666667,
+          "brightness": 0.7720666666666668,
+          "contrast": 0.40606666666666663,
+          "elastic_transform": 0.8441666666666666,
+          "pixelate": 0.23609999999999998,
+          "jpeg_compression": 0.5483666666666667,
+          "saturate": 0.7689333333333334
+        },
+        "mCA_unseen": 0.5318333333333333,
+        "mCA_seen": 0.48712222222222223
+      },
+      "17": {
+        "clean": 0.8816,
+        "per_type": {
+          "gaussian_noise": 0.4634333333333333,
+          "shot_noise": 0.22176666666666667,
+          "impulse_noise": 0.5378666666666666,
+          "defocus_blur": 0.18123333333333333,
+          "gaussian_blur": 0.5339666666666666,
+          "motion_blur": 0.1932,
+          "zoom_blur": 0.6195666666666667,
+          "fog": 0.8347000000000001,
+          "brightness": 0.7652,
+          "contrast": 0.38516666666666666,
+          "elastic_transform": 0.8418,
+          "pixelate": 0.2518,
+          "jpeg_compression": 0.5391333333333334,
+          "saturate": 0.7751333333333333
+        },
+        "mCA_unseen": 0.5212818181818183,
+        "mCA_seen": 0.4699555555555555
+      },
+      "23": {
+        "clean": 0.8827,
+        "per_type": {
+          "gaussian_noise": 0.4189,
+          "shot_noise": 0.17746666666666666,
+          "impulse_noise": 0.5388333333333333,
+          "defocus_blur": 0.18743333333333334,
+          "gaussian_blur": 0.5405333333333333,
+          "motion_blur": 0.21133333333333335,
+          "zoom_blur": 0.6020666666666666,
+          "fog": 0.8375333333333334,
+          "brightness": 0.7653333333333334,
+          "contrast": 0.3957333333333333,
+          "elastic_transform": 0.8367666666666667,
+          "pixelate": 0.23763333333333334,
+          "jpeg_compression": 0.5326333333333333,
+          "saturate": 0.774
+        },
+        "mCA_unseen": 0.5167757575757576,
+        "mCA_seen": 0.45722222222222225
+      },
+      "31": {
+        "clean": 0.8772,
+        "per_type": {
+          "gaussian_noise": 0.5207333333333334,
+          "shot_noise": 0.25026666666666664,
+          "impulse_noise": 0.5745666666666667,
+          "defocus_blur": 0.1755,
+          "gaussian_blur": 0.5418666666666666,
+          "motion_blur": 0.19310000000000002,
+          "zoom_blur": 0.6244666666666666,
+          "fog": 0.8327666666666667,
+          "brightness": 0.7754333333333333,
+          "contrast": 0.3920666666666666,
+          "elastic_transform": 0.8383333333333334,
+          "pixelate": 0.24539999999999998,
+          "jpeg_compression": 0.533,
+          "saturate": 0.7684000000000001
+        },
+        "mCA_unseen": 0.5267484848484849,
+        "mCA_seen": 0.4905555555555556
+      },
+      "41": {
+        "clean": 0.8777,
+        "per_type": {
+          "gaussian_noise": 0.43793333333333334,
+          "shot_noise": 0.2011333333333333,
+          "impulse_noise": 0.5351,
+          "defocus_blur": 0.1905,
+          "gaussian_blur": 0.5351,
+          "motion_blur": 0.19793333333333332,
+          "zoom_blur": 0.6069666666666667,
+          "fog": 0.8350666666666667,
+          "brightness": 0.7772,
+          "contrast": 0.40076666666666666,
+          "elastic_transform": 0.8405333333333335,
+          "pixelate": 0.2514,
+          "jpeg_compression": 0.5257000000000001,
+          "saturate": 0.7808
+        },
+        "mCA_unseen": 0.5191363636363637,
+        "mCA_seen": 0.46854444444444443
+      }
+    },
+    "random_params": {
+      "11": {
+        "clean": 0.81966,
+        "per_type": {
+          "gaussian_noise": 0.6113333333333333,
+          "shot_noise": 0.32765999999999995,
+          "impulse_noise": 0.5544399999999999,
+          "defocus_blur": 0.15999999999999998,
+          "gaussian_blur": 0.5631266666666667,
+          "motion_blur": 0.16153333333333333,
+          "zoom_blur": 0.6502,
+          "fog": 0.7179933333333333,
+          "brightness": 0.6724533333333335,
+          "contrast": 0.3214333333333333,
+          "elastic_transform": 0.7875800000000001,
+          "pixelate": 0.36904000000000003,
+          "jpeg_compression": 0.6332266666666667,
+          "saturate": 0.7742066666666666
+        },
+        "mCA_unseen": 0.5327672727272726,
+        "mCA_seen": 0.4812622222222222
+      },
+      "17": {
+        "clean": 0.82054,
+        "per_type": {
+          "gaussian_noise": 0.60958,
+          "shot_noise": 0.32928,
+          "impulse_noise": 0.5534666666666668,
+          "defocus_blur": 0.15666666666666665,
+          "gaussian_blur": 0.55782,
+          "motion_blur": 0.15658666666666668,
+          "zoom_blur": 0.6444133333333334,
+          "fog": 0.7186266666666666,
+          "brightness": 0.67688,
+          "contrast": 0.32082,
+          "elastic_transform": 0.7879666666666666,
+          "pixelate": 0.36585999999999996,
+          "jpeg_compression": 0.6308133333333333,
+          "saturate": 0.7757866666666666
+        },
+        "mCA_unseen": 0.53104,
+        "mCA_seen": 0.4810422222222222
+      },
+      "23": {
+        "clean": 0.81782,
+        "per_type": {
+          "gaussian_noise": 0.6131466666666666,
+          "shot_noise": 0.33416666666666667,
+          "impulse_noise": 0.5600466666666667,
+          "defocus_blur": 0.16163333333333332,
+          "gaussian_blur": 0.5556866666666667,
+          "motion_blur": 0.15914,
+          "zoom_blur": 0.6447466666666667,
+          "fog": 0.7176666666666667,
+          "brightness": 0.6719199999999999,
+          "contrast": 0.32424,
+          "elastic_transform": 0.7865599999999999,
+          "pixelate": 0.3592066666666667,
+          "jpeg_compression": 0.6329066666666666,
+          "saturate": 0.7741933333333333
+        },
+        "mCA_unseen": 0.5316872727272727,
+        "mCA_seen": 0.4822333333333333
+      },
+      "31": {
+        "clean": 0.81866,
+        "per_type": {
+          "gaussian_noise": 0.6106066666666667,
+          "shot_noise": 0.3337,
+          "impulse_noise": 0.5483066666666666,
+          "defocus_blur": 0.1504933333333333,
+          "gaussian_blur": 0.5492666666666667,
+          "motion_blur": 0.15578666666666666,
+          "zoom_blur": 0.6438266666666668,
+          "fog": 0.7166866666666667,
+          "brightness": 0.66644,
+          "contrast": 0.33115333333333336,
+          "elastic_transform": 0.78586,
+          "pixelate": 0.36521333333333333,
+          "jpeg_compression": 0.6309199999999999,
+          "saturate": 0.7736200000000001
+        },
+        "mCA_unseen": 0.5303945454545455,
+        "mCA_seen": 0.4758466666666667
+      },
+      "41": {
+        "clean": 0.81778,
+        "per_type": {
+          "gaussian_noise": 0.6121800000000001,
+          "shot_noise": 0.33253333333333335,
+          "impulse_noise": 0.5579400000000001,
+          "defocus_blur": 0.16423333333333334,
+          "gaussian_blur": 0.5600933333333333,
+          "motion_blur": 0.1647,
+          "zoom_blur": 0.6496066666666668,
+          "fog": 0.71506,
+          "brightness": 0.6703133333333333,
+          "contrast": 0.3162866666666667,
+          "elastic_transform": 0.78624,
+          "pixelate": 0.35930000000000006,
+          "jpeg_compression": 0.6286933333333333,
+          "saturate": 0.7732933333333334
+        },
+        "mCA_unseen": 0.531249696969697,
+        "mCA_seen": 0.48224222222222224
+      }
+    }
+  },
+  "condition_means": {
+    "bio_calibrated": {
+      "clean": 0.85512,
+      "mCA_unseen": 0.5028709090909091,
+      "mCA_seen": 0.4562177777777777,
+      "per_type": {
+        "gaussian_noise": 0.5071399999999999,
+        "shot_noise": 0.2167066666666667,
+        "impulse_noise": 0.5445733333333334,
+        "defocus_blur": 0.12593333333333334,
+        "gaussian_blur": 0.5052933333333334,
+        "motion_blur": 0.14034666666666668,
+        "zoom_blur": 0.5892600000000001,
+        "fog": 0.7854666666666666,
+        "brightness": 0.7355799999999999,
+        "contrast": 0.35144,
+        "elastic_transform": 0.8122399999999999,
+        "pixelate": 0.2251933333333333,
+        "jpeg_compression": 0.5499733333333333,
+        "saturate": 0.8110866666666666
+      }
+    },
+    "tuned_clean": {
+      "clean": 0.85854,
+      "mCA_unseen": 0.4989981818181818,
+      "mCA_seen": 0.4423,
+      "per_type": {
+        "gaussian_noise": 0.4617133333333333,
+        "shot_noise": 0.19792,
+        "impulse_noise": 0.5400533333333333,
+        "defocus_blur": 0.13208666666666666,
+        "gaussian_blur": 0.49885999999999997,
+        "motion_blur": 0.14498,
+        "zoom_blur": 0.57096,
+        "fog": 0.7887000000000001,
+        "brightness": 0.7330999999999999,
+        "contrast": 0.36268000000000006,
+        "elastic_transform": 0.8115666666666665,
+        "pixelate": 0.22015333333333334,
+        "jpeg_compression": 0.5389266666666667,
+        "saturate": 0.81418
+      }
+    },
+    "generic_fixed": {
+      "clean": 0.8408,
+      "mCA_unseen": 0.5282442424242426,
+      "mCA_seen": 0.4906355555555556,
+      "per_type": {
+        "gaussian_noise": 0.62556,
+        "shot_noise": 0.28640666666666664,
+        "impulse_noise": 0.5537733333333333,
+        "defocus_blur": 0.13714666666666667,
+        "gaussian_blur": 0.5457533333333333,
+        "motion_blur": 0.151,
+        "zoom_blur": 0.6438933333333333,
+        "fog": 0.75304,
+        "brightness": 0.7091999999999999,
+        "contrast": 0.3363733333333333,
+        "elastic_transform": 0.8071133333333333,
+        "pixelate": 0.31648,
+        "jpeg_compression": 0.6179133333333333,
+        "saturate": 0.79894
+      }
+    },
+    "raw_pixels": {
+      "clean": 0.8801400000000001,
+      "mCA_unseen": 0.5231551515151516,
+      "mCA_seen": 0.47468000000000005,
+      "per_type": {
+        "gaussian_noise": 0.47038,
+        "shot_noise": 0.22130666666666668,
+        "impulse_noise": 0.5431199999999999,
+        "defocus_blur": 0.18261333333333335,
+        "gaussian_blur": 0.5432666666666666,
+        "motion_blur": 0.19894666666666666,
+        "zoom_blur": 0.6233333333333333,
+        "fog": 0.8347666666666667,
+        "brightness": 0.7710466666666667,
+        "contrast": 0.39596,
+        "elastic_transform": 0.84032,
+        "pixelate": 0.24446666666666667,
+        "jpeg_compression": 0.5357666666666667,
+        "saturate": 0.7734533333333334
+      }
+    },
+    "random_params": {
+      "clean": 0.818892,
+      "mCA_unseen": 0.5314277575757574,
+      "mCA_seen": 0.4805253333333333,
+      "per_type": {
+        "gaussian_noise": 0.6113693333333333,
+        "shot_noise": 0.331468,
+        "impulse_noise": 0.5548399999999999,
+        "defocus_blur": 0.15860533333333332,
+        "gaussian_blur": 0.5571986666666667,
+        "motion_blur": 0.15954933333333332,
+        "zoom_blur": 0.6465586666666667,
+        "fog": 0.7172066666666668,
+        "brightness": 0.6716013333333333,
+        "contrast": 0.32278666666666667,
+        "elastic_transform": 0.7868413333333333,
+        "pixelate": 0.36372400000000005,
+        "jpeg_compression": 0.631312,
+        "saturate": 0.77422
+      }
+    }
+  },
+  "rule_i_per_type_tests": {
+    "shot_noise": {
+      "mean": 0.018786666666666663,
+      "lo": 0.014166666666666666,
+      "hi": 0.02340666666666667,
+      "p": 0.0,
+      "deltas": [
+        0.015499999999999986,
+        0.01426666666666665,
+        0.013400000000000023,
+        0.02476666666666663,
+        0.026000000000000023
+      ],
+      "adj_p": 0.0,
+      "significant": true
+    },
+    "impulse_noise": {
+      "mean": 0.004520000000000013,
+      "lo": -0.007693333333333307,
+      "hi": 0.016733333333333333,
+      "p": 0.4508,
+      "deltas": [
+        -0.010233333333333317,
+        0.02213333333333345,
+        -0.010533333333333283,
+        0.018166666666666553,
+        0.003066666666666662
+      ],
+      "adj_p": 0.48120000000000007,
+      "significant": false
+    },
+    "gaussian_blur": {
+      "mean": 0.006433333333333324,
+      "lo": -0.0024399999999999643,
+      "hi": 0.013680000000000025,
+      "p": 0.1596,
+      "deltas": [
+        0.01593333333333341,
+        0.01469999999999988,
+        0.006566666666666554,
+        0.005900000000000016,
+        -0.01093333333333324
+      ],
+      "adj_p": 0.20777777777777778,
+      "significant": false
+    },
+    "motion_blur": {
+      "mean": -0.0046333333333333174,
+      "lo": -0.00889999999999998,
+      "hi": -0.000526666666666653,
+      "p": 0.0152,
+      "deltas": [
+        -0.012599999999999972,
+        -0.0008999999999999564,
+        0.0010666666666666602,
+        -0.002966666666666673,
+        -0.007766666666666644
+      ],
+      "adj_p": 0.023885714285714284,
+      "significant": false
+    },
+    "zoom_blur": {
+      "mean": 0.018300000000000004,
+      "lo": 0.005920000000000014,
+      "hi": 0.028413333333333336,
+      "p": 0.0012,
+      "deltas": [
+        0.02300000000000002,
+        0.03476666666666661,
+        0.01103333333333334,
+        0.024766666666666715,
+        -0.002066666666666661
+      ],
+      "adj_p": 0.0021999999999999997,
+      "significant": true
+    },
+    "fog": {
+      "mean": -0.003233333333333399,
+      "lo": -0.0056533333333333765,
+      "hi": -0.0011866666666667358,
+      "p": 0.0,
+      "deltas": [
+        -0.0012333333333334195,
+        -0.0027333333333333654,
+        -0.0003666666666667373,
+        -0.004233333333333422,
+        -0.007600000000000051
+      ],
+      "adj_p": 0.0,
+      "significant": false
+    },
+    "contrast": {
+      "mean": -0.011240000000000038,
+      "lo": -0.01806666666666671,
+      "hi": -0.004246666666666699,
+      "p": 0.0012,
+      "deltas": [
+        -0.021166666666666722,
+        -0.013200000000000045,
+        -0.017400000000000027,
+        -0.004733333333333367,
+        0.00029999999999996696
+      ],
+      "adj_p": 0.0021999999999999997,
+      "significant": false
+    },
+    "elastic_transform": {
+      "mean": 0.0006733333333333702,
+      "lo": -0.0010599999999998833,
+      "hi": 0.002733333333333321,
+      "p": 0.4812,
+      "deltas": [
+        0.0043333333333333,
+        0.00039999999999995595,
+        0.0011666666666666492,
+        -0.0020333333333331094,
+        -0.0004999999999999449
+      ],
+      "adj_p": 0.48120000000000007,
+      "significant": false
+    },
+    "pixelate": {
+      "mean": 0.00504,
+      "lo": -0.003926666666666662,
+      "hi": 0.010173333333333335,
+      "p": 0.17,
+      "deltas": [
+        0.010433333333333322,
+        -0.012766666666666648,
+        0.010700000000000015,
+        0.008599999999999997,
+        0.008233333333333315
+      ],
+      "adj_p": 0.20777777777777778,
+      "significant": false
+    },
+    "jpeg_compression": {
+      "mean": 0.011046666666666649,
+      "lo": 0.005753333333333321,
+      "hi": 0.016859999999999965,
+      "p": 0.0,
+      "deltas": [
+        0.02193333333333325,
+        0.004766666666666697,
+        0.013733333333333375,
+        0.004433333333333289,
+        0.010366666666666635
+      ],
+      "adj_p": 0.0,
+      "significant": true
+    },
+    "saturate": {
+      "mean": -0.0030933333333333255,
+      "lo": -0.004426666666666712,
+      "hi": -0.0018666666666666166,
+      "p": 0.0,
+      "deltas": [
+        -0.002866666666666684,
+        -0.0020333333333333314,
+        -0.0011999999999998678,
+        -0.0040000000000000036,
+        -0.005366666666666742
+      ],
+      "adj_p": 0.0,
+      "significant": false
+    }
+  },
+  "mCA_gain_vs_raw_pixels": {
+    "bio_calibrated": -0.020284242424242493,
+    "tuned_clean": -0.024156969696969767,
+    "generic_fixed": 0.0050890909090909545,
+    "raw_pixels": 0.0,
+    "random_params": 0.008272606060606003
+  },
+  "rules": {
+    "rule_i": {
+      "pass": false,
+      "frac_unseen_significant": 0.2727272727272727,
+      "n_significant": 3,
+      "n_unseen": 11,
+      "mCA_gain_mean": 0.003872727272727272,
+      "mCA_gain_ci95": [
+        0.0023060606060606005,
+        0.0054393939393939435
+      ],
+      "threshold": "frac>=0.70 AND mCA_gain>=0.03"
+    },
+    "rule_ii": {
+      "pass": true,
+      "clean_delta_mean": -0.003420000000000023,
+      "threshold": "clean_bio >= clean_tuned - 0.01 (secondary)"
+    },
+    "rule_iii": {
+      "pass": false,
+      "mCA_gain_vs_random": {
+        "mean": -0.028556848484848497,
+        "lo": -0.031545333333333356,
+        "hi": -0.026386303030303072,
+        "p": 0.0,
+        "deltas": [
+          -0.027200606060605925,
+          -0.029264242424242415,
+          -0.033953939393939425,
+          -0.026600606060606102,
+          -0.025764848484848613
+        ]
+      },
+      "mCA_gain_vs_generic": {
+        "mean": -0.02537333333333345,
+        "lo": -0.02783696969696976,
+        "hi": -0.023037575757575902,
+        "p": 0.0,
+        "deltas": [
+          -0.022803030303030436,
+          -0.0221242424242426,
+          -0.026718181818181974,
+          -0.029887878787878797,
+          -0.02533333333333343
+        ]
+      },
+      "drop_overfit_tuned_minus_bio": {
+        "mean": 0.007292727272727295,
+        "lo": 0.0036260606060606105,
+        "hi": 0.010960606060606027,
+        "p": 0.0,
+        "deltas": [
+          0.004112121212121345,
+          0.012699999999999934,
+          0.004060606060605987,
+          0.012642424242424344,
+          0.002948484848484867
+        ]
+      },
+      "threshold": "CI lb>0 for all three"
+    },
+    "rule_iv": {
+      "pass": true,
+      "runs_ok": true,
+      "finite_ok": true,
+      "arch_ok": true,
+      "protocol_ok": true,
+      "backbone_params_macs": {
+        "bio_calibrated": {
+          "params": 272474,
+          "macs": 40813184
+        },
+        "generic_fixed": {
+          "params": 272474,
+          "macs": 40813184
+        },
+        "raw_pixels": {
+          "params": 272474,
+          "macs": 40813184
+        }
+      },
+      "failed_runs": 0
+    },
+    "positive_result": false
+  },
+  "cache_sha256": {
+    "test_gaussian_noise_s1.npy": "721fac7ebfdc0d42aa1cc70dcdee050bcb6f40a13f88d8a2913ca9d6fd4a082b",
+    "test_gaussian_noise_s3.npy": "4443a416d0780a4206752d7c397c094fd3555199ed7d4ed8c375eb73ec1a2d10",
+    "test_gaussian_noise_s5.npy": "564dbe1122c81ae98906486f084ebfe9fe5ee04fa4761d43cb7e653a61bffb13",
+    "test_shot_noise_s1.npy": "c116247873b6d7eeac643d7d010a61b77aebed40be526f2cbe033577b9619677",
+    "test_shot_noise_s3.npy": "a6734f6fd0774babf0107f568a2ddee0bbd6f948941796cb18653709aa3f94e2",
+    "test_shot_noise_s5.npy": "7ae3aa4453f317d738ca6a10e7863a3521fc8c9f39d0157bd7c876f901da4ace",
+    "test_impulse_noise_s1.npy": "1213683b4acfcf67767491f08d21aecf5351be053b1ba1609607fdd9f0bda4a6",
+    "test_impulse_noise_s3.npy": "72db0c34b7eebbe048ed160790d8fc3107cb948c1f8b26c5b0f71cf8d20ca6d2",
+    "test_impulse_noise_s5.npy": "88e62c68c2f6c4a6abfa1bfd0f3261dbf6689c7adf9e1c7dd9e91d7aca7bc10a",
+    "test_defocus_blur_s1.npy": "348cd1fa708bc955f456899a99c106952b92f3f5f8112978c370a16ac48074b7",
+    "test_defocus_blur_s3.npy": "490d6fe3e5d1547aad42d97751eabf8efd486cd8d6cc13e7d0aa285016560960",
+    "test_defocus_blur_s5.npy": "939d1c9cd7a4387f22a610a09a9d9ab9c557edf988d02b5282f87b580f350ca3",
+    "test_gaussian_blur_s1.npy": "9dc1a9e33da3a0ecc788800e20be1d97f70792229d59c88a38c2eceb8994114b",
+    "test_gaussian_blur_s3.npy": "ee63b5a1e88d477249786f6e5aae4a03c3057f09b0764ca8dcdf2b0eb2ee95e0",
+    "test_gaussian_blur_s5.npy": "4460bd7caf0d0b73a158d5bf1543d775681fc92e1da4104210bc4310bc8a08f1",
+    "test_motion_blur_s1.npy": "bf9790c7ddca99bf0f7c50d13cb028326d2badea00be50819bc1102bd438b78f",
+    "test_motion_blur_s3.npy": "484e365344a2623cc8c7d8a61bb02ecbd3d6be980f02d8c29a2e7679420cc11f",
+    "test_motion_blur_s5.npy": "e4d495034707898cb95ad94b96c63eb18084049d098d0d3aabb7bbd232570b62",
+    "test_zoom_blur_s1.npy": "c1cd21b0b247b19d673c5e719d0d6bd570070294c5257011df9b79639f28851b",
+    "test_zoom_blur_s3.npy": "c979a62cf9612fc00bbd4801b92a52ced92beca34704846c65611e96d6fbdb91",
+    "test_zoom_blur_s5.npy": "0eb203c838669af31c4445c40258c0bb246fdd85ec7fa8ed28884e4ee6bb16ce",
+    "test_fog_s1.npy": "39cfe6d6d5eb9a1a869e36bef82c7e5e33d2124b14fc3d8334184e3099016248",
+    "test_fog_s3.npy": "cd32bd79b3e2afe611f44b507fe132cefab40c994bb15ab664bed615f4f8fc94",
+    "test_fog_s5.npy": "02c588bf5e19fd77bba2f2b42ade7333933bb05b16243833950e40e48548d99c",
+    "test_brightness_s1.npy": "4578ca81acfc17316c71e89b51a803db1ebff177252576c8c831be99ceba14ed",
+    "test_brightness_s3.npy": "28d8d7a33eecbadb066ca2b11dfeadf464880bc7b1d76e2907d2956c58344e6e",
+    "test_brightness_s5.npy": "b6ae3f00a9ae480946bb0840c964904a776b33c884b66ddb7bd64a3f38ce8341",
+    "test_contrast_s1.npy": "f4c38fdfcd93b72390d1681785568141f570e7d7138c29f716869c8d7b021301",
+    "test_contrast_s3.npy": "e53f4de5b3ab7bc4a2899ab27d8189bd9d28c748da1a13f3e5e60555f42244d4",
+    "test_contrast_s5.npy": "a935e33949f95ecbdb0d04efc99d952a9e6c9f907cff80c2033937baa90300fe",
+    "test_elastic_transform_s1.npy": "3c80e188c4298169d92178e809730e6441572ceae1b02895e98ce91a9b6088ce",
+    "test_elastic_transform_s3.npy": "3107cfd3d5fdd21e994cb22565b9c04f43f1ade03d54a768e4b149e7943b3ab1",
+    "test_elastic_transform_s5.npy": "1b9755f7e1698dc15ef11ce36041c1bedae1a1a98e79341941feba6f2dc6a36e",
+    "test_pixelate_s1.npy": "d424e466346258e30ec6b81e2ca6000605cf7ed2a9ec2e6c853052e3b3e7cc5e",
+    "test_pixelate_s3.npy": "c095cbb669950a7b15b3a5f18000d92cd146bc1bfae34773a022e6ef224c5cb7",
+    "test_pixelate_s5.npy": "bf81cf6861eb506ce2dcdc342c3244cc4e23420e39664cecf9d6448b2b6844a7",
+    "test_jpeg_compression_s1.npy": "13b2805615f18d11b50fcac2b4a8d48e31b96034a3a23a6ee33c6cdf7ddc1d7c",
+    "test_jpeg_compression_s3.npy": "c8e9c83d2813f6d13e05ea785d2fdc4cc127cb3a1d928f3d414f46f7e4e506d1",
+    "test_jpeg_compression_s5.npy": "7d570a294cbc68bc2ac42d4fafc2b3268034a9911276e1ca03ee7ca3dba80ade",
+    "test_saturate_s1.npy": "38aade726bed64b97d348ac8b7964b37e0bc9359b3a01c9ac24de72b4961189a",
+    "test_saturate_s3.npy": "368103cf56372e484960574d7d765060e8613508a14d6899f29b6104feb7f414",
+    "test_saturate_s5.npy": "74742e2e5fb2129c38ddc87331b6e8ac0da0cb20e393d5423107dc673f08245c",
+    "val_gaussian_noise_s1.npy": "2869535fcdb325caa9cbf26aa127c5aa0b4494276f6654173c0d140670cd7bb3",
+    "val_gaussian_noise_s3.npy": "b3183f3feda1c35a0d7bfc1e4ed30cbe80d3f195b12d6bde6031c2e67ca3e0bc",
+    "val_gaussian_noise_s5.npy": "391739c798f2338b4a7ad981cd9dbe585c908463f259b41e893b5d1d00faf87c",
+    "val_defocus_blur_s1.npy": "3bb6433af6786ca849f1367ab48819cef67bc8e5660bc200a377b41257a2694e",
+    "val_defocus_blur_s3.npy": "ce7a8bf96ce5d604138a887ca38752e459ce8b8afb69ce17318c0ec206789d7d",
+    "val_defocus_blur_s5.npy": "39e4156395c0ee0986775356a96f95e3bb8b39a249194c8b7ddec62a237e0f2f",
+    "val_brightness_s1.npy": "05654937276d66739184b09dca9c2d66cf03c5e1a5507d47ed9edfa7333442cd",
+    "val_brightness_s3.npy": "e40dd5b257605592bb511f05e1135e5f64e9cdb03016184a2ced90741fa48c3c",
+    "val_brightness_s5.npy": "b0268b927c6f295a82923c3e876c98b24f28427c4310f3664449a67fc3990219"
+  },
+  "runtime_seconds": 1551.524719953537,
+  "failed_runs": [],
+  "notes": [
+    "ON/OFF calibration is a CELL_TYPE_PROXY from MaleCNS v1.0 cell-type counts (not connectivity).",
+    "Corruptions are a custom reimplementation with fixed seeds; NOT official CIFAR-10-C.",
+    "Tuning used only train/val splits and the 3 SEEN corruptions; UNSEEN corruptions and the test set were never used for selection.",
+    "Negative/null results are reported verbatim; metrics.json is machine-written only."
+  ]
+}

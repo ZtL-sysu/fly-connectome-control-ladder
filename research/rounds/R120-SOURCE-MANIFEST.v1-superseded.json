@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "round": "R120",
+  "generated_at_utc": "2026-11-14T00:40:52.710249+00:00",
+  "base": "run root for unprefixed paths; project root for base=project",
+  "source_count": 31,
+  "sources": [
+    {
+      "path": "GOAL-ITERATION-R107.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "goal-ledger.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "readonly-validator/validate_single_paper.py",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "guard/criteria-null-ladder.json",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "guard/ledger-null-ladder.json",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "R99-design-block-decision.md",
+      "base": "project",
+      "exists": false,
+      "bytes": 0,
+      "sha256": null,
+      "mtime_epoch": null
+    },
+    {
+      "path": "pipeline-state.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime_epoch": 1794451392.5066164
+    },
+    {
+      "path": "guidance-pipeline-state.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 2096,
+      "sha256": "4051add8e7eca5aad6d85b81cd2225840a40844dd42004b4f5110d9563bcceab",
+      "mtime_epoch": 1794467757.816386
+    },
+    {
+      "path": "literature-baseline-matrix.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9445,
+      "sha256": "31b5098b4df2718ddf15d0b4613daa4d819a19319bbc15b731fb58d3903da9b2",
+      "mtime_epoch": 1794473177.290743
+    },
+    {
+      "path": "gate-G0-evidence-review-R98.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 3742,
+      "sha256": "6bccf27dcb75dab8d45c37a80bd56724583ffc4e6d3859b7ef81b9b2bafd8ea9",
+      "mtime_epoch": 1794467725.068657
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "mtime_epoch": 1794514649.7575464
+    },
+    {
+      "path": "gate-G0-R107/R107-G0-PASS-CRITERION-REGISTER.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 5952,
+      "sha256": "1297b3f26f1d02cf7d12e765c0ba8c227bf9dfdb4881c53baf5cf55820241685",
+      "mtime_epoch": 1794520274.6761463
+    },
+    {
+      "path": "gate-G0-R107/R107-R1-R8-G0-CLOSURE-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15908,
+      "sha256": "960957561291eec207f6fbdadd94acd2a41ff2e7c0dc04646eb4aa9e0ad9a2af",
+      "mtime_epoch": 1794520177.2366915
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-R1-R8-G0-CLOSURE-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15908,
+      "sha256": "960957561291eec207f6fbdadd94acd2a41ff2e7c0dc04646eb4aa9e0ad9a2af",
+      "mtime_epoch": 1794520177.2366915
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9728,
+      "sha256": "d9c0e88345ff1a47e75c8c557b7556d2af107378b4c22e70abc71c7e763d9069",
+      "mtime_epoch": 1794520365.8072202
+    },
+    {
+      "path": "gate-G0-R107/isolated-post-review/R107-INDEPENDENT-REVIEW-RECOVERY.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 15064,
+      "sha256": "e3b60a80d63f0a299c042df7dbc4f5a9c6ebd804c5839b8de672a47d6198e088",
+      "mtime_epoch": 1794521652.3714225
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/pipeline-state.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 5190,
+      "sha256": "c246468e507125229cd12375caed7457cf0365b2baed58ab5f84af0058665bc8",
+      "mtime_epoch": 1794527067.8194063
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/R108-U6-W2-VERSIONED-CONTRACT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 7307,
+      "sha256": "5742e36f5d08e3e0fc8eaeb8cdada0b442c92e47b98233b7ef70968717fb54b0",
+      "mtime_epoch": 1794527019.0393806
+    },
+    {
+      "path": "state-handoff-R108/f-research-v1-state/R108-U6-W2-STATE-INPUT-MANIFEST.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 2361,
+      "sha256": "492b4d8b0788176102529eef558a5ac8dfd134355946a7d1073fea0c8aa27bcd",
+      "mtime_epoch": 1794527067.8191497
+    },
+    {
+      "path": "state-handoff-R108/R108-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9224,
+      "sha256": "0e3875250b1cb72c6743bad03b8561ffd824497a2786a667b6a837d579f1f2be",
+      "mtime_epoch": 1794528786.8996296
+    },
+    {
+      "path": "state-handoff-R110/R110-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 9767,
+      "sha256": "4e41e97d1cfa981be99a4d2e543ab4e54e3bc83e72fd29ecd1b6598e3c817910",
+      "mtime_epoch": 1794543745.757888
+    },
+    {
+      "path": "state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "mtime_epoch": 1794568261.237396
+    },
+    {
+      "path": "state-handoff-R111/R111-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 13413,
+      "sha256": "bb2dc886f9bf75a6ddb549447b4ecae27885997f9b5a67c963358e349b1903a6",
+      "mtime_epoch": 1794568240.809487
+    },
+    {
+      "path": "gate-G0-R114/R114-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8878,
+      "sha256": "5aa8cd047528c30316f98f367700aaa3808817ac367f2b2230553d024508bf08",
+      "mtime_epoch": 1794581364.193128
+    },
+    {
+      "path": "gate-G0-R115/R115-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11155,
+      "sha256": "c037fc25cd99a204d15bfb3947d25c642b34176e03db0e6cf027fc417e8abf82",
+      "mtime_epoch": 1794587117.6902232
+    },
+    {
+      "path": "gate-G0-R116/R116-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8719,
+      "sha256": "87a2514369c93bb48bbae602d40fd135147edbcde37079c550c89f227567a11b",
+      "mtime_epoch": 1794593175.781969
+    },
+    {
+      "path": "exec-premise-R117/R117-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11835,
+      "sha256": "d189ceaa1a689134d7500f81fd9843a1562b4a9b18a61e3841456a4c58def805",
+      "mtime_epoch": 1794598372.8718681
+    },
+    {
+      "path": "gate-G0-R118/R118-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 11541,
+      "sha256": "127190cdb1376552ae10af6e5aebc7480b360a33b79b94d1a19006d95aa9bcb1",
+      "mtime_epoch": 1794604833.4327528
+    },
+    {
+      "path": "review-protocol-R119/R119-ROUND-AUDIT.md",
+      "base": "run",
+      "exists": true,
+      "bytes": 8888,
+      "sha256": "141332288e8a273d00d563bd1bba70cadbcf2678865ab3eb8c89a824d7d58297",
+      "mtime_epoch": 1794609964.4522092
+    },
+    {
+      "path": "reconciliation-R120/R120-validator-out.json",
+      "base": "run",
+      "exists": true,
+      "bytes": 1875,
+      "sha256": "cb9f9aeb03b936f10e2529d762c145e88c1b9577e6430ef30248ceaae4f9da14",
+      "mtime_epoch": 1794616752.0588899
+    },
+    {
+      "path": "reconciliation-R120/R120-guard-check.txt",
+      "base": "run",
+      "exists": true,
+      "bytes": 4757,
+      "sha256": "1ed11575c27548a39e856ae7a3f1ba6b85596de036f7a0c0c5d8f3f083814cff",
+      "mtime_epoch": 1794616752.3768528
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "round": "R106",
+  "phase": "POST_INDEPENDENT_REVIEW_FREEZE",
+  "status": "ENGINEERING_FREEZE_ONLY_NOT_SCIENTIFIC_RESULT",
+  "created_local": "2026-11-13T04:23:57.324760+08:00",
+  "purpose": "Fix W9 by freezing CURRENT bytes of every gate-G0-R106 artifact (including the independent review and recovery ledger). The stale prior freeze is NOT rewritten.",
+  "independent_review_verdict": "**Verdict:** PARTIAL | **G0 may be passed:** NO",
+  "independent_review_sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+  "w9_stale_freeze": {
+    "file": "R106-END-OF-ROUND-FREEZE.json",
+    "declared_all_copies_byte_identical": true,
+    "declared_round_audit_bytes": 10457,
+    "declared_round_audit_sha256": "06299a15e5c9ab11124c8fb2b41085f4127e1295d504354c2faaf24bbc5fba7b",
+    "actual_round_audit_bytes_at_review_time": 11743,
+    "actual_round_audit_sha256_at_review_time": "772036905edf…(full value in independent review)",
+    "status": "STALE_DECLARATION_FALSE__PRESERVED_UNMODIFIED",
+    "root_cause": "Round-audit section 10 was appended after the freeze was generated; the freeze and isolated copy were not updated.",
+    "defect_occurrence": "THIRD (R104 N1, R105 W11, R106 W9)"
+  },
+  "n_files": 11,
+  "all_copies_byte_identical": true,
+  "records": [
+    {
+      "path": "gate-G0-R106/R106-ASSET-SHA-VERIFICATION.json",
+      "bytes": 4978,
+      "sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6",
+      "isolated_copy_sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-END-OF-ROUND-FREEZE.json",
+      "bytes": 2855,
+      "sha256": "9374efed2a026bcccc04d051a629fbf3514caa1a788549e51984568addd14168",
+      "isolated_copy_sha256": "9374efed2a026bcccc04d051a629fbf3514caa1a788549e51984568addd14168",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-EVIDENCE-FREEZE.json",
+      "bytes": 3172,
+      "sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006",
+      "isolated_copy_sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-GAP1-ASSET-CHECK.md",
+      "bytes": 4340,
+      "sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a",
+      "isolated_copy_sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-INDEPENDENT-GATE-REVIEW.md",
+      "bytes": 31292,
+      "sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "isolated_copy_sha256": "919d05c477ec2421ba3f958e09d7e640fb3c3033064272ddbdd46cf892b17450",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-INDEPENDENT-RECENCY-VERIFICATION.md",
+      "bytes": 11298,
+      "sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec",
+      "isolated_copy_sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G4-POSITIONING.md",
+      "bytes": 7302,
+      "sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54",
+      "isolated_copy_sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-INDEPENDENT-REVIEW-RECOVERY.md",
+      "bytes": 11458,
+      "sha256": "573e814083292439037f1997414904a1ab04c841e936991cb49c5f003bc1f940",
+      "isolated_copy_sha256": "573e814083292439037f1997414904a1ab04c841e936991cb49c5f003bc1f940",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-LITERATURE-SOURCE-SHA-VERIFICATION.json",
+      "bytes": 1885,
+      "sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a",
+      "isolated_copy_sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-PRE-REVIEW-FREEZE.json",
+      "bytes": 2356,
+      "sha256": "61f977901dc62f4183f2f32d1fd167df1c08e6a95ae6d7edff554a13f4b0b42b",
+      "isolated_copy_sha256": "61f977901dc62f4183f2f32d1fd167df1c08e6a95ae6d7edff554a13f4b0b42b",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-ROUND-AUDIT.md",
+      "bytes": 15372,
+      "sha256": "bd2d421631f764dbf4855394ee668e61d9dc4bdb62e6de70a543524145f08f11",
+      "isolated_copy_sha256": "bd2d421631f764dbf4855394ee668e61d9dc4bdb62e6de70a543524145f08f11",
+      "byte_identical": true
+    }
+  ],
+  "gates_mutated": false,
+  "model_forward_passes": 0,
+  "training_runs": 0,
+  "labels_used": 0
+}

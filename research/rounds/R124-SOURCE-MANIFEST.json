@@ -1,0 +1,158 @@
+{
+  "round": "R124",
+  "kind": "READONLY_FIRST_HAND_TEXT_ACQUISITION_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "scope_note": "R124 is a READONLY first-hand text acquisition for R106 section 6 items R3 and R5. It is NOT a gate pass, NOT a scientific result, NOT a forward pass, and NOT a score change. No state/matrix/registry/gate config was written. All classification and registration decisions remain with the designated gate owner (R120 G4/G5/G6/G7).",
+  "raw_dir": "raw/",
+  "files": [
+    {
+      "file": "biorxiv-api-details.json",
+      "method": "curl GET",
+      "url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.10.731214",
+      "observed_http_status": 200,
+      "bytes": 64741,
+      "declared_bytes_at_acquisition": 64741,
+      "bytes_match_declaration": true,
+      "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "note": "bioRxiv official details API; collection has 12 version records, each with abstract/title/date/jatsxml"
+    },
+    {
+      "file": "biorxiv-api-v1-na.json",
+      "method": "curl GET",
+      "url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.06.10.731214/1",
+      "observed_http_status": 200,
+      "bytes": 64741,
+      "declared_bytes_at_acquisition": 64741,
+      "bytes_match_declaration": true,
+      "sha256": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "note": "The /1 suffix is NOT a version selector for this endpoint; response is byte-identical to details. Preserved as negative evidence."
+    },
+    {
+      "file": "crossref-work.json",
+      "method": "curl GET",
+      "url": "https://api.crossref.org/works/10.64898/2026.06.10.731214",
+      "observed_http_status": 200,
+      "bytes": 11160,
+      "declared_bytes_at_acquisition": 11160,
+      "bytes_match_declaration": true,
+      "sha256": "1493ba22ad7f5d31a567766424d37ed7f807a7f72a09a4b957a60f481acb0971",
+      "note": "Crossref official work metadata, includes jats abstract"
+    },
+    {
+      "file": "europepmc-search.json",
+      "method": "curl GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.64898/2026.06.10.731214&format=json",
+      "observed_http_status": 200,
+      "bytes": 841,
+      "declared_bytes_at_acquisition": 841,
+      "bytes_match_declaration": true,
+      "sha256": "e0b3e78f345c8eb46791e01a14aef417ba5c3445bb2857e9fbe7a71685f469ba",
+      "note": "Europe PMC official search API, hitCount=1, PPR1251441"
+    },
+    {
+      "file": "connect-biorxiv-relate181.html",
+      "method": "curl GET",
+      "url": "https://connect.biorxiv.org/relate/content/181",
+      "observed_http_status": 200,
+      "bytes": 58714,
+      "declared_bytes_at_acquisition": 58714,
+      "bytes_match_declaration": true,
+      "sha256": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+      "note": "bioRxiv connect HTML; DOI string appears 30 times. Auxiliary, not used for abstract claims."
+    },
+    {
+      "file": "secondary-mirror-article.html",
+      "method": "curl GET",
+      "url": "https://aimedicalcompendium.com/article.cfm?id=253759",
+      "observed_http_status": 301,
+      "bytes": 265,
+      "declared_bytes_at_acquisition": 265,
+      "bytes_match_declaration": true,
+      "sha256": "6c8b6d62f3e1986c875b60f8929792fa1e21bf21f8a78a433b5116687aa58008",
+      "note": "Bare-domain URL redirects to www. Preserved verbatim (301 body)."
+    },
+    {
+      "file": "secondary-mirror-article-followed.html",
+      "method": "curl GET -L",
+      "url": "https://aimedicalcompendium.com/article.cfm?id=253759",
+      "observed_http_status": 200,
+      "bytes": 37429,
+      "declared_bytes_at_acquisition": 37429,
+      "bytes_match_declaration": true,
+      "sha256": "a791fd8c3de91a1cbc32090f5cd2f84e039c4f2cfe6f6bc4b9931a69d995f3fc",
+      "note": "Followed redirect. Second-hand mirror page; contains the size-matched/trained-ER abstract verbatim."
+    },
+    {
+      "file": "arxiv-2609.39248-abs.html",
+      "method": "curl GET -L",
+      "url": "https://arxiv.org/abs/2609.39248",
+      "observed_http_status": 200,
+      "bytes": 43328,
+      "declared_bytes_at_acquisition": 43328,
+      "bytes_match_declaration": true,
+      "sha256": "05013512ef058b0d162e4f82ab9985fb481c21a2273e7471eb157ae699237700",
+      "note": "First-hand arXiv abs for R5 W8 Zenodo identifier correction"
+    },
+    {
+      "file": "arxiv-2610.13018-abs.html",
+      "method": "curl GET -L",
+      "url": "https://arxiv.org/abs/2610.13018",
+      "observed_http_status": 200,
+      "bytes": 42453,
+      "declared_bytes_at_acquisition": 42453,
+      "bytes_match_declaration": true,
+      "sha256": "eb3ae5b645c86dc1963c092179ad443da4f27e030f887ec92cfa133a0e015cf0",
+      "note": "First-hand arXiv abs for R5 W8 submission-date correction"
+    },
+    {
+      "file": "biorxiv-v1.html",
+      "method": "curl GET -L",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.10.731214v1",
+      "observed_http_status": 429,
+      "bytes": 17,
+      "declared_bytes_at_acquisition": 17,
+      "bytes_match_declaration": true,
+      "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "note": "Cloudflare error code 1015. An earlier exploratory probe of this exact URL returned HTTP 200 / 105400 B but was NOT saved to disk, so no local byte freeze exists for the v1 HTML page."
+    },
+    {
+      "file": "biorxiv-v1-retry.html",
+      "method": "curl GET -L",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.10.731214v1?download=1",
+      "observed_http_status": 429,
+      "bytes": 17,
+      "declared_bytes_at_acquisition": 17,
+      "bytes_match_declaration": true,
+      "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "note": "Cloudflare 1015; preserved as negative evidence"
+    },
+    {
+      "file": "biorxiv-v1-early-full.html",
+      "method": "curl GET -L",
+      "url": "https://www.biorxiv.org/content/biorxiv/early/2026/06/12/2026.06.10.731214v1.full",
+      "observed_http_status": 429,
+      "bytes": 17,
+      "declared_bytes_at_acquisition": 17,
+      "bytes_match_declaration": true,
+      "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "note": "Cloudflare 1015; preserved as negative evidence"
+    },
+    {
+      "file": "biorxiv-v3.html",
+      "method": "curl GET -L",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.10.731214v3",
+      "observed_http_status": 429,
+      "bytes": 17,
+      "declared_bytes_at_acquisition": 17,
+      "bytes_match_declaration": true,
+      "sha256": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "note": "Cloudflare 1015; preserved as negative evidence"
+    }
+  ],
+  "totals": {
+    "file_count": 13,
+    "bytes_total": 323740,
+    "http_200_count": 8,
+    "http_301_count": 1,
+    "http_429_count": 4
+  }
+}

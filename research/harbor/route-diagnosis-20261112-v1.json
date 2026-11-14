@@ -1,0 +1,124 @@
+{
+  "experiment": "novix_dispatch_route_diagnosis_20261112",
+  "status": "DIAGNOSTIC_ONLY_NOT_SCIENTIFIC_RESULT",
+  "owner": "main session R98, continuing codex recovery",
+  "date": "2026-11-12",
+  "purpose": "Distinguish a dead platform from a dead dispatch route after codex recorded three ControlPlaneFailure events (21892, 21897, 21945) at steps 0.",
+  "authentication": "novix track whoami = wxf@novix.science, user_id 637, kind platform (verified)",
+  "pool_at_diagnosis": {
+    "probe": "scripts/check_4090.py (read-only)",
+    "ok": true,
+    "usable_nodes": [
+      "aliyun-hz-exp-4090-1",
+      "aliyun-hz-exp-4090-2"
+    ],
+    "gpu_count": 4,
+    "dispatch_paused": false,
+    "activity": {
+      "waiting": 14,
+      "reserved": 14,
+      "runtime": 10,
+      "research": 10,
+      "stale": false
+    }
+  },
+  "prior_terminal_failures": [
+    {
+      "task_id": "21892",
+      "status": "error",
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure",
+      "steps": 0
+    },
+    {
+      "task_id": "21897",
+      "status": "error",
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure",
+      "steps": 0
+    },
+    {
+      "task_id": "21945",
+      "status": "error",
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure",
+      "steps": 0
+    }
+  ],
+  "dispatch_matrix": [
+    {
+      "task_id": "23254",
+      "params": "none (no provider, no pool, no gpu)",
+      "status": "finish",
+      "steps": 4,
+      "reply": "3.11.15 x86_64"
+    },
+    {
+      "task_id": "23262",
+      "params": "--gpu --gpu-count 1 only",
+      "status": "finish",
+      "steps": 4,
+      "reply": "3.11.15"
+    },
+    {
+      "task_id": "23263",
+      "params": "--resource-pool exp-4090 only",
+      "status": "error",
+      "steps": 0,
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure"
+    },
+    {
+      "task_id": "23256",
+      "params": "--resource-pool exp-4090 --gpu --gpu-count 1",
+      "status": "error",
+      "steps": 0,
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure"
+    },
+    {
+      "task_id": "23253",
+      "params": "--provider novixlet --resource-pool exp-4090 --gpu --gpu-count 1",
+      "status": "error",
+      "steps": 0,
+      "error_code": "AI_SERVICE_CALL_FAILED",
+      "cause": "ControlPlaneFailure"
+    },
+    {
+      "task_id": "23268",
+      "params": "--gpu --gpu-count 1, GPU capability report",
+      "status": "finish",
+      "steps": 6,
+      "reply": "NVIDIA L4, 23034 MiB, 580.178.04 / torch 2.11.0+cu130 CUDA True NVIDIA L4"
+    },
+    {
+      "task_id": "23276",
+      "params": "--provider novixlet --gpu --gpu-count 1, no pool",
+      "status": "processing_at_provisioning",
+      "steps": 0,
+      "note": "queued at creating sandbox claim; not a result"
+    }
+  ],
+  "conclusion": {
+    "finding": "The --resource-pool parameter is the single consistent trigger of ControlPlaneFailure at steps 0. All three tasks carrying it failed; all tasks omitting it either finished (23254, 23262) or reached provisioning (23268, 23276). Authentication, control plane API and pool readiness are alive.",
+    "correction_to_prior_record": "codex recovery-status-20261112-v1.md states the goal and CCFA-startup are blocked by an external execution blocker and that no identical resubmission is justified. The present diagnosis does NOT refute those three recorded failures; it identifies a DIFFERENT, non-identical dispatch route that executes. This is a route change, not a recovered job.",
+    "cost_note": "Provider billing remains unknown. Zero observed steps must not be equated with zero billing.",
+    "gpu_not_yet_established": false,
+    "reason": "Resolved by 23268: the working no-pool route provides an L4 23GB CUDA device. exp-4090 access via --resource-pool remains blocked. 23276 still at provisioning.",
+    "working_route_device": {
+      "device": "NVIDIA L4",
+      "memory_mib": 23034,
+      "driver": "580.178.04",
+      "torch": "2.11.0+cu130",
+      "cuda_available": true,
+      "note": "Omitting --resource-pool yields the default k8s sandbox with L4, NOT the exp-4090 pool. Pool readiness (2 nodes/4 GPUs) does not imply this route reaches it."
+    },
+    "implication": "Any experiment dispatched on the working route must be sized for L4 23GB and recorded as L4, never described as a 4090 run. The frozen CUDA profilev2 still requires its intended-device peak measurement; that specific requirement is not met by an L4 result."
+  },
+  "discipline": [
+    "No scientific result is claimed from any dispatch in this record.",
+    "No historical task, review, contract or validator was modified or deleted.",
+    "All seven dispatch receipts are retained.",
+    "No commit, push, submission or publication."
+  ]
+}

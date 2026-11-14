@@ -1,0 +1,1246 @@
+{
+  "round": "R124",
+  "verifier": "R124-verify.py",
+  "independence_scope_note": "Group A is a same-machine declarative SHA/byte identity check against R124-SOURCE-MANIFEST.json (constructively guaranteed, NOT an independent cross-check; R115 W4). Groups B..I recompute from raw source bytes and independent project files with this verifier's own logic; no R124-produced JSON is used as a substantive data source, and the acquisition module is not imported. Network was not contacted by this verifier.",
+  "total_checks": 145,
+  "total_match": 141,
+  "total_mismatch": 4,
+  "by_group": {
+    "A": {
+      "MATCH": 45,
+      "MISMATCH": 0
+    },
+    "B": {
+      "MATCH": 26,
+      "MISMATCH": 1
+    },
+    "C": {
+      "MATCH": 13,
+      "MISMATCH": 1
+    },
+    "D": {
+      "MATCH": 9,
+      "MISMATCH": 1
+    },
+    "E": {
+      "MATCH": 5,
+      "MISMATCH": 1
+    },
+    "F": {
+      "MATCH": 9,
+      "MISMATCH": 0
+    },
+    "G": {
+      "MATCH": 16,
+      "MISMATCH": 0
+    },
+    "H": {
+      "MATCH": 12,
+      "MISMATCH": 0
+    },
+    "I": {
+      "MATCH": 6,
+      "MISMATCH": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "A",
+      "check": "manifest_file_count",
+      "expected": 13,
+      "observed": 13,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "manifest_bytes_total_declared",
+      "expected": 323740,
+      "observed": 323740,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "manifest_bytes_total_recomputed",
+      "expected": 323740,
+      "observed": 323740,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "manifest_200_count",
+      "expected": 8,
+      "observed": 8,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "manifest_301_count",
+      "expected": 1,
+      "observed": 1,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "manifest_429_count",
+      "expected": 4,
+      "observed": 4,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-api-details.json",
+      "expected": 64741,
+      "observed": 64741,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-api-details.json",
+      "expected": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "observed": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-api-details.json",
+      "expected": 64741,
+      "observed": 64741,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-api-v1-na.json",
+      "expected": 64741,
+      "observed": 64741,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-api-v1-na.json",
+      "expected": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "observed": "09abab723319950682fa6ec7ae31de0be1faa42c2b711dd26311c28509e7ceec",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-api-v1-na.json",
+      "expected": 64741,
+      "observed": 64741,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:crossref-work.json",
+      "expected": 11160,
+      "observed": 11160,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:crossref-work.json",
+      "expected": "1493ba22ad7f5d31a567766424d37ed7f807a7f72a09a4b957a60f481acb0971",
+      "observed": "1493ba22ad7f5d31a567766424d37ed7f807a7f72a09a4b957a60f481acb0971",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:crossref-work.json",
+      "expected": 11160,
+      "observed": 11160,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:europepmc-search.json",
+      "expected": 841,
+      "observed": 841,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:europepmc-search.json",
+      "expected": "e0b3e78f345c8eb46791e01a14aef417ba5c3445bb2857e9fbe7a71685f469ba",
+      "observed": "e0b3e78f345c8eb46791e01a14aef417ba5c3445bb2857e9fbe7a71685f469ba",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:europepmc-search.json",
+      "expected": 841,
+      "observed": 841,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:connect-biorxiv-relate181.html",
+      "expected": 58714,
+      "observed": 58714,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:connect-biorxiv-relate181.html",
+      "expected": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+      "observed": "8501cd131ae26cb74f732066cb40f70dc0e8d5432275197e64442923f885db62",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:connect-biorxiv-relate181.html",
+      "expected": 58714,
+      "observed": 58714,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:secondary-mirror-article.html",
+      "expected": 265,
+      "observed": 265,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:secondary-mirror-article.html",
+      "expected": "6c8b6d62f3e1986c875b60f8929792fa1e21bf21f8a78a433b5116687aa58008",
+      "observed": "6c8b6d62f3e1986c875b60f8929792fa1e21bf21f8a78a433b5116687aa58008",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:secondary-mirror-article.html",
+      "expected": 265,
+      "observed": 265,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:secondary-mirror-article-followed.html",
+      "expected": 37429,
+      "observed": 37429,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:secondary-mirror-article-followed.html",
+      "expected": "a791fd8c3de91a1cbc32090f5cd2f84e039c4f2cfe6f6bc4b9931a69d995f3fc",
+      "observed": "a791fd8c3de91a1cbc32090f5cd2f84e039c4f2cfe6f6bc4b9931a69d995f3fc",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:secondary-mirror-article-followed.html",
+      "expected": 37429,
+      "observed": 37429,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:arxiv-2609.39248-abs.html",
+      "expected": 43328,
+      "observed": 43328,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:arxiv-2609.39248-abs.html",
+      "expected": "05013512ef058b0d162e4f82ab9985fb481c21a2273e7471eb157ae699237700",
+      "observed": "05013512ef058b0d162e4f82ab9985fb481c21a2273e7471eb157ae699237700",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:arxiv-2609.39248-abs.html",
+      "expected": 43328,
+      "observed": 43328,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:arxiv-2610.13018-abs.html",
+      "expected": 42453,
+      "observed": 42453,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:arxiv-2610.13018-abs.html",
+      "expected": "eb3ae5b645c86dc1963c092179ad443da4f27e030f887ec92cfa133a0e015cf0",
+      "observed": "eb3ae5b645c86dc1963c092179ad443da4f27e030f887ec92cfa133a0e015cf0",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:arxiv-2610.13018-abs.html",
+      "expected": 42453,
+      "observed": 42453,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-v1.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-v1.html",
+      "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-v1.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-v1-retry.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-v1-retry.html",
+      "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-v1-retry.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-v1-early-full.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-v1-early-full.html",
+      "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-v1-early-full.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "bytes:biorxiv-v3.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "sha256:biorxiv-v3.html",
+      "expected": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "observed": "e395ad55dd18b1bf23944d00b156714accfae4ec834df208053575542dfae602",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "A",
+      "check": "status_bytes_decl:biorxiv-v3.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "api_messages_status",
+      "expected": "ok",
+      "observed": "ok",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "api_collection_len",
+      "expected": 12,
+      "observed": 12,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "api_versions_1_to_12",
+      "expected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "observed": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "match": false,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "api_doi_all_same",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_title_distinct",
+      "expected": "Connectome wiring shapes population-level neural geometry in the Drosophila visual system",
+      "observed": "Connectome wiring shapes population-level neural geometry in the Drosophila visual system",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v2_title",
+      "expected": "Representational geometry as a fidelity metric for connectome-constrained networks: evidence from the Drosophila visual system",
+      "observed": "Representational geometry as a fidelity metric for connectome-constrained networks: evidence from the Drosophila visual system",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v2_v12_titles_all_same",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_date",
+      "expected": "2026-06-12",
+      "observed": "2026-06-12",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v12_date",
+      "expected": "2026-10-16",
+      "observed": "2026-10-16",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v3_date",
+      "expected": "2026-06-23",
+      "observed": "2026-06-23",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_authors",
+      "expected": "Zhou, M. G.; Hasler, J. O.",
+      "observed": "Zhou, M. G.; Hasler, J. O.",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_license",
+      "expected": "cc_by",
+      "observed": "cc_by",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "all_published_NA",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "jatsxml_present_v1",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "all_12_abstracts_identical",
+      "expected": 1,
+      "observed": 1,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "abstract_len",
+      "expected": 4816,
+      "observed": 4816,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:p < 10-13 in every case",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:closes the gap completely",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:Erdos-Renyi",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:size-matched",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:OFF-polarity",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_has:trained",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_lacks:0.686",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_lacks:0.846",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_lacks:0.930 vs",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "v1_api_abstract_lacks:RSA Spearman",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "B",
+      "check": "api_v1_na_endpoint_identical",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": "The /1 suffix is not a version selector; byte-identical response"
+    },
+    {
+      "group": "C",
+      "check": "crossref_DOI",
+      "expected": "10.64898/2026.06.10.731214",
+      "observed": "10.64898/2026.06.10.731214",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_type",
+      "expected": "posted-content",
+      "observed": "posted-content",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_publisher",
+      "expected": "openRxiv",
+      "observed": "openRxiv",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_title_is_v2_plus_title",
+      "expected": "Representational geometry as a fidelity metric for connectome-constrained networks: evidence from the Drosophila visual system",
+      "observed": "Representational geometry as a fidelity metric for connectome-constrained networks: evidence from the Drosophila visual system",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_created_date",
+      "expected": "2026-06-12",
+      "observed": "2026-06-12",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_posted_date",
+      "expected": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "observed": [
+        [
+          2026,
+          6,
+          12
+        ]
+      ],
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_indexed_date",
+      "expected": "2026-10-21",
+      "observed": "2026-10-21",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_has_abstract",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_abstract_has:closes the gap",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_abstract_has:size-matched",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_abstract_has:Erdős–Rényi",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_abstract_has:10</jats:sup>",
+      "expected": true,
+      "observed": false,
+      "match": false,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_abstract_lacks_0.686",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "C",
+      "check": "crossref_license_CC_BY_4",
+      "expected": "http://creativecommons.org/licenses/by/4.0/",
+      "observed": "http://creativecommons.org/licenses/by/4.0/",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_datePublished_v12_date",
+      "expected": "2026-10-16",
+      "observed": "2026-10-16",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_datePublished_equals_api_v12",
+      "expected": "2026-10-16",
+      "observed": "2026-10-16",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_schema_type",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_sameAs_biorxiv_doi",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_has:p &lt; 10-13 in every case",
+      "expected": true,
+      "observed": false,
+      "match": false,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_has:p < 10-13 in every case",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_has:closes the gap completely",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_has:trained Erdos-Renyi on OFF-polarity structure",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "mirror_headline_v2_title",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "D",
+      "check": "bare_url_301_body",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "park_has_correct_zenodo_22871090",
+      "expected": 1,
+      "observed": 1,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "park_lacks_wrong_zenodo_22891264",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "park_submitted_30_Sep_2026",
+      "expected": 1,
+      "observed": 1,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "dhawan_has_9_Oct_2026",
+      "expected": 2,
+      "observed": 2,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "dhawan_lacks_12_Oct_2026",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "E",
+      "check": "dhawan_v1_timestamp",
+      "expected": true,
+      "observed": false,
+      "match": false,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_body:biorxiv-v1.html",
+      "expected": "error code: 1015",
+      "observed": "error code: 1015",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_len:biorxiv-v1.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_body:biorxiv-v1-retry.html",
+      "expected": "error code: 1015",
+      "observed": "error code: 1015",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_len:biorxiv-v1-retry.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_body:biorxiv-v1-early-full.html",
+      "expected": "error code: 1015",
+      "observed": "error code: 1015",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_len:biorxiv-v1-early-full.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_body:biorxiv-v3.html",
+      "expected": "error code: 1015",
+      "observed": "error code: 1015",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "429_len:biorxiv-v3.html",
+      "expected": 17,
+      "observed": 17,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "F",
+      "check": "no_local_v1_html_freeze",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": "The v1 HTML page's positive-abstract text was seen via WebFetch only; no local byte freeze exists. Not counted as a first-hand frozen artifact."
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R1",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R2",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R3",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R4",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R5",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R6",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R7",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R8",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_has_R9",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_verdict_G0_NO",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_R3_requires_biorxiv_DOI",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_R3_requires_version_split",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_W13_no_G0_pass_criterion",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_audit_withdrew_v1_claim",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_audit_corrected_zenodo",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "G",
+      "check": "r106_audit_corrected_dhawan_date",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "main_pipeline_name",
+      "expected": "f-guidance-builder-v1",
+      "observed": "f-guidance-builder-v1",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "main_contract_version",
+      "expected": "v2",
+      "observed": "v2",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "CCFA_startup_passed",
+      "expected": "passed",
+      "observed": "passed",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "G0_status_pending",
+      "expected": "pending",
+      "observed": "pending",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "G0_inputs_empty",
+      "expected": [],
+      "observed": [],
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "G0_evidence_empty",
+      "expected": [],
+      "observed": [],
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "G0_gate_verdict_pending",
+      "expected": "pending",
+      "observed": "pending",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "G1_G8_all_pending",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "validation_pending",
+      "expected": "pending",
+      "observed": "pending",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "handoff_pending",
+      "expected": "pending",
+      "observed": "pending",
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "governing_r95_overall_6",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "H",
+      "check": "governing_below_threshold",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "raw_no_local_abs_path",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "raw_no_credential_filename",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "raw_no_bearer_token",
+      "expected": 0,
+      "observed": 0,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "raw_max_file_under_50MiB",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "raw_max_file_bytes",
+      "expected": 64741,
+      "observed": 64741,
+      "match": true,
+      "note": ""
+    },
+    {
+      "group": "I",
+      "check": "no_dataset_or_weight_file",
+      "expected": true,
+      "observed": true,
+      "match": true,
+      "note": ""
+    }
+  ]
+}

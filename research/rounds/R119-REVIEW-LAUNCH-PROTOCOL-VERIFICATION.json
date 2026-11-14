@@ -1,0 +1,438 @@
+{
+  "round": "R119",
+  "kind": "INDEPENDENT_RECOMPUTATION_FROM_RAW_BYTES",
+  "created_utc": "2026-11-13T22:43:53+00:00",
+  "python": "3.14.6",
+  "reads_R119_raw_artifact": false,
+  "imports_R119_raw_module": false,
+  "checks": [
+    {
+      "id": "C01",
+      "label": "brief sha256[:16]",
+      "expected": [
+        "8771dea80cf7a54d",
+        4803
+      ],
+      "observed": [
+        "8771dea80cf7a54d",
+        4803
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C02",
+      "label": "GOAL-ITERATION-R107 sha256[:16]",
+      "expected": [
+        "1a81c8e15b361f62",
+        5446
+      ],
+      "observed": [
+        "1a81c8e15b361f62",
+        5446
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C03",
+      "label": "validator sha256[:16]",
+      "expected": [
+        "72240260ec2447c2",
+        7845
+      ],
+      "observed": [
+        "72240260ec2447c2",
+        7845
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C04",
+      "label": "guard ledger sha256[:16]",
+      "expected": [
+        "73043b4e164a5a5f",
+        9994
+      ],
+      "observed": [
+        "73043b4e164a5a5f",
+        9994
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C05",
+      "label": "main-line pipeline-state sha256[:16]",
+      "expected": [
+        "bcb48bb964e657a4",
+        3723
+      ],
+      "observed": [
+        "bcb48bb964e657a4",
+        3723
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C06",
+      "label": "brief '(Contract v2, R51)'",
+      "expected": [
+        1
+      ],
+      "observed": [
+        1
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C07",
+      "label": "brief 'X > 8.0' qualification line",
+      "expected": [
+        17
+      ],
+      "observed": [
+        17
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C08",
+      "label": "brief 'exactly 8.0 does not qualify'",
+      "expected": [
+        18
+      ],
+      "observed": [
+        18
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C09",
+      "label": "brief 'If X <= 8.0'",
+      "expected": [
+        85
+      ],
+      "observed": [
+        85
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C10",
+      "label": "brief 'score_gt_threshold = true'",
+      "expected": [
+        81
+      ],
+      "observed": [
+        81
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C11",
+      "label": "brief frozen output filename 20261108",
+      "expected": [
+        76
+      ],
+      "observed": [
+        76
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C12",
+      "label": "brief non-anchoring clause",
+      "expected": [
+        65
+      ],
+      "observed": [
+        65
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C13",
+      "label": "brief 'Do not use any number quoted in this brief'",
+      "expected": [
+        35
+      ],
+      "observed": [
+        35
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C14",
+      "label": "R107 protocols-frozen line",
+      "expected": [
+        90
+      ],
+      "observed": [
+        90
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C15",
+      "label": "R107 v4 route",
+      "expected": [
+        91
+      ],
+      "observed": [
+        91
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C16",
+      "label": "R107 no-retroactive-edit",
+      "expected": [
+        92
+      ],
+      "observed": [
+        92
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C17",
+      "label": "R107 anti-gaming new-review clause",
+      "expected": [
+        65
+      ],
+      "observed": [
+        65
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C18",
+      "label": "validator score_meets_threshold",
+      "expected": [
+        155
+      ],
+      "observed": [
+        155
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C19",
+      "label": "validator comparison_operator >= ",
+      "expected": [
+        156
+      ],
+      "observed": [
+        156
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C20",
+      "label": "SKILL.md cites ccf-common output standards",
+      "expected": [
+        27,
+        40,
+        90
+      ],
+      "observed": [
+        27,
+        40,
+        90
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C21",
+      "label": "validator default threshold",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C22",
+      "label": "brief-cited reviewer path exists",
+      "expected": [
+        false
+      ],
+      "observed": [
+        false
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C23",
+      "label": "actual ccf-common path exists",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C24",
+      "label": "calibration-and-rank.md exists",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C25",
+      "label": "venue-guides dir exists",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C26",
+      "label": "handoff block lines containing '8.0'",
+      "expected": [
+        []
+      ],
+      "observed": [
+        []
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C27",
+      "label": "handoff block lines containing '7.0'",
+      "expected": [
+        []
+      ],
+      "observed": [
+        []
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C28",
+      "label": "brief preamble historical score '8.2' lines",
+      "expected": [
+        [
+          10
+        ]
+      ],
+      "observed": [
+        [
+          10
+        ]
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C29",
+      "label": "brief preamble historical score '6.5' lines",
+      "expected": [
+        [
+          11
+        ]
+      ],
+      "observed": [
+        [
+          11
+        ]
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C30",
+      "label": "R58 cites brief path",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C31",
+      "label": "R60 registers brief numeric gate as background",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C32",
+      "label": "R107/v4 versioned launch brief count",
+      "expected": [
+        0
+      ],
+      "observed": [
+        0
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C33",
+      "label": "independent-review-brief* copy count",
+      "expected": [
+        1
+      ],
+      "observed": [
+        1
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C34",
+      "label": "criteria A6 text contains >= 7.0",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C35",
+      "label": "ledger A6 text contains > 8.0",
+      "expected": [
+        true
+      ],
+      "observed": [
+        true
+      ],
+      "verdict": "MATCH"
+    },
+    {
+      "id": "C36",
+      "label": "G0 status / inputs / evidence",
+      "expected": [
+        "pending",
+        [],
+        []
+      ],
+      "observed": [
+        "pending",
+        [],
+        []
+      ],
+      "verdict": "MATCH"
+    }
+  ],
+  "n_checks": 36,
+  "n_match": 36,
+  "n_mismatch": 0,
+  "mismatches": [],
+  "independence_caveat": "Same host, same hashlib, same data source as R119-raw.py. A MATCH here is a necessary consistency check only, NOT independent cross-verification. The fresh isolated sub-agent supplies that.",
+  "boundary": "Read-only; only this verification JSON is written. No score line."
+}

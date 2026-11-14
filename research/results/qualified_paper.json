@@ -1,0 +1,33 @@
+{
+  "contract": "R51 single paper, independent full review Overall strictly > 8.0",
+  "threshold": 8.0,
+  "acceptance_rule": "governing independent Overall must be strictly greater than threshold (R51); equality is NOT qualified",
+  "overall_score": 6.3,
+  "governing_review": "LATEST independent full review governs; strict > threshold; no self-authored review counts",
+  "score_gt_threshold": false,
+  "independent_review_governs": true,
+  "checks": {
+    "D1_guidance_validated": {
+      "pass": true,
+      "detail": "guidance-v2.md=12631B, packet-v2=True, validation ledger-v2=True"
+    },
+    "D2_tex_pdf_pipeline_all_passed": {
+      "pass": false,
+      "detail": "stages=26, not_passed=['P9', 'P10', 'P11', 'P12', 'P13', 'P14', 'P15', 'P16', 'P17', 'P18', 'P19', 'P20', 'P21'], md_pending_rows=52, pdf=427558B"
+    },
+    "D3_independent_full_review": {
+      "pass": false,
+      "detail": "governing=6.3 in paper-null-ladder-r60-independent-review-20261108.md (**Overall:** 6.3); LATEST independent full review governs (supersedes earlier reviews after revision); all_scores=[7.5, 8.2, 7.0, 7.5, 7.5, 6.9, 6.3]"
+    },
+    "D4_novix_experiment_evidence": {
+      "pass": true,
+      "detail": "present=15/15, missing=[], sizes={'metrics.json': 46846, 'metrics_completed.json': 35660, 'run.log': 2848, 'config.json': 2931, 'summary.txt': 3108, 'metrics_pathblock.json': 16801, 'config_pathblock.json': 8251}"
+    },
+    "D5_six_sections_traceability": {
+      "pass": false,
+      "detail": "sections=6/6 ['Introduction', 'Related Work', 'Method', 'Experiments and Results', 'Discussion', 'Conclusion'], traceability=True, claim_evidence_matrix=False"
+    }
+  },
+  "all_pass": false,
+  "verdict": "NOT_QUALIFIED"
+}

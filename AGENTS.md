@@ -1,51 +1,66 @@
 # AGENTS.md — read this first
 
-This repository is a **collaboration and evidence-checkpoint log** for a
-research project on structure-sensitive null ladders in connectome-constrained
-vision. It is deliberately small and public.
+This is the **public research archive and collaboration log** for a project on
+structure-sensitive null ladders in connectome-constrained vision.
+
+Since R126 (2026-11-14) the owner has instructed that **research results,
+progress records and research ideas are uploaded in the open**, with no
+text-level redaction. Only large model weights/datasets and files containing a
+real credential value are excluded. See `research/README.md`.
 
 ## What is here
 
+- `research/` — **the actual science**: manuscripts (TeX/PDF), real experiment
+  metrics, all independent/full/idea review reports, guidance and frozen
+  protocols, research proposals and their independent reviews, the full
+  round-by-round ledger and daily work logs, R106–R125 round audits, and the
+  harbor trial. Start with `research/README.md` and
+  `research/UPLOAD-MANIFEST.json` (per-file path, size, SHA-256).
+- `evidence/` — the earlier, smaller sanitized evidence set. Retained
+  unchanged; `research/` supersedes it in coverage.
 - `collaboration/PROTOCOL.md` — rules for syncing and checkpoints.
-- `collaboration/PROJECT.md` — goal, current scientific protocol, true status,
-  and where the primary evidence lives.
+- `collaboration/PROJECT.md` — goal, scientific protocol, true status.
 - `collaboration/tasks/<task_id>/TASK.md` — task scope and acceptance.
-- `collaboration/tasks/<task_id>/agents/<agent_id>/HANDOFF.md` — current snapshot.
-- `collaboration/tasks/<task_id>/agents/<agent_id>/LOG.md` — append-only log.
-- `collaboration/tasks/<task_id>/agents/<agent_id>/checkpoints/<UTC-id>/` —
-  one immutable checkpoint each: `CHECKPOINT.md`, `manifest.json`, and
-  `metrics.csv` only when a real measurement exists.
-- `evidence/` — small, sanitized, reproducible artifacts (protocols, scripts,
-  summaries). **No datasets, no checkpoints, no credentials.**
+- `collaboration/tasks/<task_id>/agents/<agent_id>/HANDOFF.md`, `LOG.md`,
+  `checkpoints/<UTC-id>/` — snapshot, append-only log, immutable checkpoints.
 
 ## What is deliberately NOT here
 
-The primary project is a large local working tree (~3000 files, including a
-602 MB Sintel-derived development subset, official model checkpoints, a 190 MB
-chain-status JSON, and compiled binaries). None of that is uploaded here. In
-particular:
+- Large model weights and datasets (owner instruction; also the default
+  50 MiB per-file ceiling).
+- **Files containing a real credential value.** This is the one hard exclusion.
+  It is not a redaction policy: such values would compromise the account, and
+  they are not research output. Verifier scripts that merely contain scan
+  pattern literals (e.g. `b"ghp_"`) ARE included.
+- Third-party source trees and compiled binaries unrelated to our findings.
 
-- No credentials, tokens, API keys, or account identifiers.
-- No raw/derived Sintel data (non-commercial licence, redistribution excluded).
-- No third-party source trees or model weights.
-- No file over 50 MiB.
-- No local absolute paths; they are replaced with `<local>/`.
-- No manuscript PDF/TeX (double-blind, unpublished).
+Missing large artifacts are recorded by relative path, size and hash in the
+primary project; `research/README.md` states the gap. This archive lets a new
+agent read and understand the science, but reproducing experiments requires
+requesting the data separately.
 
-Where a checkpoint refers to such material, the path, size and SHA-256 are
-recorded and the storage gap is stated explicitly. This is a collaboration
-record, not a full reproduction bundle.
+## Status honesty
+
+Governing independent full review is **R95 = 6.0**; acceptance is `>= 7.0`
+(R107 user-authorised goal iteration). Validator `NOT_QUALIFIED`, guard
+`INCOMPLETE`, **0 qualifying papers, no COMPLETE**, G0–G8 pending. Uploading
+content does not change any of this, does not pass a gate, and does not
+constitute submission or publication. Historical 7.5 reviews are retained but
+do not govern.
 
 ## Rules for a new agent
 
-1. Read `collaboration/PROTOCOL.md`, `PROJECT.md`, the relevant `TASK.md`, and
-   the latest `HANDOFF.md` on your own branch.
+1. Read `research/README.md`, `collaboration/PROTOCOL.md`, `PROJECT.md`, the
+   relevant `TASK.md`, and the latest `HANDOFF.md`.
 2. Work on a unique branch `agent/<task_id>/<agent_id>`. Never `git add .`.
-3. Do not treat a checkpoint as scientific validation. `completed` describes
-   work state only.
+   Stage only explicit files; check the staged diff; keep a per-file manifest.
+3. Do not treat a checkpoint or a manifest as scientific validation.
+   `completed` describes work state only.
 4. Do not change a scientific threshold, split, seed set, or acceptance rule to
    turn a failed result into a pass. Version such changes and keep old evidence.
 5. Report "uploaded" only after confirming the remote branch SHA.
+6. Do not rewrite or delete historical checkpoints; corrections are new
+   checkpoints that cite the record being corrected.
 
-The authoritative scientific state lives in the primary project; this repo is
-its public, sanitized handoff layer.
+The primary project working tree remains the authority for live state; this
+repository is its public research record and handoff layer.

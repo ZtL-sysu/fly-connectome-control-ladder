@@ -2,12 +2,25 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (23 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 17:5x +0800 (R125 independent recheck RECOVERED, 1 MEDIUM + 1 LOW accepted append-only; twenty-third checkpoint)
+- Status: **in_progress** (24 checkpoints published; R126 full-open research archive uploaded; research itself unfinished)
+- Last update: 2026-11-14 18:2x +0800 (R126 owner-instructed full-open upload of 233 research files; twenty-fourth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R126 full-open research archive (latest, twenty-fourth checkpoint).** Per
+  the owner's 2026-11-14 instruction, `research/` now holds **233 files /
+  ~8.6 MiB** of actual outputs, progress and ideas: manuscripts (TeX/PDF),
+  real 10-seed metrics, **all 23 review reports in full**, guidance and frozen
+  protocols, D1 proposals and independent reviews, the complete
+  `goal-ledger.md` and daily work logs, R106–R125 round audits, and the harbor
+  trial. `research/UPLOAD-MANIFEST.json` gives per-file SHA-256. Text is no
+  longer redacted ("open 就对了"). Large weights/datasets and files with a real
+  credential value remain excluded. `AGENTS.md`, `PROJECT.md`, `TASK.md` were
+  updated to the new scope; R110–R113 coverage gap explained (R112/R113 were
+  read-only concurrency-guard rounds with no substantive output). See
+  `checkpoints/20261114T102224Z-r126-full-open/`.
 
 - **R125 isolated independent recheck RECOVERED + append-only corrections (latest,
   twenty-third checkpoint).** The twenty-second checkpoint truthfully stated AT ITS

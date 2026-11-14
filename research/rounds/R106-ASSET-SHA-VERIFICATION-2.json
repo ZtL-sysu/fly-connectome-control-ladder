@@ -1,0 +1,144 @@
+{
+  "round": "R106",
+  "status": "READONLY_ASSET_VERIFICATION_NOT_SCIENTIFIC_RESULT",
+  "created_local": "2026-11-13T03:44:02.346714+08:00",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "note": "SHA recomputed from file bytes. No experiment, no model forward pass, no training, no labels. Does NOT pass G1 or any gate.",
+  "sintel_clips": [
+    {
+      "file": "alley_1-window-0.npz",
+      "scene": "alley_1",
+      "window": 0,
+      "declared_sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d",
+      "recomputed_sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d",
+      "match": true,
+      "bytes": 1219541
+    },
+    {
+      "file": "alley_1-window-1.npz",
+      "scene": "alley_1",
+      "window": 1,
+      "declared_sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d",
+      "recomputed_sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d",
+      "match": true,
+      "bytes": 1218745
+    },
+    {
+      "file": "bamboo_1-window-0.npz",
+      "scene": "bamboo_1",
+      "window": 0,
+      "declared_sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee",
+      "recomputed_sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee",
+      "match": true,
+      "bytes": 1207321
+    },
+    {
+      "file": "bamboo_1-window-1.npz",
+      "scene": "bamboo_1",
+      "window": 1,
+      "declared_sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094",
+      "recomputed_sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094",
+      "match": true,
+      "bytes": 1207129
+    },
+    {
+      "file": "market_2-window-0.npz",
+      "scene": "market_2",
+      "window": 0,
+      "declared_sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97",
+      "recomputed_sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97",
+      "match": true,
+      "bytes": 1243010
+    },
+    {
+      "file": "market_2-window-1.npz",
+      "scene": "market_2",
+      "window": 1,
+      "declared_sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7",
+      "recomputed_sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7",
+      "match": true,
+      "bytes": 1240323
+    },
+    {
+      "file": "mountain_1-window-0.npz",
+      "scene": "mountain_1",
+      "window": 0,
+      "declared_sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97",
+      "recomputed_sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97",
+      "match": true,
+      "bytes": 1202493
+    },
+    {
+      "file": "mountain_1-window-1.npz",
+      "scene": "mountain_1",
+      "window": 1,
+      "declared_sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466",
+      "recomputed_sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466",
+      "match": true,
+      "bytes": 1188981
+    }
+  ],
+  "sintel_all_sha_match": true,
+  "render_manifest_sha256": "ad4d418eb5b3a60baf5c12810ca6b17d9662c1c06a68b7bc2b2e83b20c95daa5",
+  "official_model_files": {
+    "000": [
+      {
+        "rel": "_meta.yaml",
+        "bytes": 2222,
+        "sha256": "2aa8a9505324c82bbb4011ee2f7c375b5f8b1bddde1a5281e038baecf91fc5dd"
+      },
+      {
+        "rel": "best_chkpt",
+        "bytes": 49378,
+        "sha256": "d8a57a022aa18ca338599be713af9db29b89cde4b00098ffe42b78f0d583e46a"
+      },
+      {
+        "rel": "chkpts/chkpt_00000",
+        "bytes": 49396,
+        "sha256": "d0e42857e738d0315897c2d50fde9eb3fb1a3fb1f071d55dfc13d53d72bccc3f"
+      },
+      {
+        "rel": "validation/loss.h5",
+        "bytes": 2056,
+        "sha256": "0e8484829430e76fde3b20e76e0369ceb2ac6e9cd22958a3a024a758e3c28025"
+      },
+      {
+        "rel": "validation_loss.h5",
+        "bytes": 2056,
+        "sha256": "7baba024c7363f57234771ad103acbdd9e8c107b75464f45f7d249be06248dff"
+      }
+    ],
+    "001": [
+      {
+        "rel": "_meta.yaml",
+        "bytes": 2222,
+        "sha256": "2aa8a9505324c82bbb4011ee2f7c375b5f8b1bddde1a5281e038baecf91fc5dd"
+      },
+      {
+        "rel": "best_chkpt",
+        "bytes": 49378,
+        "sha256": "f351b025e25fc02e6ab9e2a80f6fd641fc62f5b3f33210e0a2318af5cc0614ae"
+      },
+      {
+        "rel": "chkpts/chkpt_00000",
+        "bytes": 49396,
+        "sha256": "d970fa9cd5082cf678cc4ef116728b64b4e7d0bbc99350d36d128f9556b0221a"
+      },
+      {
+        "rel": "validation/loss.h5",
+        "bytes": 2056,
+        "sha256": "df95f13c9875dd10f78d224533103fd59e6483c88c10a96cce0d70c36a29ca47"
+      },
+      {
+        "rel": "validation_loss.h5",
+        "bytes": 2056,
+        "sha256": "03f39926bfff8ad4c0d3472297c61520953178f5e6281de0639b796b34def1c9"
+      }
+    ]
+  },
+  "identities_file_sha256": "d115fd5d5ffb6761fa8052bf72b97d76ea88a140c47d849cba474d87da93fff5",
+  "gates_mutated": false,
+  "model_forward_passes": 0,
+  "training_runs": 0,
+  "labels_used": 0
+}

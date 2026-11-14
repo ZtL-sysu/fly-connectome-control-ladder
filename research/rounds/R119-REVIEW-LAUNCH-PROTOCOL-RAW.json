@@ -1,0 +1,579 @@
+{
+  "round": "R119",
+  "kind": "READONLY_REVIEW_LAUNCH_PROTOCOL_CHAIN_AUDIT",
+  "status": "PROTOCOL_CONSISTENCY_MEASUREMENT_NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT",
+  "created_utc": "2026-11-13T22:43:10+00:00",
+  "python": "/Users/xhf/miniconda3/bin/python",
+  "runtime_version": "3.14.6",
+  "note_on_timestamps": "created_utc is artifact-generation time; must NOT be used to infer capture order (R115 W3 / R114 D5)",
+  "network_requests_this_round": 0,
+  "sources": {
+    "brief": {
+      "path": "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/protocols/independent-review-brief.md",
+      "exists": true,
+      "bytes": 4803,
+      "sha256": "8771dea80cf7a54d0208d689e8d8fba285be87d98a364b9c590dd14d3e2e3f10",
+      "mtime_utc": "2026-11-08T02:51:19+00:00",
+      "lines": 86
+    },
+    "goal_iteration_r107": {
+      "path": "GOAL-ITERATION-R107.md",
+      "exists": true,
+      "bytes": 5446,
+      "sha256": "1a81c8e15b361f62e027360af0d6c82d498040370610c87b657c7facd0aed4b3",
+      "mtime_utc": "2026-11-13T00:08:37+00:00",
+      "lines": 101
+    },
+    "validator": {
+      "path": "readonly-validator/validate_single_paper.py",
+      "exists": true,
+      "bytes": 7845,
+      "sha256": "72240260ec2447c219a9c4717ec57da3c8e35d2a32bc5e909169daa8558a0e58",
+      "mtime_utc": "2026-11-13T00:09:06+00:00",
+      "lines": 170
+    },
+    "guard_criteria": {
+      "path": "guard/criteria-null-ladder.json",
+      "exists": true,
+      "bytes": 10443,
+      "sha256": "94846083217df86fff6e69ab1d3edbb7c8ef7abd6e8cbfd8272c49dc549c1a36",
+      "mtime_utc": "2026-11-13T00:09:32+00:00",
+      "lines": 233
+    },
+    "guard_ledger": {
+      "path": "guard/ledger-null-ladder.json",
+      "exists": true,
+      "bytes": 9994,
+      "sha256": "73043b4e164a5a5f68625010d280416036174e467052d75f704c96f7b598d8ca",
+      "mtime_utc": "2026-11-13T00:09:20+00:00",
+      "lines": 234
+    },
+    "ledger": {
+      "path": "goal-ledger.md",
+      "exists": true,
+      "bytes": 656281,
+      "sha256": "f98b69369db6eb80c1cae327a8857c83bfcee0b6e2c54ebac55e6f97e1f11499",
+      "mtime_utc": "2026-11-13T21:26:24+00:00",
+      "lines": 2455
+    },
+    "review_r95": {
+      "path": "ccfa-review-reports/paper-null-ladder-r95-independent-review-20261111.md",
+      "exists": true,
+      "bytes": 52430,
+      "sha256": "c67f8cd39c17d2fe7ae6d1eab9414be1275a4b7f9ac236c36d4d44aab02fb97a",
+      "mtime_utc": "2026-11-11T07:01:39+00:00",
+      "lines": 514
+    },
+    "review_r58": {
+      "path": "ccfa-review-reports/paper-null-ladder-r58-independent-review-20261108.md",
+      "exists": true,
+      "bytes": 59888,
+      "sha256": "88fa350aecbca15e16b413c58b01799935c94223ce8fea96506ac4c27312c003",
+      "mtime_utc": "2026-11-08T05:08:26+00:00",
+      "lines": 435
+    },
+    "review_r60": {
+      "path": "ccfa-review-reports/paper-null-ladder-r60-independent-review-20261108.md",
+      "exists": true,
+      "bytes": 58021,
+      "sha256": "f6748ed61d4e6846babd1f8e108807c14a80343f8ebb5292218377f3b2f42a12",
+      "mtime_utc": "2026-11-08T08:30:26+00:00",
+      "lines": 436
+    },
+    "brief_r95_frozen": {
+      "path": "papers/paper-null-ladder/R49-7.5-DELIVERY/provenance/R95-independent-review-brief-FROZEN.md",
+      "exists": true,
+      "bytes": 5275,
+      "sha256": "0d42d1d9d4f37aadaffdfc1af57ebbc99456330bbc70ec689828cf0cd9201855",
+      "mtime_utc": "2026-11-11T06:35:37+00:00",
+      "lines": 93
+    },
+    "main_pipeline_state": {
+      "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/pipeline-state.json",
+      "exists": true,
+      "bytes": 3723,
+      "sha256": "bcb48bb964e657a40a5dfb595f38f554ebbdc9ed006a00b741c877a3772ac33d",
+      "mtime_utc": "2026-11-12T02:43:12+00:00",
+      "lines": 150
+    },
+    "r111_decision_package": {
+      "path": "auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/state-handoff-R111/R111-DECISION-READY-PACKAGE.md",
+      "exists": true,
+      "bytes": 5811,
+      "sha256": "4b8acd2259949f8dfee7b1cf1419dc04617bbbefa991a280eac1ea48c095174b",
+      "mtime_utc": "2026-11-13T11:11:01+00:00",
+      "lines": 63
+    }
+  },
+  "skills": {
+    "reviewer_SKILL": {
+      "path": ".claude/skills/ccf-paper-reviewer/SKILL.md",
+      "exists": true,
+      "bytes": 5394,
+      "sha256": "1a74c9bfc4e438e022bf6e7800923214a3834077dcc02aeecfa957cda9a0676b",
+      "mtime_utc": "2026-08-03T10:58:02+00:00",
+      "lines": 90
+    },
+    "reviewer_calibration": {
+      "path": ".claude/skills/ccf-paper-reviewer/references/calibration-and-rank.md",
+      "exists": true,
+      "bytes": 5193,
+      "sha256": "5edb0408ec98d9ffa9122add5a06ed261c1977a6bf8ba2f9e19ffb54737d78b9",
+      "mtime_utc": "2026-08-03T10:58:02+00:00",
+      "lines": 120
+    },
+    "reviewer_output_standards_BRIEF_PATH": {
+      "path": ".claude/skills/ccf-paper-reviewer/references/review-output-standards.md",
+      "exists": false
+    },
+    "common_output_standards_ACTUAL_PATH": {
+      "path": ".claude/skills/ccf-common/references/review-output-standards.md",
+      "exists": true,
+      "bytes": 3364,
+      "sha256": "37612fb43b6ac603467bd279f8cf9d44c33ac1c7de03e86ea4f0287cd8594997",
+      "mtime_utc": "2026-08-03T10:58:02+00:00",
+      "lines": 79
+    },
+    "writer_venue_guides": {
+      "path": ".claude/skills/ccf-paper-writer/references/venue-guides",
+      "exists": true,
+      "is_dir": true,
+      "child_entries": 110
+    }
+  },
+  "assertions": [
+    {
+      "id": "A1",
+      "description": "count of independent-review-brief* files in project tree",
+      "scope": "FILE_GLOB",
+      "result": {
+        "count": 1,
+        "paths": [
+          "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/protocols/independent-review-brief.md"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A2",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "qualification requires **X > 8.0**",
+        "found": true,
+        "line_numbers": [
+          17
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A3",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "(exactly 8.0 does not qualify)",
+        "found": true,
+        "line_numbers": [
+          18
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A4",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "If X <= 8.0, the correction loop continues",
+        "found": true,
+        "line_numbers": [
+          85
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A5",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "score_gt_threshold = true",
+        "found": true,
+        "line_numbers": [
+          81
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A6",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "(Contract v2, R51)",
+        "found": true,
+        "line_numbers": [
+          1
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A7",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "independent-review-20261108.md",
+        "found": true,
+        "line_numbers": [
+          76
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A8",
+      "description": "literal string present in brief raw text",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "8 pages of main content",
+        "found": true,
+        "line_numbers": [
+          46
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A9",
+      "description": "non-anchoring / output-format clause in brief",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "You are not told what score would be considered a success",
+        "found": true,
+        "line_numbers": [
+          65
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A10",
+      "description": "non-anchoring / output-format clause in brief",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "Do not use any number quoted in this brief",
+        "found": true,
+        "line_numbers": [
+          35
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A11",
+      "description": "non-anchoring / output-format clause in brief",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "exactly one** line of the form",
+        "found": true,
+        "line_numbers": [
+          59
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A12",
+      "description": "R107 file lists protocols/ among frozen contracts (exact line-90 substring)",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "`protocols/` — frozen",
+        "found": true,
+        "line_numbers": [
+          90
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A12b",
+      "description": "R107 file says 'no existing contract is retroactively edited'",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "no existing contract is retroactively edited",
+        "found": true,
+        "line_numbers": [
+          92
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A13",
+      "description": "R107 file names the versioned-contract route (v4)",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "future versioned contract (v4)",
+        "found": true,
+        "line_numbers": [
+          91
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A14",
+      "description": "R107 success criterion comparison operator is >= 7.0",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": ">= 7.0",
+        "found": true,
+        "line_numbers": [
+          22,
+          25,
+          37
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A15",
+      "description": "R107 success criterion says a NEW full review of a REVISED manuscript",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "**new** full independent review",
+        "found": true,
+        "line_numbers": [
+          65
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A16",
+      "description": "validator default --threshold is 7.0",
+      "scope": "REGEX_OVER_SOURCE_LINES",
+      "result": {
+        "found": true,
+        "matching_lines": [
+          133
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A17",
+      "description": "validator emits comparison_operator '>=' ",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "\"comparison_operator\": \">=\"",
+        "found": true,
+        "line_numbers": [
+          156
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A18",
+      "description": "validator emits new score_meets_threshold field",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "\"score_meets_threshold\"",
+        "found": true,
+        "line_numbers": [
+          155
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A19",
+      "description": "guard criteria A6 text uses >= 7.0",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "Overall >= 7.0",
+        "found": true,
+        "line_numbers": [
+          3,
+          132,
+          231
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A20",
+      "description": "guard ledger A6 text still uses strictly > 8.0",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "严格 > 8.0",
+        "found": true,
+        "line_numbers": [
+          134,
+          231
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A21",
+      "description": "brief-cited skill path vs actual installed path",
+      "scope": "FILE_EXISTENCE",
+      "result": {
+        "brief_cited_exists": false,
+        "actual_common_exists": true,
+        "reviewer_SKILL_exists": true,
+        "calibration_exists": true,
+        "venue_guides_exists": true
+      },
+      "note": ""
+    },
+    {
+      "id": "A22",
+      "description": "reviewer SKILL.md itself cites ../ccf-common/references/review-output-standards.md",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING_HOME",
+      "result": {
+        "found": true,
+        "line_numbers": [
+          27,
+          40,
+          90
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A23",
+      "description": "R58 independent review states it read protocols/independent-review-brief.md",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "protocols/independent-review-brief.md",
+        "found": true,
+        "line_numbers": [
+          15,
+          38
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A24",
+      "description": "R60 independent review registers the brief's numeric gate as background only",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "independent-review-brief.md",
+        "found": true,
+        "line_numbers": [
+          28
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A25",
+      "description": "R95 FROZEN brief contains no literal 8.0 threshold number",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "scope": "RAW_BYTES_EXACT_SUBSTRING",
+        "needle": "8.0",
+        "found": false,
+        "line_numbers": []
+      },
+      "note": ""
+    },
+    {
+      "id": "A26b",
+      "description": "brief contains historical numeric scores in preamble (line 10: 8.2, line 11: 6.5)",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING",
+      "result": {
+        "line_8_2": [
+          10
+        ],
+        "line_6_5": [
+          11
+        ],
+        "note": "preamble lines 9-11 are OUTSIDE the verbatim reviewer handoff block (lines 21-66)"
+      },
+      "note": ""
+    },
+    {
+      "id": "A26c",
+      "description": "brief verbatim handoff block (lines 21-66) numeric threshold tokens",
+      "scope": "RAW_BYTES_EXACT_SUBSTRING_SCOPED_LINES",
+      "result": {
+        "scope_lines": [
+          21,
+          66
+        ],
+        "lines_with_8_0": [],
+        "lines_with_7_0": [],
+        "note": "tests whether the quoted reviewer-facing text itself carries a threshold"
+      },
+      "note": ""
+    },
+    {
+      "id": "A26d",
+      "description": "existence of any R107/v4 versioned launch brief",
+      "scope": "FILE_GLOB",
+      "result": {
+        "count": 0,
+        "paths": []
+      },
+      "note": ""
+    },
+    {
+      "id": "A26e",
+      "description": "count of files named *independent-review-brief* (all copies)",
+      "scope": "FILE_GLOB",
+      "result": {
+        "count": 1,
+        "paths": [
+          "papers/paper-null-ladder/f-research-v1-run-20261108-102500-null-ladder-v2/protocols/independent-review-brief.md"
+        ]
+      },
+      "note": ""
+    },
+    {
+      "id": "A26",
+      "description": "main-line pipeline-state.json G0 status",
+      "scope": "JSON_PARSE",
+      "result": {
+        "g0": {
+          "id": "G0",
+          "status": "pending",
+          "contract_version": "v2",
+          "inputs": [],
+          "evidence": [],
+          "gate_verdict": "pending"
+        }
+      },
+      "note": ""
+    }
+  ],
+  "independence_caveat": "Two scripts in this round run on the same host with the same hashlib and the same data sources; their agreement is a necessary consistency check, NOT an independent cross-verification (R115 W4 / R114 D1). Genuine independent recomputation is delegated to a fresh isolated sub-agent with no access to the authoring conversation.",
+  "boundary": "READ ONLY. No pre-existing byte changed. No gate promotion, no self-certification, no stage status change, no review launched, no score line produced, no threshold/contract/ledger/brief edit."
+}

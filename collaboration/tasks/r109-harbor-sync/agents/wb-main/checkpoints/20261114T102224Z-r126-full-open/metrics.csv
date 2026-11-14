@@ -1,0 +1,15 @@
+﻿task_id,agent_id,run_id,dataset,split,coverage,method,teacher_seed,student_seed,T,metric,value,unit,evidence,protocol_sha256,status
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,real_wiring,,,,mean_acc_real,0.815234375,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,A0_null,,,,mean_acc_A0,0.487890625,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,L0_null,,,,mean_acc_L0,0.4794921875,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,L1_degree_null,,,,mean_acc_L1,0.50390625,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,L2_null,,,,mean_acc_L2,0.49609375,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,L3_null,,,,mean_acc_L3,0.4986328125,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,L4_matched_null,,,,mean_acc_L4,0.5015625,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,clean_motif,,,,mean_acc_clean_motif,0.834765625,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,shuffled_input,,,,mean_acc_shuffled_input,0.51328125,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,p3_p4_18017,controlled_96node_XOR,heldout,10_seeds,chance,,,,chance_level,0.5,fraction,research/results/metrics.json,,historical
+r109-harbor-sync,wb-main,g0_r95_full,manuscript_R49_delivery,full,1_manuscript,independent_full_review,,,,overall,6.0,score,research/reviews/paper-null-ladder-r95-independent-review-20261111.md,,historical
+r109-harbor-sync,wb-main,g0_r49_full,manuscript_R49,full,1_manuscript,independent_full_review,,,,overall,7.5,score,research/reviews/paper-null-ladder-r49-independent-review-20261108.md,,historical
+r109-harbor-sync,wb-main,harbor_25092,synthetic_4x4_probe,smoke,1_run,cuda_matrix_product,,,,probe_sum,360.0,count,research/harbor/R108-FINAL-VERIFICATION.md,,measured
+r109-harbor-sync,wb-main,harbor_25092,synthetic_4x4_probe,smoke,1_run,verifier,,,,reward,1.0,fraction,research/harbor/R108-FINAL-VERIFICATION.md,,measured

@@ -1,0 +1,67 @@
+{
+  "round": "R106",
+  "phase": "END_OF_ROUND_FREEZE",
+  "status": "ENGINEERING_FREEZE_ONLY_NOT_SCIENTIFIC_RESULT",
+  "created_local": "2026-11-13T03:56:05.899298+08:00",
+  "note": "End-of-round byte freeze. The independent G0 gate review has NOT landed; its verdict is deferred to next round step 1. This file is not a verdict and does not rewrite the pre-review freeze.",
+  "independent_gate_review_landed": false,
+  "independent_gate_review_status": "RUNNING_DEFERRED_TO_NEXT_ROUND",
+  "pre_review_freeze_preserved_unchanged": true,
+  "n_files": 7,
+  "all_copies_byte_identical": true,
+  "records": [
+    {
+      "path": "gate-G0-R106/R106-ASSET-SHA-VERIFICATION.json",
+      "bytes": 4978,
+      "sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6",
+      "isolated_copy_sha256": "48443a918d20357e0d8ffbf20bc5ecc8bdd086178945532cd3498bb799a81dc6",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-EVIDENCE-FREEZE.json",
+      "bytes": 3172,
+      "sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006",
+      "isolated_copy_sha256": "ebc1f4b020e381b7e86f2a677a5be2c72f1e38fc8b6ff6118b99269b71034006",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-GAP1-ASSET-CHECK.md",
+      "bytes": 4340,
+      "sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a",
+      "isolated_copy_sha256": "c57126b11a924fcd2fbcfc85c7df2675d696315dbd175bb00d4924a5f785529a",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G0-INDEPENDENT-RECENCY-VERIFICATION.md",
+      "bytes": 11298,
+      "sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec",
+      "isolated_copy_sha256": "094075140e1aa7f606a6e1eddc01112d16de0acbed65755422e0034d0b9323ec",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-G4-POSITIONING.md",
+      "bytes": 7302,
+      "sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54",
+      "isolated_copy_sha256": "d416572379600990294dd75994d337f0937466fd749aa2e781b6d1d3a430da54",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-LITERATURE-SOURCE-SHA-VERIFICATION.json",
+      "bytes": 1885,
+      "sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a",
+      "isolated_copy_sha256": "041968abf2f0ffe2a94d10894ed4cb86178013de85ff9c082ffe50ac2bc27b9a",
+      "byte_identical": true
+    },
+    {
+      "path": "gate-G0-R106/R106-ROUND-AUDIT.md",
+      "bytes": 10457,
+      "sha256": "06299a15e5c9ab11124c8fb2b41085f4127e1295d504354c2faaf24bbc5fba7b",
+      "isolated_copy_sha256": "06299a15e5c9ab11124c8fb2b41085f4127e1295d504354c2faaf24bbc5fba7b",
+      "byte_identical": true
+    }
+  ],
+  "gates_mutated": false,
+  "model_forward_passes": 0,
+  "training_runs": 0,
+  "labels_used": 0
+}

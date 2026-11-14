@@ -1,0 +1,349 @@
+{
+  "scope_note": "A1-A4 are same-machine byte-identity checks, not independent cross-verification. B-F are substantive first-hand observations recomputed from raw bytes.",
+  "total": 47,
+  "match": 47,
+  "mismatch": 0,
+  "abstract_similarity": 0.4717,
+  "observations": {
+    "v1_abs_title": "Active Visual Sampling with a Connectome-Constrained Fly Model for One-Shot Hatch Recognition in Architectural Drawings",
+    "v2_abs_title": "What Survives on Real Drawings: Active Sampling, Connectome Wiring, and Matched Baselines in Architectural Document Vision",
+    "v1_abs_abstract_chars": 1433,
+    "v2_abs_abstract_chars": 1534,
+    "v2_body_abstract_chars": 1943,
+    "atom_entry_id": "http://arxiv.org/abs/2609.24565v2",
+    "atom_published": "2026-09-21T13:30:30Z",
+    "atom_updated": "2026-09-22T12:24:47Z",
+    "atom_feed_updated_query_time": "2026-11-14T03:57:55Z"
+  },
+  "checks": [
+    {
+      "id": "A1-v1-abs",
+      "desc": "sha256 recomputed from raw bytes",
+      "expected": "0075412eb10447864bb2b139c6d8ec8eb1c8f256b2d91e69a913203027bbd367",
+      "observed": "0075412eb10447864bb2b139c6d8ec8eb1c8f256b2d91e69a913203027bbd367",
+      "match": true
+    },
+    {
+      "id": "A2-v1-abs",
+      "desc": "size recomputed from raw bytes",
+      "expected": 41581,
+      "observed": 41581,
+      "match": true
+    },
+    {
+      "id": "A1-v2-abs",
+      "desc": "sha256 recomputed from raw bytes",
+      "expected": "cbcbce7343f999ebae1f63c43963a477e96ebe827679b6f973e25e177ca7029e",
+      "observed": "cbcbce7343f999ebae1f63c43963a477e96ebe827679b6f973e25e177ca7029e",
+      "match": true
+    },
+    {
+      "id": "A2-v2-abs",
+      "desc": "size recomputed from raw bytes",
+      "expected": 43656,
+      "observed": 43656,
+      "match": true
+    },
+    {
+      "id": "A1-v1-html",
+      "desc": "sha256 recomputed from raw bytes",
+      "expected": "2726ef63d6cda79393d1faa725267cb1ede474f1189caba51cc583c9a4af648c",
+      "observed": "2726ef63d6cda79393d1faa725267cb1ede474f1189caba51cc583c9a4af648c",
+      "match": true
+    },
+    {
+      "id": "A2-v1-html",
+      "desc": "size recomputed from raw bytes",
+      "expected": 50485,
+      "observed": 50485,
+      "match": true
+    },
+    {
+      "id": "A1-v2-html",
+      "desc": "sha256 recomputed from raw bytes",
+      "expected": "f4e7fb8747165a4f4caf0a50e34ca15f7a837536699189bffe267502ca12e7ad",
+      "observed": "f4e7fb8747165a4f4caf0a50e34ca15f7a837536699189bffe267502ca12e7ad",
+      "match": true
+    },
+    {
+      "id": "A2-v2-html",
+      "desc": "size recomputed from raw bytes",
+      "expected": 182710,
+      "observed": 182710,
+      "match": true
+    },
+    {
+      "id": "A1-api",
+      "desc": "sha256 recomputed from raw bytes",
+      "expected": "5e1c68e2e21be996a3d2244d67b2d1c0e7a6e5c8a7d829657d7faa3f2341377d",
+      "observed": "5e1c68e2e21be996a3d2244d67b2d1c0e7a6e5c8a7d829657d7faa3f2341377d",
+      "match": true
+    },
+    {
+      "id": "A2-api",
+      "desc": "size recomputed from raw bytes",
+      "expected": 3139,
+      "observed": 3139,
+      "match": true
+    },
+    {
+      "id": "A3",
+      "desc": "all five raw files are non-empty",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "A4",
+      "desc": "html files are HTML, api is XML",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "B1",
+      "desc": "v1 abs title starts 'Active Visual Sampling'",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "B2",
+      "desc": "v2 abs title starts 'What Survives on Real Drawings'",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "B3",
+      "desc": "v1 and v2 titles differ",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "B4",
+      "desc": "both abs pages report the same citation_date (2026/09/21)",
+      "expected": "2026/09/21",
+      "observed": "2026/09/21",
+      "match": true
+    },
+    {
+      "id": "C1",
+      "desc": "atom entry id points to v2",
+      "expected": "http://arxiv.org/abs/2609.24565v2",
+      "observed": "http://arxiv.org/abs/2609.24565v2",
+      "match": true
+    },
+    {
+      "id": "C2",
+      "desc": "atom entry title equals v2 abs citation_title",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "C3",
+      "desc": "entry published date",
+      "expected": "2026-09-21T13:30:30Z",
+      "observed": "2026-09-21T13:30:30Z",
+      "match": true
+    },
+    {
+      "id": "C4",
+      "desc": "entry updated date",
+      "expected": "2026-09-22T12:24:47Z",
+      "observed": "2026-09-22T12:24:47Z",
+      "match": true
+    },
+    {
+      "id": "C5",
+      "desc": "feed-level updated is a QUERY timestamp, distinct from entry updated",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "C6",
+      "desc": "entry published < entry updated",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "D1",
+      "desc": "v2 abs abstract equals atom summary (verbatim)",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "D2",
+      "desc": "v1 and v2 abs abstracts differ",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "D3",
+      "desc": "v2 HTML body abstract differs from v2 abs abstract",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "D4",
+      "desc": "similarity between the two v2 abstracts is below 0.6",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "D5",
+      "desc": "v2 abs abstract length",
+      "expected": 1534,
+      "observed": 1534,
+      "match": true
+    },
+    {
+      "id": "D6",
+      "desc": "v2 HTML body abstract length",
+      "expected": 1943,
+      "observed": 1943,
+      "match": true
+    },
+    {
+      "id": "D7",
+      "desc": "v1 abs abstract length",
+      "expected": 1433,
+      "observed": 1433,
+      "match": true
+    },
+    {
+      "id": "E1",
+      "desc": "v2 body contains '7.3 The stimulus never completes a cycle' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E2",
+      "desc": "v2 body contains 'What the sampling sweep answered' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E3",
+      "desc": "v2 body contains 'What remains open' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E4",
+      "desc": "v2 body contains 'Two gaps remain.' at least 1 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E5",
+      "desc": "v2 body contains '+0.033' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E6",
+      "desc": "v2 body contains '[0.015,0.050]' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E7",
+      "desc": "v2 body contains 'T4/T5' at least 4 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E8",
+      "desc": "v2 body contains '0.271' at least 3 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E9",
+      "desc": "v2 body contains '0.356' at least 3 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E10",
+      "desc": "v2 body contains '721' at least 5 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E11",
+      "desc": "v2 body contains '1,876' at least 5 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E12",
+      "desc": "v2 body contains '0.505' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E13",
+      "desc": "v2 body contains '0.415' at least 3 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E14",
+      "desc": "v2 body contains '9 Limitations' at least 2 times",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E15",
+      "desc": "v2 body has more section headings than v1 body",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "E16",
+      "desc": "v2 html byte size exceeds v1 html byte size",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "F1",
+      "desc": "no local absolute path in any raw byte file",
+      "expected": true,
+      "observed": true,
+      "match": true
+    },
+    {
+      "id": "F2",
+      "desc": "no credential-like token in raw byte files",
+      "expected": true,
+      "observed": true,
+      "match": true
+    }
+  ]
+}

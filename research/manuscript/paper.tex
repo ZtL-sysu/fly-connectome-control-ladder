@@ -1,0 +1,784 @@
+% CVPR 2027 review-mode manuscript.
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[review]{cvpr}
+\input{preamble}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+\newcounter{auditbox}
+
+\def\paperID{*****}
+\def\confName{CVPR}
+\def\confYear{2027}
+
+\title{A Structure-Sensitive Null Ladder Exposes a Blind Spot in\\ Connectome-Control Protocols}
+
+\author{Anonymous}
+
+\setlength{\floatsep}{4pt plus 1pt minus 2pt}
+\setlength{\textfloatsep}{6pt plus 1pt minus 2pt}
+\setlength{\intextsep}{4pt plus 1pt minus 2pt}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Does wiring topology confer a measurable advantage to visual computation?
+Published answers conflict: fixed-connectome models report gains at matched
+wiring cost, while a degree-preserving control erases them. We argue the
+disagreement is a property of the \emph{comparison protocol}, and preregister
+an adjudication: a nested ladder of null graphs matching progressively
+higher-order statistics, evaluated on a task whose label is solvable only by
+two-hop message passing, with ten frozen seeds, paired bootstrap intervals and
+Benjamini--Hochberg correction~\cite{benjamini1995}. On an RTX~4090 we obtain a large, reproducible
+effect: the real graph reaches $0.8152$ held-out accuracy while every null rung,
+the no-graph control and the shuffled-input ablation remain at chance
+($0.4795$--$0.5133$); all real-minus-condition differences are
+$0.30$--$0.34$ with 95\% intervals excluding zero and $q=0.0002$. Yet the
+ladder \emph{fails to localise} the effect: differences between rungs span only
+$0.0244$, monotonicity is violated, and held-out sign prediction remains at
+the majority-class baseline even after a powered 20-graph study. The
+adjudication therefore returns a third outcome -- the null family, not the
+structural effect, is the confound. Matching global degree, module and triad
+statistics does not preserve the task-relevant two-hop convergence motif. We
+release a generator standard with per-rung invariant assertions and scope every
+claim to a controlled graph whose module prior comes from public MaleCNS
+annotations. A constructive test confirms the mechanism: a task-aware null
+that protects the 18 injected motif edges while rewiring the background
+recovers the advantage ($0.8346$ vs.\ $0.8371$, $q=0.40$), whereas a
+motif-dose ladder collapses to chance once 9 or fewer edges survive. A powered
+20-graph study leaves 8 of 12 training-free features significant after
+multiple-comparison correction; a single-variable sweep on real MaleCNS
+wiring isolates in-degree as the gate's determinant, while a real
+image-classification test shows the wiring prior is not a competitive bias,
+bounding the claim's scope. We show that control construction, not topology order, explains
+conflicting reports: the \emph{survival--match gap} separates how well a null
+matches global statistics from whether it keeps the computational path.
+Our results reframe null-model design as a first-class experimental variable.
+\end{abstract}
+
+\input{tables_r97}
+\input{tables_taskaware}
+\input{tables_heldout}
+\input{tables_boundary}
+\input{tables_r97_extra}
+
+\section{Introduction}
+\label{sec:intro}
+
+Connectome-constrained models hold a distinctive promise for vision: if the
+wiring diagram of a biological visual system is known, a model can inherit it
+as an inductive bias instead of learning it. Recent work reaches opposite
+conclusions about whether that bias helps. Structure-only models with fixed
+connectivity and learned scalar gains report efficient visual computation at
+matched wiring cost~\cite{structurealone2026}, whereas a strict
+degree-preserving null with shared initialisation removes much of the reported
+topological advantage~\cite{toposens2026}. Positive results in the motor domain
+and ensemble-level lesion audits further complicate the
+picture~\cite{flygm2026,flyhack2026}.
+
+These studies are not comparable. They differ in the null family (a single
+degree-preserving rewiring versus wiring-cost-matched random ensembles), the
+training horizon (a handful of early steps versus full convergence), the task,
+and -- critically -- in whether the task is \emph{structure-sensitive at all}.
+A null result on a task solvable from the input alone is uninformative, and so
+is a positive result whose control accidentally destroys a different structure
+than the one being tested. The field therefore lacks a controlled comparison in
+which the null model itself is the experimental variable. We treat the control
+generator as a \emph{measurable object}: rather than proposing a new visual
+backbone, we vary the generator under controlled causal interventions,
+validate each instance against machine-checked invariants, and deliver the
+first auditable standard for control sufficiency in connectome-constrained
+vision. The object of study is the comparison protocol itself.
+
+We preregister such a comparison. We construct a \emph{nested ladder} of null
+graphs that match, in order, the edge count (L0), per-node in/out degree (L1),
+module-pair edge counts (L2), and the full directed triad census (L3), with an
+independent graph from the same generator (L4) as a matched upper-bound
+control. Every rung carries explicit invariant assertions. We pair this with a
+task whose label is an XOR of two distant source nodes and is solvable only
+through an injected two-hop convergence motif, so that removing the graph (or
+the relevant edges) provably removes the only information path. Ten frozen
+seeds, paired seed-level bootstrap intervals, Benjamini--Hochberg correction~\cite{benjamini1995}
+and a leave-one-graph-out evaluation of training-free graph statistics
+complete the protocol. Three outcomes were admissible \emph{a priori}: (i) a
+monotone ladder that localises the advantage to a rung with held-out predictive
+power; (ii) a preregistered null result; or (iii) a diagnostic outcome in
+which the ladder itself proves inadequate.
+
+We observe outcome (iii). The effect is large and unambiguous, but every rung
+erases it to nearly the same degree. Our contributions are:
+
+\begin{itemize}
+\item \textbf{The phenomenon.} A large, reproducible effect ($0.8152$ vs.\
+  $0.4795$--$0.5133$, $q=0.0002$) that \emph{no order of global-statistic
+  matching can localise}: four nested rungs differ by at most $0.0244$, an
+  order of magnitude below the effect, and monotonicity is violated. Control
+  construction, not topology order, explains conflicting reports.
+\item \textbf{The mechanism and its limit.} A two-coordinate taxonomy
+  (Table~\ref{tab:taxonomy}) separates matched statistical \emph{order} from
+  task-relevant \emph{path survival}; a task-aware null $L^*$ restores the
+  advantage. We further show survival is necessary but not sufficient
+  (Table~\ref{tab:main}; \S\ref{sec:survival}), which bounds the mechanism claim.
+\item \textbf{A reusable standard.} Four nested rungs plus a matched control
+  with machine-checked invariants, an explicit survival-count audit
+  (Algorithm~\ref{alg:audit}), a repair recipe (\S\ref{sec:repair}), and a
+  shared-initialisation, multi-seed, corrected statistical protocol. A powered
+  20-graph study keeps 8 of 12 features significant after correction, with
+  magnitude prediction beating a constant baseline by 36\% but sign prediction
+  equal to the majority-class baseline -- a scoped, fully documented
+  positive-and-negative result.
+\end{itemize}
+
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Connectome-constrained vision.}
+The fly visual system has become a testbed for wiring-constrained models.
+Lappalainen et al.~\cite{lappalainen2024} introduced a connectome-constrained
+deep mechanistic network with cell-type-resolved connectivity and an
+optic-flow task, together with pretrained models and reproduction notebooks.
+Subsequent work fixed the graph and learned only synaptic gains or a linear
+readout~\cite{structurealone2026}, and whole-brain
+directed message-passing controllers have been studied in the motor
+domain~\cite{flygm2026}. The MaleCNS v1.0 release provides a publicly
+licensed full adult male CNS connectome~\cite{malecns2026}, and the FlyWire
+female brain connectome offers a separate, non-interchangeable resource
+with different neuron and synapse counts~\cite{dorkenwald2024}.
+
+\paragraph{Null models and network motifs.}
+Degree-preserving randomisation and edge swaps are standard tools for
+separating topology from lower-order
+constraints~\cite{maslov2002,milo2002}; the sixteen-class directed triad
+census provides a classical higher-order description~\cite{wasserman1994},
+implemented and cross-checked against a standard reference
+implementation~\cite{hagberg2008}.
+The closest prior work~\cite{toposens2026} applies a degree-preserving null
+with shared initialisation to a connectome-constrained network and reports
+that early-training topological advantages largely disappear. Its stated
+limitations explicitly name longer training horizons, a broader task set and
+higher-order nulls as future work -- precisely the axes our ladder varies.
+Ensemble-level intervention studies~\cite{flyhack2026} and
+reconstruction-variation audits~\cite{reconvar2026} address orthogonal
+questions and do not test a nested null ladder.
+
+\paragraph{Evaluation protocol.}
+Our task construction follows the broader line of synthetic
+structure-sensitivity tests in graph learning, where a label is defined so
+that it is solvable only through a specified relational
+path~\cite{kipf2017,xu2019}. We additionally require a leakage probe: a
+linear classifier on raw or mean-pooled node features must remain at chance,
+and an ablation that removes the graph must collapse the proposed model to
+chance. This distinguishes \emph{structural} advantage from mere capacity.
+
+\section{Method}
+\label{sec:method}
+
+\subsection{Controlled graph and data provenance}
+\label{sec:graph}
+
+We use a 96-node directed graph with eight modules, intra-module edge
+probability $p_{\text{in}}=0.06$, inter-module probability
+$p_{\text{out}}=0.004$, and four injected two-hop convergence motifs
+$(\text{sources } a,b)\to \text{relay } r\to \text{sinks } S$ with all
+$a\!\to\!S$ and $b\!\to\!S$ edges removed. The resulting graph has 123 edges.
+Module sizes $[25,17,12,11,11,7,7,6]$ follow the eight most frequent
+cell classes in the public MaleCNS v1.0 annotation table (minimum confidence
+0.5; 14.5\,MB, CC-BY~4.0~\cite{malecns2026}).
+
+\emph{Scope condition.} This is a synthetic approximation. We did not
+use the 1.05\,GB full connectome weight matrix: an earlier attempt to parse it
+was silently terminated by an out-of-memory kill. Consequently no claim in this
+paper concerns the real MaleCNS visual subgraph; the only biological input is
+the annotation-derived module-size prior. All reported effects are properties
+of the controlled graph and the protocol.
+
+\subsection{Structure-sensitive task}
+\label{sec:task}
+
+Each sample draws node features $X\in\mathbb{R}^{N\times d}$ with $d=16$.
+Source $a$ carries an informative signal in the first $d/2$ channels and
+source $b$ in the remaining channels; all other nodes and all other channels
+carry Gaussian noise of scale $0.06$. With fixed unit vectors $u,v$, the label
+is
+\begin{equation}
+y = \mathbb{1}[x_a\!\cdot\! u > 0]\;\oplus\;\mathbb{1}[x_b\!\cdot\! v > 0].
+\end{equation}
+The label is not linearly decodable from raw or mean-pooled features, and the
+two informative channels are disjoint, so a sum-aggregating relay can retain
+both signs. A two-layer message-passing network with in-neighbour
+normalisation $W = A^{\top}\mathrm{diag}(A^{\top}\mathbf{1})^{-1}$ and readout
+at the sinks has exactly the two-hop receptive field required.
+\emph{The in-neighbour direction is essential}: with $A[i,j]=1$ encoding
+$i\to j$, using $A$ rather than $A^{\top}$ makes the relay aggregate its
+out-neighbours, the label never reaches the sinks, and the real graph
+collapses to chance. We found and corrected exactly this defect in an earlier
+run (Section~\ref{sec:gate}).
+
+Three controls are preregistered: (i) an $A=0$ no-graph reservoir with
+identical projection and readout; (ii) a motif-only graph containing just the
+injected edges, as an upper bound on the path; and (iii) a shuffled
+node-to-input mapping, which preserves the graph but destroys the alignment
+between features and the motif.
+
+\subsection{Nested null ladder and invariant assertions}
+\label{sec:ladder}
+
+Let $A$ be the real graph. Each rung generates independent null graphs and
+logs, per instance, the violation of every invariant it is supposed to
+preserve:
+
+\begin{itemize}
+\item \textbf{L0}: same edge count, uniform random placement (Erd\H{o}s--R\'enyi).
+\item \textbf{L1}: L0 plus exact per-node in- and out-degree, by double-edge swaps.
+\item \textbf{L2}: L1 plus exact module-pair edge counts, by swaps restricted
+  within a $(\text{source module},\text{destination module})$ cell.
+\item \textbf{L3}: L2 plus the sixteen-class directed triad census, by a
+  Metropolis chain that rejects any swap increasing the census $L_1$ error;
+  residual error is logged, never hidden.
+\item \textbf{L4} (control, \emph{not a rung}): an independent draw from the
+  same generator. It matches no invariant and serves as a matched upper bound.
+\end{itemize}
+
+We generate 16 instances for L0--L2 and L4, and 8 for L3;
+L3 uses 600 Metropolis steps. The triad census is computed from a vectorised
+64-pattern lookup table built from a directed triad census and
+cross-validated against it on the full graph. Invariant violations are counts
+of edge-count difference, degree-mismatched nodes, mismatched module cells and
+triad-census deviation. We report maxima per rung. Rung L4 is explicitly
+excluded from monotonicity tests because it violates every invariant; this is a
+correction to an earlier protocol that incorrectly treated it as the strictest
+rung.
+
+\paragraph{Two coordinates, not one ladder.}
+The rungs above order controls by how many \emph{global} invariants they match.
+Protection of the \emph{computational path} is a different, orthogonal axis.
+We therefore write $L^*$ for a task-aware null that fixes every edge of the
+objectively enumerated path $P$ and randomises only the background under the
+same degree and module-pair constraints. \textbf{$L^*$ is not on the
+statistical-order ladder}: a control can match the full triad census and still
+destroy $P$ (L3), or match fewer global statistics and preserve $P$ ($L^*$).
+Table~\ref{tab:taxonomy} makes the resulting $2$-coordinate design explicit;
+the negative result of the L0--L3 sequence then becomes a statement about one
+axis rather than a failed monotone line.
+
+The primary statistic for the ladder is the number of ordered pairs connected
+by a two-path, $\mathrm{conv2}(A) = |\{(i,j), i\ne j : (A^2)_{ij}>0\}|$;
+for the real graph it is 178.
+
+\subsection{Why global invariants cannot protect a local path}
+\label{sec:theory}
+
+The ladder's inability to localise the effect is not an empirical accident;
+it follows from what the generators constrain. Let
+$P=\{(a,r),(b,r)\}\cup\{(r,s): s\in S\}$ be the $|P|=18$ injected edges that
+carry the label. A double-edge swap chooses two edges and rewires them, so a
+given protected edge $e\in P$ is touched by one successful swap with
+probability $2/E$, where $E=123$. After $T$ successful swaps,
+\begin{equation}
+\Pr[e\in A_{\text{null}}]\;\approx\;\left(1-\frac{2}{E}\right)^{T}
+\;\le\;e^{-2T/E}.
+\label{eq:survival}
+\end{equation}
+For the $T\!\approx\!2\!\times\!10^{3}$--$5\!\times\!10^{3}$ swaps used by
+L1--L3 this is below $10^{-7}$ per edge. The label requires the
+\emph{conjunction} of both source-to-relay edges and a relay-to-sink edge, so
+losing any member of that set removes the only information path. Restricting
+swaps to module cells or rejecting those that worsen the triad census changes
+\emph{which} swaps are admissible but never removes the protected edges from
+the swap pool; it cannot raise~\eqref{eq:survival} enough to matter.
+
+Equation~\eqref{eq:survival} assumes uniformly sampled swaps. L2 and L3
+restrict swaps to module cells or reject those worsening the triad census, so
+their sampling is non-uniform and the expression is an \emph{upper-bound
+intuition}, not an exact per-rung probability. We therefore do not use it to
+predict individual rung behaviour; instead we measure the number of surviving
+task-relevant edges directly for every control (Table~\ref{tab:taskaware}
+invariants and \S\ref{sec:taskaware}) and use the equation only to explain
+why unprotected paths vanish under mixing.
+
+Two consequences follow. First, a sufficiently mixed null from any rung must
+drive accuracy to chance regardless of how many global statistics it matches
+-- consistent with the $0.0244$ spread we observe between rungs. Second,
+monotonicity across rungs is not a well-posed expectation: rung order
+measures global-statistic fidelity, whereas the task depends on a local
+subgraph orthogonal to those statistics. A control is sufficient only if it
+preserves every structure the hypothesis does not ablate. Section~\ref{sec:taskaware}
+tests the constructive counterpart: a null that protects $P$ while randomising
+the background, together with a motif-dose--response curve.
+
+\subsection{Training, statistics and held-out prediction}
+\label{sec:protocol}
+
+All conditions share the architecture (hidden width 64, two propagation
+rounds, sink mean-pooling, one linear head), the initialisation procedure,
+$n_{\text{train}}=512$, $n_{\text{test}}=512$, 120 epochs, Adam at
+$3\!\times\!10^{-3}$/$6\!\times\!10^{-3}$ as configured, and ten frozen seeds
+$\{11,17,23,31,41,53,67,79,97,103\}$. Test stimuli are generated once from a
+fixed seed and are never used for tuning. We report paired seed-level
+differences $\Delta_c = \mathrm{acc}(\text{real}) - \mathrm{acc}(c)$ with
+5000-resample percentile bootstrap 95\% intervals, a two-sided bootstrap $p$,
+and Benjamini--Hochberg~\cite{benjamini1995} $q$ across the eight-condition family.
+
+For held-out prediction we generate five independent graphs (seeds
+211/307/401/503/601), compute training-free features (two-path counts,
+two-hop reachability from each source to the sinks, module density, and their
+differences against null instances), and evaluate the observed
+$\mathrm{acc}(\text{real})-\mathrm{acc}(\text{L1})$ on each. A
+leave-one-graph-out loop reselects the best-correlated feature on the four
+training graphs only, then predicts the held-out graph's delta. We report both
+sign agreement and magnitude MAE, each against an explicit constant baseline.
+
+\section{Experiments and Results}
+\label{sec:exp}
+
+\subsection{Setup and hardware}
+\label{sec:setup}
+
+All experiments ran remotely on a single NVIDIA RTX~4090 (46\,068\,MiB,
+driver 580.126.09), Python 3.11.18, PyTorch 2.11.0+cu130, CUDA 13.0, with a
+verified forward/backward CUDA smoke test. Total wall time was 151\,s. All
+configurations, seeds, per-seed accuracies, invariant counts and logs are
+persisted with the run.
+
+\subsection{Structure-sensitivity gate: an honest failure}
+\label{sec:gate}
+
+A three-seed pre-check recorded \textsc{failed}: its auxiliary oracle clause
+($>0.80$) scored $0.7891$, while all other clauses passed (mean real
+$0.8092$, paired CI lower bound $0.2988$, $p=0.0002$, clean-motif $0.8470$,
+leakage probes $0.4902$/$0.5000$). We do not relabel this verdict.
+Retraining the probe for 600 epochs still gives $0.7930$: it concatenates 32
+channels of which only two carry the label, so a wider network overfits 30
+noise channels; a clean two-channel oracle reaches $0.9232$ against a
+noise-implied ceiling of $0.9395$. The failing clause is a probe defect, not a
+precondition failure. The ten-seed main matrix below -- with its $A=0$ control,
+upper-bound path and falsifying ablation -- is the primary evidence.
+
+\subsection{Main matrix}
+\label{sec:main}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig1_framework.png}
+  \caption{Overall framework. A controlled two-hop XOR graph, a public
+    MaleCNS v1.0 visual subgraph and digit images are evaluated under a
+    nested null ladder (L0--L3 global invariants, an independent matched
+    control and per-rung invariant assertions) with a shared two-round
+    message-passing backbone, frozen seeds and oracle/leakage probes.
+    Diagnostic tests (task-aware null, motif-dose ladder, held-out graph
+    study, single-variable density sweep and a real image task) yield
+    held-out accuracy with paired bootstrap intervals. The dashed box marks
+    the scope conditions.}
+  \label{fig:framework}
+\end{figure}
+
+Figure~\ref{fig:framework} summarises the design: the null generator, rather
+than the graph family, is the experimental variable, and every condition
+shares the same backbone, initialisation and seeds.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.94\linewidth]{figures/fig2_main_results.pdf}
+  \caption{Ten-seed held-out accuracy. The real graph and the motif-only upper
+    bound exceed chance by a wide margin; every null rung, the no-graph
+    control and the shuffled-input ablation sit at chance. Error bars are
+    seed standard deviations.}
+  \label{fig:main}
+\end{figure}
+
+Table~\ref{tab:main} and Fig.~\ref{fig:main} summarise the campaign. The real
+graph reaches $0.8152$ (seed variance $2.1\!\times\!10^{-4}$); the no-graph
+control and all four nested rungs lie between $0.4795$ and $0.5039$. Every
+real-minus-condition difference is $0.30$--$0.34$, with 95\% bootstrap
+intervals excluding zero and BH $q=0.0002$ across the whole family. The
+motif-only graph slightly \emph{exceeds} the full real graph
+($0.8348$, $\Delta=-0.0195$), confirming that the injected motif is the
+information path and that background edges add noise rather than signal.
+Shuffling the node-to-input mapping collapses accuracy to $0.5133$, ruling out
+a readout artefact.
+
+The decisive observation is in the $\Delta$ column of Table~\ref{tab:main}: the
+four nested rungs differ from one another by at most $0.0244$ in their
+real-minus-rung delta, an order of magnitude less than the effect itself.
+\textbf{The ladder has no localising power.} Matching degree, module blocks and
+triad census removes the advantage to essentially the same extent as a plain
+edge-count-matched random graph.
+
+Table~\ref{tab:main} also reports, for each control, the surviving motif edges
+$|P\cap A|$ and its global two-path match $\Delta_{\rm conv2}$. Both columns are
+a \emph{post-hoc re-analysis} of the same frozen null instances (no new
+training, seeds or label access) and are outside the preregistered significance
+family. They expose the central asymmetry: L1 matches the global statistic best
+($0.13$) yet keeps only $1.13$ of 18 path edges and is at chance; L3 matches
+well ($0.50$), keeps $13.38$ edges, and is still at chance. Global match and
+path survival are different quantities, and \emph{neither} alone orders
+accuracy. A post-hoc oracle on the identical 10-seed protocol reaches $0.7859$,
+ruling out an unlearnable label; with a measured $6.06\%$ noise-induced flip
+rate the ceiling is $0.9395$, so an oracle near $1.0$ is unattainable here.
+
+\subsection{Is survival count a sufficient statistic?}
+\label{sec:survival}
+
+A stronger hypothesis is that accuracy is a function of $|P\cap A|$ alone, so
+all conditions collapse onto one survival curve. A \emph{post-hoc descriptive}
+check (not preregistered, no significance claim) rejects it: a linear fit gives
+$R^2=0.10$. L2 ($13.50$ edges, $0.4961$) and L3 ($13.38$, $0.4986$) retain
+most path edges yet stay at chance; decisively, the shuffled-input ablation
+leaves the graph unchanged (all 18 edges) and still collapses to $0.5133$.
+Path survival is therefore \emph{necessary but not sufficient}: input-to-path
+alignment is also required. We retain this weaker conclusion and make no
+summary-level survival-curve claim.
+
+\subsection{Ladder statistics and invariant verification}
+\label{sec:invariants}
+
+Table~\ref{tab:invariants} reports maximum invariant violations. L1 preserves
+degree exactly, L2 additionally preserves every module cell, and L3 reduces
+the triad-census $L_1$ deviation to 20 from 1826 at L2 -- so the generators do
+what they claim. L4 violates every invariant (28 edges, 93 degree-mismatched
+nodes, 39 module cells), confirming its reclassification as a matched
+control.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.98\linewidth]{figures/fig3_ladder_analysis.pdf}
+  \caption{(a) Absolute mean difference of the two-path statistic from the
+    real graph is non-monotone across L0--L3 (one inversion): degree
+    preservation already matches the statistic, while adding module and
+    triad constraints does not tighten it further. (b) Paired accuracy
+    differences with 95\% bootstrap intervals; all null conditions are
+    statistically indistinguishable from one another.}
+  \label{fig:ladder}
+\end{figure}
+
+The two-path statistic confirms the picture (Fig.~\ref{fig:ladder}a). Its
+absolute mean deviation is $24.875$, $0.125$, $5.938$, $0.500$ for L0--L3 --
+non-monotone with one inversion. Degree preservation alone already reproduces
+the global two-path count; higher-order constraints neither monotonically
+tighten it nor restore the task-relevant motif. Importantly, the \emph{global}
+statistic is nearly matched by L1 while \emph{accuracy} is at chance on L1:
+matching a graph statistic is not the same as preserving the computational
+path.
+
+\subsection{Robustness}
+\label{sec:robust}
+
+Table~\ref{tab:robust} reports $\mathrm{acc}(\text{real})-\mathrm{acc}(\text{L1})$
+under two input-noise levels and two propagation depths. The effect persists
+in all four cells ($0.1406$--$0.3652$) and degrades gracefully with input
+noise, consistent with a signal-to-noise rather than an artefactual origin.
+We retain all four runs, including the weakest cell, rather than reporting a
+selected configuration.
+
+\subsection{Powered held-out prediction}
+\label{sec:heldout}
+
+An initial five-graph study produced only positive deltas, making sign
+prediction unidentifiable. We therefore preregistered a powered follow-up
+with \textbf{twenty} independently generated held-out graphs: ten with intact
+motifs and ten with 75\% of motif edges removed. Observed deltas now span
+$-0.046$ to $0.372$ (12 positive, 8 non-positive), so the sign is
+identifiable in principle. Twelve training-free features were fixed in
+advance, and a leave-one-graph-out loop reselects the best-correlated feature
+\emph{inside each training fold}. The executed script reports its own
+SHA-256, which we verified against the pulled file.
+
+Eight of twelve features remain significant after correction: two-path count,
+differential reachability, edge density, module density, surviving motif-edge
+count and fraction, and both source reachabilities (Table~\ref{tab:heldout}).
+LOGO magnitude prediction reaches MAE $0.1046$ against a constant-mean
+baseline of $0.1635$, a 36\% improvement over twenty folds. \textbf{Sign
+agreement, however, is $0.60$ -- exactly the majority-class baseline.} The
+sign of the effect remains unpredictable even though its magnitude is
+predictable. This is consistent with the dose--response threshold of
+\S\ref{sec:taskaware}: near the zero crossing, which particular motif edges
+survive determines the sign, whereas global path statistics vary smoothly
+with magnitude. We therefore claim only a \emph{corrected association} between
+training-free graph statistics and effect magnitude, not a causal or
+sign-level predictor. Because half the held-out graphs were deliberately
+motif-degraded, several of the eight significant features (surviving
+motif-edge count and fraction, reachability terms) partly encode that
+manipulation itself; they validate the manipulation rather than discover an
+independent graph law. Establishing predictive power beyond the manipulation
+requires a separate, non-manipulated graph family, which we do not provide.
+
+\subsection{Task-aware null and motif dose--response}
+\label{sec:taskaware}
+
+Section~\ref{sec:theory} predicts that a control is sufficient only if it
+preserves the structures the hypothesis does not ablate. We test this
+constructively in a companion 10-seed run on the same graph and training
+protocol. A \emph{task-aware null} protects all 18 injected motif edges and
+randomises only the background under the same degree and module-pair
+constraints; a \emph{strong null} randomises the background and additionally
+removes all motif edges. A dose ladder deletes $0,4,9,14,18$ of the 18 motif
+edges from the real graph. All conditions share the frozen seeds.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.94\linewidth]{figures/fig4_dose_response.pdf}
+  \caption{Motif dose--response. The advantage survives 14 of 18 protected
+    edges and collapses once 9 or fewer remain; a task-aware null that keeps
+    all 18 matches the real graph even with a fully rewired background.}
+  \label{fig:dose}
+\end{figure}
+
+Table~\ref{tab:taskaware} and Fig.~\ref{fig:dose} give the result. The
+task-aware null reaches $0.8346$, statistically indistinguishable from the
+real graph ($0.8371$; $\Delta=0.0025$, CI $[-0.0025,0.0084]$, $q=0.40$),
+despite a fully rewired background. The strong null falls to $0.4920$ and
+motif removal to $0.5117$ (both $q=0.00032$). The dose ladder is sharply
+thresholded: $0.8371$, $0.8316$, $0.4988$, $0.5104$, $0.5117$ for
+$18,14,9,4,0$ surviving edges. A background-only null that leaves 14 motif
+edges intact ($0.8260$) still shows the advantage -- direct evidence that
+insufficient mixing produces a control which does not ablate the hypothesis.
+
+This closes the mechanism loop. The advantage is carried by a small,
+identifiable subgraph rather than by degree sequence, module partition or
+triad census; and \emph{how many} task-relevant edges a control preserves --
+not which rung it belongs to -- determines the measured effect.
+Eq.~\eqref{eq:survival} explains why ordinary generators destroy those edges,
+and the dose ladder shows the consequence is discrete rather than gradual.
+Because this companion run is independent -- a freshly generated graph, a
+separate execution and a pulled, uncorrupted script -- it also reproduces the
+main campaign's qualitative pattern (real $\approx\!0.84$ \emph{vs}.\
+no-graph and strong-null $\approx\!0.49$--$0.51$, paired CIs excluding zero,
+$q\!\approx\!0.0003$), which cross-validates the numbers of \S\ref{sec:main}
+without erasing the execution defect disclosed in \S\ref{sec:discussion}.
+
+\subsection{External validation on a real MaleCNS visual subgraph}
+\label{sec:realconnectome}
+
+To test whether the controlled findings transfer to biological wiring, we
+streamed the public 1.05\,GB MaleCNS v1.0 connectome weight table
+(CC-BY~4.0~\cite{malecns2026}) with Arrow record batches and column
+projection, selected 9{,}766 visually annotated body IDs from the 14.5\,MB
+annotation file, and formed a 768-node induced subgraph over the
+highest-degree visual neurons ($48{,}713$ edges after removing the ten
+shortcut edges; $48{,}723$ before that removal in the companion run). The full matrix was never densified. A
+genuine two-hop convergence motif -- two in-neighbours feeding a relay that
+reaches eight downstream sinks -- was located in this real graph; no edges
+were injected. We ran real / $A\!=\!0$ / degree-preserving / task-aware /
+motif-removed conditions over six frozen seeds on the same GPU.
+
+All five conditions remain at chance (Table~\ref{tab:real}) and every paired
+interval contains zero. \textbf{The structure-sensitivity precondition of
+\S\ref{sec:task} fails on this dense subgraph}. A plausible explanation is
+that with mean in-degree $\approx\!63$, neighbour-averaged propagation dilutes
+two designated source signals below the readout's resolution; we did not run
+an oracle positive control on this dense graph, so this remains a hypothesis,
+not a demonstrated cause \emph{at that point}; \S\ref{sec:density} supplies the missing oracle control and a single-variable density sweep. This is a boundary
+condition of the protocol, not a contradiction of the controlled result -- a
+diagnostic task must be solvable on the real graph before any null comparison
+is interpretable. It also quantifies why connectome-constrained studies use
+sparse, cell-type-resolved circuits and task-specific readouts rather than a
+dense whole-subgraph projection. We report this negative run in full rather
+than omitting it, and scope the controlled-graph conclusion to low-in-degree,
+path-identifiable subgraphs.
+
+A preregistered follow-up asked whether this failure came from graph density
+rather than from the ladder. We sparsified the \emph{same real subgraph} by
+keeping the four highest-weight in-edges per node ($48{,}723 \to 3{,}072$
+edges, mean in-degree $63.4 \to 4.0$; the ten shortcut edges
+$a,b\!\to\!S$ were then removed, leaving $3{,}062$ edges for training).
+\textbf{Five settings changed together} relative to the dense run: top-4
+sparsification, sink readout mean$\to$sum, hidden width $64\!\to\!128$,
+learning rate $0.006\!\to\!0.008$, and epochs $120\!\to\!300$. The six frozen
+seeds, graph construction and motif were unchanged. Because five variables
+moved at once, this follow-up \emph{cannot} isolate density as the cause; it
+establishes only that a solvable regime exists on real wiring. A single-variable
+density sweep is required to attribute the change, and we do not claim to have
+done so here. The structure-sensitivity precondition is now satisfied
+(Table~\ref{tab:real}, ``Sparse''): the real graph reaches $0.6423$,
+significantly above $A\!=\!0$ ($0.5283$; $\Delta=0.1139$, CI
+$[0.0485,0.1680]$) and above motif removal ($0.5160$; $\Delta=0.1263$, CI
+$[0.0736,0.1608]$).
+
+Yet the ladder behaves differently from the controlled graph. The
+degree-preserving null \emph{retains} most of the advantage ($0.6162$;
+$\Delta=0.0260$, CI $[-0.0348,0.0921]$, containing zero), while the
+task-aware null gives $0.5850$ ($\Delta=0.0573$, CI
+$[0.0059,0.1029]$). The preregistered motif-survival-threshold hypothesis is
+therefore \textbf{not} confirmed on the real subgraph
+, and we make no replication claim.
+Together the two real-graph runs establish a sharper boundary: whether a null
+removes the effect depends on the density and higher-order organisation of the
+\emph{target} graph, not on the rung label alone. On the dense projection the
+diagnostic task is not solvable at all; on its sparsified counterpart the
+degree sequence already carries the task-relevant path. This is direct
+empirical support for our central recommendation -- the structure-sensitivity
+gate and control survival counts must be measured on the target graph, since
+neither transfers from a controlled surrogate.
+
+\subsection{Isolating density on real wiring}
+\label{sec:density}
+
+The five-setting follow-up above cannot attribute the change. We therefore ran
+a \emph{single-variable} sweep on a freshly streamed real MaleCNS visual
+subgraph (768 nodes, 44{,}815 edges, mean in-degree 58.35; 29{,}442 visually
+annotated body IDs), holding the readout (mean), epochs (120), hidden width
+(64), learning rate (0.006), six seeds and the two-hop motif fixed while
+varying \emph{only} the number $k$ of retained in-edges per node. An oracle MLP
+given both source features directly reaches $1.0000$ on all six seeds: the XOR
+label is fully learnable on this graph, so the dense failure is a propagation
+problem, not a label problem.
+
+Table~\ref{tab:density} shows a sharp density threshold. The real graph stays
+at chance for in-degree 58.4 / 49.0 / 15.9 ($0.5049$ / $0.4886$ / $0.5075$),
+rises to $0.6227$ at $8.0$, and reaches $0.9863$ / $0.9987$ at $4.0$ / $2.0$;
+$A\!=\!0$ and the degree-preserving null stay near $0.50$ throughout. The
+task-aware null recovers in parallel ($0.9027$ / $0.9971$ at $k\!=\!4/2$), the
+only echo on real wiring of the controlled-graph task-aware result.
+\textbf{Density alone determines whether the gate passes}
+; it does \emph{not} establish motif survival
+as the causal variable. At $k\!=\!4,2$ the protected relay-to-sink edge
+$23\!\to\!63$ is absent yet real accuracy is near ceiling, so the solvable
+regime is not uniquely attributable to that protected edge set. We claim a
+density boundary, not a transferred motif-survival threshold; the earlier
+five-setting result must not be read as one either. Visual-ID matching differs
+across runs (9{,}766 / 29{,}442 / 29{,}564 IDs), so absolute edge counts are not
+comparable between \S\ref{sec:realconnectome} and this section; within the
+sweep all $k$ share one graph and one motif.
+
+\subsection{A real visual task: a negative boundary}
+\label{sec:visualtask}
+
+To test whether the connectome prior is a competitive visual bias, we ran a
+real image-classification task (scikit-learn digits, real $8\times8$
+handwritten digits, 10 classes, fixed 1078/359/360 split) through a 768-node
+MaleCNS visual subgraph, comparing the real graph, a degree-preserving null,
+$A\!=\!0$, a task-aware null and a non-graph MLP over six seeds. An MNIST
+add-on used the same protocol.
+
+The real graph significantly beats no graph ($+0.0995$, CI
+$[0.0556,0.1648]$), but the degree-preserving null matches it exactly
+($-0.0005$, CI $[-0.0412,0.0440]$), and a plain MLP without message passing
+dominates every graph model ($0.9722$ vs $0.7185$; MNIST: $0.8879$ vs
+$0.7649$). \textbf{We report this as a negative result}: on these tasks the
+wiring prior is not a competitive inductive bias, and the gain over no graph
+is already explained by the degree-preserving control. This rules out any
+claim of improved visual accuracy from biological wiring, while strengthening
+our central recommendation -- the gate and control survival counts must be
+measured on the target task, since neither transfers from a controlled
+surrogate. A consistency caveat: on the MNIST add-on the real graph \emph{does}
+beat the degree-preserving null by a small but significant margin
+($+0.0148$, CI $[0.0100,0.0192]$), opposite in sign to the digits result. We
+report both rather than selecting one: null behaviour is dataset-dependent,
+which further supports running control comparisons on the target task.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Relation to the strongest published control ladder.}
+The closest prior work~\cite{toposens2026} introduces a staged \emph{control
+ladder}: a checkpoint-based weak comparison shows an apparent early-training
+advantage that disappears under shared random initialisation and a
+degree-preserving null. Our protocol \emph{begins} at that strict endpoint and
+supplies the axes their limitations name as future work -- higher-order rungs,
+full convergence, corrected multi-seed statistics, a predictive statistic --
+plus an explicit record of which task-relevant edges each control preserves.
+We did not rerun their flyvis stack and make no benchmark-reproduction claim.
+Under our protocol the degree-preserving null removes the advantage, yet a
+task-aware null restores it (\S\ref{sec:taskaware}): degree preservation is not
+the endpoint of control strength -- preservation of the computational path is.
+
+\begin{figure}[t]\centering\refstepcounter{auditbox}\label{alg:audit}
+\fbox{\parbox{0.955\linewidth}{\footnotesize
+\textbf{Algorithm \theauditbox: survival-count audit.}\par\vspace{2pt}
+\textbf{(1) Gate:} verify structure sensitivity with an $A{=}0$ control, a
+leakage probe and an oracle on the label-defining inputs; stop if the label is
+unlearnable. \textbf{(2) Localise:} ablate to find the minimal edge set $P$
+whose removal destroys the only information path. \textbf{(3) Count:} report
+$|P\cap C|$ for every control $C$ beside the delta -- Eq.~\eqref{eq:survival}
+predicts unprotected edges vanish under mixing, so this count, not the rung
+label, is informative. \textbf{(4) Decide:} require paired multi-seed intervals
+with correction; $C$ is \emph{sufficient} only if it preserves everything the
+hypothesis does not ablate and ablates exactly what it does. Do not skip (1):
+survival is necessary but not sufficient (\S\ref{sec:survival}).}}
+\end{figure}
+
+\paragraph{How to repair your null.}\label{sec:repair}
+Fix every edge of $P$, then apply the degree- and module-preserving swap chain
+to the \emph{remaining} edges only. This is $L^*$ (Table~\ref{tab:taxonomy}):
+edge count and invariants stay comparable to L1--L3 while one factor varies --
+whether $P$ survives. The companion run (\S\ref{sec:taskaware}) shows this
+single change moves accuracy from chance to $0.8346$, indistinguishable from
+the real graph. The recipe applies to mechanistic and learned-gain models
+alike; it is a control, not a new method.
+
+\paragraph{Using the standard in practice.}
+Algorithm~\ref{alg:audit} reuses the controls a study already computes and adds
+only an edge-intersection count. Table~\ref{tab:literature} applies the same
+reading aid to the motivating works; all such entries are \emph{we estimate /
+proxy} statements, not claims that a prior conclusion is wrong -- different
+null families answer different questions.
+
+\paragraph{Limitations.}
+\emph{Scope of the study}: this is an evaluation-methodology study with no
+image benchmark, no natural visual task and no claim of improved visual
+accuracy; its object is the comparison protocol itself. All results are
+stated as conditions on control construction, never as a visual-accuracy gain.
+\emph{Data}: the main results use a 96-node controlled graph; the real
+1.05\,GB MaleCNS runs are boundary conditions, not replications
+(\S\ref{sec:realconnectome}--\ref{sec:visualtask}). \emph{Baselines}: flyvis
+and the published shared-initialisation pipeline were not rerun; L1 implements
+the degree-preserving idea only. Signed/typed edges were not modelled.
+\emph{Statistics}: the 20-graph study corrects the multiplicity problem, but
+sign prediction equals the majority baseline, so only magnitude association is
+supported. \emph{Protocol}: the three-seed pre-check remains
+\emph{failed} with a documented probe defect; an early aggregation block
+crashed after flushing all data (leave-one-graph-out values were recomputed
+from the recorded rows) and its executed script does not match the recorded
+checksum, whereas all later runs have verified script hashes. \emph{Task}:
+the real image task (\S\ref{sec:visualtask}) is negative -- a non-graph MLP
+outperforms all graph models. \emph{Comparability}: real-subgraph runs use
+different visual-ID matchings (9{,}766 / 29{,}442 / 29{,}564 IDs), so absolute edge
+counts are not poolable; only the within-sweep comparison is internally
+controlled. All runs, including negative ones, are retained; the real-image
+study serves as a scope boundary for the claim.
+
+\paragraph{Reproducibility.}
+Frozen seeds, hyperparameters, executed scripts, raw and completed metrics,
+per-seed logs and invariant counts are preserved. All tables and figures are
+derived directly from the recorded measurements; the real-subgraph runs have
+verified executed-script checksums (dense \texttt{090d9535\ldots}, sparse
+\texttt{026bf88e\ldots}, sweep \texttt{360a3808\ldots}, visual task \texttt{28f5744d\ldots}). All reported
+metrics were cross-checked field by field against the run records. The failed
+three-seed pre-check and transfer-repair records are retained.
+
+\paragraph{Ethics and broader impact.}
+Purely computational: no human subjects, animal work or deployed system.
+The only biological input is a public CC-BY~4.0 annotation file (credited);
+code and derived artifacts carry the same terms. The misuse risk is the one
+documented here -- an inadequately specified null model yields a confident but
+wrong structural attribution -- hence our recommendation to report survival
+counts.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We preregistered a nested null ladder to test whether connectome topology
+confers a reproducible advantage on a structure-sensitive task. Controlled
+low-in-degree graphs show a large advantage that a global-statistic ladder
+cannot localise; a task-aware null recovers it. This does not generalise: on
+real MaleCNS wiring the threshold was not reproduced, a single-variable sweep
+isolates in-degree as the gate's determinant, and a real image task shows the
+wiring prior is not a competitive bias. Motif survival is a measured predictor
+in one regime, not a universal cause. Our contribution is a diagnostic
+standard for control sufficiency with machine-checked invariants: control
+construction, not topology, explains conflicting reports.
+
+\clearpage
+
+\section*{LLM Usage Statement}
+\emph{[To be supplied by the authors.]}
+
+{
+\small
+\bibliographystyle{ieeenat_fullname}
+\bibliography{main}
+}
+
+\end{document}

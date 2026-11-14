@@ -1,0 +1,574 @@
+{
+  "round": "R121",
+  "verifier": "R121-verify.py (standalone, no collector import, no R121 JSON read)",
+  "generated_at": "2026-11-14T10:25:31",
+  "python": "3.14.6",
+  "n_checks": 73,
+  "n_match": 69,
+  "n_mismatch": 4,
+  "all_match": false,
+  "checks": [
+    {
+      "id": "SELF-0",
+      "label": "verifier source contains no R121 JSON read",
+      "expected": true,
+      "observed": false,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "A1",
+      "label": "R95 needle at line 419",
+      "expected": true,
+      "observed": [
+        419
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A2",
+      "label": "R95 needle at line 450",
+      "expected": true,
+      "observed": [
+        450
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A3",
+      "label": "R95 needle at line 450",
+      "expected": true,
+      "observed": [
+        450
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A4",
+      "label": "R95 needle at line 450",
+      "expected": true,
+      "observed": [
+        450
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A5",
+      "label": "R95 needle at line 448",
+      "expected": true,
+      "observed": [
+        448
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A6",
+      "label": "R95 needle at line 473",
+      "expected": true,
+      "observed": [
+        473
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A7",
+      "label": "R95 needle at line 240",
+      "expected": true,
+      "observed": [
+        240
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A8",
+      "label": "R95 needle at line 249",
+      "expected": true,
+      "observed": [
+        249
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A9",
+      "label": "R95 needle at line 454",
+      "expected": true,
+      "observed": [
+        454
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A10",
+      "label": "R95 needle at line 413",
+      "expected": true,
+      "observed": [
+        413
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A11",
+      "label": "R95 needle at line 414",
+      "expected": true,
+      "observed": [
+        414
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A12",
+      "label": "R95 needle at line 450",
+      "expected": true,
+      "observed": [
+        450
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "A13",
+      "label": "R95 byte size",
+      "expected": 52430,
+      "observed": 52430,
+      "status": "MATCH"
+    },
+    {
+      "id": "A14",
+      "label": "R95 sha256 prefix",
+      "expected": "c67f8cd39c17d2fe",
+      "observed": "c67f8cd39c17d2fe",
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R114-1",
+      "label": "R114 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R114-2",
+      "label": "R114 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R114-3",
+      "label": "R114 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R114-4",
+      "label": "R114 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R115-1",
+      "label": "R115 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R115-2",
+      "label": "R115 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R115-3",
+      "label": "R115 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R115-4",
+      "label": "R115 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R116-1",
+      "label": "R116 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R116-2",
+      "label": "R116 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R116-3",
+      "label": "R116 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R116-4",
+      "label": "R116 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R117-1",
+      "label": "R117 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R117-2",
+      "label": "R117 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R117-3",
+      "label": "R117 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R117-4",
+      "label": "R117 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R118-1",
+      "label": "R118 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R118-2",
+      "label": "R118 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R118-3",
+      "label": "R118 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R118-4",
+      "label": "R118 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R119-1",
+      "label": "R119 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R119-2",
+      "label": "R119 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R119-3",
+      "label": "R119 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R119-4",
+      "label": "R119 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R120-1",
+      "label": "R120 declares READONLY",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R120-2",
+      "label": "R120 declares NOT_GATE_PASS",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R120-3",
+      "label": "R120 declares NOT_SCIENTIFIC_RESULT",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-R120-4",
+      "label": "R120 has no line-start numeric Overall",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "B-COUNT",
+      "label": "prior round count",
+      "expected": 7,
+      "observed": 7,
+      "status": "MATCH"
+    },
+    {
+      "id": "C1",
+      "label": "real-graph hypothesis_supported all false",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "C2",
+      "label": "real-graph n files",
+      "expected": 6,
+      "observed": 4,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "C3",
+      "label": "synthetic controlled has true values",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "C4",
+      "label": "condition (a) satisfied",
+      "expected": false,
+      "observed": false,
+      "status": "MATCH"
+    },
+    {
+      "id": "D1",
+      "label": "reviewed main.tex bytes",
+      "expected": 40175,
+      "observed": 40175,
+      "status": "MATCH"
+    },
+    {
+      "id": "D2",
+      "label": "reviewed main.tex md5",
+      "expected": "e4bfad51ad834fdccdb6db7821e158c",
+      "observed": "e4bfad51ad834fdccdb6db7821e158c6",
+      "status": "MISMATCH"
+    },
+    {
+      "id": "D3",
+      "label": "admission at main.tex:637",
+      "expected": [
+        637
+      ],
+      "observed": [
+        637
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "D4",
+      "label": "condition (b) satisfied",
+      "expected": false,
+      "observed": false,
+      "status": "MATCH"
+    },
+    {
+      "id": "E1",
+      "label": "mlp baseline mean acc",
+      "expected": 0.9722222222222222,
+      "observed": 0.9722222222222222,
+      "status": "MATCH"
+    },
+    {
+      "id": "E2",
+      "label": "real minus degree-preserving delta < 0.001 in abs",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "E3",
+      "label": "condition (c) satisfied",
+      "expected": false,
+      "observed": false,
+      "status": "MATCH"
+    },
+    {
+      "id": "F1",
+      "label": "validator verdict",
+      "expected": "NOT_QUALIFIED",
+      "observed": "NOT_QUALIFIED",
+      "status": "MATCH"
+    },
+    {
+      "id": "F2",
+      "label": "validator overall",
+      "expected": 6.0,
+      "observed": 6.0,
+      "status": "MATCH"
+    },
+    {
+      "id": "F3",
+      "label": "validator threshold",
+      "expected": 7.0,
+      "observed": 7.0,
+      "status": "MATCH"
+    },
+    {
+      "id": "F4",
+      "label": "validator operator",
+      "expected": ">=",
+      "observed": ">=",
+      "status": "MATCH"
+    },
+    {
+      "id": "F5",
+      "label": "validator score_meets_threshold",
+      "expected": false,
+      "observed": false,
+      "status": "MATCH"
+    },
+    {
+      "id": "F6",
+      "label": "validator failing checks",
+      "expected": [
+        "D2_tex_pdf_pipeline_all_passed",
+        "D3_independent_full_review",
+        "D5_six_sections_traceability"
+      ],
+      "observed": [
+        "D2_tex_pdf_pipeline_all_passed",
+        "D3_independent_full_review",
+        "D5_six_sections_traceability"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "F7",
+      "label": "guard verdict INCOMPLETE",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "F8",
+      "label": "guard failing criteria",
+      "expected": [
+        "A2",
+        "A6"
+      ],
+      "observed": [
+        "A2",
+        "A6"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "F9",
+      "label": "guard pending steps",
+      "expected": 7,
+      "observed": 7,
+      "status": "MATCH"
+    },
+    {
+      "id": "G1",
+      "label": "mainline stage count",
+      "expected": 12,
+      "observed": 12,
+      "status": "MATCH"
+    },
+    {
+      "id": "G2",
+      "label": "first stage CCFA-startup passed",
+      "expected": "passed",
+      "observed": "passed",
+      "status": "MATCH"
+    },
+    {
+      "id": "G3",
+      "label": "G0 pending with empty inputs/evidence",
+      "expected": [
+        true,
+        true,
+        true
+      ],
+      "observed": [
+        true,
+        true,
+        true
+      ],
+      "status": "MATCH"
+    },
+    {
+      "id": "G4",
+      "label": "all downstream stages pending",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "H1",
+      "label": "newer numeric Overall lines",
+      "expected": 1,
+      "observed": 2,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "H2",
+      "label": "all newer lines are byte-identical r95 copy",
+      "expected": true,
+      "observed": true,
+      "status": "MATCH"
+    },
+    {
+      "id": "H3",
+      "label": "new governing candidates",
+      "expected": 0,
+      "observed": 0,
+      "status": "MATCH"
+    },
+    {
+      "id": "I1",
+      "label": "isolated copy count",
+      "expected": 21,
+      "observed": 21,
+      "status": "MATCH"
+    },
+    {
+      "id": "I2",
+      "label": "isolated copies byte-identical to some original",
+      "expected": [],
+      "observed": [],
+      "status": "MATCH"
+    }
+  ],
+  "scope_note": "Same-machine recomputation consistency, NOT independent cross-validation; genuine independence comes from the isolated sub-agent review."
+}

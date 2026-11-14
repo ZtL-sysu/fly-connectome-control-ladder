@@ -1,0 +1,579 @@
+{
+  "round": "R117",
+  "classification": "READONLY_EXECUTION_PREMISE_PROBE_NOT_SCIENTIFIC_RESULT_NOT_GATE_PASS_NOT_FORWARD_PASS",
+  "generated_utc": "2026-11-13T19:17:22.853855+00:00",
+  "generated_utc_note": "Product-generation wall clock. NOT a network acquisition timestamp; must not be used to reconstruct acquisition chronology (R115 W3 / R114 D5).",
+  "python_driver": "3.14.6",
+  "python_driver_path": "/Users/xhf/miniconda3/bin/python",
+  "strict_boundary": {
+    "forward_pass": false,
+    "inference": false,
+    "training": false,
+    "label_read": false,
+    "epe_or_l2_computation": false,
+    "scientific_metric": false,
+    "gate_promotion": false,
+    "pipeline_state_json_written": false,
+    "npz_arrays_instantiated": false,
+    "note": "npz inspected only via zip central directory (filename, CRC, uncompressed size, testzip). No array, label, or stimulus value was read."
+  },
+  "import_matrix": {
+    "A_base_default": {
+      "py": "3.14.6",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "FAIL",
+      "error": "ModuleNotFoundError: No module named 'flyvis'",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/bin/python",
+        "cwd": ".",
+        "pythonpath": [],
+        "extra_env_keys": []
+      }
+    },
+    "B_ceg_default": {
+      "py": "3.11.15",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "FAIL",
+      "error": "ModuleNotFoundError: No module named 'flyvis'",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+        "cwd": ".",
+        "pythonpath": [],
+        "extra_env_keys": []
+      }
+    },
+    "C_ceg_cwd_sources": {
+      "py": "3.11.15",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "FAIL",
+      "error": "ModuleNotFoundError: No module named 'flyvis.version'",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+        "cwd": "sources/flyvis",
+        "pythonpath": [],
+        "extra_env_keys": []
+      }
+    },
+    "D_ceg_syspath_sources": {
+      "py": "3.11.15",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "FAIL",
+      "error": "ModuleNotFoundError: No module named 'flyvis.version'",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+        "cwd": ".",
+        "pythonpath": [
+          "sources/flyvis"
+        ],
+        "extra_env_keys": []
+      }
+    },
+    "E_base_syspath_sources": {
+      "py": "3.14.6",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "FAIL",
+      "error": "ModuleNotFoundError: No module named 'pytz'",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/bin/python",
+        "cwd": ".",
+        "pythonpath": [
+          "sources/flyvis"
+        ],
+        "extra_env_keys": []
+      }
+    },
+    "F_ceg_r101_sandbox": {
+      "py": "3.11.15",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "OK",
+      "flyvis_file": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/local-provisioning/flyvis-work/flyvis/__init__.py",
+      "flyvis_version": "1.2.0",
+      "flyvis_device": "cpu",
+      "connectome_exists": true,
+      "root_dir": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/local-provisioning/flyvis-root",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+        "cwd": ".",
+        "pythonpath": [
+          "local-provisioning/flyvis-work"
+        ],
+        "extra_env_keys": [
+          "FLYVIS_ROOT_DIR"
+        ]
+      }
+    },
+    "G_ceg_sandbox_plus_deps": {
+      "py": "3.11.15",
+      "torch": "2.13.0",
+      "cuda_available": false,
+      "mps_available": true,
+      "default_device_before": "cpu",
+      "import_flyvis": "OK",
+      "flyvis_file": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/local-provisioning/flyvis-work/flyvis/__init__.py",
+      "flyvis_version": "1.2.0",
+      "flyvis_device": "cpu",
+      "connectome_exists": true,
+      "root_dir": "/Users/xhf/Downloads/phd/4090/fly-gnn-snn-vision/auto-paper/20261111-225602/Task-Aligned-Controls-for-Connectome-Vision/local-provisioning/flyvis-root",
+      "default_device_after": "cpu",
+      "rc": 0,
+      "config": {
+        "python": "/Users/xhf/miniconda3/envs/ceg_snn_mi/bin/python",
+        "cwd": ".",
+        "pythonpath": [
+          "local-provisioning/flyvis-work",
+          "code-audit/flyvis-local-deps"
+        ],
+        "extra_env_keys": [
+          "FLYVIS_ROOT_DIR"
+        ]
+      }
+    }
+  },
+  "device_source_verbatim": [
+    "device = torch.device(\"cuda\") if torch.cuda.is_available() else torch.device(\"cpu\")",
+    "torch.set_default_device(device)"
+  ],
+  "version_py_verbatim": [
+    "# RECONSTRUCTED for local provisioning only -- NOT an official FlyVis file.",
+    "# The pinned source snapshot omits flyvis/version.py (setuptools_scm build output).",
+    "# Value taken from the top entry of CHANGELOG.md of the pinned snapshot.",
+    "__version__ = '1.2.0'"
+  ],
+  "sintel_clips": [
+    {
+      "file": "alley_1-window-0.npz",
+      "exists": true,
+      "bytes": 1219541,
+      "sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 658118399,
+        "flow_source.npy": 4010895646,
+        "lum_resampled.npy": 2521105419,
+        "flow_resampled.npy": 3076566689
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "alley_1-window-1.npz",
+      "exists": true,
+      "bytes": 1218745,
+      "sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 388541863,
+        "flow_source.npy": 931065847,
+        "lum_resampled.npy": 2402681154,
+        "flow_resampled.npy": 4138999469
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "bamboo_1-window-0.npz",
+      "exists": true,
+      "bytes": 1207321,
+      "sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 2127061605,
+        "flow_source.npy": 2397148332,
+        "lum_resampled.npy": 339910510,
+        "flow_resampled.npy": 2709732530
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "bamboo_1-window-1.npz",
+      "exists": true,
+      "bytes": 1207129,
+      "sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 607564262,
+        "flow_source.npy": 2482530416,
+        "lum_resampled.npy": 2067689813,
+        "flow_resampled.npy": 694061592
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "market_2-window-0.npz",
+      "exists": true,
+      "bytes": 1243010,
+      "sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 770627824,
+        "flow_source.npy": 1673544091,
+        "lum_resampled.npy": 3947794829,
+        "flow_resampled.npy": 629218629
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "market_2-window-1.npz",
+      "exists": true,
+      "bytes": 1240323,
+      "sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 1489679475,
+        "flow_source.npy": 2175886267,
+        "lum_resampled.npy": 271548531,
+        "flow_resampled.npy": 3180592066
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "mountain_1-window-0.npz",
+      "exists": true,
+      "bytes": 1202493,
+      "sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 2197886018,
+        "flow_source.npy": 2892562911,
+        "lum_resampled.npy": 1209687591,
+        "flow_resampled.npy": 291266116
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    },
+    {
+      "file": "mountain_1-window-1.npz",
+      "exists": true,
+      "bytes": 1188981,
+      "sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466",
+      "zip_entries": [
+        "lum_source.npy",
+        "flow_source.npy",
+        "lum_resampled.npy",
+        "flow_resampled.npy"
+      ],
+      "zip_entry_count": 4,
+      "zip_crc32": {
+        "lum_source.npy": 4245414161,
+        "flow_source.npy": 1577965870,
+        "lum_resampled.npy": 3587472825,
+        "flow_resampled.npy": 3300085173
+      },
+      "zip_uncompressed_bytes": {
+        "lum_source.npy": 164516,
+        "flow_source.npy": 328904,
+        "lum_resampled.npy": 346208,
+        "flow_resampled.npy": 692288
+      },
+      "zip_testzip_crc_ok": true
+    }
+  ],
+  "official_checkpoint": {
+    "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/chkpts/chkpt_00000",
+    "bytes": 49396,
+    "sha256": "d0e42857e738d0315897c2d50fde9eb3fb1a3fb1f071d55dfc13d53d72bccc3f",
+    "weights_only_restore": {
+      "top_level_type": "dict",
+      "top_level_keys": [
+        "decoder",
+        "network"
+      ],
+      "tensor_count": 14,
+      "state_dict_digest_sha256": "bd3f2cc8a037e1f58517989fced0f233a97e647f3ab9545d865e8bb416e25f74",
+      "tensor_shapes": {
+        "decoder/flow/base.0.bias": [
+          8
+        ],
+        "decoder/flow/base.0.weight": [
+          8,
+          34,
+          5,
+          5
+        ],
+        "decoder/flow/base.1.bias": [
+          8
+        ],
+        "decoder/flow/base.1.num_batches_tracked": [],
+        "decoder/flow/base.1.running_mean": [
+          8
+        ],
+        "decoder/flow/base.1.running_var": [
+          8
+        ],
+        "decoder/flow/base.1.weight": [
+          8
+        ],
+        "decoder/flow/decoder.0.bias": [
+          3
+        ],
+        "decoder/flow/decoder.0.weight": [
+          3,
+          8,
+          5,
+          5
+        ],
+        "network/edges_sign": [
+          604
+        ],
+        "network/edges_syn_count": [
+          2355
+        ],
+        "network/edges_syn_strength": [
+          604
+        ],
+        "network/nodes_bias": [
+          65
+        ],
+        "network/nodes_time_const": [
+          65
+        ]
+      },
+      "all_finite": true,
+      "rc": 0
+    }
+  },
+  "official_meta": {
+    "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/_meta.yaml",
+    "bytes": 2222,
+    "sha256": "2aa8a9505324c82bbb4011ee2f7c375b5f8b1bddde1a5281e038baecf91fc5dd",
+    "clause_lines": [
+      "        seed: 0",
+      "  task:",
+      "      type: MultiTaskSintel",
+      "      tasks:",
+      "      - flow",
+      "      boxfilter:",
+      "      n_frames: 19",
+      "      gaussian_white_noise: 0.08",
+      "      flow:",
+      "        type: DecoderGAVP",
+      "      flow: l2norm",
+      "    batch_size: 4",
+      "    seed: 0",
+      "    task_weight:"
+    ],
+    "clause_presence": {
+      "gaussian_white_noise": true,
+      "n_frames": true,
+      "batch_size": true,
+      "seed": true,
+      "boxfilter": true,
+      "DecoderGAVP": true,
+      "MultiTaskSintel": true,
+      "task": true,
+      "flow": true
+    }
+  },
+  "frozen_contract_readiness": {
+    "frozen_seed_set": {
+      "status": "NOT_ESTABLISHED_BY_THIS_PROBE",
+      "reason": "This probe reads only the official meta seed line; a frozen multi-seed set + seed key is a P2/P3 contract artifact and is not asserted here.",
+      "is_gate_pass": false
+    },
+    "noise_calibration": {
+      "status": "OFFICIAL_META_LINE_PRESENT",
+      "note": "std .08 / lower-clamp / 4 draws / frozen seed key are contract clauses; only the presence of source lines is measured, no calibration run performed.",
+      "is_gate_pass": false
+    },
+    "zero_injection_assertion": {
+      "status": "NOT_MEASURED",
+      "note": "Requires an executable runner; no runner was invoked by this probe.",
+      "is_gate_pass": false
+    },
+    "mps_device_adaptation": {
+      "status": "MEASURED",
+      "note": "See import_matrix and device_lines; FlyVis upstream selects cuda-or-cpu only.",
+      "is_gate_pass": false
+    }
+  },
+  "source_manifest": [
+    {
+      "label": "flyvis_init",
+      "path": "local-provisioning/flyvis-work/flyvis/__init__.py",
+      "bytes": 1801,
+      "sha256": "aea219a5e7fe78d4eba07f8a5c9f08abfcba3ad235bcca943dd08af803ab9e3a"
+    },
+    {
+      "label": "flyvis_version_reconstructed",
+      "path": "local-provisioning/flyvis-work/flyvis/version.py",
+      "bytes": 255,
+      "sha256": "15efb6b02134350a3e29d4f1332c570bec0f61418fd73c7422ad9dca804b4e0b"
+    },
+    {
+      "label": "official_chkpt_00000",
+      "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/chkpts/chkpt_00000",
+      "bytes": 49396,
+      "sha256": "d0e42857e738d0315897c2d50fde9eb3fb1a3fb1f071d55dfc13d53d72bccc3f"
+    },
+    {
+      "label": "official_meta_yaml",
+      "path": "sources/flyvis-pretrained-access/unpacked/results/flow/0000/000/_meta.yaml",
+      "bytes": 2222,
+      "sha256": "2aa8a9505324c82bbb4011ee2f7c375b5f8b1bddde1a5281e038baecf91fc5dd"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-0.npz",
+      "bytes": 1219541,
+      "sha256": "962912eb013325b0d2d4e80d1324edb18f974940b9fe7d7e1f205587cf028b1d"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/alley_1-window-1.npz",
+      "bytes": 1218745,
+      "sha256": "b79161e3cf4bf8ce1a684c10a25f0085ec742fa96c7434d2f188c7bd503af71d"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-0.npz",
+      "bytes": 1207321,
+      "sha256": "d5e5293b2e6a769414fb47bfeaeda31910d1c3a8c77d1eb83adf76f9ece4baee"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/bamboo_1-window-1.npz",
+      "bytes": 1207129,
+      "sha256": "7cb13aac8628e03fbab77c322cb7ee98826b51ea4fa98799128494e66d030094"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-0.npz",
+      "bytes": 1243010,
+      "sha256": "a2d0ef52252651ee0d6c4a6feef86a99447658dca0b2550b4efb35caabb1df97"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/market_2-window-1.npz",
+      "bytes": 1240323,
+      "sha256": "b334aaf685acd19127600ed743402c4694f43096fd5679fc9b17059a569e29f7"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-0.npz",
+      "bytes": 1202493,
+      "sha256": "1decfaddcac197616d84f09de2d59c7428a64a3d38f48e5be7c8badc4b109b97"
+    },
+    {
+      "label": "sintel_clip",
+      "path": "sources/sintel-development-subset-v1/rendered-attempt-1/mountain_1-window-1.npz",
+      "bytes": 1188981,
+      "sha256": "38b40eee85feb431f21fdf7e7f971de962379eafb1466a5de4414dfdfbe53466"
+    }
+  ],
+  "secret_scan": {
+    "patterns": 7,
+    "hits": 0,
+    "details": []
+  }
+}
