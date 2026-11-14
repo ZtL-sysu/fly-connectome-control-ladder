@@ -1,0 +1,31 @@
+﻿metric,value,unit,scope,kind
+independent_review_bytes,28736,bytes,R121-INDEPENDENT-REVIEW.md,measurement
+independent_review_lines,237,lines,R121-INDEPENDENT-REVIEW.md,measurement
+independent_review_sha256_prefix,9650a024f84c9b1e,sha256_prefix,R121-INDEPENDENT-REVIEW.md,measurement
+independent_review_write_count,1,writes,single final write no intermediate state,measurement
+claim_groups_matching,8,groups,A-H,measurement
+claim_groups_mismatching,0,groups,A-H,measurement
+overclaim_categories_confirmed,0,categories,(a)-(l),measurement
+overclaim_categories_refuted,12,categories,(a)-(l),measurement
+defects_total,6,items,J-1 to J-6 accepted append-only,measurement
+defects_high,0,items,reviewer grading,measurement
+defects_medium,1,items,J-1,measurement
+defects_low,3,items,J-2 J-3 J-6,measurement
+defects_snapshot_observation,1,items,J-4 already disclosed,measurement
+defects_scope_limitation,1,items,J-5 reviewer constraint,measurement
+defects_fabrication,0,items,reviewer finding,measurement
+defects_data_inconsistency,0,items,reviewer finding,measurement
+reviewer_md_files_scanned,6124,files,isolated sub-agent scan,measurement
+numeric_scored_verdict_lines_current,15,lines,project-wide md scan at 10:28,measurement
+numeric_scored_verdict_files_current,13,files,project-wide md scan at 10:28,measurement
+numeric_scored_verdict_lines_wake_time,14,lines,project-wide md scan at 10:03,measurement
+new_governing_candidates,0,files,project-wide md scan,measurement
+real_graph_files_false,6,files,REAL_MALECNS_VISUAL_SUBGRAPH,measurement
+synthetic_source_labeled_files,2,files,data.source=SYNTHETIC_APPROXIMATION,measurement
+synthetic_trajectory_mirrors,2,files,no data.source field,measurement
+independent_review_local_path_hits,2,hits,reason original not uploaded,measurement
+historical_checkpoints_unchanged,14,checkpoints,immutability check,measurement
+papers_qualified,0,papers,round outcome,measurement
+complete_written,0,boolean,round outcome,measurement
+gates_promoted,0,gates,round outcome,measurement
+forward_passes_performed,0,forward_passes,round outcome,measurement

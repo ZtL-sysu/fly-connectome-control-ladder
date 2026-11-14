@@ -2,12 +2,39 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (14 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 10:3x +0800 (R121 heartbeat: read-only governing-review score-change-condition closure audit; fourteenth checkpoint; isolated independent recheck launched, NOT yet recovered)
+- Status: **in_progress** (15 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 10:4x +0800 (R121 heartbeat: isolated independent recheck RECOVERED, all 6 items accepted append-only; fifteenth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R121 isolated recheck recovered + append-only corrections (latest,
+  fifteenth checkpoint).** The fourteenth checkpoint truthfully claimed no
+  verdict while the fresh isolated sub-agent was running; its bytes are **not
+  rewritten**. Final independent report (primary project, **not uploaded** —
+  quotes 2 local paths): **28,736 B / 237 lines**, SHA-256
+  `9650a024f84c9b1ec308db4a96c18fee26e5cfd67e3b73b0b9a50f1a0891200c`, one
+  write, mtime 10:42:30, original unchanged. Verdict
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result
+  claimed: NO`, `Forward pass performed: NO`. A–H **all MATCH**; reviewer
+  used **no** R121 JSON as a data source and read the round audit only last,
+  for defect grading. **12 named overclaim categories CONFIRMED = 0 (all
+  REFUTED)**; **6 items (0 HIGH / 1 MEDIUM / 3 LOW / 1 disclosed snapshot
+  observation / 1 scope limitation)**, all accepted **append-only** in
+  private `R121-POST-REVIEW-CORRECTION.md`. Most substantive is **J-1
+  (MEDIUM)**: "14 numeric scored-verdict lines" was the wake-time (10:03)
+  truth; at audit-write time (10:28), after this round's own byte-identical
+  `isolated/` copy existed, the count is **15 lines / 13 files** (main
+  session re-measured). Both later-than-r95 files are byte-identical to r95,
+  `new_governing_candidates = 0`, no new score. J-2/J-3/J-6 are label,
+  token-spelling, and paraphrase narrowings; J-4 is the already-disclosed
+  capture-time snapshot (corroborates "no historical byte rewritten"); J-5
+  is a declared reviewer scope limit (74/74 is same-host consistency, never
+  independent cross-validation). Reviewer found **no overclaim** in the
+  negative closure finding. Gate/evidence-layer recheck, **NOT**
+  `ccf-paper-reviewer full`. Sanitized summary only:
+  `evidence/R121-INDEPENDENT-REVIEW-SANITIZED.md`.
 
 - **R121 read-only success-criterion closure audit (latest, fourteenth
   checkpoint).** Lane change: instead of an eighth process-layer dossier, R121
