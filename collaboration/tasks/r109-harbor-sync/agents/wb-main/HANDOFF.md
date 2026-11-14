@@ -2,12 +2,50 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (17 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 12:2x +0800 (R122 isolated independent recheck RECOVERED, 2 LOW defects accepted append-only; seventeenth checkpoint)
+- Status: **in_progress** (18 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 13:5x +0800 (R123 gap-1 first-hand licence/code-path text acquisition; eighteenth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R123 gap-1 first-hand licence / code-path text acquisition (latest, eighteenth
+  checkpoint).** Executed the standing step-1 item 1 (goal-owner authorized): R106 section 6
+  R1 / R98 gap 1, which the R106 gate review flagged verbatim as "no LICENSE text was read"
+  and the R120 decision register listed as a remaining first-hand item undone for 11+ rounds.
+  This is **not** a ninth process dossier — R121's negative closure (from the governing
+  review's own score-change rule) still holds. 13 third-party public small texts frozen
+  (all HTTP 200, 262,728 B, each < 200 KB), SHA-256 anchored, 200 KB hard size cap, no
+  dataset / weights / binary / large file / local path / project credential. One official
+  upstream script embeds a hard-coded **third-party public** API-key literal: marked
+  `upload_to_public_repo=false`, local only, `<redacted>` in every derivative; **no raw file
+  uploaded**, only `evidence/R123-GAP1-LICENCE-SANITIZED.md`. Independent verifier (no
+  collector import, no round JSON as data source for substantive claims): **91 checks / 91
+  MATCH / 0 MISMATCH**; group A declared same-machine byte-identity, not independent
+  cross-verification. A v1 wrong expected value (assumed 20 MANIFEST rows; true 18 from the
+  18/19/20 self-reference nesting) is retained verbatim with both scripts and both readings —
+  an expectation-assumption error, not a data inconsistency. Substantive findings are
+  **third-party text facts, not project results**: Zenodo 21549559 record-level CC BY 4.0
+  statement + README `Licence and attribution` (NOT 18 per-asset licence texts; upstream
+  claim is a transcription, not independently verified); Sintel official licence is a **custom
+  MPI non-commercial scientific-research licence, not CC BY** (`CC BY` / `Creative Commons`
+  each 0 mentions); official flyvis code is MIT but weights go through a Google Drive folder
+  with **zero** independent weight licence text (code licence is not weight licence, terms
+  remain OPEN); FlyHack code path negative evidence (abs page 0 github.com / 0 Zenodo, one
+  repo search `total_count=0`), scoped to that query. **Acquisition complete is NOT gap 1
+  closed**: R1 requires matrix correction + freeze, R6/R7 a designated gate owner's explicit
+  judgment and recorded pass, R9 a fresh independent recheck; matrix/registry disposition
+  belongs to decision groups G5/G6/G7/G4. Primary baseline matrix, source manifest,
+  pipeline state, and ledger byte-unchanged. Read-only machine gates: validator
+  `NOT_QUALIFIED / 6.0 / >=7.0`, guard `INCOMPLETE` (A2/A6); guard ledger SHA unchanged.
+  Zero gate promotion (G0 pending), zero self-certification, zero state write-back, zero
+  forward pass / training / dataset / scientific metric / new positive evidence. No
+  `ccf-paper-reviewer full`, no scored verdict line, no v4, no P3 while G0 pending, no
+  `<=32h / K=45` authorization assumed, no 4090/L4/H20 claim. Primary project: no
+  submission / commit / push. A fresh isolated sub-agent was **launched** with no expected
+  verdict / score anchor / conclusion anchor; at checkpoint write time it was **not
+  recovered**, so **no recheck conclusion is claimed** — recovery and append-only corrections
+  go to a new immutable checkpoint. Result still **0 qualifying papers, no COMPLETE**.
 
 - **R122 isolated independent recheck recovered + append-only corrections
   (latest, seventeenth checkpoint).** The sixteenth checkpoint truthfully
