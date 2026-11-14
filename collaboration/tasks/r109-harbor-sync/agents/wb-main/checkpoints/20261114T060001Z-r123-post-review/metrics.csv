@@ -1,0 +1,21 @@
+﻿metric,value,unit,source
+independent_review_bytes,16565,bytes,R123-INDEPENDENT-REVIEW.md
+independent_review_lines,105,count,R123-INDEPENDENT-REVIEW.md
+independent_review_sha256_prefix,40edc181845f5d50,hex,R123-INDEPENDENT-REVIEW.md
+recheck_groups_match,6,count,R123-INDEPENDENT-REVIEW.md
+recheck_groups_mismatch,0,count,R123-INDEPENDENT-REVIEW.md
+overclaim_categories_confirmed,0,count,R123-INDEPENDENT-REVIEW.md
+overclaim_categories_refuted,12,count,R123-INDEPENDENT-REVIEW.md
+defects_high,0,count,R123-INDEPENDENT-REVIEW.md
+defects_medium,1,count,R123-INDEPENDENT-REVIEW.md
+defects_low,1,count,R123-INDEPENDENT-REVIEW.md
+defects_fabrication,0,count,R123-INDEPENDENT-REVIEW.md
+zenodo_six_files_bytes_wrong,152578,bytes,R123-ROUND-AUDIT.md section 3
+zenodo_six_files_bytes_recounted,152628,bytes,raw directory byte-exact recount
+summary_delta_bytes,50,bytes,R123-POST-REVIEW-CORRECTION.md
+four_group_total_bytes,262728,bytes,raw directory byte-exact recount
+v2_verifier_match,91,count,R123-VERIFICATION.json
+gate_promotions,0,count,R123-POST-REVIEW-CORRECTION.md
+forward_passes,0,count,R123-INDEPENDENT-REVIEW.md
+state_writebacks,0,count,R123-POST-REVIEW-CORRECTION.md
+qualifying_papers,0,count,R123-POST-REVIEW-CORRECTION.md

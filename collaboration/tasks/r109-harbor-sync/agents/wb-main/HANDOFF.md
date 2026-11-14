@@ -2,12 +2,42 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (18 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 13:5x +0800 (R123 gap-1 first-hand licence/code-path text acquisition; eighteenth checkpoint)
+- Status: **in_progress** (19 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 14:0x +0800 (R123 isolated independent recheck RECOVERED, 1 MEDIUM + 1 LOW defect accepted append-only; nineteenth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R123 isolated independent recheck recovered + append-only corrections (latest,
+  nineteenth checkpoint).** The eighteenth checkpoint truthfully stated that the recheck was
+  launched but not recovered and claimed no verdict; its bytes are **not rewritten**. Fresh
+  isolated sub-agent `general-purpose-1` (no expected verdict / score anchor / conclusion
+  anchor): final `R123-INDEPENDENT-REVIEW.md` **16,565 B / 105 lines**, SHA-256
+  `40edc181845f5d5086e7ee3dc71c6515861d2061c41be8d688301f45cb744408`, one write, mtime
+  13:57, original unchanged. `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific
+  result claimed: NO | Forward pass performed: NO`. Reviewer recomputed from the 13 raw byte
+  files with its own logic (no collector/verifier import, no round JSON as data source, round
+  audit read LAST), ran no verifier / git / network, modified no existing file; 0 credential
+  values, 0 scored verdict lines, 0 score anchors. **A–F 6 MATCH / 0 MISMATCH**; **12 named
+  overclaim categories CONFIRMED 0 / REFUTED 12**; defects **HIGH 0 / MEDIUM 1 / LOW 1**,
+  fabrication 0. **Both defects accepted append-only** in primary
+  `R123-POST-REVIEW-CORRECTION.md`: **W-1 [MEDIUM | fact error, NOT fabrication]** round
+  audit section 3 wrote the six Zenodo files as `152,578` bytes; byte-exact recount is
+  **152,628** (50 B delta). Main-session recount 10,603 + 131,225 + 4,061 + 2,615 + 2,267 +
+  1,857 = 152,628; four-group total **262,728** matches the heading, manifest and reviewer's
+  A-group recount. Impact scoped to one derived summary number — no propagation to raw bytes,
+  SHA, either verifier reading, machine gates, gate state, governing, A–F or the 12 rulings;
+  round audit and eighteenth checkpoint not rewritten. **W-2 [LOW | scope]** "zero local
+  paths" was not limited to the 13 raw frozen files; those 13 do have 0 hits (A/F unaffected),
+  but two same-directory guard outputs and the independent report contain local
+  absolute-path literals — corrected wording limits the claim and states those files are
+  local-only, not uploaded. Pre-existing V-1 confirmed correctly classified, not a new
+  defect. Independent report original **not uploaded** (contains local path literals); only
+  `evidence/R123-INDEPENDENT-REVIEW-SANITIZED.md`. Gate / evidence-layer recheck, **not** a
+  full manuscript review; no scored verdict line. All machine-gate readings, gate states,
+  governing (R95), `0 qualifying papers`, `no COMPLETE`, zero forward pass / zero scientific
+  result / zero state write-back, and the heartbeat schedule are unchanged.
 
 - **R123 gap-1 first-hand licence / code-path text acquisition (latest, eighteenth
   checkpoint).** Executed the standing step-1 item 1 (goal-owner authorized): R106 section 6
