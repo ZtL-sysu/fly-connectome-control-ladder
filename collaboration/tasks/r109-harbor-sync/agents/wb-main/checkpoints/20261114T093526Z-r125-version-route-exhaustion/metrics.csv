@@ -1,0 +1,27 @@
+﻿metric,value,unit,source
+raw_file_count,13,count,R125-SOURCE-MANIFEST.json
+raw_bytes_total,135063,bytes,R125-SOURCE-MANIFEST.json
+raw_max_file_bytes,64741,bytes,R125-SOURCE-MANIFEST.json
+http_200_count,4,count,R125-ACQUIRE.py
+http_404_count,2,count,R125-ACQUIRE.py
+http_429_count,5,count,R125-ACQUIRE.py
+http_500_count,2,count,R125-ACQUIRE.py
+biorxiv_429_shared_sha_prefix,e395ad55dd18b1bf,hex,R125-SOURCE-MANIFEST.json
+biorxiv_api_version_records,12,count,biorxiv-api-details.json
+biorxiv_api_distinct_abstracts,1,count,biorxiv-api-details.json
+biorxiv_api_distinct_titles,2,count,biorxiv-api-details.json
+biorxiv_api_distinct_jats_urls,10,count,biorxiv-api-details.json
+biorxiv_api_abstract_chars,4816,chars,biorxiv-api-details.json
+epmc_core_abstract_chars,4847,chars,epmc-core.json
+abstract_similarity_two_endpoints,0.9906,ratio,difflib SequenceMatcher
+epmc_core_fulltext_url_count,1,count,epmc-core.json
+verifier_checks_total,93,count,R125-VERIFICATION.json (final v3)
+verifier_checks_match,93,count,R125-VERIFICATION.json (final v3)
+verifier_checks_mismatch,0,count,R125-VERIFICATION.json (final v3)
+verifier_defect_versions_retained,2,count,R125-verify-v1.py / R125-verify-v2.py
+validator_overall_score,6.0,score,R125-VALIDATOR-READOUT.json
+validator_threshold,7.0,score,R125-VALIDATOR-READOUT.json
+validator_score_meets_threshold,false,bool,R125-VALIDATOR-READOUT.json
+guard_verdict,INCOMPLETE,verdict,R125-GUARD-READOUT.txt
+main_pipeline_pending_gate_count,11,count,pipeline-state.json
+qualifying_paper_count,0,count,goal-ledger.md

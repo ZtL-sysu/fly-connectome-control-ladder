@@ -2,12 +2,95 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (21 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 15:5x +0800 (R124 isolated independent recheck RECOVERED, 3 MEDIUM + 3 LOW defects accepted append-only; twenty-first checkpoint)
+- Status: **in_progress** (22 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 17:3x +0800 (R125 version-attribution first-hand route exhaustion; twenty-second checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R125 version-attribution first-hand route exhaustion (latest, twenty-second
+  checkpoint).** Read-only, NOT a gate pass / scientific result / forward pass.
+  Motivation: R124's own isolated-review correction **M3** narrowed the "v1 page
+  (positive)" abstract to a **WebFetch transcription with NO local byte freeze**; R124's
+  hand-off grouped "whether to fetch v1 bytes" with "classification / registration" and
+  passed all to a designated gate owner. R125 executes **only** the autonomous half
+  (first-hand byte acquisition) and leaves classification / registration / matrix
+  finalisation / pass-criterion freezing to the gate owner (G1 / G4 / G6 / G7).
+  **New route never tried before**: the bioRxiv official details API publishes a
+  per-version `jatsxml` URL for each of its 12 version records; R124 had tried only the
+  `.full` HTML v1 path (4 x 429). Also exhausted EBI Europe PMC full text, Internet
+  Archive Wayback, and a hypothesised `api.biorxiv.org` JATS endpoint.
+  **13 raw files / 135,063 B**, each frozen verbatim + SHA-256; largest 64,741 B.
+  5 x HTTP 429 / 17 B `error code: 1015` (official per-version JATS v1/v3/v12 variants,
+  all five sharing one digest); 2 x HTTP 500 / 150 B (EPMC `fullTextXML`); 1 x HTTP 200
+  / 6,367 B (**EPMC `resultType=core` = new third first-hand endpoint**); CDX `[]` +
+  Wayback 404; `api.biorxiv.org/jats` 404; details `/1` 200 byte-identical to R124's
+  un-suffixed response (independently reproduces "/1 is not a version selector");
+  connect page 200 byte-identical to R124 frozen copy (duplicate, not a new source).
+  **Substantive findings**: (1) EPMC core `abstractText` 4,847 chars, similarity
+  **0.9906** to the bioRxiv API abstract (4,816 chars), all 22 diff ops typographic /
+  whitespace / hyphen / comma / name-transliteration normalisation, no semantic
+  difference; carries `largely null result` / `disappears entirely` /
+  `statistically indistinguishable` / `size-matched` / `not the confirmation we set out
+  to find`; the four "v1 positive" numbers `0.686 / 0.846 / 0.930 / 0.603` occur
+  **zero** times. Per R124 M2/M3 the same abstract at several endpoints is NOT several
+  independent sources => **endpoint count +1, independent-source count unchanged**, no
+  version-attribution claim; R124 M3 narrowing is **strengthened, not overturned**.
+  (2) From R124 frozen API bytes: `version` is a **string** `'1'..'12'`; **12 records
+  share ONE abstract** and **2 distinct titles** (v1 differs from v2-v12); but
+  `jatsxml` has only **10 distinct URLs** - v3/v4 both `2026-06-23`, v8/v9 both
+  `2026-06-30` => even with 429 cleared and all JATS full texts retrievable, **two
+  version pairs remain indistinguishable at the official endpoint**. Endpoint-side
+  structural limit, not a rate-limit artefact. All 12 `license=cc_by` and EPMC
+  `license="cc by"` are **record-level metadata**, NOT per-asset licence text (R123
+  lesson), do NOT close gap 1. (3) EPMC 500 is **structural**: lite + core agree
+  `hasPDF=N / inEPMC=N / inPMC=N / isOpenAccess=N`, `fullTextUrlList` has exactly one
+  DOI-resolver entry => EPMC holds no full text, not a retry candidate. Index dates
+  are NOT the current abstract's version. (4) **Negative conclusion reported as
+  such**: the "v1 page no local byte freeze" gap remains OPEN; the "v1 positive vs
+  current negative" dichotomy still has no first-hand byte support; **R3 stays OPEN**;
+  no R106/R124 byte rewritten; acquisition completion is NOT gap closure.
+  **Time-point/scope limits**: all 429/500/404/empty-CDX results scoped strictly to the
+  R125 acquisition instant (~17:0x +0800) and exact URLs/hosts; 429 is Cloudflare 1015
+  host-side rate limiting, NOT permanent unavailability (R124 got 200 from
+  api.biorxiv.org / connect.biorxiv.org the same day and reported an unsaved 200 /
+  105,400 B v1 HTML response); CDX query used `statuscode:200`, `limit=5`, one URL form;
+  char counts / similarity bound to specific derived files with declared normalisation.
+  **Reproducibility**: `R125-verify.py` does not import the acquisition module and uses
+  no R125-produced JSON as a substantive data source - recomputes from 13 raw byte
+  files + R124's two frozen authority files: **93 checks / 93 MATCH / 0 MISMATCH**
+  (A27 B6 C10 D24 E14 F4 G2 H6). Group A is a same-machine byte-identity consistency
+  check, not independent cross-source verification; SHA literals from a separate
+  `shasum -a 256`, none invented. Two verifier defects retained and reproducible, both
+  script / expectation defects (NOT data inconsistency, NOT fabrication): **V-1** v1
+  `bytes` not JSON-serializable -> `TypeError`; **V-2** v2 expected `version` as ints
+  but API returns strings -> `91/92 MATCH, 1 MISMATCH (E-versions)`; v3 fixes both +
+  adds explicit field-type check -> 93/93. v1/v2 files and v2 VERIFICATION kept.
+  Three further self-caught corrections in this round's OWN unpublished drafts, all
+  logged: v2 reproduction overwrote final VERIFICATION (restored by v3 re-run);
+  `Path('.').parent` resolution in the metrics generator; "largest file 58,714 B"
+  corrected to **64,741 B** by byte-wise max computation. No frozen byte / historical
+  checkpoint changed. **Double gates (read-only)**: validator `NOT_QUALIFIED / 6.0 /
+  >=7.0 / score_meets_threshold=false`; guard `INCOMPLETE` (A2/A6); seven structural
+  authorities byte-identical before/after; mainline G0-G8/validation/handoff all
+  pending, `G0.inputs=[]`/`evidence=[]`. **Boundary**: zero forward / training /
+  labels / dataset / EPE-l2 / scientific metrics, zero gate promotion, zero
+  self-certification, zero stage change; no `ccf-paper-reviewer full`, no scored-verdict
+  line, no v4, no gate skipping, no <=32h/K=45 assumption, no 4090/L4/H20 claim;
+  D1 stays `BLOCKED_ON_CONFIRMATION`. **Fresh fully isolated independent recheck
+  launched (no expected verdict / score anchor / conclusion anchor); at this
+  checkpoint's write time NOT yet recovered and NO recheck conclusion claimed** -
+  that statement is TRUE at write time, these bytes are not rewritten, and the
+  recovered conclusion / any append-only corrections go to a NEW immutable checkpoint
+  per R117/R119-R124. Gate/evidence-layer recheck, NOT a full manuscript review.
+  Result: step-3 precondition (substantive new positive scientific evidence) unmet =>
+  no new manuscript copy / no 9-page compilation / no fresh full review. **0 papers
+  qualified, no COMPLETE**, governing unchanged R95 = 6.0 / Confidence 4.0,
+  `NOT_QUALIFIED` / `INCOMPLETE`, G0 pending, zero gate promotion / zero
+  self-certification / zero state change. Stop gates only (1) qualify >=7.0 (2) goal
+  owner stops. Checkpoint `completed` is work state, not scientific validation.
+
 
 - **R124 isolated independent recheck RECOVERED + append-only corrections (latest,
   twenty-first checkpoint).** Fresh isolated sub-agent `general-purpose-1`, **no expected
