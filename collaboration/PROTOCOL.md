@@ -75,3 +75,20 @@ Each sync:
 It does not declare experiments or papers accepted. A valid manifest and a
 green checkpoint script are evidence of bookkeeping, not of scientific
 validity.
+
+## Merge record (v1, integrator action, 2026-11-14 18:2x +0800)
+
+The default branch `main` was updated by the integrator with a `--no-ff` merge
+of `agent/r109-harbor-sync/wb-main`, accepting 24 immutable checkpoints and
+the R126 full-open research archive. This was an explicit owner instruction
+("把这个分支合并了吧"). Per §"single-writer discipline" the merge is an
+acceptance action by the designated integrator only; no agent self-merged.
+
+Important distinction: **this accepts the bookkeeping record, not the science.**
+It does not pass any gate, change any score, validate any experiment, or
+qualify the paper. Governing independent full review remains 6.0, validator
+`NOT_QUALIFIED`, guard `INCOMPLETE`, 0 qualifying papers, no COMPLETE.
+
+Active work continues on `agent/r109-harbor-sync/wb-main`. New checkpoints are
+published on that branch and merged into `main` by the integrator as a later
+acceptance action. No force push, no remote branch deletion, no Release.

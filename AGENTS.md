@@ -54,6 +54,10 @@ do not govern.
    relevant `TASK.md`, and the latest `HANDOFF.md`.
 2. Work on a unique branch `agent/<task_id>/<agent_id>`. Never `git add .`.
    Stage only explicit files; check the staged diff; keep a per-file manifest.
+   `main` is the default branch and was merged by the integrator on
+   2026-11-14 (24 checkpoints + R126 archive); see `PROTOCOL.md` "Merge
+   record". Publish new checkpoints on the agent branch; only the integrator
+   merges them into `main`.
 3. Do not treat a checkpoint or a manifest as scientific validation.
    `completed` describes work state only.
 4. Do not change a scientific threshold, split, seed set, or acceptance rule to
