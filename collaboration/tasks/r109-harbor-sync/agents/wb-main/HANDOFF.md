@@ -2,13 +2,52 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (12 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 08:5x +0800 (R120 heartbeat: read-only standing-instruction / on-disk-state reconciliation + consolidated decision register; isolated recheck launched, not recovered at checkpoint write time; awakened 2026-11-14 08:16)
+- Status: **in_progress** (13 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 09:0x +0800 (R120 heartbeat: isolated independent recheck recovered, all 7 defects accepted append-only; thirteenth checkpoint; awakened 2026-11-14 08:16)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
+- **R120 isolated recheck recovered + append-only corrections (latest,
+  thirteenth checkpoint).** The twelfth checkpoint truthfully claimed no
+  verdict while the fresh isolated sub-agent was running; its bytes are **not
+  rewritten**. Final independent report (primary project, **not uploaded** —
+  quotes 2 local paths): **23,074 B**, SHA-256
+  `c7c613c54bd08cad1b945c5affcdf371522430e63fff84d702ac86625cf3d9ea`, one
+  write, mtime 08:55:00, original unchanged. Verdict
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result
+  claimed: NO`, `Forward pass performed: NO`. A–H/J/L **MATCH**; **I/K
+  MISMATCH**; reviewer used **no** R120 JSON as a data source. **12 named
+  overclaim categories CONFIRMED = 0 (all REFUTED)**; **7 defects (1 HIGH /
+  3 MEDIUM / 3 LOW / 0 fabrication / 0 data inconsistency)**, all accepted
+  **append-only** in private `R120-POST-REVIEW-CORRECTION.md`. **W1 (HIGH,
+  substantive withdrawal)**: the literal "no newer file with a numeric
+  scored-verdict line anywhere" claim is refuted (reviewer 13,704 files →
+  647 literal / 109 inline numeric / 14 line-start numeric lines across 12
+  files, newer files quoting/copying existing scores), and R120's own field
+  was an **empty never-populated placeholder** with no verifier check ⇒ closed
+  by a **NEW first-hand recomputation, not a wording patch**:
+  `R120-I2-EVIDENCE.py/json` (13,706 files, 662/109/14, plus **39 files / 83
+  lines newer than r95**, all quotations/copies); narrowed claim "zero new
+  independent full reviews after r95, zero newly produced numeric verdict
+  lines" supported by `qualifying_files=[] / supported=true`. W2 "first /
+  never" narrowed to a scope observation (R111:26 is a documented prior
+  observation); W3 the four R107 restatements are different wording/numbering
+  versions (spliced quotation; line numbers 175/175/116/180 correct); W4 the
+  **whole** item ② must not be called satisfied — only the "create P0 state /
+  no P stages in guidance state" sub-clause exists as a draft scaffold,
+  "versioned contract handling of the guidance handoff" unmet (handoff
+  pending), and the reviewer confirmed
+  `SCAFFOLD_CREATED_DRAFT_NOT_ACTIVATED` is **accurate, neither overclaim nor
+  underclaim**; W5 "12" was a file count (exact 14 lines / 12 files); W6 3
+  byte-identical closure copies on disk, evidence set collected 2; W7 R115
+  added no new gate-owner decision. None changes any A–H/J byte-level value,
+  the non-scientific-result boundary, absence of G0 promotion or governing.
+  Sanitized `evidence/R120-INDEPENDENT-REVIEW-SANITIZED.md`; `metrics.csv`
+  holds real read-only measurements. **0 papers qualified, no COMPLETE,
+  governing still 6.0 / Confidence 4.0, `NOT_QUALIFIED` / `INCOMPLETE`, G0
+  pending.** A checkpoint `completed` is work state, not scientific validation.
 - **R120 standing-instruction / on-disk-state reconciliation (latest,
   twelfth checkpoint).** Lane change: no machine-gate fix, no Nth G0 text
   patch, no P3 forward pass, no v4 contract. First byte-anchored item-by-item
