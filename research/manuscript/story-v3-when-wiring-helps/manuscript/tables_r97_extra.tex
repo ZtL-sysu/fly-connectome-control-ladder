@@ -1,0 +1,38 @@
+% R97: two-coordinate taxonomy (P0-3), literature comparison (P0-5),
+% and the survival-count audit algorithm (writing surgery item 3).
+
+\begin{table}[t]\centering\caption{Two orthogonal coordinates of control design.
+Columns increase the number of matched \emph{global} invariants (rung order);
+rows vary whether the \emph{task-relevant path} $P$ is preserved. $L^*$
+is not on the rung ladder: path preservation is a different axis from
+statistical order. Accuracies are from the main matrix (Table~\ref{tab:main})
+and the task-aware companion run (Table~\ref{tab:taskaware}); they are not a
+single pooled family.}\label{tab:taxonomy}\footnotesize
+\resizebox{\linewidth}{!}{\begin{tabular}{lccccc}\toprule
+ & L0 & L1 & L2 & L3 & $L^*$ (path kept) \\ \midrule
+Global invariants matched & 0 & 1 & 2 & 3 & varies \\
+$|P\cap A|$ (mean) & 0.44 & 1.13 & 13.50 & 13.38 & 18 \\
+$\Delta_{\rm conv2}$ & 24.88 & 0.13 & 5.94 & 0.50 & -- \\
+Acc.\ (chance $=0.5$) & 0.4795 & 0.5039 & 0.4961 & 0.4986 & 0.8346 \\
+\bottomrule\end{tabular}}\end{table}
+
+\begin{table}[t]\centering\caption{Literature comparison. All entries describing
+other studies are \emph{we estimate / proxy} statements, not claims about
+their internal results; where a quantity is not reported in the accessible
+record we say so rather than infer it. Task-sensitivity gate and path-survival
+proxies are our own protocol's terms applied as an external reading aid.}
+\label{tab:literature}\footnotesize
+\resizebox{\linewidth}{!}{\begin{tabular}{llll}\toprule
+Work & Reported claim & Null family (as described) & Path-survival proxy$^\dagger$ \\ \midrule
+\cite{structurealone2026} & gains at matched wiring cost & wiring-cost-matched ensembles & we estimate: not reported \\
+\cite{toposens2026} & advantage vanishes early & degree-preserving, shared init & we estimate: low (degree swap) \\
+\cite{flygm2026} & motor-domain positive & not comparable to ours & we estimate: not reported \\
+\cite{flyhack2026} & ensemble-level lesion audit & lesion, not null rewiring & we estimate: not applicable \\
+This work & control protocol is the confound & nested L0--L3 $+$ $L^*$ & measured: 0.44--18 of 18 \\
+\bottomrule\end{tabular}}
+\\[2pt]\raggedright\scriptsize
+$^\dagger$Our proxy, computed by applying our survival-count definition to the
+control construction as described, not a measured quantity of those studies.
+No entry asserts that a prior conclusion is wrong; different null families
+answer different questions.
+\end{table}

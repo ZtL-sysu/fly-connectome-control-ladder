@@ -1,0 +1,25 @@
+% Tables derived from the recorded measurements.
+
+\begin{table}[t]\centering
+\caption{Real MaleCNS v1.0 visual subgraph, six frozen seeds. Dense: 768 nodes / 48,723 edges / mean in-degree 63.4. Sparse: the same graph with the four highest-weight in-edges per node retained, 3,072 edges / mean in-degree 4.0.}\label{tab:real}\small
+\begin{tabular}{lcc}\toprule Condition & Dense & Sparse \\ \midrule
+Real graph & 0.5186 & 0.6423 \\
+$A=0$ & 0.5264 & 0.5283 \\
+Degree-preserving & 0.5088 & 0.6162 \\
+Task-aware & 0.5156 & 0.5850 \\
+Motif removed & 0.5306 & 0.5160 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[t]\centering
+\caption{Powered held-out study (20 graphs). Features are significant after Benjamini--Hochberg correction over the 12-feature family. LOGO = leave-one-graph-out.}\label{tab:heldout}\small
+\begin{tabular}{lc}\toprule Quantity & Value \\ \midrule
+Graphs (intact / motif-degraded) & 20 (10 / 10) \\
+Delta sign counts (positive / non-positive) & 12 / 8 \\
+Features significant after BH ($q<0.05$) & 8 of 12 \\
+LOGO magnitude MAE & 0.1046 \\
+Constant-mean baseline MAE & 0.1635 \\
+LOGO sign agreement & 0.60 \\
+Majority-class sign baseline & 0.60 \\
+\bottomrule\end{tabular}
+\end{table}

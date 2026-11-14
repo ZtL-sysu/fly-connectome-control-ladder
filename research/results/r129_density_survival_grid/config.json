@@ -1,0 +1,26 @@
+{
+  "experiment_id": "r129_density_survival_grid",
+  "date_preregistered": "2026-11-14",
+  "preregistration_correction": "v1 of this config wrongly used graph_seed=11/sinks=2 (16 motif edges, not the paper's graph). Corrected BEFORE any grid training to the exact main-campaign config: graph_seed=123, sinks_per_relay=4 (3 motifs x 6 edges = 18 edges, 123 total edges, matching the paper). Training hyperparameters also aligned to the main campaign: lr=0.006, batch=128.",
+  "status": "PRE-REGISTERED before any grid training",
+  "question": "On the controlled 96-node graph family, is the topology advantage gated by BOTH task-relevant path survival AND background in-degree density (two-factor interaction)?",
+  "base_code": "papers/paper-null-ladder/f-research-v1-run-20261107-203506-null-ladder/scripts/p3_p4_ladder.py (frozen import; unmodified)",
+  "design": {
+    "graph": "96 nodes, module sizes [25,17,12,11,11,7,7,6] (MaleCNS annotation prior); motif = two-hop convergence motifs injected by the frozen generator with seed=123, sinks_per_relay=4 (3 motifs accepted, 18 edges, 123 total edges) -- the exact main-campaign graph",
+    "density_levels": {"scale_s": [1, 8, 32, 64], "construction": "background-only graph sampled with default_rng(seed=1000+s) at p_in=0.06*s, p_out=0.004*s; motif edges then injected; shortcut edges a,b->sinks removed"},
+    "survival_levels": {"k_motif_edges": [18, 9, 0], "construction": "delete (18-k) uniformly chosen motif edges with rng seed 77"},
+    "conditions": ["real graph per (s,k)", "A=0 no-graph control once per seed (graph-independent)"],
+    "seeds_frozen": [11, 17, 23, 31, 41, 53],
+    "data": "make_dataset(512 train seed 1, 512 test seed 999, d=16, noise 0.06) identical protocol to main campaign",
+    "training": "GNN width 64, 2 rounds, epochs 120, Adam lr 0.006, batch 128, cpu (Apple M1), paired seeds -- matching the main campaign protocol",
+    "primary_statistic": "effect(s,k) = mean_seed [acc_real(s,k) - acc_A0(seed)]; 5000-resample bootstrap CI on seed-level deltas"
+  },
+  "preregistered_predictions": {
+    "P1": "effect(s=1, k=18) > 0 (replication of the controlled-graph effect)",
+    "P2": "effect(s, k=18) decreases monotonically in s (density gate: even a fully surviving path is diluted at high in-degree)",
+    "P3": "effect(s=1, k=9) < effect(s=1, k=18), while at the highest density both k=18 and k=9 sit at chance (two-factor interaction)"
+  },
+  "outcomes_admissible": ["P1 and P2 confirmed (two-factor mechanism on controlled family)", "any other pattern reported as-is"],
+  "negative_results": "all cells reported, no run selection",
+  "device": "Apple M1 CPU, PyTorch 2.13.0 (local; no GPU available)"
+}

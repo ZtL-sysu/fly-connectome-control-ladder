@@ -1,0 +1,171 @@
+{
+ "generated": "2026-11-14",
+ "scope": "r129-story-v3 additive files only",
+ "files": [
+  {
+   "path": "collaboration/tasks/r129-story-v3/TASK.md",
+   "bytes": 2998,
+   "sha256": "ffeae04faae7b8ba528eba7696acaa0e3499642862552ef6b733510272cbdf52"
+  },
+  {
+   "path": "collaboration/tasks/r129-story-v3/agents/claude-fable/HANDOFF.md",
+   "bytes": 3497,
+   "sha256": "34409b35f140127a0ef1f4831e8ecb35adef1fef551e494e63f820e253f333a7"
+  },
+  {
+   "path": "collaboration/tasks/r129-story-v3/agents/claude-fable/LOG.md",
+   "bytes": 1722,
+   "sha256": "1e8d095db4eb163c1f1271ac00f8cd2e36b7345cd5fa099c1d936688bb5a624a"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/cvpr.sty",
+   "bytes": 17969,
+   "sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig1_framework.png",
+   "bytes": 1748957,
+   "sha256": "b4b05d6de5c7cd018af4097eb6b09af2389f46cebb4fe879140d975373f655e4"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig2_main_results.pdf",
+   "bytes": 22255,
+   "sha256": "506aeec47e6fa9d0092e4dde19cb901d0240701e7091b955ff85d5f502daebaa"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig3_ladder_analysis.pdf",
+   "bytes": 29140,
+   "sha256": "87012291db2570d6e622cb7689963ad2c82f90e4af295b55b6351cc2d78fd68e"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig4_dose_response.pdf",
+   "bytes": 20913,
+   "sha256": "0434fe5a617e3183eaae6ccfc9140b673ae9adcc3aaa917eaf24b2f589f01887"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig5_survival_accuracy.pdf",
+   "bytes": 23196,
+   "sha256": "8a2357309446d7e6aaf506dcbaa9591a274cc16cbd265ce00223de84e8579b01"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/figures/fig6_density_survival_grid.pdf",
+   "bytes": 18274,
+   "sha256": "e849a307e392022c5e51a18740d055e2ebb488f6b57c2f84b0a1fdd136525cd4"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/ieeenat_fullname.bst",
+   "bytes": 26900,
+   "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/main.bib",
+   "bytes": 5109,
+   "sha256": "c08810a21010ca46b6e3ebe4bf8b8b655beb0d9c143f97790581a258d360fb38"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/main.pdf",
+   "bytes": 2143954,
+   "sha256": "b24af532f05c36ee5ca0d4e13989817107876761f7e9c1d985a578fb6ccd6ddc"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/main.tex",
+   "bytes": 45855,
+   "sha256": "032ff185d1b971c53d9475783050f102c1e7e47c88c1d162c2c730d473cc7763"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/paper.pdf",
+   "bytes": 2143954,
+   "sha256": "b24af532f05c36ee5ca0d4e13989817107876761f7e9c1d985a578fb6ccd6ddc"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/paper.tex",
+   "bytes": 45855,
+   "sha256": "032ff185d1b971c53d9475783050f102c1e7e47c88c1d162c2c730d473cc7763"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/preamble.tex",
+   "bytes": 1472,
+   "sha256": "fd3c020fc3b3d6c9f29d1f95e5e46ca551b8db14281ed41ef27a951ffe01fee2"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables.tex",
+   "bytes": 1743,
+   "sha256": "fa3208ef4e3a82c24f668a71962998667a13d1543d4ac193625a03cdd62d4799"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_boundary.tex",
+   "bytes": 1676,
+   "sha256": "bfd6308b5b91adf1c534f5dd53d230044633496909f265cb2f304898fa9866d2"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_grid.tex",
+   "bytes": 884,
+   "sha256": "4c35b6e7708a5e3cb7013f3b9575ccb66cf73e5918b46a2159bfd58b0182264b"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_heldout.tex",
+   "bytes": 1212,
+   "sha256": "97fb9fafbf0fd57d08e75fec6e2e22e2533fd9a38ab74c046006c7767cbd71b2"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_r97.tex",
+   "bytes": 3027,
+   "sha256": "b82379359533b17f56767a209f94e0a3cf284fd73a5552f5c6bfc69e568b3052"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_r97_extra.tex",
+   "bytes": 2479,
+   "sha256": "fb59088816d649b18d8d00eac24acf49a1dca1e6153c6977d4fca754354e941d"
+  },
+  {
+   "path": "research/manuscript/story-v3-when-wiring-helps/manuscript/tables_taskaware.tex",
+   "bytes": 1100,
+   "sha256": "5ae9f205c24c7c49eb522c5c61b413cfd8bd8d50e0ef3ef6c429e157a580eed8"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/PRE-REGISTRATION.sha256",
+   "bytes": 156,
+   "sha256": "4f8a0660122178b651a6dec00d50085fed10f1d4393b54dde0cf28fa9c45bcd0"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/RUN1-DEFECT-AND-FIX.md",
+   "bytes": 1213,
+   "sha256": "9e6ab4cd0b6bab902ee5b317cf6d40de0e506a04b410ee0d70c8c826df6ac691"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/config.json",
+   "bytes": 2693,
+   "sha256": "f74b1637775b6c55490c6b5077c3c1eba37f917b9d99a9253206be29527faaf4"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/make_grid_assets.py",
+   "bytes": 2705,
+   "sha256": "022fd6b99a1f71bf26c50ee05d99cad2620f7c780fb95ca0109d279b3b697b35"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/metrics.json",
+   "bytes": 11645,
+   "sha256": "b0616cf4dd599055fe82c47c853b75ad2cf79bacb9f7f45d3ecb008780e026a4"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/metrics_run1_defective.json",
+   "bytes": 11636,
+   "sha256": "cfd3e6733b60d811b97220906cd9907acc0a86f8d61c6780970006094fd86748"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/run_grid.py",
+   "bytes": 5713,
+   "sha256": "45a2ec5b92b296575ff40f273c5d3f35581cc8fe7a758248cf7c082b29508ee5"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/summary.txt",
+   "bytes": 974,
+   "sha256": "e428995713b1476923a7bf674f491112ad0c1b96288ee1a478ba80efcf2bfff1"
+  },
+  {
+   "path": "research/results/r129_density_survival_grid/summary_run1_defective.txt",
+   "bytes": 974,
+   "sha256": "d341e6fd2adf44ba315752904fb658ad35d245adb20e0346068367be446d311f"
+  }
+ ]
+}

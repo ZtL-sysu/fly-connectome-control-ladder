@@ -1,0 +1,18 @@
+r129 density x survival grid
+frozen code SHA: 8a1f437f1b9f2753710b96545e2b97e76629df6384d1ad892076bdd552e182b8
+leakage probe: {'linear_probe_full_X_acc': 0.48046875, 'linear_probe_pooled_X_acc': 0.49609375}
+s1_k18: acc=0.7559 effect=+0.2396 CI95=[+0.2207,+0.2585]
+s1_k9: acc=0.4684 effect=-0.0479 CI95=[-0.0573,-0.0374]
+s1_k0: acc=0.4977 effect=-0.0186 CI95=[-0.0342,-0.0065]
+s8_k18: acc=0.5111 effect=-0.0052 CI95=[-0.0215,+0.0114]
+s8_k9: acc=0.5007 effect=-0.0156 CI95=[-0.0254,-0.0062]
+s8_k0: acc=0.4912 effect=-0.0251 CI95=[-0.0322,-0.0186]
+s32_k18: acc=0.5068 effect=-0.0094 CI95=[-0.0260,+0.0052]
+s32_k9: acc=0.5120 effect=-0.0042 CI95=[-0.0130,+0.0049]
+s32_k0: acc=0.4948 effect=-0.0215 CI95=[-0.0404,-0.0055]
+s64_k18: acc=0.4915 effect=-0.0247 CI95=[-0.0319,-0.0186]
+s64_k9: acc=0.4837 effect=-0.0326 CI95=[-0.0433,-0.0221]
+s64_k0: acc=0.4873 effect=-0.0290 CI95=[-0.0371,-0.0205]
+P1 (s=1,k=18 effect>0): True
+P2 (monotone density gate): True
+P3 (interaction): True

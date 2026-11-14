@@ -1,0 +1,82 @@
+PRE-REGISTERED before any grid training; frozen code SHA: 8a1f437f1b9f2753710b96545e2b97e76629df6384d1ad892076bdd552e182b8
+config correction v2: graph_seed=123, sinks_per_relay=4 (18 motif edges, 123 total)
+leakage probe acc: {'linear_probe_full_X_acc': 0.48046875, 'linear_probe_pooled_X_acc': 0.49609375}
+A=0 seed 11: 0.5234
+A=0 seed 17: 0.5215
+A=0 seed 23: 0.5234
+A=0 seed 31: 0.5020
+A=0 seed 41: 0.5156
+A=0 seed 53: 0.5117
+s=1 k=18 seed=11: acc=0.7539 effect=+0.2305
+s=1 k=18 seed=17: acc=0.7617 effect=+0.2402
+s=1 k=18 seed=23: acc=0.7988 effect=+0.2754
+s=1 k=18 seed=31: acc=0.7324 effect=+0.2305
+s=1 k=18 seed=41: acc=0.7754 effect=+0.2598
+s=1 k=18 seed=53: acc=0.7129 effect=+0.2012
+s=1 k=9 seed=11: acc=0.4688 effect=-0.0547
+s=1 k=9 seed=17: acc=0.4805 effect=-0.0410
+s=1 k=9 seed=23: acc=0.4824 effect=-0.0410
+s=1 k=9 seed=31: acc=0.4727 effect=-0.0293
+s=1 k=9 seed=41: acc=0.4590 effect=-0.0566
+s=1 k=9 seed=53: acc=0.4688 effect=-0.0430
+s=1 k=0 seed=11: acc=0.5215 effect=-0.0020
+s=1 k=0 seed=17: acc=0.5000 effect=-0.0215
+s=1 k=0 seed=23: acc=0.5195 effect=-0.0039
+s=1 k=0 seed=31: acc=0.4961 effect=-0.0059
+s=1 k=0 seed=41: acc=0.4980 effect=-0.0176
+s=1 k=0 seed=53: acc=0.5430 effect=+0.0312
+s=8 k=18 seed=11: acc=0.4844 effect=-0.0391
+s=8 k=18 seed=17: acc=0.5156 effect=-0.0059
+s=8 k=18 seed=23: acc=0.5117 effect=-0.0117
+s=8 k=18 seed=31: acc=0.5020 effect=+0.0000
+s=8 k=18 seed=41: acc=0.5430 effect=+0.0273
+s=8 k=18 seed=53: acc=0.5098 effect=-0.0020
+s=8 k=9 seed=11: acc=0.4746 effect=-0.0488
+s=8 k=9 seed=17: acc=0.4980 effect=-0.0234
+s=8 k=9 seed=23: acc=0.4980 effect=-0.0254
+s=8 k=9 seed=31: acc=0.4824 effect=-0.0195
+s=8 k=9 seed=41: acc=0.5078 effect=-0.0078
+s=8 k=9 seed=53: acc=0.5410 effect=+0.0293
+s=8 k=0 seed=11: acc=0.5293 effect=+0.0059
+s=8 k=0 seed=17: acc=0.4883 effect=-0.0332
+s=8 k=0 seed=23: acc=0.4824 effect=-0.0410
+s=8 k=0 seed=31: acc=0.4961 effect=-0.0059
+s=8 k=0 seed=41: acc=0.4707 effect=-0.0449
+s=8 k=0 seed=53: acc=0.5020 effect=-0.0098
+s=32 k=18 seed=11: acc=0.5000 effect=-0.0234
+s=32 k=18 seed=17: acc=0.5254 effect=+0.0039
+s=32 k=18 seed=23: acc=0.4805 effect=-0.0430
+s=32 k=18 seed=31: acc=0.5137 effect=+0.0117
+s=32 k=18 seed=41: acc=0.5254 effect=+0.0098
+s=32 k=18 seed=53: acc=0.4961 effect=-0.0156
+s=32 k=9 seed=11: acc=0.5000 effect=-0.0234
+s=32 k=9 seed=17: acc=0.5254 effect=+0.0039
+s=32 k=9 seed=23: acc=0.4805 effect=-0.0430
+s=32 k=9 seed=31: acc=0.5137 effect=+0.0117
+s=32 k=9 seed=41: acc=0.5254 effect=+0.0098
+s=32 k=9 seed=53: acc=0.4961 effect=-0.0156
+s=32 k=0 seed=11: acc=0.5000 effect=-0.0234
+s=32 k=0 seed=17: acc=0.5254 effect=+0.0039
+s=32 k=0 seed=23: acc=0.4805 effect=-0.0430
+s=32 k=0 seed=31: acc=0.5137 effect=+0.0117
+s=32 k=0 seed=41: acc=0.5254 effect=+0.0098
+s=32 k=0 seed=53: acc=0.4961 effect=-0.0156
+s=64 k=18 seed=11: acc=0.5000 effect=-0.0234
+s=64 k=18 seed=17: acc=0.4805 effect=-0.0410
+s=64 k=18 seed=23: acc=0.5000 effect=-0.0234
+s=64 k=18 seed=31: acc=0.4746 effect=-0.0273
+s=64 k=18 seed=41: acc=0.5020 effect=-0.0137
+s=64 k=18 seed=53: acc=0.4922 effect=-0.0195
+s=64 k=9 seed=11: acc=0.5000 effect=-0.0234
+s=64 k=9 seed=17: acc=0.4805 effect=-0.0410
+s=64 k=9 seed=23: acc=0.5000 effect=-0.0234
+s=64 k=9 seed=31: acc=0.4746 effect=-0.0273
+s=64 k=9 seed=41: acc=0.5020 effect=-0.0137
+s=64 k=9 seed=53: acc=0.4922 effect=-0.0195
+s=64 k=0 seed=11: acc=0.5000 effect=-0.0234
+s=64 k=0 seed=17: acc=0.4805 effect=-0.0410
+s=64 k=0 seed=23: acc=0.5000 effect=-0.0234
+s=64 k=0 seed=31: acc=0.4746 effect=-0.0273
+s=64 k=0 seed=41: acc=0.5020 effect=-0.0137
+s=64 k=0 seed=53: acc=0.4922 effect=-0.0195
+END_OF_RUN_OK

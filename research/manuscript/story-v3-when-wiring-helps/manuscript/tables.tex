@@ -1,0 +1,32 @@
+% Tables derived from the recorded measurements.
+
+\begin{table}[t]\centering\caption{Main matrix, 10 frozen seeds. 
+All real-minus-condition differences have 95\% bootstrap CIs excluding zero and BH $q=0.0002$. Chance $=0.5$.}\label{tab:main}\small
+\resizebox{\linewidth}{!}{\begin{tabular}{lccc}\toprule Condition & Mean acc. & Seed var. & $\Delta$ (95\% CI) \\ \midrule
+Real graph & 0.8152 & 2.10e-04 & -- \\
+$A=0$ & 0.4879 & 6.61e-04 & $0.3273$ [0.3043,0.3463] \\
+L0 ER & 0.4795 & 3.50e-04 & $0.3357$ [0.3191,0.3525] \\
+L1 +degree & 0.5039 & 3.55e-04 & $0.3113$ [0.2947,0.3275] \\
+L2 +module & 0.4961 & 3.13e-04 & $0.3191$ [0.3021,0.3352] \\
+L3 +triad & 0.4986 & 7.48e-05 & $0.3166$ [0.3027,0.3293] \\
+L4 indep. (control) & 0.5016 & 2.63e-04 & $0.3137$ [0.2984,0.3293] \\
+Motif only (upper bnd) & 0.8348 & 2.35e-04 & $-0.0195$ [-0.0307,-0.0086] \\
+Shuffled node$\to$input & 0.5133 & 1.54e-04 & $0.3020$ [0.2865,0.3162] \\
+\bottomrule\end{tabular}}\end{table}
+
+\begin{table}[t]\centering\caption{Null-ladder invariants (maximum violation over instances). 
+L4 violates every invariant and is therefore a matched control, not a rung.}\label{tab:invariants}\small
+\begin{tabular}{lrrrr}\toprule Rung & Edges & Degree & Blocks & Triad L1 \\ \midrule
+L0 & 0 & 95 & 53 & 484 \\
+L1 & 0 & 0 & 47 & 756 \\
+L2 & 0 & 0 & 0 & 1826 \\
+L3 & 0 & 0 & 0 & 20 \\
+L4 & 28 & 93 & 39 & 4836 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[t]\centering\caption{Robustness: $\Delta$ = acc(real) $-$ acc(L1) 
+under two input-noise levels and two message-passing depths.}\label{tab:robust}\small
+\begin{tabular}{lcc}\toprule Noise / depth & 2 rounds & 3 rounds \\ \midrule
+0.05 & 0.3652 & 0.3561 \\
+0.2 & 0.1406 & 0.2064 \\
+\bottomrule\end{tabular}\end{table}
