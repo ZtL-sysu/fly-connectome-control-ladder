@@ -2,12 +2,72 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (20 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 15:2x +0800 (R124 R106 section 6 R3 / R5 first-hand text acquisition; twentieth checkpoint; fresh isolated recheck launched, not recovered)
+- Status: **in_progress** (21 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 15:5x +0800 (R124 isolated independent recheck RECOVERED, 3 MEDIUM + 3 LOW defects accepted append-only; twenty-first checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R124 isolated independent recheck RECOVERED + append-only corrections (latest,
+  twenty-first checkpoint).** Fresh isolated sub-agent `general-purpose-1`, **no expected
+  verdict / score anchor / conclusion anchor**: final `R124-INDEPENDENT-REVIEW.md`
+  **28,602 B / SHA-256 `76abf752a8ea1fb57804400d05c6ef8baff168a4cb07455fb03cf5c2584a5293`**
+  (mtime 15:47, one write, no intermediate state, original unchanged).
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result claimed: NO |
+  Forward pass performed: NO`. Reviewer used ONLY the 13 raw byte files with its own logic
+  (no collector/verifier import, no round JSON as substantive data source, round audit read
+  LAST), ran no verifier / git / network, modified no existing file; 0 credential values /
+  0 scored verdict lines / 0 emails. **66 checks / 66 MATCH / 0 MISMATCH** (A7 B12 C12 D5
+  E6 F3 G7 H8 I6); all first-hand numbers independently reproduced by byte summation.
+  **12 named overclaim categories CONFIRMED 0 / REFUTED 12**; defects **HIGH 0 /
+  MEDIUM 3 / LOW 3**, 0 fabrication / 0 data inconsistency / 0 fact error. **All six
+  defects ACCEPTED append-only** in NEW primary `R124-POST-REVIEW-CORRECTION.md` (9,718 B,
+  SHA prefix `1405ed027e3151902ccd`): **M1 [MED]** `:29` zero-local-path claim lacked an
+  explicit file set (group I scoped to 13 raw files, 0 hits; this round's guard-readout copy
+  has 13 local-path literals, local-only and NOT uploaded) => narrowed to a file-set
+  declaration, not a factual misstatement. **M2 [MED | substantive narrowing]** ":55 three
+  INDEPENDENT first-hand byte sources including the mirror body" conflicted with the audit's
+  own 'mirror always second-hand'; all three are renderings of the SAME current abstract =>
+  corrected to ONE current abstract at **2 first-hand endpoints** (bioRxiv details API,
+  Crossref work API) **+ 1 second-hand mirror endpoint**, mirror cross-corroboration only,
+  NOT 3 independent sources. **M3 [MED | substantive narrowing]** "12 versions" + "v1
+  positive vs v12 scope" was not fully consistent with the round's own negative conclusion;
+  v1 positivity came only from an un-saved WebFetch transcription (`0.686` etc. total 0 in
+  raw bytes), and 'v12 scope' attributed one abstract backfilled into all 12 records to a
+  single version => corrected to **12 version RECORDS sharing ONE abstract** (not 12
+  distinguishable abstracts), **v1 page abstract = WebFetch transcription with NO local
+  byte freeze, NOT a first-hand conclusion**, and **'current abstract scope' with no
+  version attribution** (mirror `datePublished` only a time-point corroboration); R3's
+  negative conclusion (v3 not the turning version, no attribution for the middle ten) is
+  unchanged and now more explicit; no R106 byte rewritten. **L1 [LOW]** `:16` "19 lines /
+  19 files" had no counting scope; strict line-start numeric Overall = **15 lines /
+  13 files** (incl. provenance/isolated byte-identical copies), **excluding copies =
+  12 lines / 10 files**; '19' was the file count WITHOUT the numeric constraint
+  (same class as R121 J-1). Core `new_governing_candidates=0` unchanged. **L2 [LOW]** `:27`
+  "first-hand freeze (13 files)" included 2 second-hand mirror files => narrowed to "13 raw
+  byte files, 2 second-hand mirror endpoints for cross-corroboration only"; 323,740 B / 13
+  unchanged. **L3 [LOW]** `:90` "/tmp report not in project tree" is true for the original
+  `guard check -o`; a read-only `R124-GUARD-READOUT.txt` (4,871 B) copy was later cp'd into
+  the round dir as a reading trace, identical and not uploaded. **Clarification**: the
+  reviewer's 'concurrent write' observation (`R124-VALIDATOR-READOUT.json` at 15:26:29
+  after audit 15:25:58) was produced by the main session itself 31 s later, not an
+  external session; raw/ mtimes stable, reviewer stated conclusion unaffected. **Reviewer
+  scope limits accepted** (HTTP statuses declarative; group A same-host identity; reviewer
+  did not run verifier so 145/145 checked for consistency only; v1 HTML 105,400 B first
+  probe unverifiable; concurrency guard / ledgers / pipeline-state read independently).
+  Pre-existing 7 v1 script/expectation defects independently confirmed correctly
+  classified, both versions retained. **All six are wording / scope / attribution
+  narrowings**: none changes 13 raw bytes + SHA, SOURCE-MANIFEST, v2 **145/145 MATCH / 0
+  MISMATCH**, 66/66, 12 categories REFUTED 12, either gate reading, gate state,
+  governing, 0 qualifying papers, R106 section 6 convergence, or heartbeat schedule.
+  Independent report original **NOT uploaded** (R117 precedent: local absolute-path
+  literals + scan-pattern literals), only `evidence/R124-INDEPENDENT-REVIEW-SANITIZED.md`.
+  **Twentieth checkpoint** truthfully claimed at its write time 'recheck launched, not
+  recovered, no verdict claimed'; its bytes are NOT rewritten. Gate / evidence-layer
+  recheck, **NOT** `ccf-paper-reviewer full`: no scored verdict line, no numeric paper
+  score, no governing change. A checkpoint `completed` is work state, not scientific
+  validation.
 
 - **R124 heartbeat: R106 section 6 R3 / R5 first-hand text acquisition (latest,
   twentieth checkpoint).** Concurrency guard NOT triggered (primary ledger mtime
