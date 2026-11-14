@@ -2,14 +2,50 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (11 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 07:0x +0800 (R119 heartbeat: read-only review-launch protocol chain audit; isolated recheck recovered, all 8 defects accepted append-only; awakened 2026-11-14 06:28)
+- Status: **in_progress** (12 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 08:5x +0800 (R120 heartbeat: read-only standing-instruction / on-disk-state reconciliation + consolidated decision register; isolated recheck launched, not recovered at checkpoint write time; awakened 2026-11-14 08:16)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
 
-- **R119 isolated recheck recovered + append-only corrections (latest,
+- **R120 standing-instruction / on-disk-state reconciliation (latest,
+  twelfth checkpoint).** Lane change: no machine-gate fix, no Nth G0 text
+  patch, no P3 forward pass, no v4 contract. First byte-anchored item-by-item
+  reconciliation of the standing heartbeat step-1 list against disk, plus a
+  single deduplicated **10-group (G1–G10) external-decision register** with
+  exact `file:line` anchors and dependency order; minimal unblocking set
+  **G1 + G4 + G10**. Central finding (narrowly stated): standing step-1 item
+  ② ("U6/W2 versioned contract → NEW f-research-v1 P0 state, no P stages in
+  guidance state") **was already executed at R108 as a DRAFT scaffold** —
+  5,190 B / `c246468e50712522`, 26 P0–P21 stages all pending, empty history,
+  contract `DRAFT, not activated` / `PENDING_DESIGNATED_GATE_OWNER_AND_HANDOFF`
+  — and main-line guidance state has zero P-stage IDs. Status
+  `SCAFFOLD_CREATED_DRAFT_NOT_ACTIVATED`, **not** a pass/activation/evidence.
+  R111 line 26 already observed the prompt/ledger drift, so this is
+  quantification + consolidation, **not** a first-ever discovery. Three
+  distinct state namespaces with distinct hashes (main-line 12 stages; R108
+  draft 26 all pending; historical v2 `v2-R51` 26 = 13 passed + 13 pending,
+  read by validator D2 / guard A2) ⇒ consistent with R110 C5, not new.
+  Live double gate: validator `NOT_QUALIFIED / 6.0 / >=7.0` (D1,D4 pass;
+  D2,D3,D5 fail), guard `INCOMPLETE` (A2,A6 fail; S1–S7 all 7 pending; 0
+  actions); readouts byte-anchored in the private run root, not `/tmp`.
+  Reproducibility: 31 sources, independent verifier (no collector import, no
+  R120 JSON read) **75 checks / 75 MATCH / 0 MISMATCH**, 31/31 isolated
+  byte-identical copies. **v1 collector defect preserved verbatim**: project
+  root one level too high → empty project-root reads, plus three needle
+  mismatches; script/search-scope defects, not data inconsistencies; fixed in
+  v2, both readings retained. Content safety: strict secret-value patterns 0
+  hits, staged public files 0 local-absolute-path hits, 0 real numeric
+  scored-verdict lines, no >50 MiB / dataset / weight / binary / third-party
+  source / unpublished manuscript. Fresh isolated sub-agent launched with no
+  expected conclusion and no score anchors; **at checkpoint write time NOT
+  recovered ⇒ no verdict claimed**; recovered conclusion goes into a new
+  immutable checkpoint. Step-3 precondition unmet ⇒ no manuscript copy, no
+  compile, no full review. **0 papers qualified, no COMPLETE, governing still
+  6.0, `NOT_QUALIFIED` / `INCOMPLETE`.** A checkpoint `completed` is work
+  state, not scientific validation.
+- **R119 isolated recheck recovered + append-only corrections (eleventh,
   eleventh checkpoint).** The tenth checkpoint was written while the fresh
   isolated sub-agent was still running and truthfully claimed no verdict; its
   bytes are **not rewritten**. Final independent report (primary project,
