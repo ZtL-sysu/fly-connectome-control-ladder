@@ -2,12 +2,40 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (13 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 09:0x +0800 (R120 heartbeat: isolated independent recheck recovered, all 7 defects accepted append-only; thirteenth checkpoint; awakened 2026-11-14 08:16)
+- Status: **in_progress** (14 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 10:3x +0800 (R121 heartbeat: read-only governing-review score-change-condition closure audit; fourteenth checkpoint; isolated independent recheck launched, NOT yet recovered)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R121 read-only success-criterion closure audit (latest, fourteenth
+  checkpoint).** Lane change: instead of an eighth process-layer dossier, R121
+  reconciles the **governing R95 independent full review's own score-change
+  taxonomy** (§8/§11/§13/§15, 18 byte-exact needles all matched) against the
+  seven R114–R120 rounds, the three "raise score" conditions, the two machine
+  gates, and the ordered gate chain. All three raise conditions are
+  `satisfied = False` from source bytes: (a) 6 real MaleCNS
+  `hypothesis_supported = False` (4 synthetic controlled graphs are `True`,
+  the surrogate M1 excludes); (b) version-locked manuscript 40,175 B / md5
+  `e4bfad51…158c6` states at line 637 that the flyvis stack was not rerun,
+  0 rerun metric files; (c) real visual task MLP baseline 0.97222 dominates,
+  real-minus-null delta −0.000463 with CI95 including 0. 7/7 prior rounds
+  declare `READONLY…NOT_GATE_PASS_NOT_SCIENTIFIC_RESULT`, 0 new positive
+  evidence, 0 gate passes, 0 numeric verdict lines. **Negative closure
+  finding**: by the governing review's own §13 "No quick change" rule, this
+  class of work **cannot** raise the evidence-capped Overall from 6.0 to
+  >= 7.0 — a criterion-level impossibility, not slow progress. Validator
+  `NOT_QUALIFIED / 6.0 / >=7.0`, guard `INCOMPLETE` (A2/A6, 7 steps pending),
+  G0–G8/validation/handoff all `pending` with empty inputs/evidence, zero new
+  governing full reviews. Independent verifier: **74/74 MATCH, 0 MISMATCH**;
+  21 sources + 21 byte-identical isolated copies; six v1 script defects
+  documented and both readings retained. EXEC LOCK, zero gate promotion, zero
+  state write-back. **Fresh isolated independent sub-agent launched with no
+  expected verdict / score anchor; at checkpoint write time NOT recovered —
+  this checkpoint claims NO recheck verdict.** Recovered conclusion goes into a
+  new immutable checkpoint; earlier checkpoints are not rewritten. Sanitized
+  summary only: `evidence/R121-SUCCESS-CONDITION-SANITIZED.md`.
 
 - **R120 isolated recheck recovered + append-only corrections (latest,
   thirteenth checkpoint).** The twelfth checkpoint truthfully claimed no

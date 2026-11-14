@@ -1,0 +1,46 @@
+﻿metric,value,unit,scope,kind
+independent_verifier_checks,74,checks,R121-VERIFICATION.json,measurement
+independent_verifier_match,74,checks,R121-VERIFICATION.json,measurement
+independent_verifier_mismatch,0,checks,R121-VERIFICATION.json,measurement
+governing_review_byte_needles,18,needles,R95 score-change taxonomy,measurement
+governing_review_needles_matched,18,needles,R95 score-change taxonomy,measurement
+prior_rounds_audited,7,rounds,R114-R120 round audits,measurement
+prior_rounds_readonly_not_gate_not_science,7,rounds,full-document boundary tags,measurement
+prior_rounds_claiming_new_positive_evidence,0,rounds,R114-R120,measurement
+prior_rounds_claiming_gate_passed,0,rounds,R114-R120,measurement
+prior_rounds_numeric_overall_lines,0,lines,R114-R120,measurement
+raise_condition_a_satisfied,0,boolean,real MaleCNS graph transfer,measurement
+raise_condition_b_satisfied,0,boolean,strong baseline rerun,measurement
+raise_condition_c_satisfied,0,boolean,real visual task changed conclusion,measurement
+real_graph_hypothesis_supported_files,6,files,REAL_MALECNS_VISUAL_SUBGRAPH,measurement
+real_graph_hypothesis_supported_true,0,files,REAL_MALECNS_VISUAL_SUBGRAPH,measurement
+synthetic_controlled_hypothesis_supported_true,4,files,SYNTHETIC_APPROXIMATION,measurement
+version_locked_manuscript_bytes,40175,bytes,R49-7.5-DELIVERY/manuscript/main.tex,measurement
+version_locked_manuscript_matches_r95_md5,1,boolean,e4bfad51ad834fdccdb6db7821e158c6,measurement
+flyvis_toposens_rerun_metric_files,0,files,project-wide name scan,measurement
+visual_task_mlp_baseline_mean_acc,0.9722222222222222,accuracy,r39_visual_task/metrics.json,measurement
+visual_task_real_minus_null_delta,-0.0004629629629628873,accuracy,r39_visual_task/metrics.json,measurement
+validator_overall_score,6.0,score,validate_single_paper.py,measurement
+validator_threshold,7.0,score,validate_single_paper.py,measurement
+validator_score_meets_threshold,0,boolean,validate_single_paper.py,measurement
+validator_checks_passing,2,checks,D1 and D4,measurement
+validator_checks_failing,3,checks,D2 D3 D5,measurement
+guard_criteria_failing,2,criteria,A2 and A6,measurement
+guard_steps_pending,7,steps,S1-S7,measurement
+guard_action_sequence_entries,0,actions,guard ledger,measurement
+mainline_stages,12,stages,pipeline-state.json,measurement
+mainline_stages_passed,1,stages,CCFA-startup,measurement
+mainline_stages_pending,11,stages,G0-G8 validation handoff,measurement
+g0_inputs,0,entries,pipeline-state.json,measurement
+g0_evidence,0,entries,pipeline-state.json,measurement
+numeric_overall_line_start_lines,14,lines,project-wide md scan,measurement
+newer_than_r95_preexisting,1,files,byte-identical r95 copy,measurement
+new_governing_review_candidates,0,files,project-wide md scan,measurement
+source_files_registered,21,files,R121-RAW-v2.json source_manifest,measurement
+isolated_byte_identical_copies,21,files,success-condition-R121/isolated,measurement
+collector_v1_defects,3,defects,retained in R121-V1-DEFECTS.md,measurement
+verifier_v1_defects,4,defects,retained in R121-V1-DEFECTS.md,measurement
+papers_qualified,0,papers,round outcome,measurement
+complete_written,0,boolean,round outcome,measurement
+gates_promoted,0,gates,round outcome,measurement
+forward_passes_performed,0,forward_passes,round outcome,measurement
