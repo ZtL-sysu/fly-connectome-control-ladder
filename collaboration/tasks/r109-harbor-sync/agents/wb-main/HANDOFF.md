@@ -2,12 +2,47 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (15 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 10:4x +0800 (R121 heartbeat: isolated independent recheck RECOVERED, all 6 items accepted append-only; fifteenth checkpoint)
+- Status: **in_progress** (16 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 12:0x +0800 (R122 heartbeat: R106 section 6 R4 first-hand byte freeze landed; isolated independent recheck LAUNCHED, not yet recovered; sixteenth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R122 R106 section 6 R4 first-hand source freeze (latest, sixteenth checkpoint).**
+  Direction change: no ninth process dossier (R105/R107/R109 halted that loop;
+  R121 proved from the governing review's own section 13 rules that read-only
+  audits cannot raise the evidence-capped Overall). Instead closed the
+  *evidence-acquisition* half of R4 — repeatedly named in R106/R107/R118/R120,
+  undone for 11 rounds — with 5 SHA-anchored raw byte files for
+  `arXiv:2609.24565` v1/v2 (abs pages, HTML full text, atom API), all HTTP 200.
+  **Substantive first-hand finding (third-party version fact, NOT a project
+  result)**: the same v2 carries two materially different official abstracts —
+  abs/API (1,534 chars) vs HTML body-embedded (1,943 chars), similarity
+  **0.4717**, 38 diff opcodes; the abs/API one contains the time-scale sweep
+  conclusion, the body one does not. v1 differs from both in abstract and
+  title. v2 section 7.3 / section 8 `+0.033 [0.015,0.050]` / "Two gaps
+  remain." / section 9 all verified verbatim from raw bytes, supporting
+  R106's G4 positioning. Atom **feed-level** `updated` is query time,
+  explicitly separated from **entry-level** version times (abs Submission
+  history agrees). Independent verifier recomputes from raw bytes without
+  importing the collector or reading any R122 JSON: **47 / 47 MATCH / 0
+  MISMATCH**; A1-A4 declared same-host necessary-consistency checks, B-F
+  substantive observations. **No write-back**:
+  `literature-search/source-manifest.json` (R4's register half, decision G7),
+  `literature-baseline-matrix.md` (R2/G6) and `pipeline-state.json`
+  byte-unchanged; G0 still `pending`. EXEC LOCK zero forward / training /
+  dataset / metric; no `ccf-paper-reviewer full`, no numeric scored-verdict
+  line, no v4, no P3, no gate skipping. Fresh isolated sub-agent launched with
+  **no verdict / score / conclusion anchor**; **at checkpoint write time NOT
+  recovered => this checkpoint claims NO recheck verdict, NO defect list, NO
+  confirmation**; recovered conclusions + append-only corrections go into a
+  NEW immutable checkpoint, these bytes not rewritten. Raw third-party HTML
+  (contains an author email) and all primary project artifacts NOT uploaded;
+  only `evidence/R122-FIRST-HAND-R4-SANITIZED.md` with `<local>/` masking.
+  **Result unchanged: 0 papers qualified, no COMPLETE, governing R95 = 6.0 /
+  Confidence 4.0, `NOT_QUALIFIED` / `INCOMPLETE`, G0 pending.** Heartbeat
+  ACTIVE schedule unchanged.
 
 - **R121 isolated recheck recovered + append-only corrections (latest,
   fifteenth checkpoint).** The fourteenth checkpoint truthfully claimed no

@@ -1,0 +1,25 @@
+metric,value,unit,source
+raw_files_frozen,5,count,R122-SOURCE-MANIFEST.json
+raw_bytes_total,321571,bytes,sum of 5 raw files
+v1_abs_bytes,41581,bytes,raw byte file
+v2_abs_bytes,43656,bytes,raw byte file
+v1_html_bytes,50485,bytes,raw byte file
+v2_html_bytes,182710,bytes,raw byte file
+atom_api_bytes,3139,bytes,raw byte file
+v2_abs_abstract_chars,1534,chars,extracted from raw bytes
+v2_html_body_abstract_chars,1943,chars,extracted from raw bytes
+v1_abs_abstract_chars,1433,chars,extracted from raw bytes
+v2_abstract_similarity,0.4717,ratio,difflib.SequenceMatcher
+v2_abstract_diff_opcodes,38,count,non-equal opcodes
+v2_html_section_headings,37,count,parsed h1-h4
+v1_html_section_headings,16,count,parsed h1-h4
+v2_plaintext_chars,45960,chars,stripped plaintext
+verifier_checks_total,47,count,R122-verify.py
+verifier_checks_match,47,count,R122-verify.py
+verifier_checks_mismatch,0,count,R122-verify.py
+http_endpoints_200,5,count,curl status
+double_gate_validator_score,6.0,score,validate_single_paper.py
+double_gate_threshold,7.0,score,validate_single_paper.py
+independent_full_reviews_launched_this_round,0,count,round audit
+gate_promotions_this_round,0,count,pipeline-state.json
+forward_passes_this_round,0,count,round audit
