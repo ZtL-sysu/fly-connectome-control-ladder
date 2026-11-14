@@ -2,12 +2,94 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (19 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 14:0x +0800 (R123 isolated independent recheck RECOVERED, 1 MEDIUM + 1 LOW defect accepted append-only; nineteenth checkpoint)
+- Status: **in_progress** (20 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 15:2x +0800 (R124 R106 section 6 R3 / R5 first-hand text acquisition; twentieth checkpoint; fresh isolated recheck launched, not recovered)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R124 heartbeat: R106 section 6 R3 / R5 first-hand text acquisition (latest,
+  twentieth checkpoint).** Concurrency guard NOT triggered (primary ledger mtime
+  14:04:15 = ~64.8 min stale > 10 min; no main research session / polling process;
+  zero project writes in preceding 12 min; newest full review still r95 / 11-11;
+  19 line-start numeric scored-verdict lines all historical reports or byte-identical
+  copies, 0 unregistered async full reviews; no R124 artifacts at wake; governing still
+  6.0). **Direction change**: NOT a 9th process dossier (R105/R107/R109 halted that loop;
+  R121's negative closure from the governing review's own section 13 still holds). R122
+  closed R4 acquisition, R123 closed R1 acquisition; this round closes the LAST TWO
+  R106 section-6 items not requiring a gate-owner ruling: **R3** (2026 geometry study
+  first-hand source, version marking, verbatim recheck of the p<10^-13 / trained-ER /
+  OFF-closure claims, secondary-mirror status) and **R5** (first-hand byte verification
+  of W5/W8 corrections), plus the FIRST per-item convergence table for R1-R9. 13
+  third-party PUBLIC small texts frozen (8x200 / 1x301 / 4x429 Cloudflare 1015 preserved
+  as negative evidence, 323,740 B total, largest 64,741 B, SHA-256 anchored).
+  **Substantive first-hand findings (third-party text facts, NOT project results)**:
+  (1) bioRxiv official details API returns **12 version records** for DOI
+  10.64898/2026.06.10.731214 (v1 2026-06-12 -> v12 2026-10-16); v1 title differs from
+  the v2-v12 title (identical across all 11 later records). (2) **All 12 `abstract`
+  fields are byte-identical** (4,816 chars, SHA prefix 555e28f9fef3), each verbatim
+  containing `p < 10-13 in every case`, `closes the gap completely`,
+  `trained Erdos-Renyi on OFF-polarity structure` => the API abstract is a CURRENT
+  abstract backfill into every version record, NOT a per-version historical abstract.
+  (3) An early probe of the v1 HTML page returned HTTP 200 / 105,400 B but was NOT saved;
+  its abstract was POSITIVE (RSA Spearman r=0.686 / 0.846 / 0.930 vs 0.603) without the
+  three negative phrases; four later probes all 429 => **NO local v1 page byte freeze**,
+  the positive abstract is a WebFetch transcription only, explicitly NOT a first-hand
+  frozen artifact. (4) Crossref abstract is likewise the negative version but
+  created=2026-06-12 (v1 date), title is the v2+ title, indexed=2026-10-21 =>
+  metadata-layer version mismatch. (5) Second-hand mirror datePublished=2026-10-16
+  equals API v12 date and its body verbatim has all three negative phrases => v12 scope;
+  R106 recorded that URL as Cloudflare-blocked, this round got HTTP 200 / 37,429 B after a
+  301 => TIME-POINT / ENDPOINT difference, NOT a claim R106 fabricated anything; the
+  mirror remains second-hand, used only for cross-corroboration. (6) **Strict scope for
+  R3**: R106's 'v1 positive vs v3 largely negative' version marking is UNSUPPORTED by the
+  first-hand bytes (v3 is one of 12 records; the API supplies no per-version abstracts;
+  the first appearance of the negative conclusion cannot be determined from local bytes).
+  Narrowed to: v1 page (positive, no local bytes) vs current/v12 scope (negative, three
+  independent first-hand byte sources); the middle ten versions' abstracts not obtained,
+  no version attribution claimed. R106's central W6 finding still stands, NO R106 byte
+  rewritten. (7) R5: first-hand arXiv abs pages verbatim contain 22871090 (1 hit) /
+  22891264 (0), and 9 Oct 2026 (2) / 12 Oct 2026 (0) => both W8 corrections confirmed;
+  W5 already appended-only withdrawn inside R106's own round audit and byte-confirmed in
+  R122, NOT duplicated, NO historical byte rewritten. **R1-R9 convergence**: all
+  autonomously completable items (R1/R3/R4 acquisition + R5 byte verification) are now
+  EXHAUSTED; every remaining item (R2 matrix finalization, R6 gate judgment, R7 state
+  registration + pass criterion, R8 refreeze, R9 fresh recheck) sits behind a designated
+  gate owner, converging exactly on R120's minimal set G1+G4+G10. **Independent verifier**
+  (no collector import, no round JSON as substantive data source): **145 checks / 145
+  MATCH / 0 MISMATCH** (A 45 / B 27 / C 14 / D 10 / E 6 / F 9 / G 16 / H 12 / I 6);
+  group A is a same-host necessary-consistency check, NOT independent cross-verification.
+  v1 verifier and its 145/141/4 output RETAINED verbatim; 6 v1 script/expectation defects
+  + 1 acquisition defect (unsaved HTTP 200 page) documented, 0 data inconsistency,
+  0 fabrication, 0 report fact error. **Acquisition complete is NOT gap closure**.
+  Read-only double gate: validator NOT_QUALIFIED / 6.0 / >=7.0 / score_meets_threshold=
+  false (D1 pass D2 fail D3 fail D4 pass D5 fail); guard INCOMPLETE (A2/A6, S1-S7 all
+  pending, 0 action entries), guard ledger SHA unchanged => read-only; main-line 12
+  stages, CCFA-startup=passed, G0-G8/validation/handoff all pending, G0 inputs=[]
+  evidence=[]. **Strict boundary**: zero write-back to pipeline-state.json /
+  literature-baseline-matrix.md / source-manifest.json / primary ledger (collection
+  time) / any gate config, all byte-unchanged; zero gate promotion (G0 pending), zero
+  self-certification, zero state change; EXEC LOCK zero forward / inference / training /
+  labels / dataset / EPE-l2 / scientific metric / new positive evidence, network only for
+  read-only acquisition; no review / score / threshold / manuscript / gate / frozen
+  artifact / registry change; no ccf-paper-reviewer full, no numeric **Overall:** line,
+  no self-authored governing review, no v4 contract, no P3 while G0 pending, no
+  <=32h/K=45 authorization assumption (D1 stays BLOCKED_ON_CONFIRMATION), no 4090/L4/H20
+  claim; primary project no submission / commit / push. **Increment is evidence-layer,
+  NOT score-layer** (R121 negative closure): a first-hand literature freeze does NOT
+  change governing 6.0, explicitly NOT presented as progress toward qualifying. Fresh
+  isolated sub-agent LAUNCHED with NO expected verdict / score anchor / conclusion anchor;
+  **at checkpoint write time NOT recovered, so NO recheck conclusion is claimed** -
+  recovery + append-only corrections go to a NEW immutable checkpoint, these bytes not
+  rewritten. NO raw file uploaded (R117/R119/R120/R121/R122/R123 precedent), only
+  evidence/R124-R3-R5-FIRST-HAND-SANITIZED.md. Full-repo strict pattern scan 0 new
+  hits; no >50 MiB / binary / dataset / weight / third-party source / unpublished
+  manuscript. Strict `git add --` explicit files only; 19 earlier published checkpoints
+  untouched; private ZtL-sysu/novix-platform untouched; no merge / force / branch
+  deletion / Release. **Result unchanged: 0 papers qualified, no COMPLETE, governing
+  R95 = 6.0 / Confidence 4.0, NOT_QUALIFIED / INCOMPLETE, G0 pending; heartbeat ACTIVE
+  unchanged.** A checkpoint `completed` is work state, not scientific validation.
 
 - **R123 isolated independent recheck recovered + append-only corrections (latest,
   nineteenth checkpoint).** The eighteenth checkpoint truthfully stated that the recheck was
