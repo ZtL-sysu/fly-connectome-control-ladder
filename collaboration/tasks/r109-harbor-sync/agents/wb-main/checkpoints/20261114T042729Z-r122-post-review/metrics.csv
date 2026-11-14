@@ -1,0 +1,24 @@
+﻿metric,value,unit,source
+independent_review_bytes,24434,bytes,R122-INDEPENDENT-REVIEW.md
+independent_review_sha256_prefix,bcc78c27ab05ccee,hex,R122-INDEPENDENT-REVIEW.md
+recheck_group_a_match,13,count,R122-INDEPENDENT-REVIEW.md
+recheck_group_b_match,6,count,R122-INDEPENDENT-REVIEW.md
+recheck_group_c_match,8,count,R122-INDEPENDENT-REVIEW.md
+recheck_group_d_match,9,count,R122-INDEPENDENT-REVIEW.md
+recheck_group_e_match,19,count,R122-INDEPENDENT-REVIEW.md
+recheck_group_f_match,2,count,R122-INDEPENDENT-REVIEW.md
+recheck_total_match,57,count,R122-INDEPENDENT-REVIEW.md
+recheck_total_mismatch,3,count,R122-INDEPENDENT-REVIEW.md
+overclaim_categories_confirmed,0,count,R122-INDEPENDENT-REVIEW.md
+overclaim_categories_refuted,12,count,R122-INDEPENDENT-REVIEW.md
+defects_high,0,count,R122-INDEPENDENT-REVIEW.md
+defects_medium,0,count,R122-INDEPENDENT-REVIEW.md
+defects_low,2,count,R122-INDEPENDENT-REVIEW.md
+defects_fabrication_or_data_inconsistency,0,count,R122-INDEPENDENT-REVIEW.md
+report_score_anchor_tokens,0,count,R122-INDEPENDENT-REVIEW.md
+append_only_correction_files_created,1,count,R122-POST-REVIEW-CORRECTION.md
+checkpoints_published,17,count,checkpoint directory
+double_gate_validator_score,6.0,score,validate_single_paper.py
+independent_full_reviews_launched_this_round,0,count,round audit
+gate_promotions_this_round,0,count,pipeline-state.json
+forward_passes_this_round,0,count,round audit

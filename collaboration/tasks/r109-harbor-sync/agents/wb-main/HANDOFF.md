@@ -2,12 +2,67 @@
 
 - Task / agent / branch: `r109-harbor-sync` / `wb-main` /
   `agent/r109-harbor-sync/wb-main`
-- Status: **in_progress** (16 checkpoints published; harbor trial closed, research itself unfinished)
-- Last update: 2026-11-14 12:0x +0800 (R122 heartbeat: R106 section 6 R4 first-hand byte freeze landed; isolated independent recheck LAUNCHED, not yet recovered; sixteenth checkpoint)
+- Status: **in_progress** (17 checkpoints published; harbor trial closed, research itself unfinished)
+- Last update: 2026-11-14 12:2x +0800 (R122 isolated independent recheck RECOVERED, 2 LOW defects accepted append-only; seventeenth checkpoint)
 - Protocol: `collaboration/PROTOCOL.md` v1; `collaboration/PROJECT.md`
 - Repo: `ZtL-sysu/fly-connectome-control-ladder` (public)
 
 ## Completed
+
+- **R122 isolated independent recheck recovered + append-only corrections
+  (latest, seventeenth checkpoint).** The sixteenth checkpoint truthfully
+  claimed no verdict while the fresh isolated sub-agent was running; its
+  bytes are **not rewritten**. Final independent report (primary project,
+  **not uploaded** per R117 precedent): **24,434 B**, SHA-256
+  `bcc78c27ab05ccee699199f8c01899f4a6bd912a6e24202a82397df080cace4e`,
+  one write, mtime 12:25:48, original unchanged. Verdict
+  `REPRODUCIBLE_WITH_DEFECTS | G0 may be passed: NO | Scientific result
+  claimed: NO | Forward pass performed: NO`. Reviewer used only the five raw
+  byte files with its OWN parsing logic (no collector/verifier import, no
+  R122 JSON as data source), read the round audit LAST. A-F **57 MATCH / 3
+  MISMATCH** (A 13/0, B 6/0, C 8/0, D 9/2, E 19/1, F 2/0); **12 named
+  overclaim categories CONFIRMED 0 / REFUTED 12**; **defects HIGH 0 /
+  MEDIUM 0 / LOW 2**, 0 fact error / 0 data inconsistency / 0 fabrication;
+  0 expected-score or score-anchor tokens in the report. **3 MISMATCHes all
+  accepted as reviewer parsing-scope differences, not report errors**: v2
+  body abstract 1,943 vs 1,938 (naive 1,941) and similarity 0.4717 vs 0.4724
+  (naive 0.4719) come from inline-formula `46x` rendering (LaTeX alttext vs
+  MathML glyphs + annotation); the **38 diff opcodes are identical under all
+  four scopes**; plaintext 45,960 vs 45,430 / 46,545 is whitespace
+  normalization degree. Reviewer measured each derived artifact itself and
+  confirmed the report values are accurate for their own artifacts. Reviewer's
+  own script defect retained verbatim: initial `str.find()` for `What remains
+  open` sliced into the TOC (`False / 18 chars`), fixed with `rfind()` to
+  `True / 561 chars`. **2 LOW defects all ACCEPTED, append-only** in a NEW
+  primary `R122-POST-REVIEW-CORRECTION.md`: **C-1 [LOW | wording]** the
+  section 8 quotation at `R122-ROUND-AUDIT.md:75` labeled "verbatim" is a
+  MathML-cleaned rendering, not a contiguous byte substring of the derived
+  plaintext (which has `+ 0.033 +0.033 [ 0.015 , 0.050 ] [0.015,0.050]`) =>
+  narrowed to "numeric tokens verbatim-matchable; full sentence after
+  whitespace/MathML normalization"; all tokens (verifier E5/E6) and the
+  section 8 conclusion unchanged. **C-2 [LOW | scope]** `:60` "37 / 16
+  section headings" is correct under "all h1-h6 tags minus modal title and
+  Abstract pseudo-heading" but includes the h1 document title, six h4
+  subheadings and bibliography heading without declaring the counting scope;
+  reviewer's section/subsection count is v1 14 / v2 28, and **v2 > v1 holds
+  under every scope**. Reviewer explicitly found NO time-point / scope-mixing
+  defect and noted the report's separation of feed query time from
+  entry-level version times as a strength. Additional first-hand facts:
+  v1/v2 `citation_title` differ while `citation_date` = 2026/09/21 for both
+  (`citation_online_date` distinguishes 09/21 vs 09/22); the atom opaque
+  query id is NOT a credential; 5 raw byte files have 0 local-path /
+  credential-style hits. Reviewer's scope limitation accepted (concurrency
+  guard, ledgers, pipeline-state readings, "all HTTP 200" not verifiable from
+  the 5 raw byte files alone; no truth claim made). **No historical artifact
+  and not the independent report itself was rewritten**: round audit,
+  independent review, verification JSON, source manifest, all 5 raw byte files
+  and the sixteenth checkpoint byte-unchanged. Gate/evidence-layer recheck,
+  **NOT** `ccf-paper-reviewer full`: no scored-review Overall line, no numeric
+  paper score, no governing change. Independent report original **NOT
+  uploaded** (R117 precedent: only sanitized summaries), only
+  `evidence/R122-POST-REVIEW-SANITIZED.md`. **Result unchanged: 0 papers
+  qualified, no COMPLETE, governing R95 = 6.0 / Confidence 4.0,
+  `NOT_QUALIFIED` / `INCOMPLETE`, G0 pending; heartbeat ACTIVE unchanged.**
 
 - **R122 R106 section 6 R4 first-hand source freeze (latest, sixteenth checkpoint).**
   Direction change: no ninth process dossier (R105/R107/R109 halted that loop;
