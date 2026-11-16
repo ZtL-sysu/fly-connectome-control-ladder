@@ -1,0 +1,54 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Connectome-constrained computation.}
+Large-scale fly connectomes support models constrained by measured neuronal
+wiring~\cite{dorkenwald2024,malecns2026}. Lappalainen et
+al.~\cite{lappalainen2024} combine connectomic constraints with task training
+to predict neural responses across the visual system. Structure-only models
+investigate visual computation under fixed wiring and wiring-cost
+comparisons~\cite{structure2026}. Beiran and Litwin-Kumar~\cite{beiran2025} characterize dynamical
+degeneracy under fixed connectomic weights and show how partial activity
+recordings can resolve it. Our question concerns the source information
+left by an intervention in a fixed computational model.
+
+\paragraph{Null models and structural attribution.}
+Degree-preserving swaps and motif counts are established tools for network
+analysis~\cite{maslov2002,milo2002}; weighted-network randomization further
+shows that degree and strength are different constraints~\cite{milisav2025}.
+Dhiman~\cite{dhiman2026} studies staged controls for initialization, degree,
+and early optimization in connectome-constrained networks. The closest
+mechanistic precedent is Park~\cite{park2026}, who shows that standard
+randomizations introduce sensory--motor shortcuts in embodied agents,
+and evaluates boundary-preserving controls, graded shortcut doses, and sham
+interventions. These controls address task-relevant routes. Our audit resolves source
+access inside the executed propagator, including separate-relay routes
+that survive a zero common-relay count. It uses standard linear transport
+algebra to diagnose the functional meaning of the structural comparison.
+Zhang et al.~\cite{zhang2025motifs} analyze how coherent and incoherent
+motifs affect representational capacity and stability; our question is
+whether removing a declared motif removes the inputs required by a task.
+
+\paragraph{Graph communication and rewiring.}
+Curvature-based analysis~\cite{curvature2022} and joint width--depth--topology
+analysis~\cite{oversquashing2023} relate graph structure to information
+transport. Spectral pruning demonstrates that removing edges can improve
+communication and generalization~\cite{pruning2024}, while virtual-node
+rewiring creates efficient long-range routes~\cite{virtual2024}.
+GraphGPS combines local and global communication~\cite{graphgps2022};
+oversmoothing itself depends on the model's parameter
+regime~\cite{phase2024}. We fix the two-step propagator and evaluate what task information its
+structural interventions preserve, complementing methods that alter
+communication to improve learning.
+
+\paragraph{Evaluating explanations through interventions.}
+GNNExplainer uses subgraphs and features to explain learned
+predictions~\cite{gnnexplainer2019}. ROAR shows that deletion-based image
+attribution can be confounded by distribution shift and evaluates removal
+with retraining~\cite{roar2019}. RegExplainer addresses explanation/input
+shift and the different decision structure of graph
+regression~\cite{regexplainer2024}. Our readout is trained separately for
+each graph condition, so the outcome concerns available task information
+under that condition, rather than the acute sensitivity of one frozen
+trained model. The additional issue here is graph compensation: preserving
+degree while removing an edge can introduce a replacement computation.

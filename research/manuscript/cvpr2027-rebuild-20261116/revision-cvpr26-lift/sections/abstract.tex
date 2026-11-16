@@ -1,0 +1,24 @@
+\begin{abstract}
+Interventions on connectome-constrained models are often reported through the
+graph statistics they preserve. Such reports can miss the task information
+that reaches a readout. We study this failure for a fixed directed operator:
+two rounds of incoming-neighbor averaging followed by a readout at two
+designated sinks. Propagating the two source basis columns summarizes every
+intervention by a $2\times2$ source-to-readout transfer $T$. For the noiseless
+subspace XOR used in prior experiments, both columns being nonzero are
+necessary and sufficient for perfect Bayes accuracy, while zeroing a common
+relay is neither. On reconstructed MaleCNS graphs, two edits that preserve
+degree and module counts and eliminate all common relays differ in exactly
+this way; their archived accuracies are 0.9745 and 0.5055. Across two $k=8$
+extractions, all nonzero doses keep ideal label information while finite
+accuracy rises from about 67\% to 94\%, and several null graphs regain the
+task after a zero-dose graph loses it. An executed MLP reproduces the
+high-versus-chance split on the matched matrices, and a visual parity XOR
+separates an invertible transfer (0.746), a parallel mixture (0.663), and a
+deleted source (0.506). With four CIFAR-10 images mixed together, the class
+at one source changes from 0.164 without a private transfer direction to
+0.566 with one, and falls to 0.096 when that source is deleted. The same
+graph still reads a preserved source at 0.440. The result is
+a task-specific reporting standard: state the executed operator and check the
+information reaching the readout before interpreting a structural control.
+\end{abstract}

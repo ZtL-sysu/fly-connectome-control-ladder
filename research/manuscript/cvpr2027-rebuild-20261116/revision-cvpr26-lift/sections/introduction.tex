@@ -1,0 +1,48 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Graph interventions are often justified by the statistics they preserve.
+A rewiring may keep every degree, and a motif deletion may be paired with a
+count of the circuit family that remains. These statistics describe the edit.
+They do not, by themselves, describe what reaches the readout of a model.
+
+A MaleCNS intervention makes the distinction concrete. After compensating
+swaps, two reconstructed graphs have the same in-degree and out-degree
+sequences, the same module-pair counts, and zero common-relay triples. One
+still carries both designated sources to the sinks in two propagation steps;
+the other carries only one. Their archived accuracies are 0.9745 and 0.5055.
+A relay count alone cannot explain this difference: separate relays can
+replace a deleted common relay.
+
+We audit the information that survives an intervention for a fixed executed
+operator. Features undergo two rounds of incoming-neighbor averaging and are
+read at two sinks. With activity confined to two sources, the graph reduces to
+$T=R_SW^2E_{ab}$, whose columns record source access at the readout. For the
+noiseless subspace XOR task used in the archived experiments, both columns
+being nonzero are necessary and sufficient for perfect Bayes accuracy. This
+criterion is deliberately task-specific. It does not constrain arbitrary
+GNNs, noisy decoded states, or finite-optimizer behavior.
+
+The audit separates three levels that structural reports usually combine.
+The first is graph structure: degrees, module counts, named motifs, protected
+edges. The second is population information: whether a task label remains
+decodable from the transferred sources. The third is finite trained behavior:
+how a particular readout handles the surviving mixture. A common-relay count
+is sufficient, but not necessary, for the population criterion on this task.
+Finite accuracy can also vary widely among interventions that all preserve
+ideal label information.
+
+Our contributions are:
+\begin{itemize}
+  \item An operator-level audit for connectome interventions. It reports
+        source visibility and a task-specific Bayes criterion beside the
+        stated graph constraints.
+  \item A matched MaleCNS counterexample. Two zero-common-relay, degree- and
+        module-matched reconstructions have different source access; the
+        high-versus-chance split is consistent with their archived fits.
+  \item Converging tests of that distinction.
+        All nonzero $k=8$ doses retain ideal information while finite accuracy
+        rises, nulls can regain a lost task, executed readouts follow transfer
+        geometry on visual labels, and a reverse-support image control stays
+        negative.
+\end{itemize}

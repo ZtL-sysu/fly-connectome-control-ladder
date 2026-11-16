@@ -9,3 +9,11 @@
 ## 2026-11-16 source-support archive
 
 Archived the degree-match manuscript, the 307-swap ensemble, and the independent full review (Overall 4). Decision note: `research/manuscript/cvpr2027-source-support-20261116/research-decision.md`. This does not change the CIFAR revision or R95.
+
+## 2026-11-16 CVPR-focused refinement archive
+
+Archived the focused refinement of the existing task-information manuscript.
+The isolated follow-up review gives Overall 5.5 / confidence 5 after removal
+of the unsupported noise bound and correction of the CIFAR claim. No score
+gain or change to R95 is claimed. Explicit file hashes are in
+`research/manuscript/cvpr2027-rebuild-20261116/cvpr26-lift-manifest.json`.

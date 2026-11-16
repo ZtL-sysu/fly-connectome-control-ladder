@@ -14,6 +14,22 @@ Resume entry:
 4. A further score move, as stated by the 2026-11-16 ensemble review, needs the same certificate to change a flyvis, Kenyon, or optic-flow comparison. A signed two-hop T4a–d kernel probe did not separate four direction axes and is not in the paper.
 5. Leave the CIFAR revision below untouched. It is a different manuscript.
 
+## Latest additive state (2026-11-16, CVPR-focused refinement)
+
+The refined CIFAR/operator-audit manuscript is at
+`research/manuscript/cvpr2027-rebuild-20261116/revision-cvpr26-lift/main.pdf`.
+It retains eight scientific pages, with the LLM statement and references on
+page 9; the supplement is seven pages. Its final isolated review is Overall
+5.5, confidence 5 (`reviews-cvpr26-lift/independent-final-review.md`). This
+is equal to the locked baseline's 5.5, not a demonstrated improvement.
+
+The revision removes a mathematically unsupported noise-margin theorem and
+its table, limits the CIFAR abstract claim to the measured source contrast,
+and retains the archived visual and MLP evidence. No new training was run.
+The scientific scope remains one animal, reconstructed dose operators, and
+readout assays rather than a broad vision model. R95 governance and all other
+manuscript histories remain unchanged.
+
 ## Previous state (CIFAR revision)
 
 # HANDOFF — codex-20261116 @ cvpr2027-score-lift-20261116

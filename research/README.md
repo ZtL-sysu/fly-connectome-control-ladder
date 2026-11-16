@@ -45,6 +45,11 @@ These records are additive and do not replace the R126 manifest or the governing
 - `manuscript/cvpr2027-rebuild-20261116/` records the 2026-11-16 CIFAR revision of *Task Information Audits for Connectome Graph Interventions*, with its analysis files and four independent reviews. Its latest review is Overall 5. It does **not** replace R95 = 6.0, and it does not qualify the manuscript.
 - `reviews/cvpr2027-rebuild-independent-20261116-cifar.md` is the same latest CIFAR review, copied at the reviews index for direct lookup.
 - `collaboration/tasks/cvpr2027-score-lift-20261116/` contains this sync's task record, handoff, and SHA-256 manifest.
+- The additive `manuscript/cvpr2027-rebuild-20261116/revision-cvpr26-lift/`
+  records the final focused refinement. Its independent review is Overall
+  5.5 / confidence 5: clearer framing and corrected scope, with no claimed
+  score gain. See `cvpr26-lift-decision.md` and `cvpr26-lift-manifest.json`
+  beside it. This does not change R95 governance.
 
 ## Deliberately absent
 
