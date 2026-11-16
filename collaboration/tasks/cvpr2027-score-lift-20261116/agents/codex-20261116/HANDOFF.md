@@ -2,6 +2,24 @@
 
 Protocol: `collaboration/PROTOCOL.md`. This handoff records a work-state sync. It does not validate or qualify the manuscript.
 
+## Current state (2026-11-16, source-support draft)
+
+The active manuscript is *A Degree Match Does Not Keep Both Inputs*, archived at `research/manuscript/cvpr2027-source-support-20261116/`. It is a six-page CVPR 2027 review draft. The latest isolated full review of that PDF is Overall 4, confidence 4 (`reviews/independent-full-review-ensemble.md`). That review does not replace R95 and does not meet a score of 6.
+
+Resume entry:
+
+1. Open `research/manuscript/cvpr2027-source-support-20261116/main.tex` and `research-decision.md`.
+2. Check the 307-swap claims against `analysis/conditioned_ensemble.json` and `analysis/support_sweep.json`. Check the 24-draw null against `analysis/degree24.json`.
+3. Do not describe the protected three-route runs as independent wirings. Eleven of twelve copy \(T\).
+4. A further score move, as stated by the 2026-11-16 ensemble review, needs the same certificate to change a flyvis, Kenyon, or optic-flow comparison. A signed two-hop T4a–d kernel probe did not separate four direction axes and is not in the paper.
+5. Leave the CIFAR revision below untouched. It is a different manuscript.
+
+## Previous state (CIFAR revision)
+
+# HANDOFF — codex-20261116 @ cvpr2027-score-lift-20261116
+
+Protocol: `collaboration/PROTOCOL.md`. This handoff records a work-state sync. It does not validate or qualify the manuscript.
+
 ## Current state
 
 The archived manuscript is *Task Information Audits for Connectome Graph Interventions*. Its latest compiled revision is the 2026-11-16 CIFAR version: main PDF, 9 pages total with 8 pages of content, plus the supplement. The latest independent review is Overall 5 and Scholarly Confidence 4. Governing acceptance remains R95 = 6.0, validator `NOT_QUALIFIED`, guard `INCOMPLETE`. This revision does not replace R95 or the R129 story.

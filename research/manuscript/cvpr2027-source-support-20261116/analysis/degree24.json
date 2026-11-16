@@ -1,0 +1,485 @@
+{
+  "rows": [
+    {
+      "rewire_seed": 50000,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 38,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50001,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 33,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50002,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 41,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50003,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 50,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50004,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 39,
+      "T": [
+        [
+          0.0,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false
+    },
+    {
+      "rewire_seed": 50005,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 45,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50006,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50007,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 33,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50008,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50009,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 41,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50010,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 47,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50011,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 42,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50012,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 50,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50013,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 42,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50014,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 47,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50015,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50016,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 52,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50017,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 34,
+      "T": [
+        [
+          0.0,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false
+    },
+    {
+      "rewire_seed": 50018,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50019,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 47,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50020,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 40,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50021,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 49,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50022,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 47,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    },
+    {
+      "rewire_seed": 50023,
+      "swaps": 30720,
+      "degree_node_match": true,
+      "module_pair_match": false,
+      "overlap": 61,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false
+    }
+  ],
+  "wall_s": 67.1
+}

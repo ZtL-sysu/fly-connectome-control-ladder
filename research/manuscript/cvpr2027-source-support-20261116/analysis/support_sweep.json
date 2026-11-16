@@ -1,0 +1,1780 @@
+{
+  "measured_T": [
+    [
+      0.125,
+      0.0625
+    ],
+    [
+      0.125,
+      0.0625
+    ]
+  ],
+  "n_edges": 3072,
+  "rows": [
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 2777,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 2777,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 2779,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 2779,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 2777,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 2781,
+      "T": [
+        [
+          0.125,
+          0.0
+        ],
+        [
+          0.125,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 2780,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 2774,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 2778,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 2781,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 2775,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.05,
+      "swaps": 154,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 2780,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 2519,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 2518,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 2517,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 2511,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 2514,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 2518,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.125,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 2502,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 2523,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 2519,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 2513,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 2509,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.1,
+      "swaps": 307,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 2517,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 1885,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 1874,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 1882,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.125,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": true
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 1850,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 2,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 1859,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 1868,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 1883,
+      "T": [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 1867,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 1878,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 1872,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 1868,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.25,
+      "swaps": 768,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 1879,
+      "T": [
+        [
+          0.0,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 1125,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 1167,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 1124,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0625
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 1149,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 1155,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 1125,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 1124,
+      "T": [
+        [
+          0.125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 1132,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 1160,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 1160,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 1173,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.125
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 0.5,
+      "swaps": 1536,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 1147,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 448,
+      "T": [
+        [
+          0.0625,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 2,
+      "both": true,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 437,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 421,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 433,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 464,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 458,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 435,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 447,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 431,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 438,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 404,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 1,
+      "swaps": 3072,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 425,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 104,
+      "T": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 103,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 89,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 109,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 88,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 105,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 99,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 103,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 88,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 103,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 101,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 2,
+      "swaps": 6144,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 89,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 0,
+      "degree_node_match": true,
+      "overlap": 54,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 1,
+      "degree_node_match": true,
+      "overlap": 47,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 2,
+      "degree_node_match": true,
+      "overlap": 49,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 3,
+      "degree_node_match": true,
+      "overlap": 43,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 4,
+      "degree_node_match": true,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 5,
+      "degree_node_match": true,
+      "overlap": 44,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 6,
+      "degree_node_match": true,
+      "overlap": 46,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 7,
+      "degree_node_match": true,
+      "overlap": 39,
+      "T": [
+        [
+          0.0,
+          0.0625
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 1,
+      "n_sources": 1,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 8,
+      "degree_node_match": true,
+      "overlap": 34,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 9,
+      "degree_node_match": true,
+      "overlap": 33,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 10,
+      "degree_node_match": true,
+      "overlap": 63,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    },
+    {
+      "multiplier": 10,
+      "swaps": 30720,
+      "draw": 11,
+      "degree_node_match": true,
+      "overlap": 33,
+      "T": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "rank": 0,
+      "n_sources": 0,
+      "both": false,
+      "same_T": false
+    }
+  ],
+  "wall_s": 51.8
+}
