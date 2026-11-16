@@ -1,0 +1,16 @@
+\begin{abstract}
+A preserved motif count is not a functional certificate for a graph intervention.
+We formalize a task-information audit for a fixed two-step connectome propagator:
+compute the source-to-readout transfer $T$, then test whether both task sources
+remain visible. For an ideal noiseless subspace XOR task, both source columns
+being nonzero is necessary and sufficient for perfect Bayes accuracy. The audit
+changes three conclusions on measured MaleCNS wiring. A named-edge intervention
+and a path-conditioned intervention both remove every common-relay triple and
+preserve degree and module counts, yet only the first retains both sources.
+Across two $k=8$ extractions, every nonzero dose retains ideal label information
+while finite-readout accuracy on the nonzero doses still rises from about 67\% to above 94\%. The zero dose remains at chance. Degree and
+protected nulls can also regain the task after a zero-dose graph has lost it.
+Replaying the archived MLP on these reconstructions recovers the high-versus-chance split, whereas a linear readout stays at chance. On a visual parity XOR, the same MLP reaches 0.746, 0.663, and 0.506 as the transfer goes from invertible, to parallel, to a deleted source. With four CIFAR-10 images driving the operator together, a frozen embedding that itself scores 0.571 is recovered at 0.566 when the labeled source keeps a private direction. The degree-matched path-zero graph falls to 0.096 on that source and stays at 0.440 on a preserved source. A separate reverse-support CIFAR-10 subset control detects no connectome-specific
+accuracy gain. The contribution is an audit that separates structural
+preservation, source access, ideal label information, and finite trained behavior.
+\end{abstract}

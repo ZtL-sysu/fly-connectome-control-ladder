@@ -38,6 +38,14 @@ rewritten or redacted: the owner said "不用考虑脱敏，open 就对了".
   review governs" is unchanged, so they do not qualify the paper.
 - Uploading a manuscript does not constitute submission or publication.
 
+## Later additive records
+
+These records are additive and do not replace the R126 manifest or the governing R95 status.
+
+- `manuscript/cvpr2027-rebuild-20261116/` records the 2026-11-16 CIFAR revision of *Task Information Audits for Connectome Graph Interventions*, with its analysis files and four independent reviews. Its latest review is Overall 5. It does **not** replace R95 = 6.0, and it does not qualify the manuscript.
+- `reviews/cvpr2027-rebuild-independent-20261116-cifar.md` is the same latest CIFAR review, copied at the reviews index for direct lookup.
+- `collaboration/tasks/cvpr2027-score-lift-20261116/` contains this sync's task record, handoff, and SHA-256 manifest.
+
 ## Deliberately absent
 
 Large model weights, official checkpoints, Sintel-derived development data,

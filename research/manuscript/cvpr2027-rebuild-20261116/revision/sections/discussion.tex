@@ -1,0 +1,61 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{A protocol, not another motif count.}
+The zero-common-relay counterexample identifies a distinction that motif
+counts cannot express. Separate routes expose both sources in one
+reconstruction, while the other loses a source at the readout. This
+source-access difference is consistent with the archived high/chance
+outcomes. It complements boundary-aware connectome controls~\cite{park2026}:
+the routes used by a task can extend beyond the circuit family named by
+an intervention. Interpreting a compensated deletion therefore requires
+examining the replacement routes as well as the deleted structure.
+
+\paragraph{Population information and finite trainability.}
+Proposition~1 separates these quantities for the ideal task. All nonzero
+$k=8$ dose reconstructions preserve the complete label information, yet
+their finite-readout accuracies vary substantially. Their dose curves
+therefore describe how the recorded learning procedure handles different
+input mixtures within an information-preserving regime. Rank-one transfer
+can also retain the label: full recovery of both source vectors is a
+stronger requirement than this classification task needs. The useful
+diagnostic is to test the task's information requirement before treating
+a change in fitted accuracy as information deletion.
+
+\paragraph{Scope.}
+The archived task uses synthetic source labels, two-step linear propagation,
+and a finite MLP on fixed subgraphs of one male connectome. The visual tests
+use that propagator, the archived MLP, and the same three narrow
+reconstructions. The four-source assay asks whether one CIFAR-10 class remains
+readable when three other images drive the operator. It is not a
+natural-image recognition benchmark. The two $k=8$
+extractions share 195 neurons. The population result isolates source access
+inside one reconstructed visual subgraph, rather than broader biological
+organization. The exact population result assumes
+noiseless continuous features; noise and finite precision affect subspace
+decoding, while nonlinear or spiking propagation requires input-dependent
+analysis. The separate reverse-support CIFAR-10 subset control detects no
+connectome-specific accuracy benefit.
+
+The two dense $k=8$ base graphs match frozen source hashes, but original
+dose-instance hashes are unavailable. The reconstructed dose operators
+are therefore post-hoc calculations, and their agreement with archived
+outcomes is a consistency result. The edit algorithms also differ in order
+and partner choices, preventing attribution of the historical score gap
+to the common-relay rejection rule alone. Full provenance and the
+recorded initialization protocol are given in the supplement.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Structural intervention reports should include the task information that survives.
+For the fixed connectome propagator studied here, source visibility gives that
+report, and the ideal subspace task turns it into an exact Bayes criterion.
+On the matched narrow graphs, the archived MLP follows that matrix on the
+subspace task and a visual parity XOR. With four simultaneous CIFAR-10 images, the same
+matrix predicts which image class survives.
+The same criterion separates matched zero-motif graphs, distinguishes ideal
+information from finite-readout dose curves, and shows why a protected null
+is a different counterfactual. The audit is specific to this operator and task,
+but the reporting standard is broader: a preserved statistic is evidence only
+for the constraint it actually enforces.

@@ -1,0 +1,203 @@
+{
+ "generated": "2026-11-16",
+ "scope": "cvpr2027-score-lift additive files only",
+ "files": [
+  {
+   "path": "collaboration/tasks/cvpr2027-score-lift-20261116/TASK.md",
+   "bytes": 1037,
+   "sha256": "6a26f9e1ad8fb0fe25c8984179452d89b138a0486e1f7e86e1ec28e8d0d1d694"
+  },
+  {
+   "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/HANDOFF.md",
+   "bytes": 2210,
+   "sha256": "1c8c0c073f6347b181848d365819366dfbe1369ff5a59bbb1212333116753682"
+  },
+  {
+   "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/LOG.md",
+   "bytes": 360,
+   "sha256": "39774a951e0bc7236844166ee4e4e763852975136b61326ffc10009c86bedd58"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/cifar-identity-readout.json",
+   "bytes": 5603,
+   "sha256": "a89bbb9f21ebef5ffc4ada0922d2d925db992058c43f2461789a0e10a8b18d1a"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/cifar_embed_readout.py",
+   "bytes": 6624,
+   "sha256": "f8887c531b3174c61a5afc9e0a4ec60b8ca6d50f1ddec0d9e33ae6cfceb98d05"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/executed-readout.json",
+   "bytes": 5729,
+   "sha256": "12df812bb9b9982bdcafc57eeff91f35f94c348970d21fc30cdf6e1b92135dc4"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/executed_readout.py",
+   "bytes": 6233,
+   "sha256": "3deb55544cffee92a3816bd526c00e982e6c608fea14bbbb5f2fee8aa11b5e2f"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/population-identity-readout.json",
+   "bytes": 13989,
+   "sha256": "a32064e193a22029669afe15dd273ffad13138e4621f04aedcb6ed5ffa99a479"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/population-label-readout.json",
+   "bytes": 13987,
+   "sha256": "31b516ce0119be8d330e5f0ebb13757fefca51edb1d74e5f03f000f89f791ec4"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/population_identity_readout.py",
+   "bytes": 7062,
+   "sha256": "e8944f5470c76350fee6228a86562a77eca908b7e0ee6771d2b80d7d3eb6c0ac"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/population_label_readout.py",
+   "bytes": 7074,
+   "sha256": "dfb872f7b8926ad1f0834ac9db5a27c5b4741ebf01740bd9ee9cc977da4a9a99"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/recovered_graphs/narrowk4_base.npz",
+   "bytes": 9566,
+   "sha256": "661f0e0c8162728ead471fadcf9f7c2cb224ee8c375abe90197f5aa429a1a416"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/recovered_graphs/narrowk4_namededge_s0.npz",
+   "bytes": 9573,
+   "sha256": "69582e7f5b4eb88906bc9fed10f2de10a7d1c2674172ad187cfcb209bf12684a"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/recovered_graphs/narrowk4_pathblock_p0.npz",
+   "bytes": 9575,
+   "sha256": "2a87e2534cea531c88bd49158f2a279005336d80f2e46917650f4c046668d8fe"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/analysis/recovered_graphs/narrowk4_transfer_report.json",
+   "bytes": 8159,
+   "sha256": "50c43656606b2af7b664fdc865a5a6b96b142db159c911df43a3b1d281e6329a"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews/independent-full-review-20261116-align.md",
+   "bytes": 5712,
+   "sha256": "3075a8867404325c7766d3387732cce5661e6c6a74684ca0a6d29b931a270adb"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews/independent-full-review-20261116-cifar.md",
+   "bytes": 6097,
+   "sha256": "cf2fb1846a9af805cf96b9ecaf7ec5beeeca7ca048693f66b027e41afbadb3b2"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews/independent-full-review-20261116-identity.md",
+   "bytes": 6113,
+   "sha256": "f62137d2cf2e8b51146d786980f8b498b306e5ebcfd91228bb2c98905d1f73a7"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews/independent-full-review-20261116-population.md",
+   "bytes": 6020,
+   "sha256": "8451956efcc24b695743237163f97fc5dc3976997be5ce46be70722e4dbf9e13"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/cvpr.sty",
+   "bytes": 17887,
+   "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/figures/edge_vs_path.pdf",
+   "bytes": 14001,
+   "sha256": "273ed976a91b849b35a9032d8aa8110e370bbef9fc36967f8d8ad54c83a92faa"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/figures/endpoint_deltas.pdf",
+   "bytes": 12617,
+   "sha256": "e3f12997bfb60573e8cb2569972ca20424eeacf3423b1edbdadb747b1c566ed3"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/figures/image_boundary.pdf",
+   "bytes": 15902,
+   "sha256": "8bfab49477a2aab76568a47e6842de4922f0aee944e5b297aa40d557e9e190db"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/figures/multigraph.pdf",
+   "bytes": 22167,
+   "sha256": "0e177d361d410082e2f54c2ba59429679c9028b752155b6903d5becc7b91401d"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/figures/overview.pdf",
+   "bytes": 25597,
+   "sha256": "068e5505391b46771b5860de246ecc9c317f2723d1563a946a50b22f288cc758"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/ieeenat_fullname.bst",
+   "bytes": 26900,
+   "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/main.pdf",
+   "bytes": 568077,
+   "sha256": "e93ee4576f02192d74a3b967556a97f63a993548dd99b30d51b4eb1bd4436bc9"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/main.tex",
+   "bytes": 1415,
+   "sha256": "934e20f3559cc2042d4e587509a33e7d56cf7a2c2ca48f214b8b3964f33f1ae5"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/references.bib",
+   "bytes": 9964,
+   "sha256": "2e02848b7c18d96da03ac0bccdc41575c215114a2d7dc107122c06a7ed61887e"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/abstract.tex",
+   "bytes": 1755,
+   "sha256": "f4130cc1a65a8283935467b1f49e19ddca0677b5146bd96989e52af1388397a7"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/discussion.tex",
+   "bytes": 3570,
+   "sha256": "d49a01b51c60e118f63caac70d664611935d6fee8139cfdab7c0124387a9bd23"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/experiments.tex",
+   "bytes": 20124,
+   "sha256": "96006bff92e561b55406698c0e85ebae0e4a22611a3e6888ced0a480e514568e"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/introduction.tex",
+   "bytes": 3405,
+   "sha256": "fab50488df897b753bd640f982c2b6d1d0dfb0a89370a8ab27c8fb6b484e5845"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/method.tex",
+   "bytes": 7309,
+   "sha256": "c1f0ed4b3c751e5bd156039d0547deddbd5e722839be882eacabd13bfeffd2d4"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/overview.tex",
+   "bytes": 575,
+   "sha256": "f01e48928d7ef2403ad3ba01afa44f187614f7a62640f6f89b68335c0125ea7c"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/sections/related.tex",
+   "bytes": 3398,
+   "sha256": "6720a3a74ce17228aef59d0548b0687ddb788a199bbe30ff181ad7891bdee93d"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/supplement.pdf",
+   "bytes": 218690,
+   "sha256": "6d3dff4edbe2c5fbd5403e062733d673e86abca4bec7a3a45064bafbccfe25b2"
+  },
+  {
+   "path": "research/manuscript/cvpr2027-rebuild-20261116/revision/supplement.tex",
+   "bytes": 20768,
+   "sha256": "a6d30699c50aee083bd902c2e8fcea2040f50afb4a83275fd42e8ad6d88b8f2b"
+  },
+  {
+   "path": "research/reviews/cvpr2027-rebuild-independent-20261116-cifar.md",
+   "bytes": 6097,
+   "sha256": "cf2fb1846a9af805cf96b9ecaf7ec5beeeca7ca048693f66b027e41afbadb3b2"
+  }
+ ],
+ "credential_hits": [],
+ "over_50mib": []
+}

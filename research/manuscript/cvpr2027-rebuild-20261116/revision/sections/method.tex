@@ -1,0 +1,158 @@
+\section{Task-Information Audit}
+\label{sec:method}
+
+
+\subsection{From wiring to the executed operator}
+\label{sec:operator}
+
+Let $A_{uv}=1$ denote a directed edge $u\!\to\!v$. The main experiments
+use binary support and incoming-neighbor averaging,
+\begin{equation}
+ d_v=\sum_u A_{uv},\qquad
+ W_{vu}=\frac{A_{uv}}{\max(d_v,1)}.
+ \label{eq:operator}
+\end{equation}
+Rows for zero in-degree remain zero. Features propagate linearly for two
+rounds, $H=W^2X$, before an MLP reads the concatenated features at
+$S=\{s_1,s_2\}$. The operator direction, normalization, and readout
+locations are part of the computational model.
+
+With nonzero features only at sources $a,b$, let $E_{ab}$ place the source
+vectors and $R_S$ select the sinks. The graph affects the classifier input
+through
+\begin{equation}
+ H_S=T(A)X_{ab},\qquad T(A)=R_SW(A)^2E_{ab}.
+ \label{eq:transfer}
+\end{equation}
+$T$ has two source columns and two sink rows. It records every two-step
+route contributing to these inputs, including routes outside a selected
+motif family. Equal $T$ matrices give identical readout inputs for any
+source features; equal graph statistics need not. Computing $T$ requires
+propagating two basis columns, rather than constructing all entries of
+$W^2$. For a sparse fixed operator and $h$ steps, this costs
+$O(h|E|\,n_{\rm source})$ time and $O(Nn_{\rm source})$ storage.
+
+\subsection{Source visibility and ideal task solvability}
+\label{sec:observability}
+
+A source is \emph{visible} when its column of $T$ is nonzero. Visibility means readout access for this fixed operator. It is not classical state observability and it does not recover the full source state.
+For the ideal noiseless task, visibility gives a complete criterion.
+Let $c_a,c_b$ be independent balanced bits and
+$x_a=P_{c_a}z_a$, $x_b=P_{c_b}z_b$, with independent
+$z_a,z_b\sim\mathcal N(0,I_8)$. The class subspaces
+$U_c=\operatorname{span}(P_c)\subset\mathbb R^{16}$ satisfy
+$U_0\cap U_1=\{0\}$, and the label is $y=c_a\oplus c_b$.
+
+\paragraph{Remark (common-relay sufficiency).}
+If $\mathcal C(A)$ in Eq.~\eqref{eq:paths} is nonempty, both source columns
+of a nonnegative $T$ are nonzero. The converse is false: separate relays can
+expose both sources without any shared relay.
+
+\paragraph{Proposition 1 (ideal population criterion).}
+For a fixed nonnegative $T$ and no other active inputs, the Bayes accuracy
+from $H_S=TX_{ab}$ is
+\begin{equation}
+ \operatorname{Acc}^{*}(T)=
+ \begin{cases}
+  1, & T_{:a}\ne0\ \text{and}\ T_{:b}\ne0,\\
+  \tfrac12, & \text{otherwise}.
+ \end{cases}
+ \label{eq:criterion}
+\end{equation}
+
+\emph{Proof.} If $T_{:b}=0$, the readout is independent of $c_b$,
+so $\Pr(y=1\mid H_S)=1/2$; the same holds for $a$.
+If both columns are nonzero, summing sink vectors gives
+$z=\alpha x_a+\beta x_b$, where
+$\alpha=\sum_sT_{sa}>0$ and $\beta=\sum_sT_{sb}>0$.
+For equal source classes, $z\in U_0\cup U_1$. For different classes,
+transversality and nonzero Gaussian coordinates imply
+$z\notin U_0\cup U_1$ almost surely. Subspace membership therefore
+recovers the XOR label. $\square$
+
+This is a population information statement. Finite MLP optimization,
+sample size, numerical precision and noise can change achieved accuracy.
+The supplement gives the full argument and the ten-seed basis-rank check.
+A shared relay and rank-two transfer are both unnecessary: separate
+source routes suffice, and even identical sink mixtures retain the ideal
+label information when both source coefficients are positive.
+
+\subsection{What the structural interventions constrain}
+\label{sec:paths}
+
+The graph controls preserve each node's in-/out-degree and module-pair
+edge counts. For fixed sources and sinks, a common-relay family is
+\begin{equation}
+ \mathcal C(A)=\{(r,s):s\in S,\ A_{ar}A_{br}A_{rs}=1\}.
+ \label{eq:paths}
+\end{equation}
+A member represents two source edges converging at a relay and one edge
+to a sink. Its three-edge description omits separate-relay routes.
+The number of named motif edges retained is an even narrower statistic.
+Neither quantity specifies all columns of Eq.~\eqref{eq:transfer}.
+
+We compare two archived intervention designs. Named-edge compensation
+removes requested edges of a selected four-edge motif and replaces each
+through a module-matched directed double-edge swap,
+\begin{equation}
+ (u\!\to\!v,x\!\to\!y)
+ \longmapsto (u\!\to\!y,x\!\to\!v).
+ \label{eq:swap}
+\end{equation}
+Matching source-module and target-module labels preserves module counts;
+the exchange preserves every labeled degree. It does not constrain
+other source-specific routes.
+
+The path-conditioned design enumerates $\mathcal C(A)$, retains its first
+$q$ relay/sink pairs in a fixed order, and protects their path-edge union.
+Edges belonging only to non-retained triples are processed in sorted order.
+Background partners are randomized subject to degree/module matching,
+no duplicate/self-loop edges, no direct source--sink edges, and protection
+of the retained path edges. A candidate is additionally rejected if it
+creates any new member of $\mathcal C$; the final set must exactly equal
+the requested retained subset. Infeasible requests are recorded.
+This is a finite common-relay constraint, not a complete source-transport
+constraint. Different accepted swaps and ordering choices can still
+change source-specific routes and hence $T$.
+
+Subsequent degree nulls rewire the whole dose graph. Protected nulls fix
+the retained path-edge union while rewiring the remainder. They are not
+subject to the no-new-common-relay acceptance rule and need not preserve
+$T$. Table~\ref{tab:questions} states the distinct computational questions
+answered by these counterfactuals.
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Specify the computational contrast.} $A_q$ denotes a
+path-conditioned dose graph. The task audit checks the executed transfer
+alongside the declared graph constraints.}
+\label{tab:questions}
+\small
+\begin{tabular}{@{}p{0.30\linewidth}p{0.64\linewidth}@{}}
+\toprule
+Comparison & Question answered \\
+\midrule
+$A$ versus $W=I$ & Is cross-node transport required at the chosen readout? \\[3pt]
+$A$ versus degree null & Does this graph outperform the specified rewiring? \\[3pt]
+$A_q$ versus $A_{q'}$ & What changes under this particular constrained edit? \\[3pt]
+$A_q$ versus protected null & What changes when selected edges stay fixed but the background is rewired? \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Read the outcome through observability}
+\label{sec:controls}
+
+The audit has a direct sequence. First establish the executed direction,
+normalization, propagation depth, and readout. Next enumerate the stated
+motif family and compute source-specific transfer to those readout nodes.
+Finally distinguish loss of source access from the performance of a
+particular trained readout. An oracle given both sources tests label
+learnability; $W=I$ prevents cross-node transport to distinct sinks;
+linear-readout, shuffled-label, and moved-readout controls check alternative
+explanations. Equation~\eqref{eq:criterion} then distinguishes ideal label-information
+loss from the trainability of the surviving input mixture.
+
+The exact matrix reduction applies to a fixed linear propagation prefix.
+Nonlinear message passing, gating and spiking dynamics require an
+input-dependent analysis of source access.

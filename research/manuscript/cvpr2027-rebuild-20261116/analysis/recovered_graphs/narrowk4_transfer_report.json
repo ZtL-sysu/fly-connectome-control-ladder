@@ -1,0 +1,432 @@
+{
+  "provenance": {
+    "weights_sha256_verified": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+    "weight_bytes": 1051241946,
+    "annotation_file": "existing local MaleCNS v1.0 body-annotations.feather",
+    "rebuilt_from_original_readonly_scripts": [
+      "r51_motif_survival/build_graph.py",
+      "r51_motif_survival/run_task_a.py",
+      "r51_motif_survival/common.py",
+      "r51_pathblock/dose_pathblock.py"
+    ],
+    "not_original_execution_asset": true
+  },
+  "base": {
+    "N": 768,
+    "E_dense": 44906,
+    "E_k4": 3072,
+    "body_ids_sha256": "c0f5de2efad8bb067114eba7d61d0ebd3b25a8c095706b77f5bf8383be273776",
+    "module_ids_sha256": "915156613bc5237ff930362b7fe7eff9a1e5c562622244475dac5057988d9eb1"
+  },
+  "motif": {
+    "a": 6,
+    "b": 109,
+    "s1": 4,
+    "s2": 5,
+    "body_ids": {
+      "a": 10019,
+      "b": 10854,
+      "r": 10027,
+      "s1": 10015,
+      "s2": 10016
+    },
+    "named_edges": {
+      "a->r": [
+        6,
+        9
+      ],
+      "b->r": [
+        109,
+        9
+      ],
+      "r->s1": [
+        9,
+        4
+      ],
+      "r->s2": [
+        9,
+        5
+      ]
+    },
+    "P_all_base": [
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ]
+    ]
+  },
+  "namededge_s0": {
+    "n_edges": 3072,
+    "named_motif_edges_remaining": [],
+    "replacement_log": [
+      {
+        "deleted_named_edge": [
+          6,
+          9
+        ],
+        "removed_edges": [
+          [
+            6,
+            9
+          ],
+          [
+            670,
+            149
+          ]
+        ],
+        "added_edges": [
+          [
+            6,
+            149
+          ],
+          [
+            670,
+            9
+          ]
+        ]
+      },
+      {
+        "deleted_named_edge": [
+          109,
+          9
+        ],
+        "removed_edges": [
+          [
+            41,
+            238
+          ],
+          [
+            109,
+            9
+          ]
+        ],
+        "added_edges": [
+          [
+            41,
+            9
+          ],
+          [
+            109,
+            238
+          ]
+        ]
+      },
+      {
+        "deleted_named_edge": [
+          9,
+          4
+        ],
+        "removed_edges": [
+          [
+            9,
+            4
+          ],
+          [
+            302,
+            132
+          ]
+        ],
+        "added_edges": [
+          [
+            9,
+            132
+          ],
+          [
+            302,
+            4
+          ]
+        ]
+      },
+      {
+        "deleted_named_edge": [
+          9,
+          5
+        ],
+        "removed_edges": [
+          [
+            9,
+            5
+          ],
+          [
+            57,
+            546
+          ]
+        ],
+        "added_edges": [
+          [
+            9,
+            546
+          ],
+          [
+            57,
+            5
+          ]
+        ]
+      }
+    ],
+    "transfer": {
+      "W2_sink_rows_source_cols": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0625
+        ]
+      ],
+      "route_lists": [
+        {
+          "source": 6,
+          "source_body_id": 10019,
+          "sink": 4,
+          "sink_body_id": 10015,
+          "n_routes": 1,
+          "routes": [
+            {
+              "relay": 18,
+              "relay_body_id": 10061,
+              "coefficient": 0.0625
+            }
+          ],
+          "sum": 0.0625
+        },
+        {
+          "source": 6,
+          "source_body_id": 10019,
+          "sink": 5,
+          "sink_body_id": 10016,
+          "n_routes": 1,
+          "routes": [
+            {
+              "relay": 18,
+              "relay_body_id": 10061,
+              "coefficient": 0.0625
+            }
+          ],
+          "sum": 0.0625
+        },
+        {
+          "source": 109,
+          "source_body_id": 10854,
+          "sink": 4,
+          "sink_body_id": 10015,
+          "n_routes": 0,
+          "routes": [],
+          "sum": 0.0
+        },
+        {
+          "source": 109,
+          "source_body_id": 10854,
+          "sink": 5,
+          "sink_body_id": 10016,
+          "n_routes": 1,
+          "routes": [
+            {
+              "relay": 57,
+              "relay_body_id": 10317,
+              "coefficient": 0.0625
+            }
+          ],
+          "sum": 0.0625
+        }
+      ],
+      "P_all_common_relays": []
+    }
+  },
+  "pathblock_p0": {
+    "n_edges": 3072,
+    "metadata": {
+      "n_kept_paths": 0,
+      "kept_triples": [],
+      "deleted_edges": [
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          109,
+          9
+        ]
+      ],
+      "n_swaps": 4,
+      "swap_infeasible": false,
+      "n_edges": 3072,
+      "in_degree_sequence_matches_base": true,
+      "out_degree_sequence_matches_base": true,
+      "module_pair_counts_match_base": true,
+      "n_new_common_relays": 0,
+      "final_triples": [],
+      "invariant_violations": []
+    },
+    "transfer": {
+      "W2_sink_rows_source_cols": [
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.0625,
+          0.0
+        ]
+      ],
+      "route_lists": [
+        {
+          "source": 6,
+          "source_body_id": 10019,
+          "sink": 4,
+          "sink_body_id": 10015,
+          "n_routes": 1,
+          "routes": [
+            {
+              "relay": 18,
+              "relay_body_id": 10061,
+              "coefficient": 0.0625
+            }
+          ],
+          "sum": 0.0625
+        },
+        {
+          "source": 6,
+          "source_body_id": 10019,
+          "sink": 5,
+          "sink_body_id": 10016,
+          "n_routes": 1,
+          "routes": [
+            {
+              "relay": 18,
+              "relay_body_id": 10061,
+              "coefficient": 0.0625
+            }
+          ],
+          "sum": 0.0625
+        },
+        {
+          "source": 109,
+          "source_body_id": 10854,
+          "sink": 4,
+          "sink_body_id": 10015,
+          "n_routes": 0,
+          "routes": [],
+          "sum": 0.0
+        },
+        {
+          "source": 109,
+          "source_body_id": 10854,
+          "sink": 5,
+          "sink_body_id": 10016,
+          "n_routes": 0,
+          "routes": [],
+          "sum": 0.0
+        }
+      ],
+      "P_all_common_relays": []
+    }
+  },
+  "base_transfer": {
+    "W2_sink_rows_source_cols": [
+      [
+        0.125,
+        0.0625
+      ],
+      [
+        0.125,
+        0.0625
+      ]
+    ],
+    "route_lists": [
+      {
+        "source": 6,
+        "source_body_id": 10019,
+        "sink": 4,
+        "sink_body_id": 10015,
+        "n_routes": 2,
+        "routes": [
+          {
+            "relay": 9,
+            "relay_body_id": 10027,
+            "coefficient": 0.0625
+          },
+          {
+            "relay": 18,
+            "relay_body_id": 10061,
+            "coefficient": 0.0625
+          }
+        ],
+        "sum": 0.125
+      },
+      {
+        "source": 6,
+        "source_body_id": 10019,
+        "sink": 5,
+        "sink_body_id": 10016,
+        "n_routes": 2,
+        "routes": [
+          {
+            "relay": 9,
+            "relay_body_id": 10027,
+            "coefficient": 0.0625
+          },
+          {
+            "relay": 18,
+            "relay_body_id": 10061,
+            "coefficient": 0.0625
+          }
+        ],
+        "sum": 0.125
+      },
+      {
+        "source": 109,
+        "source_body_id": 10854,
+        "sink": 4,
+        "sink_body_id": 10015,
+        "n_routes": 1,
+        "routes": [
+          {
+            "relay": 9,
+            "relay_body_id": 10027,
+            "coefficient": 0.0625
+          }
+        ],
+        "sum": 0.0625
+      },
+      {
+        "source": 109,
+        "source_body_id": 10854,
+        "sink": 5,
+        "sink_body_id": 10016,
+        "n_routes": 1,
+        "routes": [
+          {
+            "relay": 9,
+            "relay_body_id": 10027,
+            "coefficient": 0.0625
+          }
+        ],
+        "sum": 0.0625
+      }
+    ],
+    "P_all_common_relays": [
+      [
+        9,
+        4
+      ],
+      [
+        9,
+        5
+      ]
+    ]
+  }
+}

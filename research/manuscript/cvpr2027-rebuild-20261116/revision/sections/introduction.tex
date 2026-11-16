@@ -1,0 +1,51 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Graph interventions are often reported through the statistics they preserve.
+A degree-preserving rewiring can keep every node's number of partners, and a
+motif deletion can be paired with a count of the circuit family that remains.
+Those reports answer a structural question. They do not answer whether the
+information required by a task still reaches the readout.
+
+This gap matters for connectome-constrained visual models, where measured
+wiring is used both as an inductive bias and as an object of
+interpretation~\cite{lappalainen2024,structure2026}. Degree-preserving
+randomization, motif deletion, and path protection are meaningful controls,
+but each can leave a replacement route. The deleted circuit and the source
+information available to the task are different objects.
+
+We study this distinction with a fixed directed operator. Features propagate
+for two rounds of incoming-neighbor averaging, and an MLP reads two sink
+nodes. With features active only at two sources, every structural intervention
+reduces to a source-to-readout transfer matrix
+$T=R_SW^2E_{ab}$. A nonzero column means that source remains visible. For the
+ideal noiseless subspace XOR task, both columns being nonzero is necessary and
+sufficient for perfect Bayes accuracy. A common-relay count is sufficient for
+this condition but not necessary: separate relays can preserve both sources.
+
+The audit changes the interpretation of existing connectome interventions.
+On one MaleCNS visual subgraph, two degree- and module-matched zero-dose
+reconstructions both have no common-relay triples. One retains both sources
+and has 97.45\% archived accuracy; the other loses a source and has 50.55\%.
+On two $k=8$ extractions, every reconstructed nonzero dose preserves ideal
+label information, while finite-readout accuracy still varies from roughly
+67\% to 94\%. Null graphs can also regain the task after the dose graph has
+lost it. The archived MLP, not a linear decode, carries a stricter distinction onto a visual parity XOR: among graphs that retain both sources, accuracy follows transfer rank, and it falls to chance only when a source column is deleted. The same operator, driven by four CIFAR-10 images at once, makes that deletion specific to the image class of the removed source. A reverse-support CIFAR-10 subset control detects no positive
+connectome-specific gain, so the claim is about auditing interventions rather
+than improving image classification.
+
+Our contributions are:
+\begin{itemize}
+  \item A task-information audit that reports source visibility and an exact
+        ideal-task criterion alongside motif, degree, and module statistics.
+  \item Connectome evidence that the audit changes intervention conclusions:
+        matched zero-motif graphs can differ in source access, information-preserving
+        doses can differ in finite accuracy, and protected nulls need not match
+        the dose graph.
+  \item An executed-readout check on those matched graphs. The archived MLP
+        reproduces the subspace split, and a two-source visual parity XOR
+        follows transfer rank. With four simultaneous CIFAR-10 images, class
+        identity follows the labeled source column: a private direction matches
+        the embedding ceiling, a deleted column returns chance, and the same
+        path-zero graph still reads a preserved source.
+\end{itemize}
