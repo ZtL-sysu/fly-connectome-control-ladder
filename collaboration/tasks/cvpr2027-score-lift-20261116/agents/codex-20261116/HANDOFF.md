@@ -73,3 +73,7 @@ The current paper is now `Task Information Audits for Connectome Graph Intervent
 The local LaTeX source was recompiled successfully with the desktop editor and system `latexmk`. The final PDF is anonymous, has all fonts embedded, no undefined references or citations, no overfull boxes, and no author identity. No new experiment, training, or scientific claim was added.
 
 Sync scope: the final main and supplement sources/PDFs, all embedded figure assets, and the final verification note. This is a work-state and artifact sync only. Governing review status and the existing scientific qualifications in `PROJECT.md` are unchanged.
+
+## 2026-11-17 final title and closing text
+
+The current submission title is "When Motifs Disappear but Information Survives: Auditing Graph Interventions in Connectomes". The abstract, opening paragraph, conclusion, two experiment sentences, and supplement title follow the final-edit instruction. The LLM statement remains the author-specified ChatGPT editing sentence. Main PDF is 9 pages: scientific content ends on page 8; the statement and references are on page 9. No new experiment was run.

@@ -1,15 +1,15 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Removing a targeted circuit motif does not necessarily remove the computation
-it supports. Consider two interventions on a reconstructed fly connectome:
-both preserve the original in- and out-degree sequences and module-level edge
-counts, and both eliminate every common relay between two designated sources
-and their readout sinks. Yet the corresponding archived classifiers achieve
-97.45\% and 50.55\% accuracy. As illustrated in Fig.~\ref{fig:overview}, one
-reconstructed graph still delivers both sources through separate relays; the
-other loses access to one source. The structural certificates are identical,
-but the information reaching the readout is not.
+When a graph intervention removes a circuit motif, what exactly has been
+removed from the computation? Figure~\ref{fig:overview} illustrates why the
+answer cannot be inferred from the edited structure alone. Two reconstructed
+interventions on a fly connectome satisfy identical degree and module-pair
+constraints and eliminate all common-relay triples for the designated sources
+and sinks. Nevertheless, one retains both sources through separate relays,
+while the other loses access to one. Their corresponding archived classifiers
+achieve 97.45\% and 50.55\% accuracy. The structural certificates agree, but
+the task information reaching the readout does not.
 
 Degree-preserving rewiring and motif deletion isolate structural properties,
 but a compensating edit can introduce replacement routes. The absence of a

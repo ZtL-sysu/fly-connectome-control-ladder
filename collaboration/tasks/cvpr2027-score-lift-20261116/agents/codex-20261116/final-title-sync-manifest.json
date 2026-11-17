@@ -1,0 +1,70 @@
+{
+  "purpose": "final title, abstract, closing text, and page-fit sync",
+  "files": [
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.tex",
+      "bytes": 1110,
+      "sha256": "65eb1777dc7dd932459a47944bea4e67095b7b636d77cd82aad7692d5c6327e7"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.pdf",
+      "bytes": 774274,
+      "sha256": "011b8ff6697973bf4f949dfa92352a29f8a1764932ab5094290211538aa0ca34"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main_submission.pdf",
+      "bytes": 774274,
+      "sha256": "011b8ff6697973bf4f949dfa92352a29f8a1764932ab5094290211538aa0ca34"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.tex",
+      "bytes": 22914,
+      "sha256": "e8fcad27fab1af7f2d9801a6f577337ca4e9acad5ce5b38e61e0c1b2c7d45de3"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.pdf",
+      "bytes": 222079,
+      "sha256": "100c9c54e31c914cde6f92394867df4046b2212d6913fd3dd05cfc7b96ffb256"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/abstract.tex",
+      "bytes": 1529,
+      "sha256": "a24d3ce91b1c17b3c56e1d843f1f94eca09ae6e6e3963f54a8b73170724ab300"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/introduction.tex",
+      "bytes": 3317,
+      "sha256": "c9ab3abf30cf107f1dac304701036981eca965bf503b0fa95a2f85611e03c305"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/discussion.tex",
+      "bytes": 2111,
+      "sha256": "48f02460f317f4f4ef8eb0c471be3f7961995b1732f6b53c5e27fa3f99ccae4f"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/experiments.tex",
+      "bytes": 19841,
+      "sha256": "02c2f4f8ce5cc1bdc5ead1b2f6bba2882f616bb5f140905bb65bb2a3f6f4b635"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/overview.tex",
+      "bytes": 644,
+      "sha256": "86080bc1f483aa7ebe74012c0d5bd5c2cbb26ea1e5912903aba6de311cc772e6"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/transfer_geometry.tex",
+      "bytes": 602,
+      "sha256": "cca0c7e18691d08c263582dbeca50c1d5041f1f9e59996b035ca5df943e487c1"
+    },
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/HANDOFF.md",
+      "bytes": 6893,
+      "sha256": "677b257529ab952dc618a8b6fb02e3115a83cf87ad7d3d7106bd1326036dce54"
+    },
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/LOG.md",
+      "bytes": 2927,
+      "sha256": "6dde6b32065825619021217d076762b26d4d18db783f887e21c39c66c576a553"
+    }
+  ]
+}

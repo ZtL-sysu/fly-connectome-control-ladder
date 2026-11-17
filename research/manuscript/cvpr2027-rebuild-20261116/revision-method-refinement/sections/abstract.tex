@@ -1,22 +1,22 @@
 \begin{abstract}
-Two connectome graph interventions can satisfy the same structural constraints
-yet leave different task information at the readout. In our study, two degree-
-and module-matched interventions eliminate all common relays, while their
-archived classifiers achieve 97.45\% and 50.55\% accuracy. This discrepancy
-exposes a limitation of structure-only intervention controls: preserving graph
-statistics does not certify the computation that survives. We introduce a
-task-information audit that separates structural constraints, source
-information available under the executed operator, and finite-model behavior.
-For a fixed two-step graph propagator, a compact source-to-readout transfer
-reveals routes and mixtures overlooked by motif counts. On a specified
-noiseless subspace XOR task, perfect Bayes accuracy requires exactly that both
-source columns remain nonzero. Reconstructed MaleCNS interventions exhibit the
-corresponding source-access difference, consistent with their archived
-outcomes. Across two additional graph extractions, all nonzero intervention
-doses preserve ideal label information even as trained accuracy increases from
-approximately 67\% to 94\%. Visual parity and four-source CIFAR-10 probes
-further distinguish source visibility, independent source recovery, and learned classification. Together,
-these findings establish task-information auditing as a practical way to
-distinguish structural preservation, information availability, and learned
-behavior.
+Removing a circuit motif need not remove the computation it supports. On the
+Drosophila MaleCNS connectome, two reconstructed graph interventions preserve
+identical degree and module-pair statistics while eliminating all designated
+common-relay triples. Yet one retains both task sources and the other loses
+access to one, consistent with archived classification accuracies of 97.45\%
+and 50.55\%. Readout retraining on the reconstructed transfers reproduces this
+high-versus-chance contrast, without recovering the identical historical run
+instances. To explain what survives a graph intervention, we introduce
+task-information auditing, which separates structural constraints, information
+available at the readout, and finite-model behavior through a compact
+source-to-readout transfer matrix. For a fixed two-step nonnegative linear
+propagator, we prove that perfect Bayes solvability of a noiseless subspace
+XOR task requires neither a common relay nor full transfer rank, but exactly
+the visibility of both sources. Across two additional graph extractions, ideal
+solvability remains perfect at every nonzero intervention dose, even as
+trained accuracy rises from approximately 67\% to 94\%. In a four-source
+CIFAR-10 probe, an independent transfer direction accompanies an increase in
+target-source classification accuracy from 16.4\% to 56.6\%. These findings
+shift the evaluation of graph interventions from the structures they preserve
+to the task-relevant computations they leave intact.
 \end{abstract}

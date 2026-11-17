@@ -33,3 +33,7 @@ The current paper is now `Task Information Audits for Connectome Graph Intervent
 The local LaTeX source was recompiled successfully with the desktop editor and system `latexmk`. The final PDF is anonymous, has all fonts embedded, no undefined references or citations, no overfull boxes, and no author identity. No new experiment, training, or scientific claim was added.
 
 Sync scope: the final main and supplement sources/PDFs, all embedded figure assets, and the final verification note. This is a work-state and artifact sync only. Governing review status and the existing scientific qualifications in `PROJECT.md` are unchanged.
+
+## 2026-11-17 final title and closing text
+
+Synced the titled final manuscript. Main and supplement titles match. Body remains within eight pages after modest figure scaling. LLM statement unchanged from the author-approved sentence.

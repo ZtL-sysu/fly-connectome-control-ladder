@@ -230,7 +230,7 @@ protocol is used throughout.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/multigraph.pdf}
+\includegraphics[width=0.86\textwidth]{figures/multigraph.pdf}
 \caption{\textbf{Finite-readout accuracy varies among
 information-preserving doses.} Blue, gray and green curves report archived dose, degree-null and
 protected-null accuracies in both $k{=}8$ extractions. Error bars are
@@ -315,8 +315,7 @@ On the subspace XOR, this replay returns MLP accuracies 0.976, 0.979, and
 0.504 for the base, named-edge, and path-zero graphs
 (Table~\ref{tab:executed}). The archived fits were 0.9772, 0.9745, and
 0.5055. Every linear readout stays near 0.505, including on the two graphs
-where the MLP exceeds 0.97. The trained model follows source visibility. A
-linear image of $T$ does not solve the label.
+where the MLP exceeds 0.97. The trained model follows source visibility. A linear readout of the transferred features remains near chance, even when ideal XOR solvability is preserved.
 
 The visual task keeps that architecture and those seeds, and replaces the Gaussian
 subspaces with handwritten digits~\cite{optdigits1998}. A fixed projection maps
@@ -356,9 +355,9 @@ Path zero & 0 & 1 & 0.504 & 0.506 \\
 The two-source XOR task is a setting in which visibility alone determines
 ideal label solvability. We now ask for the class of one designated image
 in a mixture of four independently sampled visual representations
-(Fig.~\ref{fig:geometry}). Access to a source and the ability to separate
-its representation are different properties, measured by the private energy
-$\rho_j$ in Eq.~\eqref{eq:private}.
+(Fig.~\ref{fig:geometry}). Source visibility and independent source recovery are distinct properties.
+We characterize the latter through the private energy defined in
+Eq.~\eqref{eq:private}.
 A two-convolution network is trained on $30{,}000$ CIFAR-10 images and then
 frozen. Its $16$-d embedding is linearly classified at $0.571$ on the official
 $10{,}000$-image test set. Sources $\{109,107,152,6\}$ receive independent
