@@ -8,3 +8,4 @@
 - Independent full review: Overall 6.0, confidence 5; recommends replacing the 5.5 locked draft.
 - Reviewer-posted fixes applied: the private residual is cross-referenced in the Introduction, the abstract no longer says the geometry "explains" behavior generally, and Fig. 4 is labelled as a schematic in transfer-feature space.
 - Remaining substantive risks are unchanged: one animal, related graph extractions, a fixed linear operator, post-hoc reconstruction of historical interventions, and narrow visual readout probes.
+- Image generation was attempted for Figure 1 but the built-in image service returned a usage-limit error. The final figure was rebuilt as an editable, data-faithful scientific vector graphic; all matrices and accuracies are typeset from archived records.
