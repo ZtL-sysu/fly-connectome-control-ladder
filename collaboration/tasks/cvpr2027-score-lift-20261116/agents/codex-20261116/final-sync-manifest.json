@@ -1,0 +1,176 @@
+{
+  "purpose": "final submission artifact sync",
+  "status": "completed work state, not scientific acceptance",
+  "files": [
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/TASK.md",
+      "bytes": 2069,
+      "sha256": "ed7701737d363baf897001d352859e55c9c401121a1534376a4743f6d5793b50"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.tex",
+      "bytes": 1076,
+      "sha256": "b72311e98b298cd7f8da19dacdf52c3a089ae49c2951087bc192bd74135bad48"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.pdf",
+      "bytes": 772769,
+      "sha256": "52ae3ae2d9616d0ec9197fc4b8d9d38a5ad2688b85a9e252002ef018f2327f42"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main_submission.pdf",
+      "bytes": 772769,
+      "sha256": "52ae3ae2d9616d0ec9197fc4b8d9d38a5ad2688b85a9e252002ef018f2327f42"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.tex",
+      "bytes": 22880,
+      "sha256": "bd29122d6a7dd259ae15446747157468252d0bef62d06b56e15f9e32a0577bd8"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.pdf",
+      "bytes": 222041,
+      "sha256": "3fa53d355364a89787d09d5ca2cd7eff3a9a1705414eb4f393a292bbc4d54546"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/abstract.tex",
+      "bytes": 1509,
+      "sha256": "4f60c0a03cb19c7ce46e3d0448841b89a8b0a73eef66c7b1bb05f954ac4d1f31"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/introduction.tex",
+      "bytes": 3320,
+      "sha256": "8cc277c08c42c6f7c9212b7eddb0456669170e396b339a2365d1a999ea760c1a"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/related.tex",
+      "bytes": 3314,
+      "sha256": "994d9d5188b925b4bac371e6286977966ec5a720d57571d6ea2dd08d43ea675a"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/method.tex",
+      "bytes": 8361,
+      "sha256": "67452116de34e40fad388b0748839b997a6f94e09e602edad5b0cfadd5426a02"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/experiments.tex",
+      "bytes": 19768,
+      "sha256": "29505612351e79e7587a17248c475f74e85413268b991132ea98fa7a7e6e5339"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/overview.tex",
+      "bytes": 644,
+      "sha256": "9d257db764b1b7379dd8efdb2495dd4c320b6e11645c97149c0db77da5a6ec9c"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/transfer_geometry.tex",
+      "bytes": 598,
+      "sha256": "0f5916e309c22605762a3ef183affa9e8f020132d9b9397e24ea9a11e40aee75"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/discussion.tex",
+      "bytes": 1867,
+      "sha256": "5ef56dc23d9c952309e6dc39eea4e34b4def493d48ad6fbfca7f6178052056a6"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/generated/full_matrices.tex",
+      "bytes": 5245,
+      "sha256": "37f9c0d4b0aaee4ddb70c4edcc5b9cc00626195c74201dfc4aa6f310f2a5b044"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/generated/paired_comparisons.tex",
+      "bytes": 3742,
+      "sha256": "1d17c69f5920a86e107b0408fbe09a568a0b84fe16120f7d6cb03333934d8624"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.pdf",
+      "bytes": 116079,
+      "sha256": "7b8aac08e41f0f62ae6df151ba12ab32a72c471fc173ac068c971e359be01070"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.png",
+      "bytes": 239113,
+      "sha256": "01b83b9ccf6a7c22c6b4a93174dfe49c24cc60ef0957cd3cb5ff76262bc090a7"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.svg",
+      "bytes": 35664,
+      "sha256": "66a9b0601c699f31203e0028e6441dc272d3d5f9511b7085f7457d6bb7bff687"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview-source.png",
+      "bytes": 256954,
+      "sha256": "15fe4b8d0c9e86b787afda265b6ff09fcba67b39af873846cc3610fcf8a6a330"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.pdf",
+      "bytes": 36317,
+      "sha256": "d73f7026ed6735facdaeb2a97cfd42aba25b412fbf8e5dfe33805b0880c616d6"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.png",
+      "bytes": 59606,
+      "sha256": "3c9bb9f2f15d51f9180e8dc6b6efec85c3ee511bd9562e7c6755ec20b3ae19a8"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.svg",
+      "bytes": 20145,
+      "sha256": "07d2999d64354f04805c196e078a5cc19ea1df58b55051a35e7e68214d6530ee"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.pdf",
+      "bytes": 45147,
+      "sha256": "7f433d2ae509ad593b4ce41cf5598d84f845afe6188842972a3dc0651bc006cc"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.png",
+      "bytes": 115513,
+      "sha256": "3efd8e0a8643ffb1c9141a3c18adcbf69dd63020a97738e7ec02d7fe5629944b"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.svg",
+      "bytes": 33649,
+      "sha256": "b421750798c80e000dbf7f2c4b19696509112a229f478cf26baabcaa0360144f"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.pdf",
+      "bytes": 68779,
+      "sha256": "ede3723ffcff887e5a564d10553464fb06d08f62f0f23f8c42dd2d13bd5dc74b"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.png",
+      "bytes": 66209,
+      "sha256": "1a1df2b08ab323c1669a9b164a203d66fbb0dea9384432cb9e4d9daa6dfa1120"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.svg",
+      "bytes": 18031,
+      "sha256": "5b1d9cee5a3d382452e5366ce9641efa822fd431c2230320e1a0ce8b48d1fa87"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/qa-method-refinement/FINAL-ACCEPTANCE.md",
+      "bytes": 1359,
+      "sha256": "c8a23be91bd023813934be1dd59982d702c2a6288f6a8db525606255623f44d2"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews-method-refinement/final-verification.md",
+      "bytes": 1359,
+      "sha256": "c8a23be91bd023813934be1dd59982d702c2a6288f6a8db525606255623f44d2"
+    },
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/HANDOFF.md",
+      "bytes": 6394,
+      "sha256": "149e7c2b13e880530476af3a29652d6981d019987fef92a85baf490fddf6da70"
+    },
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/LOG.md",
+      "bytes": 2692,
+      "sha256": "0a85e7515f4cace2267a8c3329cafc7ca63874cb3b0ce996ee5ec46e1c159656"
+    },
+    {
+      "path": "collaboration/tasks/cvpr2027-score-lift-20261116/agents/codex-20261116/checkpoints/20261117Tfinal/CHECKPOINT.md",
+      "bytes": 1121,
+      "sha256": "5969c270a06f3baf3e3ada374ef6f184bf8a2176af9fcbfbdd90ea29e70c03e5"
+    }
+  ]
+}

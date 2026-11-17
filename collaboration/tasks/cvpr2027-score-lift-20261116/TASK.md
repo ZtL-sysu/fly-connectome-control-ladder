@@ -29,3 +29,5 @@
   and rebuilt main figures. No new experiment was run.
 - Its isolated full review is Overall 6.0, confidence 5, and recommends
   replacing the prior 5.5 version. The evidence breadth remains narrow.
+- Status: synced to the current final submission artifacts only; no
+  change to governance.

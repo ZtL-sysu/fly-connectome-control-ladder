@@ -1,13 +1,12 @@
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/transfer_geometry.pdf}
-\caption{\textbf{Private transfer direction and source-specific readouts.}
-(Left) Schematic in transfer-feature space: the private component $q_j$ is
-the residual of a target transfer column after projecting out all other
-source columns; $\rho_j=\|q_j\|^2$.
-(Right) Ten-seed MLP accuracies from the frozen four-image CIFAR-10 readout.
-Source 109 is collinear on the base graph, has a private component on
-named-edge zero, and is deleted on path zero. Source 107 retains a shared
-column on all three graphs. Values come from the recorded readout.}
+\caption{\textbf{Independent source access and visual readout.}
+Left: for a one-dimensional competing subspace, the target column $t_j$
+splits into its projection $p_j$ and an orthogonal residual $q_j$. A nonzero
+residual permits exact linear recovery of that source under noiseless mixing.
+Right: ten-seed MLP accuracies for two CIFAR-10 sources. Source 109 gains a
+private component under named-edge compensation; source 107 stays readable
+through a shared mixture.}
 \label{fig:geometry}
 \end{figure}

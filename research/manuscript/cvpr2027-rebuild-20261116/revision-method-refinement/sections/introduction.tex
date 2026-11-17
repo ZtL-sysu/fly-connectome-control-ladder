@@ -1,68 +1,58 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Two graph edits can preserve the same degrees, module counts, and number of
-common relays while leaving different task information at the readout.
-In the MaleCNS intervention in Fig.~\ref{fig:overview}, one reconstructed
-zero-dose graph still carries both designated sources to the sinks in two
-propagation steps; the other carries only one. Their archived accuracies are
-0.9745 and 0.5055. A relay count cannot explain the difference because
-separate relays can replace a deleted common relay.
+Removing a targeted circuit motif does not necessarily remove the computation
+it supports. Consider two interventions on a reconstructed fly connectome:
+both preserve the original in- and out-degree sequences and module-level edge
+counts, and both eliminate every common relay between two designated sources
+and their readout sinks. Yet the corresponding archived classifiers achieve
+97.45\% and 50.55\% accuracy. As illustrated in Fig.~\ref{fig:overview}, one
+reconstructed graph still delivers both sources through separate relays; the
+other loses access to one source. The structural certificates are identical,
+but the information reaching the readout is not.
 
-This is an evaluation problem. A structural constraint certifies the edit,
-but it does not describe the computation the edited graph executes. The
-missing link becomes clearer when a task is defined by which sources supply
-information: the relevant object is the source-to-readout transfer under the
-fixed operator. Once that transfer is known, equal structural counts can be
-inspected against the signals that actually reach the classifier.
+Degree-preserving rewiring and motif deletion isolate structural properties,
+but a compensating edit can introduce replacement routes. The absence of a
+motif therefore does not establish the absence of the associated computation.
+The relevant object is the signal that the executed operator delivers to the
+readout.
 
-We formulate a task-information audit with three outputs at increasing
-levels of specificity. The structural output verifies the declared degrees,
-module counts, motifs and protected edges. The information-level output
-reports source visibility, transfer rank, and, for several competing
-sources, the private transfer residual of Eq.~\eqref{eq:private}. The
-behavioral output measures a
-finite model trained on the transferred features. Keeping these outputs
-separate prevents a structural certificate from being read as an
-information certificate, and prevents finite accuracy from being read as a
-measure of information loss.
+We address this gap with a task-information audit that separates three
+questions: whether the declared structural constraints hold, whether the
+information required by the task reaches the readout, and how effectively a
+finite model uses that information. For the fixed two-step linear operator
+studied here, propagating basis signals from the designated sources produces
+a compact source-to-readout transfer. Its columns capture source access, and
+their geometry describes how sources are mixed. Unlike a motif count, the
+transfer includes every contributing route under the operator used by the
+classifier.
 
-For the fixed directed operator used in the archived experiments, two
-rounds of incoming-neighbor averaging reduce the intervention to
-$T=R_SW^2E_{ab}$. A nonzero column means that a source affects the readout;
-it does not imply full source recovery. For the noiseless subspace XOR task,
-however, both nonzero columns are necessary and sufficient for perfect
-Bayes accuracy. This exact criterion provides a calibration point: a common
-relay is sufficient for source visibility but not necessary, and rank-one
-transfer can still preserve the XOR label.
+The audit yields an exact result for the noiseless subspace XOR task: perfect
+Bayes accuracy is possible if and only if both source columns are nonzero.
+Neither a shared relay nor full transfer rank is required. Separate routes
+can therefore preserve the task after a targeted common relay disappears.
+Applied to the reconstructed MaleCNS interventions, the criterion
+distinguishes the information-preserving and information-losing zero-relay
+graphs, consistent with their archived outcomes.
 
-The audit then addresses two questions in sequence. First, does structural
-matching imply information matching? The zero-relay counterexample answers
-no. Second, does preserved task information imply comparable finite-model
-behavior? On two $k=8$ extractions, every nonzero dose preserves ideal label
-information while accuracy rises from about 67\% to 94\%. The dose curves
-therefore measure how a finite readout uses surviving mixtures, not
-successive losses of label information.
+A second distinction remains even when ideal task information survives.
+Across two $k{=}8$ extractions, every nonzero dose retains both sources and
+therefore preserves perfect Bayes solvability, yet finite-readout accuracy
+rises from roughly 67\% to 94\%. Structural preservation, information
+availability, and learned performance are different levels of evidence. On
+visual parity and four-image CIFAR-10 probes, source mixtures and private
+transfer directions further show why a visible source need not be equally
+usable by a trained readout.
 
-For visual representations with several simultaneous sources, visibility
-alone is no longer enough. We use the residual of one transfer column after
-projecting out the others to quantify independent source access. On a visual
-parity task, accuracy follows transfer geometry: 0.746 for invertible
-columns, 0.663 for parallel columns and 0.506 after deleting a source.
-In a four-image CIFAR-10 readout, the class at source 109 reaches 0.566 when
-its transfer has a private component, falls to 0.164 when it is collinear
-with other sources and to 0.096 when it is deleted; a preserved source
-remains at 0.440. These are probes of readout geometry, not a visual
-recognition benchmark.
-
-Our contributions are:
+Our contributions are threefold:
 \begin{itemize}
-  \item A three-level task-information audit that pairs declared structural
-        constraints with executed source-to-readout transfer and finite-model
-        behavior, and gives an exact criterion for a specified ideal task.
-  \item A matched MaleCNS counterexample in which two zero-common-relay,
-        degree- and module-matched graphs differ in source access.
-  \item Evidence that preserved information and finite utilization are
-        distinct, followed by a transfer-geometry analysis that extends the
-        audit from two-source visibility to multi-source visual readouts.
+  \item We formulate a task-information audit that separates structural
+        constraints, source-to-readout information, and finite-model
+        behavior, with an exact criterion for a specified noiseless task.
+  \item We identify a matched-connectome counterexample in which
+        eliminating common relays can either preserve or remove the source
+        information required by the task.
+  \item We distinguish ideal information preservation from finite-readout
+        performance and extend the audit to source recovery and mixing
+        geometry in visual probes.
 \end{itemize}

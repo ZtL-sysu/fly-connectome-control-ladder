@@ -1,11 +1,14 @@
-# Final verification: revision-method-refinement
+# Final acceptance report
 
-- Main paper: 9 PDF pages, with scientific content ending on page 8 and the LLM statement and references on page 9.
-- Supplement: 7 pages.
-- LaTeX compiles with `latexmk -pdf -halt-on-error`; no undefined references, undefined citations, or overfull boxes remain.
-- Figures are rebuilt from archived records by `analysis/make_figures.py`. No model training or new evaluation was performed.
-- Verified against archived records: narrow transfers `[[2,1],[2,1]]`, `[[1,0],[1,1]]`, `[[1,0],[1,0]]` after scaling by 16; source-109 residuals 0, 0.001953125, 0; CIFAR source readouts 0.164/0.566/0.096 and preserved source 0.440.
-- Independent full review: Overall 6.0, confidence 5; recommends replacing the 5.5 locked draft.
-- Reviewer-posted fixes applied: the private residual is cross-referenced in the Introduction, the abstract no longer says the geometry "explains" behavior generally, and Fig. 4 is labelled as a schematic in transfer-feature space.
-- Remaining substantive risks are unchanged: one animal, related graph extractions, a fixed linear operator, post-hoc reconstruction of historical interventions, and narrow visual readout probes.
-- Image generation for Figure 1 was attempted twice with prompts following `f-research-v1/references/framework-figure-style.md`, but the built-in image service returned HTTP 429 because the account usage window is exhausted until 2026-11-20 15:21 UTC+8. The final figure is therefore a polished, editable, four-column scientific vector diagram following the same style guide: white background, uppercase pipeline headers, pastel modules, black arrows, mathematical labels, a bottom evidence strip and legend. All matrices and accuracies are typeset from archived records. A later GPT-image replacement can be swapped in when the quota resets without changing TeX beyond the figure file.
+- `main_submission.pdf` is identical to the compiled `main.pdf`.
+- Main paper: 9 pages; scientific content ends on page 8. Page 9 contains the LLM Usage Statement and references.
+- Supplement: 7 pages, anonymous and consistent with the main paper.
+- Figure 1 uses the final embedded image: matched structures, both active source routes in panel (a), no misleading dashed edges in panel (b), correct matrices and accuracies, and “0 common-relay triples”.
+- Figure 4 uses a programmatic orthogonal-projection diagram with t_j, p_j, q_j and the right-angle relation; the CIFAR readout panel is retained.
+- Figure 3 no longer places ideal Bayes labels above the panels; the caption states the ideal condition.
+- Method adds the multi-source representation and the exact source-recovery identity q_j^T H_S = rho_j x_j.
+- Visual experiment wording now distinguishes source visibility, exact source recovery, and learned classification; “embedding ceiling” was removed.
+- LLM Usage Statement has been replaced with the author-approved text naming OpenAI's ChatGPT (GPT models).
+- Citation check: 22 cited keys, no missing BibTeX entries.
+- LaTeX compilation: no errors, undefined references, or overfull boxes.
+- Manual review: no author identities in the anonymous PDF; formula, figure, table, and reference order are consistent.

@@ -1,20 +1,22 @@
 \begin{abstract}
-Graph interventions are usually reported through the structures they
-preserve: degrees, modules, or motif counts. These certificates do not say
-what task information reaches the readout of the executed model. We propose
-a task-information audit that separates graph structure, information at the
-readout, and finite-model behavior. For a fixed two-step graph operator,
-propagating source basis vectors yields a source-to-readout transfer
-$T=R_SW^2E_{ab}$. Its columns and geometry reveal source access, mixture,
-and private directions that structural counts omit. For a specified
-noiseless subspace XOR, two nonzero columns are necessary and sufficient for
-perfect Bayes accuracy; a common relay is not. On reconstructed MaleCNS
-graphs, two degree- and module-matched edits with zero common relays differ
-in source access and have archived accuracies of 0.9745 and 0.5055. Across
-$k=8$ interventions, all nonzero doses preserve ideal label information
-while finite accuracy grows from about 67\% to 94\%. Extending the audit to
-multi-source transfer geometry clarifies measured source-specific readout
-behavior on visual parity and four-image CIFAR-10 probes. The audit turns an
-intervention report into a claim about the computation that was actually
-executed.
+Two connectome graph interventions can satisfy the same structural constraints
+yet leave different task information at the readout. In our study, two degree-
+and module-matched interventions eliminate all common relays, while their
+archived classifiers achieve 97.45\% and 50.55\% accuracy. This discrepancy
+exposes a limitation of structure-only intervention controls: preserving graph
+statistics does not certify the computation that survives. We introduce a
+task-information audit that separates structural constraints, source
+information available under the executed operator, and finite-model behavior.
+For a fixed two-step graph propagator, a compact source-to-readout transfer
+reveals routes and mixtures overlooked by motif counts. On a specified
+noiseless subspace XOR task, perfect Bayes accuracy requires exactly that both
+source columns remain nonzero. Reconstructed MaleCNS interventions exhibit the
+corresponding source-access difference, consistent with their archived
+outcomes. Across two additional graph extractions, all nonzero intervention
+doses preserve ideal label information even as trained accuracy increases from
+approximately 67\% to 94\%. Visual parity and four-source CIFAR-10 probes
+further distinguish source visibility, independent source recovery, and learned classification. Together,
+these findings establish task-information auditing as a practical way to
+distinguish structural preservation, information availability, and learned
+behavior.
 \end{abstract}

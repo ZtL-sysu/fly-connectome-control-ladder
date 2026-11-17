@@ -73,8 +73,9 @@ recorded in the supplement.
 \subsection{Calibrating a known structural effect}
 \label{sec:calibration}
 
-Before interpreting real-wiring interventions, we verify that the task and
-readout can detect a known route. Table~\ref{tab:calibration} shows the
+Before examining biological wiring, we use a graph in which the targeted
+circuit is the only source-to-readout route. This checks that the task,
+operator, and readout respond when that access is removed. Table~\ref{tab:calibration} shows the
 controlled-graph result. The graph reaches 99.71\% accuracy and the oracle
 99.91\%. A degree-preserving null reduces accuracy to 50.17\%, whereas
 protecting the four route edges retains 99.71\%. Deleting the motif,
@@ -107,8 +108,9 @@ Oracle source readout & 0.9991 & [0.9983, 0.9997] \\
 \end{tabular}
 \end{table}
 
-The controlled motif deletion removes the only source-to-sink route.
-Real connectome neighborhoods need not have that property.
+The controlled deletion removes the only source-to-sink route. Deleting
+the same kind of motif in a larger connectome need not remove the
+task-relevant computation.
 
 \subsection{Named edges do not define the intervention}
 \label{sec:edge}
@@ -120,14 +122,16 @@ order and replaces deleted edges with module-matched swaps. It preserves
 degree and module counts, without checking the common-relay family after
 each exchange.
 
+The controlled result does not extend automatically to a compensated edit.
 Figure~\ref{fig:edge-path}a exposes the resulting mismatch. Intact accuracy
 is $0.9772$, while the zero-named-edge graph achieves $0.9745$.
 The paired difference is $0.0027$ with interval $[-0.0031,0.0078]$.
 The requested one- and two-edge conditions both give $0.5051$.
 The response is nonmonotone: the zero-edge condition retains nearly
 intact accuracy while the intermediate conditions fall to chance. With
-features active only at the designated sources, this motivates examining
-the routes left by the compensating edits.
+features active only at the designated sources, the requested edge count
+is not a proxy for the computation left by the edit. We therefore inspect
+the source-to-readout transfer directly.
 
 \begin{figure}[t]
 \centering
@@ -156,7 +160,13 @@ Their task-information contrast can be inspected directly through $T$.
 \subsection{Question 1: does structural matching preserve information?}
 \label{sec:replay}
 
-We reconstruct the graph operators from the public MaleCNS tables and
+The decisive comparison concerns two zero-common-relay reconstructions
+with the same degree and module constraints. Their certificates agree, but
+their transfers do not: named-edge compensation retains both sources through
+separate relays, while path conditioning loses source $b$ at the readout.
+Proposition~1 assigns ideal solvability only to the first. This is consistent
+with archived accuracies 0.9745 and 0.5055. The matrices are reconstructed
+from public MaleCNS tables and
 archived extraction/intervention code. The recovered weight table matches
 the original release's recorded byte count and SHA-256. The narrow base
 matches 768 nodes, 44,906 dense edges, 3,072 retained edges, the five selected
@@ -209,7 +219,9 @@ rejection rule or isolate it from the other editing choices.
 \subsection{Question 2: does information preservation predict finite use?}
 \label{sec:multi}
 
-The $k=8$ study uses broad and narrow annotation predicates and requires
+When both sources remain visible, preservation of ideal information need
+not imply comparable trained performance. The $k=8$ study uses broad and
+narrow annotation predicates and requires
 at least three enumerated triples per selected source--sink configuration.
 Both extractions have exactly three, giving four distinct dose levels.
 Every reported dose is feasible, retains the requested terminal set, and
@@ -219,13 +231,12 @@ protocol is used throughout.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/multigraph.pdf}
-\caption{\textbf{Ideal information remains fixed while finite accuracy
-changes.} Blue, gray and green curves report archived dose, degree-null and
+\caption{\textbf{Finite-readout accuracy varies among
+information-preserving doses.} Blue, gray and green curves report archived dose, degree-null and
 protected-null accuracies in both $k{=}8$ extractions. Error bars are
-seed-block bootstrap 95\% intervals. The row above each dose gives the
-ideal Bayes accuracy reconstructed from source visibility: $1/2$ only when
-the dose graph loses a source. Null graphs follow different counterfactuals
-and are not assigned these ideal labels. All doses are from the same animal.}
+seed-block bootstrap 95\% intervals. Every nonzero dose retains both sources, so its ideal Bayes accuracy
+is 1; only the zero dose is $1/2$. Null graphs are different counterfactuals
+and are not assigned those ideal labels. All doses are from the same animal.}
 \label{fig:multi}
 \end{figure*}
 
@@ -289,10 +300,13 @@ all surviving task information.
 \subsection{Transfer geometry beyond two-source visibility}
 \label{sec:images}
 
-Nonzero columns decide the ideal subspace criterion. They do not by themselves
-say what a trained nonlinear readout will do with a visual label. We therefore
-attach the archived readout to the three degree- and module-matched narrow
-reconstructions: a $32\!\to\!64\!\to\!1$ ReLU MLP, Adam with learning rate
+For the noiseless subspace XOR task, source visibility is sufficient for
+ideal label solvability, even when the transfer columns are parallel. Visual
+representations pose a different challenge: the relevant information must be
+extracted from mixtures of image features. We therefore compare transfer rank
+with finite-readout behavior under the same operator. We retrain the archived
+readout architecture on the three reconstructed transfers, using the recorded
+protocol: a $32\!\to\!64\!\to\!1$ ReLU MLP, Adam with learning rate
 0.006, 120 epochs of 32 batches of 128, and the ten recorded seeds. With
 features present only at $a$ and $b$, the sink input is exactly $TX_{ab}$.
 The linear control uses the same budget with the hidden layer removed.
@@ -317,8 +331,9 @@ The reverse-support CIFAR-10 subset remains a negative control
 
 \begin{table}[t]
 \centering
-\caption{\textbf{Archived MLP versus a linear readout.} Means over the ten
-recorded seeds. All three graphs share degree and module counts. Linear
+\caption{\textbf{Readout performance on reconstructed transfers.}
+Means over ten seeds. The MLP is retrained from the archived architecture.
+All three graphs share degree and module counts. Linear
 accuracies are 0.506, 0.505, and 0.505 on the subspace task and 0.505,
 0.502, and 0.506 on the visual task, in the same row order.}
 \label{tab:executed}
@@ -338,9 +353,12 @@ Path zero & 0 & 1 & 0.504 & 0.506 \\
 \subsection{Multi-source geometry on visual codes}
 \label{sec:population}
 
-Figure~\ref{fig:geometry} turns from the two-source XOR to four concurrent
-visual sources. A $16$-d code of an $8{\times}8$ digit is an easy class
-label. CIFAR-10 is not.
+The two-source XOR task is a setting in which visibility alone determines
+ideal label solvability. We now ask for the class of one designated image
+in a mixture of four independently sampled visual representations
+(Fig.~\ref{fig:geometry}). Access to a source and the ability to separate
+its representation are different properties, measured by the private energy
+$\rho_j$ in Eq.~\eqref{eq:private}.
 A two-convolution network is trained on $30{,}000$ CIFAR-10 images and then
 frozen. Its $16$-d embedding is linearly classified at $0.571$ on the official
 $10{,}000$-image test set. Sources $\{109,107,152,6\}$ receive independent
@@ -355,15 +373,15 @@ on every graph.
 \begin{table}[t]
 \centering
 \caption{\textbf{CIFAR-10 identity from four simultaneous images.} Chance is
-$0.1$. The frozen embedding's own test accuracy is $0.571$. Private energy is
-the residual of the labeled column. Source $109$ is deleted at these sinks
-only on path zero.}
+$0.1$. A linear probe of the isolated embedding scores $0.571$. Private energy
+is the squared norm of the target column's orthogonal residual. The transfer
+column of source $109$ vanishes under path conditioning.}
 \label{tab:population}
 \small
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}llccc@{}}
 \toprule
-Label & Graph & Private & MLP & Linear \\
+Label & Graph & $\rho_j$ & MLP & Linear \\
 \midrule
 109 & Base & 0 & 0.164 & 0.166 \\
 109 & Named-edge zero & 0.00195 & 0.566 & 0.558 \\
@@ -375,9 +393,10 @@ Label & Graph & Private & MLP & Linear \\
 \end{tabular}
 \end{table}
 
-Path zero reads source $107$ at $0.440$ and source $109$ at $0.096$. The
-named-edge MLP reaches $0.566$, beside the embedding ceiling, and the linear
-control reaches $0.558$. The base graph has more column energy and no private
-direction; the MLP stays at $0.164$ and the linear control at $0.166$. The same split holds for UCI digit
-identity: the named-edge MLP reaches $0.852$, path zero falls to $0.099$, and
-the preserved source stays at $0.698$.
+Source $109$ gains a nonzero private component under named-edge compensation:
+MLP accuracy is $0.566$, against $0.164$ on the base graph and $0.096$ when
+its column vanishes. The linear control reaches $0.558$, beside the $0.571$
+linear probe of the unmixed embedding. Source $107$ stays readable without a
+private component, at $0.440$ on path zero, so class information can survive
+when exact source recovery cannot. The UCI digit split is $0.852$, $0.099$,
+and $0.698$ for the same three conditions.

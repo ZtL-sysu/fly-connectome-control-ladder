@@ -66,3 +66,10 @@ Training used local CIFAR batches 2--4, or 30,000 images. Batch 1 is absent and 
 3. Read `reviews/independent-full-review-20261116-cifar.md` before changing any CIFAR claim.
 4. Keep this manuscript separate from R95 and R129. A future score change requires a new isolated full review of a revised manuscript.
 5. Do not rerun the encoder or readout merely to reproduce this archive sync.
+## 2026-11-17 final submission sync
+
+The current paper is now `Task Information Audits for Connectome Graph Interventions`. The final main PDF is identical to the source-built `main.pdf`, contains eight pages of scientific content plus the LLM Usage Statement and references on page 9, and uses the exact author-approved ChatGPT disclosure. Figure 1 is the user-provided replacement showing matched structural constraints and differing task information; Figure 3 no longer places ideal-Bayes labels above the panels; Figure 4 uses a programmatic orthogonal-projection diagram without text collisions.
+
+The local LaTeX source was recompiled successfully with the desktop editor and system `latexmk`. The final PDF is anonymous, has all fonts embedded, no undefined references or citations, no overfull boxes, and no author identity. No new experiment, training, or scientific claim was added.
+
+Sync scope: the final main and supplement sources/PDFs, all embedded figure assets, and the final verification note. This is a work-state and artifact sync only. Governing review status and the existing scientific qualifications in `PROJECT.md` are unchanged.

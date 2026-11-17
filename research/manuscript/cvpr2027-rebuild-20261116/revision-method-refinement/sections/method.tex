@@ -1,16 +1,20 @@
 \section{Task-Information Audit}
 \label{sec:method}
 
-An intervention specifies which edges to change. A task-information audit
-asks what computation those changes leave at the readout. We separate three
-levels: structural validation checks declared constraints; transfer analysis
-identifies the task information available to the readout; a trained readout
-measures how a finite model uses that information.
+A graph intervention changes wiring; its interpretation depends on the
+computation that remains. We audit an intervention at three levels. First, we
+verify the structural properties the edit claims to preserve. Second, we
+examine which task-relevant source signals reach the readout under the
+executed operator. Third, we evaluate how a finite trained model uses the
+resulting representation. These levels answer different questions and are not
+interchangeable evidence.
 
 \subsection{Specify the executed computation}
 \label{sec:operator}
 
-The audit takes four inputs: an edited graph, its executed propagation
+For a fixed linear propagation prefix, source-to-readout transfer can be
+computed directly, without training a classifier or enumerating every source
+input. The audit takes four inputs: an edited graph, its executed propagation
 operator, designated task sources, and readout locations.
 Let $A_{uv}=1$ denote a directed edge $u\!\to\!v$. The main experiments
 use binary support and incoming-neighbor averaging,
@@ -42,7 +46,7 @@ $O(h|E|\,n_{\rm source})$ time and $O(Nn_{\rm source})$ storage.
 For this operator, every entry has an explicit path interpretation:
 \begin{equation}
  T_{sj}=\sum_r W_{sr}W_{rj}
- =\sum_r\frac{A_{rj}A_{sr}}{\max(d_r,1)\max(d_s,1)}.
+ =\sum_r\frac{A_{jr}A_{rs}}{\max(d_r,1)\max(d_s,1)}.
  \label{eq:pathsum}
 \end{equation}
 Each term is one source--relay--sink route. A common-relay count records
@@ -54,7 +58,7 @@ and common-relay statistics need not imply equal readout inputs.
 \label{sec:observability}
 
 \paragraph{Source access is not source recovery.}
-A source is \emph{visible} when its column of $T$ is nonzero. Visibility
+Source visibility is weaker than source recovery, and neither alone determines an arbitrary trained classifier. For the noiseless XOR task considered here, visibility is nevertheless an exact criterion for whether the label remains recoverable. A source is \emph{visible} when its column of $T$ is nonzero. Visibility
 means that some source-dependent signal reaches the readout; it does not
 mean that the source vector can be reconstructed. Full column rank is
 the stronger linear-separability condition for independent sources.
@@ -97,22 +101,22 @@ The proposition is a population statement for this noiseless task, not a
 prediction of finite-sample optimization or a guarantee of source recovery.
 
 \paragraph{Multi-source mixing geometry.}
-Visibility is incomplete when several sources contribute features
-simultaneously. For a target source $j$, let $t_j=T_{:j}$ and let $T_{-j}$
-collect the other source columns. Its private component is the residual
-after projecting out those columns:
+With $m$ designated active sources, the same linear prefix gives
+$H_S=TX$: each column of $T$ belongs to one source and each row of $X$
+holds that source's features. For a target source $j$, let $t_j=T_{:j}$
+and let $T_{-j}$ collect the other columns. Its private component is the
+residual after projecting out those columns:
 \begin{equation}
  q_j=(I-P_{\operatorname{span}(T_{-j})})t_j,\qquad
  \rho_j=\|q_j\|_2^2.
  \label{eq:private}
 \end{equation}
-The scalar $\rho_j$ is the squared transfer coefficient along a readout
-direction orthogonal to all other transferred sources. It measures
-independent source access in the linear operator, independently of the
-source representation or readout training. A nonzero residual can support
-source separation; a zero residual says that the target transfer is
-collinear with the other columns. Neither case by itself specifies a
-nonlinear classifier's accuracy.
+Because $q_j$ is orthogonal to every other column,
+$q_j^\top H_S=\rho_j x_j$ under noiseless mixing. If $\rho_j>0$,
+$x_j=q_j^\top H_S/\rho_j$ recovers the target without reconstructing the
+other sources. A zero residual means no linear projection isolates it from
+arbitrary competing features. That is source recovery, not label solvability:
+class information can remain when exact separation is impossible.
 
 \subsection{What the structural interventions constrain}
 \label{sec:paths}
@@ -160,6 +164,8 @@ moved-readout controls test alternative explanations.
 The output pairs a structural certificate with a statement about task
 information and a separate measurement of finite-model behavior.
 
-The exact matrix reduction applies to a fixed linear propagation prefix.
-Nonlinear message passing, gating and spiking dynamics require an
-input-dependent analysis of source access.
+The audit does not replace structural controls. It tests whether those
+controls support the task-level conclusion drawn from them. The exact matrix
+reduction applies to a fixed linear propagation prefix. Nonlinear message
+passing, gating and spiking dynamics require an input-dependent analysis of
+source access.

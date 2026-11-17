@@ -26,3 +26,10 @@ replacement of the earlier 5.5 version. Improvement is methodological
 articulation and figure quality; no new experiment, animal, operator or
 visual benchmark was added. R95 governance remains unchanged. Manifest:
 `research/manuscript/cvpr2027-rebuild-20261116/method-refinement-manifest.json`.
+## 2026-11-17 final submission sync
+
+The current paper is now `Task Information Audits for Connectome Graph Interventions`. The final main PDF is identical to the source-built `main.pdf`, contains eight pages of scientific content plus the LLM Usage Statement and references on page 9, and uses the exact author-approved ChatGPT disclosure. Figure 1 is the user-provided replacement showing matched structural constraints and differing task information; Figure 3 no longer places ideal-Bayes labels above the panels; Figure 4 uses a programmatic orthogonal-projection diagram without text collisions.
+
+The local LaTeX source was recompiled successfully with the desktop editor and system `latexmk`. The final PDF is anonymous, has all fonts embedded, no undefined references or citations, no overfull boxes, and no author identity. No new experiment, training, or scientific claim was added.
+
+Sync scope: the final main and supplement sources/PDFs, all embedded figure assets, and the final verification note. This is a work-state and artifact sync only. Governing review status and the existing scientific qualifications in `PROJECT.md` are unchanged.
