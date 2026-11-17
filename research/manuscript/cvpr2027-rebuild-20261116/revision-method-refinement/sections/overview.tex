@@ -1,12 +1,14 @@
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.78\textwidth]{figures/overview.pdf}
-\caption{\textbf{Identical structural constraints do not imply identical task
-information.} Both reconstructed interventions preserve the original degree
-sequences and module-pair counts and eliminate all common-relay triples.
-Named-edge compensation retains both sources through separate relays, whereas
-path conditioning leaves source $b$ with no two-hop route to the selected
-readout. Only contributing two-hop routes are shown. Transfer matrices are
-reconstructed; accuracies are corresponding archived outcomes.}
+\includegraphics[width=\textwidth]{figures/overview-final.png}
+\caption{\textbf{Task-information auditing traces what survives graph
+interventions.} Left: two degree- and module-matched interventions eliminate
+all common-relay triples, yet retain different source-to-readout transfers;
+their archived accuracies are 97.45\% and 50.55\%. Center: the audit links
+structural constraints, transfer under the executed operator, and finite-model
+behavior. Right: ideal information can persist while trained accuracy changes,
+and an independent transfer direction accompanies improved target-source
+classification. Transfer matrices are reconstructed; accuracies are archived
+outcomes.}
 \label{fig:overview}
 \end{figure*}
