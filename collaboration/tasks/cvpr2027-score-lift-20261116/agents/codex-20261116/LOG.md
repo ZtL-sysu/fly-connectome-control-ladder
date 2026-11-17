@@ -17,3 +17,12 @@ The isolated follow-up review gives Overall 5.5 / confidence 5 after removal
 of the unsupported noise bound and correction of the CIFAR claim. No score
 gain or change to R95 is claimed. Explicit file hashes are in
 `research/manuscript/cvpr2027-rebuild-20261116/cvpr26-lift-manifest.json`.
+
+## 2026-11-17 method-refinement archive
+
+Archived the current best manuscript in `revision-method-refinement/`.
+The isolated full review gives Overall 6.0 / confidence 5, recommending
+replacement of the earlier 5.5 version. Improvement is methodological
+articulation and figure quality; no new experiment, animal, operator or
+visual benchmark was added. R95 governance remains unchanged. Manifest:
+`research/manuscript/cvpr2027-rebuild-20261116/method-refinement-manifest.json`.

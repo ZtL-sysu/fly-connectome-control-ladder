@@ -1,0 +1,223 @@
+{
+  "paper": "Task Information Audits for Connectome Graph Interventions",
+  "revision": "revision-method-refinement",
+  "latest_independent_review": {
+    "overall": 6.0,
+    "confidence": 5,
+    "path": "reviews-method-refinement/independent-review.md"
+  },
+  "supersedes": "revision-cvpr26-lift (overall 5.5)",
+  "note": "Framing, method, and figure revision only; no new experiment. R95 governance unchanged.",
+  "files": [
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/analysis/make_figures.py",
+      "bytes": 9510,
+      "sha256": "357a24906d0d7bd945811f0329be70712780ac5433e794d4aa0669ea85e54065"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/cvpr.sty",
+      "bytes": 17887,
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.pdf",
+      "bytes": 36922,
+      "sha256": "1dc140250ee8cb3ec7bae41ebb8fd6b54b9af0248c1559289ff2c2f6c277b575"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.png",
+      "bytes": 68770,
+      "sha256": "0bb797d5b78e8660b07463d89c745c0f188e64c6b2c53d54d9fcb16750d98e80"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/edge_vs_path.svg",
+      "bytes": 20825,
+      "sha256": "f334f44ad6cbce46030c1d69bd2e97f2e7fcd3d62d19ae79b95ef92af7ca1348"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/endpoint_deltas.pdf",
+      "bytes": 12617,
+      "sha256": "e3f12997bfb60573e8cb2569972ca20424eeacf3423b1edbdadb747b1c566ed3"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/endpoint_deltas.png",
+      "bytes": 23821,
+      "sha256": "e154fb728933509a100872a60e3b18fe714e832a381a32ade5d2403dda326f61"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/endpoint_deltas.svg",
+      "bytes": 11249,
+      "sha256": "5be33801f1debb66ac3afb8532277bc633d265f967a78ab1bee9e59f6d717f08"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/image_boundary.pdf",
+      "bytes": 15902,
+      "sha256": "8bfab49477a2aab76568a47e6842de4922f0aee944e5b297aa40d557e9e190db"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/image_boundary.png",
+      "bytes": 22518,
+      "sha256": "cd0fae9fa36c53922e663685b3d8cd496f4157168342b4d7a251e8b53a0e36bc"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/image_boundary.svg",
+      "bytes": 10719,
+      "sha256": "af8f747e0eb4d09dd6d432b7621160d6ee5ebca3b67fd04c088dcf9077dbbd27"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.pdf",
+      "bytes": 45869,
+      "sha256": "49398bf1d09a5ceb635a320cf093357aa3768cd5e5b596c39f4fa9c4fce3a511"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.png",
+      "bytes": 119099,
+      "sha256": "956e8458dd35be5f104f6acac1205e1d706f647237fbee7e094f44336c5a3304"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/multigraph.svg",
+      "bytes": 36380,
+      "sha256": "0f91be769ce5009a76cb2e0b6ff89bdb6d8030730bdb371989137f46b6eae88d"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.pdf",
+      "bytes": 103995,
+      "sha256": "bbd4d5ee164a13effabd3f861da37304a0ae2ffa0f4b700e308932c3b893395f"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.png",
+      "bytes": 115013,
+      "sha256": "d692bb9038d615e204e607bd4de357644cae6e24ead7e90b7bbb61982ab4158b"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.svg",
+      "bytes": 21859,
+      "sha256": "79fd06285d15c8ab594ca6013d6dc677ac46e9499d4e387723d430ed27fa3ba0"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.pdf",
+      "bytes": 68927,
+      "sha256": "9641b115f76442a0a1c4f0a4999687c2560178fa033067e87c69ae6114bed070"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.png",
+      "bytes": 75394,
+      "sha256": "298f78d4cad21366d771ef52da86916620f1d4023cfa85e1d20f68bd14163419"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.svg",
+      "bytes": 17502,
+      "sha256": "f56a57dfa7a4ec4abb4e8f6e40184e8663d85d1d8650773f46ed124310ec7e0a"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/generated/full_matrices.tex",
+      "bytes": 5245,
+      "sha256": "37f9c0d4b0aaee4ddb70c4edcc5b9cc00626195c74201dfc4aa6f310f2a5b044"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/generated/paired_comparisons.tex",
+      "bytes": 3742,
+      "sha256": "1d17c69f5920a86e107b0408fbe09a568a0b84fe16120f7d6cb03333934d8624"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/ieeenat_fullname.bst",
+      "bytes": 26900,
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.pdf",
+      "bytes": 760511,
+      "sha256": "1028835ec3f02317d957e8715dcc0697c9e9b66c83dd2abc27d73e77ff4a1c26"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.tex",
+      "bytes": 1460,
+      "sha256": "068a052b7b7ff806352d81069f7bdd03f661f99f20ca238fc1dbfafc56132811"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/qa-method-refinement/baseline-review.md",
+      "bytes": 2073,
+      "sha256": "da0c7da286cc41f4cb72d5f01b652ff834d62a448c14aacd518f424f66236bb8"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/references.bib",
+      "bytes": 9964,
+      "sha256": "2e02848b7c18d96da03ac0bccdc41575c215114a2d7dc107122c06a7ed61887e"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/abstract.tex",
+      "bytes": 1294,
+      "sha256": "962e4931a666e53b1bbf62fcd67e70b11a4b759d3c00ae77ad60738f1daa7a0e"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/discussion.tex",
+      "bytes": 2703,
+      "sha256": "ea58680216e873d4de093e3fa0a9b89ff18b5790421000bb3dffb0dd38bfe5bd"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/experiments.tex",
+      "bytes": 18404,
+      "sha256": "4d5b192209f8e2c02671b1aa48528689afd8fbacad68755a2a04b4c43ffb10f6"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/introduction.tex",
+      "bytes": 3979,
+      "sha256": "820b1bff56240b778fe9530609928ee18f6d5fd8a8e2045388ade7db7c443f16"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/method.tex",
+      "bytes": 7680,
+      "sha256": "8cad465afb8e46456b74df6ce8a715cc9e15e90a2a0cf8724b614c31285d1e86"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/overview.tex",
+      "bytes": 534,
+      "sha256": "aa3acd119c192ad4abe4fbface84c7bb07de5976a771aba928dded22a40b04e8"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/related.tex",
+      "bytes": 3314,
+      "sha256": "994d9d5188b925b4bac371e6286977966ec5a720d57571d6ea2dd08d43ea675a"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/sections/transfer_geometry.tex",
+      "bytes": 676,
+      "sha256": "25e24aa5c918a1f55c7f7105318c07f98ab265f04af8109baf3a8bac5182b336"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.pdf",
+      "bytes": 222041,
+      "sha256": "3fa53d355364a89787d09d5ca2cd7eff3a9a1705414eb4f393a292bbc4d54546"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/supplement.tex",
+      "bytes": 22880,
+      "sha256": "bd29122d6a7dd259ae15446747157468252d0bef62d06b56e15f9e32a0577bd8"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/template-README.md",
+      "bytes": 1695,
+      "sha256": "82154abbe11cdbc336bfb9ecc7e6cf9f2be823c4ff18de16235f2cca2561101a"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/visual-contract.md",
+      "bytes": 1061,
+      "sha256": "db57812adab757e0d4248ac1fc885a922607347316d271a1a49e07ec06997dd3"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews-method-refinement/final-verification.md",
+      "bytes": 1198,
+      "sha256": "510ae6ed5e4a3e0f1e15dad2a76b6ef8cda730b1b548585ae0482d7a166f917d"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews-method-refinement/independent-review.md",
+      "bytes": 12281,
+      "sha256": "62722beb15e299cf603c65671a5592d0b09fca35c4581626fe71979bece490db"
+    },
+    {
+      "path": "research/manuscript/cvpr2027-rebuild-20261116/method-refinement-decision.md",
+      "bytes": 2694,
+      "sha256": "5dbc3f8d2c00c908a9aac1a84da94ba14b194f6e12e0a1d73db5b5214b2a5924"
+    }
+  ]
+}

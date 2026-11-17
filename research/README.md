@@ -50,6 +50,12 @@ These records are additive and do not replace the R126 manifest or the governing
   5.5 / confidence 5: clearer framing and corrected scope, with no claimed
   score gain. See `cvpr26-lift-decision.md` and `cvpr26-lift-manifest.json`
   beside it. This does not change R95 governance.
+- `manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/` is the
+  current best version of this paper. Its isolated review is Overall
+  6.0 / confidence 5, above the earlier 5.5 version, based on a clearer
+  three-level audit, correct transfer geometry and rebuilt figures. It adds
+  no new experiment and does not change R95 governance. See
+  `method-refinement-decision.md` and `method-refinement-manifest.json`.
 
 ## Deliberately absent
 

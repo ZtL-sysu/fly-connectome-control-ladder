@@ -20,3 +20,12 @@
 - Latest review of this refined manuscript: Overall 5.5, confidence 5. This
   matches the locked baseline's score; it does not replace R95 or claim a
   higher score. The source-support manuscript remains separate.
+
+## 2026-11-17 method-refinement follow-up
+
+- Status: archived; no change to R95 governance or qualification status.
+- `revision-method-refinement/` adds an explicit four-step Task-Information
+  Audit, path expansion, private-transfer residual, question-led experiments,
+  and rebuilt main figures. No new experiment was run.
+- Its isolated full review is Overall 6.0, confidence 5, and recommends
+  replacing the prior 5.5 version. The evidence breadth remains narrow.

@@ -1,0 +1,165 @@
+\section{Task-Information Audit}
+\label{sec:method}
+
+An intervention specifies which edges to change. A task-information audit
+asks what computation those changes leave at the readout. We separate three
+levels: structural validation checks declared constraints; transfer analysis
+identifies the task information available to the readout; a trained readout
+measures how a finite model uses that information.
+
+\subsection{Specify the executed computation}
+\label{sec:operator}
+
+The audit takes four inputs: an edited graph, its executed propagation
+operator, designated task sources, and readout locations.
+Let $A_{uv}=1$ denote a directed edge $u\!\to\!v$. The main experiments
+use binary support and incoming-neighbor averaging,
+\begin{equation}
+ d_v=\sum_u A_{uv},\qquad
+ W_{vu}=\frac{A_{uv}}{\max(d_v,1)}.
+ \label{eq:operator}
+\end{equation}
+Rows for zero in-degree remain zero. Features propagate linearly for two
+rounds, $H=W^2X$, before an MLP reads the concatenated features at
+$S=\{s_1,s_2\}$. The operator direction, normalization, and readout
+locations are part of the computational model.
+
+With nonzero features only at sources $a,b$, let $E_{ab}$ place the source
+vectors and $R_S$ select the sinks. The graph affects the classifier input
+through
+\begin{equation}
+ H_S=T(A)X_{ab},\qquad T(A)=R_SW(A)^2E_{ab}.
+ \label{eq:transfer}
+\end{equation}
+$T$ has two source columns and two sink rows. It records every two-step
+route contributing to these inputs, including routes outside a selected
+motif family. Equal $T$ matrices give identical readout inputs for any
+source features; equal graph statistics need not. Computing $T$ requires
+propagating two basis columns, rather than constructing all entries of
+$W^2$. For a sparse fixed operator and $h$ steps, this costs
+$O(h|E|\,n_{\rm source})$ time and $O(Nn_{\rm source})$ storage.
+
+For this operator, every entry has an explicit path interpretation:
+\begin{equation}
+ T_{sj}=\sum_r W_{sr}W_{rj}
+ =\sum_r\frac{A_{rj}A_{sr}}{\max(d_r,1)\max(d_s,1)}.
+ \label{eq:pathsum}
+\end{equation}
+Each term is one source--relay--sink route. A common-relay count records
+only routes shared by both sources. Equation~\eqref{eq:pathsum} also retains
+separate-relay routes and their weights. This is why equal degree, module
+and common-relay statistics need not imply equal readout inputs.
+
+\subsection{Read the transfer at three levels}
+\label{sec:observability}
+
+\paragraph{Source access is not source recovery.}
+A source is \emph{visible} when its column of $T$ is nonzero. Visibility
+means that some source-dependent signal reaches the readout; it does not
+mean that the source vector can be reconstructed. Full column rank is
+the stronger linear-separability condition for independent sources.
+
+\paragraph{Ideal task information.}
+For the archived subspace task, visibility is already an exact criterion.
+Let $c_a,c_b$ be independent balanced bits and
+$x_a=P_{c_a}z_a$, $x_b=P_{c_b}z_b$, with independent
+$z_a,z_b\sim\mathcal N(0,I_8)$. The class subspaces
+$U_c=\operatorname{span}(P_c)\subset\mathbb R^{16}$ satisfy
+$U_0\cap U_1=\{0\}$, and the label is $y=c_a\oplus c_b$.
+
+\noindent\textbf{Proposition 1 (ideal population criterion).}
+\emph{For a fixed nonnegative $T$ and no other active inputs, the Bayes
+accuracy from $H_S=TX_{ab}$ is}
+\begin{equation}
+ \operatorname{Acc}^{*}(T)=
+ \begin{cases}
+  1, & T_{:a}\ne0\ \text{and}\ T_{:b}\ne0,\\
+  \tfrac12, & \text{otherwise}.
+ \end{cases}
+ \label{eq:criterion}
+\end{equation}
+
+\emph{Proof.} If $T_{:b}=0$, the readout is independent of $c_b$,
+so $\Pr(y=1\mid H_S)=1/2$; the same holds for $a$.
+If both columns are nonzero, summing sink vectors gives
+$z=\alpha x_a+\beta x_b$, where
+$\alpha=\sum_sT_{sa}>0$ and $\beta=\sum_sT_{sb}>0$.
+For equal source classes, $z\in U_0\cup U_1$. For different classes,
+transversality and nonzero Gaussian coordinates imply
+$z\notin U_0\cup U_1$ almost surely. Subspace membership therefore
+recovers the XOR label. $\square$
+
+Rank-one transfer can thus retain ideal task information: two nonzero
+parallel columns still supply both class-dependent terms. A common relay
+is likewise unnecessary because separate routes can expose both sources.
+The supplement gives the full argument and ten-seed basis-rank check.
+The proposition is a population statement for this noiseless task, not a
+prediction of finite-sample optimization or a guarantee of source recovery.
+
+\paragraph{Multi-source mixing geometry.}
+Visibility is incomplete when several sources contribute features
+simultaneously. For a target source $j$, let $t_j=T_{:j}$ and let $T_{-j}$
+collect the other source columns. Its private component is the residual
+after projecting out those columns:
+\begin{equation}
+ q_j=(I-P_{\operatorname{span}(T_{-j})})t_j,\qquad
+ \rho_j=\|q_j\|_2^2.
+ \label{eq:private}
+\end{equation}
+The scalar $\rho_j$ is the squared transfer coefficient along a readout
+direction orthogonal to all other transferred sources. It measures
+independent source access in the linear operator, independently of the
+source representation or readout training. A nonzero residual can support
+source separation; a zero residual says that the target transfer is
+collinear with the other columns. Neither case by itself specifies a
+nonlinear classifier's accuracy.
+
+\subsection{What the structural interventions constrain}
+\label{sec:paths}
+
+The graph controls preserve each node's in-/out-degree and module-pair
+edge counts. For fixed sources and sinks, a common-relay family is
+\begin{equation}
+ \mathcal C(A)=\{(r,s):s\in S,\ A_{ar}A_{br}A_{rs}=1\}.
+ \label{eq:paths}
+\end{equation}
+A member represents two source edges converging at a relay and one edge
+to a sink. Its three-edge description omits separate-relay routes.
+The number of named motif edges retained is an even narrower statistic.
+Neither quantity specifies all columns of Eq.~\eqref{eq:transfer}.
+
+We compare two archived intervention designs. Named-edge compensation
+removes selected motif edges and replaces each through a module-matched
+double-edge swap
+$(u\!\to\!v,x\!\to\!y)\mapsto(u\!\to\!y,x\!\to\!v)$.
+Matching source-module and target-module labels preserves module counts;
+the exchange preserves every labeled degree. It does not constrain
+other source-specific routes.
+
+The path-conditioned design retains a prefix of $\mathcal C$, protects its
+path-edge union and rejects swaps that create new members. Other edges
+are processed in sorted order with randomized feasible partners. This is
+a common-relay constraint, not a complete source-transport constraint.
+
+Degree nulls rewire the whole dose graph. Protected nulls retain selected
+path edges while rewiring the background without the no-new-relay rule.
+The two therefore ask different counterfactual questions.
+
+\subsection{Turn the analysis into an audit}
+\label{sec:controls}
+
+The procedure has four steps. First, verify the declared structural
+invariants. Second, construct $T$ from the actual direction, normalization,
+propagation depth and sinks. Third, report visibility, the applicable
+ideal-task criterion, and, for competing sources, rank and private
+components. Finally, compare finite readouts against these information-level
+predictions. An oracle given both sources tests label learnability;
+$W=I$ prevents cross-node transport; linear-readout, shuffled-label and
+moved-readout controls test alternative explanations.
+
+The output pairs a structural certificate with a statement about task
+information and a separate measurement of finite-model behavior.
+
+The exact matrix reduction applies to a fixed linear propagation prefix.
+Nonlinear message passing, gating and spiking dynamics require an
+input-dependent analysis of source access.

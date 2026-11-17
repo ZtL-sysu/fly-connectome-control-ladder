@@ -30,6 +30,19 @@ The scientific scope remains one animal, reconstructed dose operators, and
 readout assays rather than a broad vision model. R95 governance and all other
 manuscript histories remain unchanged.
 
+## Latest additive state (2026-11-17, method refinement)
+
+Use `research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/`
+as the current best manuscript. Its isolated review is Overall 6.0,
+confidence 5 (`reviews-method-refinement/independent-review.md`), and it
+supersedes the 5.5 `revision-cvpr26-lift` for paper quality. The paper now
+states a four-step Task-Information Audit, expands transfer over relay
+paths, defines a private residual for multi-source geometry, and organizes
+experiments around two explicit questions. Figure generation reads only
+archived records. No training or new evaluation was performed. The evidence
+remains one animal, fixed linear operator and narrow readout probes; R95,
+thresholds and gate states are unchanged.
+
 ## Previous state (CIFAR revision)
 
 # HANDOFF — codex-20261116 @ cvpr2027-score-lift-20261116
