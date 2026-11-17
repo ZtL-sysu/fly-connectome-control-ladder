@@ -11,8 +11,8 @@
   "files": [
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/analysis/make_figures.py",
-      "bytes": 9510,
-      "sha256": "357a24906d0d7bd945811f0329be70712780ac5433e794d4aa0669ea85e54065"
+      "bytes": 11219,
+      "sha256": "12980f84fe64733a34c79454695d023d1c31e44d15af11a2ad951c034db9fc5b"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/cvpr.sty",
@@ -81,18 +81,18 @@
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.pdf",
-      "bytes": 103995,
-      "sha256": "bbd4d5ee164a13effabd3f861da37304a0ae2ffa0f4b700e308932c3b893395f"
+      "bytes": 93326,
+      "sha256": "8bb4e4293eb578ff71c27a0107f034c76adf0d422ea0c7e8ad158c001b0e4d40"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.png",
-      "bytes": 115013,
-      "sha256": "d692bb9038d615e204e607bd4de357644cae6e24ead7e90b7bbb61982ab4158b"
+      "bytes": 239113,
+      "sha256": "01b83b9ccf6a7c22c6b4a93174dfe49c24cc60ef0957cd3cb5ff76262bc090a7"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/overview.svg",
-      "bytes": 21859,
-      "sha256": "79fd06285d15c8ab594ca6013d6dc677ac46e9499d4e387723d430ed27fa3ba0"
+      "bytes": 35664,
+      "sha256": "0f7b7d561f81ea01e96b35e5624514fb6dfa604083edf9989e389f1cc5a5099f"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/figures/transfer_geometry.pdf",
@@ -126,8 +126,8 @@
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.pdf",
-      "bytes": 760511,
-      "sha256": "1028835ec3f02317d957e8715dcc0697c9e9b66c83dd2abc27d73e77ff4a1c26"
+      "bytes": 749677,
+      "sha256": "d8668dd0646522c82454e29bf3387e41d8498728712251536491cf9fea4425e0"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/main.tex",
@@ -201,13 +201,13 @@
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/revision-method-refinement/visual-contract.md",
-      "bytes": 1061,
-      "sha256": "db57812adab757e0d4248ac1fc885a922607347316d271a1a49e07ec06997dd3"
+      "bytes": 1500,
+      "sha256": "94190640db754d8a3673914f169ac4ac43342db95934db720f419be1cb9e5ae8"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews-method-refinement/final-verification.md",
-      "bytes": 1454,
-      "sha256": "11bce29233ed1aef03ed45d38dea4645ec7fc83d0ef04a973ed034e168238542"
+      "bytes": 1885,
+      "sha256": "8595c697927e954e4b36019f47d3d6ca3e77d4c37d40c73751524fa14aaf1de6"
     },
     {
       "path": "research/manuscript/cvpr2027-rebuild-20261116/reviews-method-refinement/independent-review.md",

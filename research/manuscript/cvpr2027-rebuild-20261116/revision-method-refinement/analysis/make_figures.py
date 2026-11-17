@@ -34,50 +34,96 @@ def clean(ax):
     ax.grid(axis='y', alpha=.16); ax.set_axisbelow(True); ax.set_ylabel('Test accuracy')
 
 R = json.loads((ROOT/'analysis/recovered_graphs/narrowk4_transfer_report.json').read_text())
-fig = plt.figure(figsize=(7.0, 2.9), facecolor='white')
-gs = fig.add_gridspec(3, 2, height_ratios=[.18, 1, .42], left=.02, right=.98, top=.98, bottom=.06, wspace=.18, hspace=.12)
-banner = fig.add_subplot(gs[0, :]); banner.axis('off')
-banner.add_patch(FancyBboxPatch((0, .08), 1, .84, boxstyle='round,pad=0.02,rounding_size=0.02',
-    facecolor='#F3F3F1', edgecolor='#DDDDD9', lw=.7, transform=banner.transAxes))
-banner.text(.5, .52, 'Same structure: matched degrees  |  matched modules  |  0 common relays',
-    ha='center', va='center', fontsize=9, fontweight='bold', color='#333333')
-pos = {'a': (0, .9), 'b': (0, 0), 'ra': (1, 1.0), 'rb': (1, -.2),
-       's1': (2, .9), 's2': (2, 0)}
-node_text = {'a': 'a', 'b': 'b', 'ra': r'$r_a$', 'rb': r'$r_b$',
-             's1': r'$s_1$', 's2': r'$s_2$'}
-routes = [[('a','ra'), ('ra','s1'), ('ra','s2'), ('b','rb'), ('rb','s2')],
-          [('a','ra'), ('ra','s1'), ('ra','s2')]]
-transfers = [R['namededge_s0']['transfer']['W2_sink_rows_source_cols'],
-             R['pathblock_p0']['transfer']['W2_sink_rows_source_cols']]
-for i in range(2):
-    ax = fig.add_subplot(gs[1, i]); ax.axis('off'); ax.set_xlim(-.3, 2.3); ax.set_ylim(-.45, 1.55)
-    active = set(v for edge in routes[i] for v in edge)
-    for n, (x, y) in pos.items():
-        present = n in active
-        color = BLUE if n in ('a','s1','s2') else ORANGE if n in ('b','rb') else '#BBBBBB'
-        if not present: color = '#B9B9B9'
-        ax.add_patch(Circle((x,y), .125, facecolor='white', edgecolor=color, lw=1.5, zorder=3))
-        ax.text(x, y, node_text[n], ha='center', va='center', fontsize=9,
-                color='#222222' if present else '#999999', zorder=4)
-    for u, v in routes[i]:
-        color = ORANGE if u in ('b','rb') else BLUE
-        rad = .1 if (u,v) == ('ra','s2') else 0
-        ax.add_patch(FancyArrowPatch(pos[u], pos[v], arrowstyle='-|>', mutation_scale=11,
-            shrinkA=9, shrinkB=9, lw=1.7, color=color, connectionstyle=f'arc3,rad={rad}'))
-    ax.text(1, 1.43, ['Named-edge zero dose', 'Path-conditioned zero dose'][i],
-            ha='center', fontweight='bold', fontsize=10)
-    mat = np.rint(np.array(transfers[i])*16).astype(int)
-    res = fig.add_subplot(gs[2, i]); res.axis('off'); res.set_xlim(0,1); res.set_ylim(0,1)
-    res.add_patch(FancyBboxPatch((.02,.08), .96, .84, boxstyle='round,pad=0.02,rounding_size=0.02',
-        facecolor='#FAFAF8', edgecolor='#E0E0DC', lw=.7))
-    res.text(.5,.77,'Reconstructed transfer',ha='center',fontsize=7.5,color='#555555')
-    res.text(.5,.51,f'16T = [ {mat[0,0]}  {mat[0,1]} ;  {mat[1,0]}  {mat[1,1]} ]',
-        ha='center',fontsize=11,fontfamily='monospace',color='#222222')
-    res.text(.5,.25,['Both sources visible  |  Archived accuracy: 0.9745',
-                     'Source b deleted  |  Archived accuracy: 0.5055'][i],
-        ha='center',fontsize=7.0,fontweight='bold',color=BLUE if i==0 else ORANGE)
-fig.text(.5, .01, 'Same structural certificate, different task information at the readout',
-    ha='center', fontsize=9.5, fontweight='bold', color='#222222')
+fig, ax = plt.subplots(figsize=(12, 6), facecolor='white')
+ax.set_xlim(0, 12); ax.set_ylim(0, 6); ax.axis('off')
+
+def module(x, y, width, height, title, lines, face, edge='#222222', title_color='#111111', lw=1.0):
+    ax.add_patch(FancyBboxPatch((x, y), width, height,
+        boxstyle='round,pad=0.035,rounding_size=0.08', facecolor=face,
+        edgecolor=edge, linewidth=lw, zorder=1))
+    ax.text(x + width/2, y + height - .18, title, ha='center', va='top',
+            fontsize=9.2, fontweight='bold', color=title_color, zorder=3)
+    for k, line in enumerate(lines):
+        ax.text(x + .13, y + height - .48 - .26*k, line, ha='left', va='top',
+                fontsize=7.5, color='#333333', zorder=3)
+
+def arrow(x1, y1, x2, y2, label=None, label_pos=None):
+    ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle='-|>', mutation_scale=11,
+        lw=1.15, color='#222222', shrinkA=2, shrinkB=2, zorder=4))
+    if label:
+        lx, ly = label_pos if label_pos else ((x1+x2)/2, (y1+y2)/2+.12)
+        ax.text(lx, ly, label, ha='center', va='bottom', fontsize=7.4, color='#333333', zorder=5)
+
+headers = [(.25, 'INTERVENTION'), (3.25, 'EXECUTED OPERATOR'),
+           (6.25, 'TASK-INFORMATION AUDIT'), (9.25, 'INTERVENTION REPORT')]
+for hx, title in headers:
+    ax.text(hx + 1.25, 5.55, title, ha='center', va='center',
+            fontsize=10.5, fontweight='bold', color='#111111')
+
+module(.25, 3.05, 2.5, 2.0, 'EDITED CONNECTOME',
+       ['degree sequence', 'module counts', r'common relays $\mathcal{C}(A)$'], '#F1F1EF')
+module(3.25, 3.05, 2.5, 2.0, 'TWO-STEP PROPAGATION',
+       [r'$H_S=R_SW^2E_{ab}X_{ab}$', 'incoming-neighbor averaging',
+        r'$W_{vu}=A_{uv}/\max(d_v,1)$'], '#E8F4F4')
+module(6.25, 4.18, 2.5, .82, 'SOURCE ACCESS',
+       [r'$T_{:a}\neq0$   $T_{:b}\neq0$'], '#EFEBF7')
+module(6.25, 3.25, 2.5, .82, 'TRANSFER GEOMETRY',
+       [r'$\mathrm{rank}(T)$; private residual $q_j$'], '#EFEBF7')
+module(6.25, 2.32, 2.5, .82, 'IDEAL TASK TEST',
+       [r'nonzero columns $\Leftrightarrow$ Bayes $=1$'], '#EFEBF7',
+       edge='#B45151', lw=1.2)
+module(9.25, 4.12, 2.5, .92, 'STRUCTURE CERTIFICATE',
+       ['verified constraints'], '#FCE8D5')
+module(9.25, 3.08, 2.5, .92, 'FINITE READOUT',
+       ['retrained MLP; accuracy'], '#FCE8D5')
+module(9.25, 1.98, 2.5, 1.02, 'INTERPRET EDIT',
+       ['structure preserved?', 'information preserved?', 'behavior changed?'],
+       '#F6C89F')
+
+arrow(2.75, 4.05, 3.25, 4.05, r'$A,\,W$')
+arrow(5.75, 4.05, 6.25, 4.05, r'$T(A)$', (6.0, 4.22))
+arrow(8.75, 4.55, 9.25, 4.55)
+arrow(8.75, 3.66, 9.25, 3.66)
+arrow(8.75, 2.73, 9.25, 2.73, label=None)
+arrow(10.5, 4.12, 10.5, 4.00)
+arrow(10.5, 3.08, 10.5, 2.95)
+
+ax.text(8.95, 3.30, 'readout information', ha='center', va='center',
+        fontsize=6.8, color='#555555', rotation=90)
+ax.text(.25, 1.92, 'MATCHED ZERO-RELAY EXAMPLE', ha='left', va='center',
+        fontsize=9.5, fontweight='bold', color='#111111')
+ax.plot([.25, 11.75], [1.82, 1.82], color='#DDDDDD', lw=.8)
+
+def evidence_card(x, title, matrix, acc, accent):
+    ax.add_patch(FancyBboxPatch((x, .58), 5.05, 1.06,
+        boxstyle='round,pad=0.035,rounding_size=0.06', facecolor='#F8FAFA',
+        edgecolor='#BBBBBB', linewidth=.8, zorder=1))
+    ax.text(x + .18, 1.39, title, ha='left', va='center', fontsize=8.8,
+            fontweight='bold', color=accent, zorder=3)
+    ax.text(x + .18, 1.06, 'reconstructed operator', ha='left', va='center',
+            fontsize=6.8, color='#666666')
+    ax.text(x + .18, .78, matrix, ha='left', va='center', fontsize=9.5,
+            fontfamily='monospace', color='#222222')
+    ax.text(x + 2.85, 1.06, 'archived fit', ha='left', va='center',
+            fontsize=6.8, color='#666666')
+    ax.text(x + 2.85, .78, acc, ha='left', va='center', fontsize=9.5,
+            fontfamily='monospace', color=accent)
+
+evidence_card(.35, 'Named-edge zero', '16T = [1 0; 1 1]', 'accuracy 0.9745', BLUE)
+evidence_card(6.60, 'Path zero', '16T = [1 0; 1 0]', 'accuracy 0.5055', ORANGE)
+ax.annotate('', xy=(6.45, 1.10), xytext=(5.55, 1.10),
+            arrowprops=dict(arrowstyle='<->', color='#555555', lw=1.0))
+ax.text(6.0, 1.30, 'same constraints', ha='center', va='bottom',
+        fontsize=6.9, color='#555555')
+
+legend_items = [('#F1F1EF', 'Structural constraints'), ('#E8F4F4', 'Executed operator'),
+                ('#EFEBF7', 'Task information'), ('#F6C89F', 'Finite-model behavior')]
+for k, (color, label) in enumerate(legend_items):
+    lx = .35 + 3.05*k
+    ax.add_patch(FancyBboxPatch((lx, .18), .20, .14, boxstyle='round,pad=0.01',
+        facecolor=color, edgecolor='#777777', linewidth=.5, zorder=2))
+    ax.text(lx + .28, .25, label, ha='left', va='center', fontsize=6.7, color='#444444')
+fig.subplots_adjust(left=.015, right=.985, top=.99, bottom=.015)
 save(fig, 'overview')
 
 E = json.loads((ROOT/'evidence/edge_dose.json').read_text())['stats']['per_dose']
